@@ -128,7 +128,8 @@
     const c = cotas(SIM.total);
     const lista = [];
     for (const d of DOMINIOS) {
-      const pool = embaralhar(Q.filter((q) => q.tema === d)).sort((a, b) => tentativas(a) - tentativas(b));
+      // O exame real só tem pergunta de uma resposta e de várias respostas (sem associação).
+      const pool = embaralhar(Q.filter((q) => q.tema === d && q.tipo !== 'pareamento')).sort((a, b) => tentativas(a) - tentativas(b));
       lista.push(...pool.slice(0, c[d]));
     }
     return embaralhar(lista);
@@ -464,7 +465,7 @@
         h('button', {
           class: 'btn primario', style: 'width:100%',
           onclick: () => {
-            const aviso = brancos ? `Há ${brancos} pergunta(s) em branco. Finalizar mesmo assim?` : 'Finalizar a prova e ver o resultado?';
+            const aviso = brancos ? `Há ${brancos} pergunta(s) em branco. Na prova real, em branco conta como errada e não há penalidade por chutar. Finalizar mesmo assim?` : 'Finalizar a prova e ver o resultado?';
             if (confirm(aviso)) finalizar();
           },
         }, 'Finalizar prova')));
@@ -594,6 +595,7 @@
     const sim = montarSimulado();
     ok(sim.length === SIM.total, `simulado com ${sim.length} perguntas`);
     ok(new Set(sim.map((q) => q.uid)).size === sim.length, 'simulado com repetidas');
+    ok(!sim.some((q) => q.tipo === 'pareamento'), 'simulado não deve ter pergunta de associação');
     DOMINIOS.forEach((d) => ok(sim.filter((q) => q.tema === d).length === c[d], `cota de ${d} não respeitada`));
     const interfaceTestada = testeInterface(falhas);
     const saida = { total: Q.length, cotas: c, interfaceTestada, falhas, resultado: falhas.length ? 'FALHOU' : 'OK' };
