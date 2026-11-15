@@ -8872,5 +8872,862 @@
   "fonte": "https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html",
   "autoral": true,
   "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 304,
+  "uid": "371deb9d",
+  "tipo": "unica",
+  "tema": "Conceitos de nuvem",
+  "subtema": "Conceitos de nuvem e Well-Architected",
+  "gabarito": "documentacao",
+  "enunciado": "Uma equipe de desenvolvimento queria testar uma ideia nova, mas esperava semanas para receber servidores do departamento de TI. Na nuvem AWS, ela consegue disponibilizar os mesmos recursos em minutos. Qual vantagem da nuvem essa situação ilustra?",
+  "alternativas": [
+   {
+    "texto": "Aumento da velocidade e da agilidade",
+    "correta": true
+   },
+   {
+    "texto": "Troca de despesas variáveis por despesas fixas",
+    "correta": false
+   },
+   {
+    "texto": "Redução da necessidade de monitoramento",
+    "correta": false
+   },
+   {
+    "texto": "Eliminação de todos os custos de operação",
+    "correta": false
+   }
+  ],
+  "explicacao": "Na nuvem, novos recursos de TI estão a um clique de distância, o que reduz de semanas para minutos o tempo para disponibilizá-los aos desenvolvedores. O custo e o tempo para experimentar caem de forma significativa.",
+  "fonte": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 305,
+  "uid": "59a1c0e0",
+  "tipo": "unica",
+  "tema": "Conceitos de nuvem",
+  "subtema": "Conceitos de nuvem e Well-Architected",
+  "gabarito": "documentacao",
+  "enunciado": "Uma loja virtual recebe um pico de acessos na Black Friday e, depois, o tráfego volta ao normal. Qual característica da nuvem permite aumentar e reduzir os recursos automaticamente, conforme a demanda, para pagar só pelo que for necessário?",
+  "alternativas": [
+   {
+    "texto": "Elasticidade",
+    "correta": true
+   },
+   {
+    "texto": "Durabilidade",
+    "correta": false
+   },
+   {
+    "texto": "Soberania de dados",
+    "correta": false
+   },
+   {
+    "texto": "Conformidade",
+    "correta": false
+   }
+  ],
+  "explicacao": "Elasticidade é a capacidade de aumentar e diminuir os recursos conforme a demanda. Na nuvem, é possível acessar a capacidade necessária e ajustá-la para mais ou para menos em poucos minutos.",
+  "fonte": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 306,
+  "uid": "47467df0",
+  "tipo": "unica",
+  "tema": "Conceitos de nuvem",
+  "subtema": "Conceitos de nuvem e Well-Architected",
+  "gabarito": "documentacao",
+  "enunciado": "Uma aplicação crítica deve continuar disponível mesmo que um data center inteiro fique indisponível. Qual abordagem ajuda a atingir esse objetivo de alta disponibilidade?",
+  "alternativas": [
+   {
+    "texto": "Executar a aplicação em várias Zonas de Disponibilidade",
+    "correta": true
+   },
+   {
+    "texto": "Executar a aplicação em uma única instância grande do Amazon EC2",
+    "correta": false
+   },
+   {
+    "texto": "Armazenar todos os dados em um único volume do Amazon EBS",
+    "correta": false
+   },
+   {
+    "texto": "Reduzir o número de instâncias para diminuir pontos de falha",
+    "correta": false
+   }
+  ],
+  "explicacao": "As Zonas de Disponibilidade são locais isolados dentro de uma Região, com energia, rede e conectividade independentes. Distribuir a aplicação entre elas evita um único ponto de falha. Uma única instância ou um único volume deixa a aplicação vulnerável.",
+  "fonte": "https://docs.aws.amazon.com/wellarchitected/latest/framework/reliability.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 307,
+  "uid": "7e4f4d3c",
+  "tipo": "unica",
+  "tema": "Conceitos de nuvem",
+  "subtema": "Conceitos de nuvem e Well-Architected",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa brasileira quer atender clientes de outro continente com baixa latência, sem construir um data center no exterior. Qual vantagem da nuvem AWS ajuda nesse caso?",
+  "alternativas": [
+   {
+    "texto": "Implantar a aplicação em Regiões próximas dos clientes, em minutos e com poucos cliques",
+    "correta": true
+   },
+   {
+    "texto": "Comprar servidores físicos e enviá-los ao exterior",
+    "correta": false
+   },
+   {
+    "texto": "Aumentar a largura de banda do data center atual",
+    "correta": false
+   },
+   {
+    "texto": "Reservar capacidade antecipadamente por três anos",
+    "correta": false
+   }
+  ],
+  "explicacao": "A vantagem 'alcance global em minutos' permite implantar a aplicação em várias Regiões do mundo com poucos cliques, o que reduz a latência e melhora a experiência dos clientes a baixo custo.",
+  "fonte": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 308,
+  "uid": "1f3762f3",
+  "tipo": "multipla",
+  "tema": "Conceitos de nuvem",
+  "subtema": "Conceitos de nuvem e Well-Architected",
+  "gabarito": "documentacao",
+  "enunciado": "Quais são vantagens de usar a computação em nuvem em vez de manter um data center próprio? (Selecione DUAS.)",
+  "alternativas": [
+   {
+    "texto": "Trocar despesas fixas por despesas variáveis, pagando só pelo que consome",
+    "correta": true
+   },
+   {
+    "texto": "Parar de adivinhar a capacidade necessária, ajustando-a conforme a demanda",
+    "correta": true
+   },
+   {
+    "texto": "Investir antecipadamente em hardware antes de saber como ele será usado",
+    "correta": false
+   },
+   {
+    "texto": "Dedicar mais tempo à manutenção da infraestrutura física",
+    "correta": false
+   },
+   {
+    "texto": "Garantir que a capacidade nunca precise ser alterada",
+    "correta": false
+   }
+  ],
+  "explicacao": "As seis vantagens citadas pela AWS são: trocar despesa fixa por variável, ganhar economia de escala, parar de adivinhar a capacidade, aumentar velocidade e agilidade, parar de gastar com a operação de data centers e alcançar o mundo em minutos. Investir antes de saber o uso é justamente o problema do modelo tradicional.",
+  "fonte": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 309,
+  "uid": "ffa96c19",
+  "tipo": "unica",
+  "tema": "Conceitos de nuvem",
+  "subtema": "Conceitos de nuvem e Well-Architected",
+  "gabarito": "documentacao",
+  "enunciado": "Qual termo descreve a capacidade de um sistema continuar funcionando corretamente quando um de seus componentes falha?",
+  "alternativas": [
+   {
+    "texto": "Tolerância a falhas",
+    "correta": true
+   },
+   {
+    "texto": "Agilidade",
+    "correta": false
+   },
+   {
+    "texto": "Elasticidade",
+    "correta": false
+   },
+   {
+    "texto": "Economia de escala",
+    "correta": false
+   }
+  ],
+  "explicacao": "Tolerância a falhas é a capacidade de o sistema continuar operando quando parte dele falha, por exemplo com componentes redundantes. Agilidade trata da rapidez para provisionar e experimentar, elasticidade trata do ajuste à demanda e economia de escala trata de custo.",
+  "fonte": "https://docs.aws.amazon.com/wellarchitected/latest/framework/reliability.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 310,
+  "uid": "e6080eaf",
+  "tipo": "unica",
+  "tema": "Conceitos de nuvem",
+  "subtema": "Conceitos de nuvem e Well-Architected",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa quer garantir que sua carga de trabalho execute a função esperada de forma correta e consistente, recupere-se de falhas e atenda à demanda. Qual pilar do AWS Well-Architected Framework trata desse objetivo?",
+  "alternativas": [
+   {
+    "texto": "Confiabilidade",
+    "correta": true
+   },
+   {
+    "texto": "Otimização de custos",
+    "correta": false
+   },
+   {
+    "texto": "Sustentabilidade",
+    "correta": false
+   },
+   {
+    "texto": "Excelência operacional",
+    "correta": false
+   }
+  ],
+  "explicacao": "O pilar Confiabilidade trata da capacidade de uma carga de trabalho funcionar de forma correta e consistente quando esperado, o que inclui recuperar-se de falhas e atender à demanda.",
+  "fonte": "https://docs.aws.amazon.com/wellarchitected/latest/framework/reliability.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 311,
+  "uid": "2d12e341",
+  "tipo": "unica",
+  "tema": "Conceitos de nuvem",
+  "subtema": "Conceitos de nuvem e Well-Architected",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa escolhe Regiões e tipos de instância com maior eficiência energética para reduzir o impacto ambiental das suas cargas de trabalho na nuvem. Qual pilar do AWS Well-Architected Framework orienta essa decisão?",
+  "alternativas": [
+   {
+    "texto": "Sustentabilidade",
+    "correta": true
+   },
+   {
+    "texto": "Segurança",
+    "correta": false
+   },
+   {
+    "texto": "Eficiência de desempenho",
+    "correta": false
+   },
+   {
+    "texto": "Confiabilidade",
+    "correta": false
+   }
+  ],
+  "explicacao": "O pilar Sustentabilidade trata de minimizar os impactos ambientais da execução de cargas de trabalho na nuvem. É o sexto pilar do framework.",
+  "fonte": "https://docs.aws.amazon.com/wellarchitected/latest/framework/sustainability.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 312,
+  "uid": "17318b2e",
+  "tipo": "unica",
+  "tema": "Conceitos de nuvem",
+  "subtema": "Conceitos de nuvem e Well-Architected",
+  "gabarito": "documentacao",
+  "enunciado": "Uma equipe cria procedimentos para operar suas cargas de trabalho, monitora a operação e melhora continuamente os processos depois de cada incidente. Qual pilar do AWS Well-Architected Framework descreve essas práticas?",
+  "alternativas": [
+   {
+    "texto": "Excelência operacional",
+    "correta": true
+   },
+   {
+    "texto": "Otimização de custos",
+    "correta": false
+   },
+   {
+    "texto": "Sustentabilidade",
+    "correta": false
+   },
+   {
+    "texto": "Eficiência de desempenho",
+    "correta": false
+   }
+  ],
+  "explicacao": "A Excelência operacional cobre dar suporte ao desenvolvimento, executar cargas de trabalho com eficácia, obter visibilidade da operação e melhorar continuamente os processos e procedimentos para gerar valor ao negócio.",
+  "fonte": "https://docs.aws.amazon.com/wellarchitected/latest/framework/operational-excellence.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 313,
+  "uid": "e5dfc33d",
+  "tipo": "unica",
+  "tema": "Conceitos de nuvem",
+  "subtema": "Conceitos de nuvem e Well-Architected",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa implementa gerenciamento de identidade, controles de detecção e criptografia para proteger seus dados, sistemas e ativos. Qual pilar do AWS Well-Architected Framework trata dessas práticas?",
+  "alternativas": [
+   {
+    "texto": "Segurança",
+    "correta": true
+   },
+   {
+    "texto": "Confiabilidade",
+    "correta": false
+   },
+   {
+    "texto": "Eficiência de desempenho",
+    "correta": false
+   },
+   {
+    "texto": "Excelência operacional",
+    "correta": false
+   }
+  ],
+  "explicacao": "O pilar Segurança trata da proteção de dados, sistemas e ativos, aproveitando as tecnologias de nuvem para melhorar a postura de segurança.",
+  "fonte": "https://docs.aws.amazon.com/wellarchitected/latest/framework/security.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 314,
+  "uid": "362c1456",
+  "tipo": "unica",
+  "tema": "Conceitos de nuvem",
+  "subtema": "Conceitos de nuvem e Well-Architected",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa quer usar os recursos de computação de forma eficiente para atender aos requisitos e manter essa eficiência à medida que a demanda e as tecnologias mudam. Qual pilar do AWS Well-Architected Framework trata desse objetivo?",
+  "alternativas": [
+   {
+    "texto": "Eficiência de desempenho",
+    "correta": true
+   },
+   {
+    "texto": "Otimização de custos",
+    "correta": false
+   },
+   {
+    "texto": "Segurança",
+    "correta": false
+   },
+   {
+    "texto": "Sustentabilidade",
+    "correta": false
+   }
+  ],
+  "explicacao": "A Eficiência de desempenho trata do uso eficiente de recursos de computação para atender aos requisitos do sistema e de manter essa eficiência conforme a demanda muda e novas tecnologias surgem.",
+  "fonte": "https://docs.aws.amazon.com/wellarchitected/latest/framework/performance-efficiency.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 315,
+  "uid": "9a987d42",
+  "tipo": "unica",
+  "tema": "Conceitos de nuvem",
+  "subtema": "Conceitos de nuvem e Well-Architected",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa quer entender e controlar onde o dinheiro é gasto na nuvem e evitar custos desnecessários, sem deixar de entregar valor ao negócio. Qual pilar do AWS Well-Architected Framework trata desse objetivo?",
+  "alternativas": [
+   {
+    "texto": "Otimização de custos",
+    "correta": true
+   },
+   {
+    "texto": "Excelência operacional",
+    "correta": false
+   },
+   {
+    "texto": "Confiabilidade",
+    "correta": false
+   },
+   {
+    "texto": "Segurança",
+    "correta": false
+   }
+  ],
+  "explicacao": "A Otimização de custos trata de executar sistemas que entreguem valor ao negócio pelo menor preço, evitando custos desnecessários.",
+  "fonte": "https://docs.aws.amazon.com/wellarchitected/latest/framework/cost-optimization.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 316,
+  "uid": "29cadfe7",
+  "tipo": "multipla",
+  "tema": "Conceitos de nuvem",
+  "subtema": "Conceitos de nuvem e Well-Architected",
+  "gabarito": "documentacao",
+  "enunciado": "Quais itens são pilares do AWS Well-Architected Framework? (Selecione DOIS.)",
+  "alternativas": [
+   {
+    "texto": "Sustentabilidade",
+    "correta": true
+   },
+   {
+    "texto": "Excelência operacional",
+    "correta": true
+   },
+   {
+    "texto": "Agilidade",
+    "correta": false
+   },
+   {
+    "texto": "Governança",
+    "correta": false
+   },
+   {
+    "texto": "Escalabilidade",
+    "correta": false
+   }
+  ],
+  "explicacao": "Os seis pilares são excelência operacional, segurança, confiabilidade, eficiência de desempenho, otimização de custos e sustentabilidade. Governança é uma perspectiva do AWS Cloud Adoption Framework, e agilidade e escalabilidade são vantagens da nuvem, não pilares.",
+  "fonte": "https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 317,
+  "uid": "4659a840",
+  "tipo": "multipla",
+  "tema": "Conceitos de nuvem",
+  "subtema": "Migração e transferência",
+  "gabarito": "documentacao",
+  "enunciado": "Quais resultados de negócio o AWS Cloud Adoption Framework (AWS CAF) ajuda uma organização a alcançar? (Selecione DOIS.)",
+  "alternativas": [
+   {
+    "texto": "Redução do risco do negócio",
+    "correta": true
+   },
+   {
+    "texto": "Aumento da eficiência operacional",
+    "correta": true
+   },
+   {
+    "texto": "Eliminação da necessidade de qualquer equipe de TI",
+    "correta": false
+   },
+   {
+    "texto": "Garantia de tempo de inatividade zero em todas as aplicações",
+    "correta": false
+   },
+   {
+    "texto": "Dispensa de qualquer planejamento de migração",
+    "correta": false
+   }
+  ],
+  "explicacao": "O AWS CAF orienta a transformação digital e aponta resultados como redução de riscos do negócio, melhor desempenho em ESG (ambiental, social e de governança), aumento de receita e maior eficiência operacional. Ele não elimina a equipe de TI nem dispensa planejamento.",
+  "fonte": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/welcome.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 318,
+  "uid": "f9b431cc",
+  "tipo": "unica",
+  "tema": "Conceitos de nuvem",
+  "subtema": "Migração e transferência",
+  "gabarito": "documentacao",
+  "enunciado": "Qual perspectiva do AWS Cloud Adoption Framework (AWS CAF) ajuda a orquestrar as iniciativas de nuvem, maximizando os benefícios para a organização e minimizando os riscos da transformação?",
+  "alternativas": [
+   {
+    "texto": "Governança",
+    "correta": true
+   },
+   {
+    "texto": "Plataforma",
+    "correta": false
+   },
+   {
+    "texto": "Pessoas",
+    "correta": false
+   },
+   {
+    "texto": "Segurança",
+    "correta": false
+   }
+  ],
+  "explicacao": "A perspectiva de Governança trata de coordenar as iniciativas de nuvem, maximizar os benefícios e reduzir os riscos da transformação. As outras perspectivas do AWS CAF são Negócios, Pessoas, Plataforma, Segurança e Operações.",
+  "fonte": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/welcome.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 319,
+  "uid": "b6cf4399",
+  "tipo": "unica",
+  "tema": "Conceitos de nuvem",
+  "subtema": "Migração e transferência",
+  "gabarito": "documentacao",
+  "enunciado": "Qual perspectiva do AWS Cloud Adoption Framework (AWS CAF) trata de garantir a confidencialidade, a integridade e a disponibilidade dos dados e das cargas de trabalho na nuvem?",
+  "alternativas": [
+   {
+    "texto": "Segurança",
+    "correta": true
+   },
+   {
+    "texto": "Negócios",
+    "correta": false
+   },
+   {
+    "texto": "Operações",
+    "correta": false
+   },
+   {
+    "texto": "Pessoas",
+    "correta": false
+   }
+  ],
+  "explicacao": "A perspectiva de Segurança do AWS CAF ajuda a garantir a confidencialidade, a integridade e a disponibilidade dos dados e das cargas de trabalho na nuvem.",
+  "fonte": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/welcome.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 320,
+  "uid": "d835c0ea",
+  "tipo": "unica",
+  "tema": "Conceitos de nuvem",
+  "subtema": "Migração e transferência",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa vai mover dezenas de servidores para a AWS exatamente como estão, sem alterar as aplicações, para migrar o mais rápido possível (lift-and-shift). Qual estratégia de migração ela está usando?",
+  "alternativas": [
+   {
+    "texto": "Redefinir a hospedagem (rehost)",
+    "correta": true
+   },
+   {
+    "texto": "Refatorar (re-architect)",
+    "correta": false
+   },
+   {
+    "texto": "Recomprar (repurchase)",
+    "correta": false
+   },
+   {
+    "texto": "Retirar (retire)",
+    "correta": false
+   }
+  ],
+  "explicacao": "Rehost é conhecido como lift-and-shift: as aplicações são movidas para a nuvem sem nenhuma alteração. Depois da migração, fica mais fácil otimizá-las ou reprojetá-las.",
+  "fonte": "https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/migration-strategies.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 321,
+  "uid": "c8ac65bb",
+  "tipo": "unica",
+  "tema": "Conceitos de nuvem",
+  "subtema": "Migração e transferência",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa migra seu banco de dados Microsoft SQL Server de servidores próprios para o Amazon RDS for SQL Server, sem mudar a lógica da aplicação, para reduzir a administração do banco. Qual estratégia de migração ela está usando?",
+  "alternativas": [
+   {
+    "texto": "Redefinir a plataforma (replatform)",
+    "correta": true
+   },
+   {
+    "texto": "Redefinir a hospedagem (rehost)",
+    "correta": false
+   },
+   {
+    "texto": "Reter (retain)",
+    "correta": false
+   },
+   {
+    "texto": "Retirar (retire)",
+    "correta": false
+   }
+  ],
+  "explicacao": "Replatform (lift, tinker and shift) move a aplicação para a nuvem com algum nível de otimização, como passar um banco de dados para um serviço gerenciado. O exemplo do guia da AWS é exatamente migrar um SQL Server para o Amazon RDS for SQL Server.",
+  "fonte": "https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/migration-strategies.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 322,
+  "uid": "537527a0",
+  "tipo": "unica",
+  "tema": "Conceitos de nuvem",
+  "subtema": "Migração e transferência",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa vai reprojetar uma aplicação monolítica em uma arquitetura de microsserviços com recursos nativos da nuvem, para melhorar agilidade, desempenho e escalabilidade. Qual estratégia de migração ela está usando?",
+  "alternativas": [
+   {
+    "texto": "Refatorar (refactor ou re-architect)",
+    "correta": true
+   },
+   {
+    "texto": "Redefinir a hospedagem (rehost)",
+    "correta": false
+   },
+   {
+    "texto": "Realocar (relocate)",
+    "correta": false
+   },
+   {
+    "texto": "Reter (retain)",
+    "correta": false
+   }
+  ],
+  "explicacao": "Refatorar move a aplicação para a nuvem e modifica a arquitetura para aproveitar recursos nativos da nuvem. É a estratégia mais complexa e cara, pois a modernização acontece durante a migração.",
+  "fonte": "https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/migration-strategies.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 323,
+  "uid": "00b2d1fd",
+  "tipo": "unica",
+  "tema": "Conceitos de nuvem",
+  "subtema": "Migração e transferência",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa decide manter uma aplicação em seu data center por enquanto, porque ela depende de um equipamento especializado que não tem equivalente na nuvem. Qual estratégia de migração ela está adotando para essa aplicação?",
+  "alternativas": [
+   {
+    "texto": "Reter (retain)",
+    "correta": true
+   },
+   {
+    "texto": "Retirar (retire)",
+    "correta": false
+   },
+   {
+    "texto": "Recomprar (repurchase)",
+    "correta": false
+   },
+   {
+    "texto": "Refatorar (refactor)",
+    "correta": false
+   }
+  ],
+  "explicacao": "Reter é a estratégia para aplicações que ficam no ambiente de origem ou que ainda não estão prontas para migrar, por exemplo por dependências físicas sem equivalente na nuvem. Retirar é desativar a aplicação.",
+  "fonte": "https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/migration-strategies.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 324,
+  "uid": "7b7370d9",
+  "tipo": "unica",
+  "tema": "Conceitos de nuvem",
+  "subtema": "Migração e transferência",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa quer migrar um banco de dados para a AWS mantendo o banco de origem em operação e sincronizado com o novo até o momento da troca, para minimizar o tempo de inatividade. Qual abordagem de migração ela deve usar?",
+  "alternativas": [
+   {
+    "texto": "Replicação contínua do banco de dados, como a oferecida pelo AWS DMS",
+    "correta": true
+   },
+   {
+    "texto": "Desligar a aplicação, exportar os dados e importá-los em um arquivo único",
+    "correta": false
+   },
+   {
+    "texto": "Copiar os arquivos do banco manualmente uma vez por mês",
+    "correta": false
+   },
+   {
+    "texto": "Recriar o banco de dados do zero e redigitar os dados",
+    "correta": false
+   }
+  ],
+  "explicacao": "Com a replicação contínua, o banco de origem continua atendendo os usuários enquanto as alterações são copiadas para o destino. Na hora da troca, o tempo de inatividade é mínimo. O AWS DMS oferece esse recurso.",
+  "fonte": "https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 325,
+  "uid": "c6d14a2e",
+  "tipo": "unica",
+  "tema": "Conceitos de nuvem",
+  "subtema": "Conceitos de nuvem e Well-Architected",
+  "gabarito": "documentacao",
+  "enunciado": "Uma startup não quer comprar servidores antecipadamente e prefere pagar somente pelos recursos de computação que consumir, mês a mês. Que tipo de despesa esse modelo representa?",
+  "alternativas": [
+   {
+    "texto": "Despesa variável, paga conforme o uso",
+    "correta": true
+   },
+   {
+    "texto": "Despesa de capital fixa, paga antecipadamente",
+    "correta": false
+   },
+   {
+    "texto": "Despesa fixa, com valor igual todos os meses",
+    "correta": false
+   },
+   {
+    "texto": "Despesa de depreciação de hardware próprio",
+    "correta": false
+   }
+  ],
+  "explicacao": "Na nuvem você paga somente quando consome recursos e somente pelo que consome. Isso troca o investimento antecipado em data centers e servidores (despesa fixa de capital) por despesa variável.",
+  "fonte": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 326,
+  "uid": "e21703d7",
+  "tipo": "unica",
+  "tema": "Conceitos de nuvem",
+  "subtema": "Conceitos de nuvem e Well-Architected",
+  "gabarito": "documentacao",
+  "enunciado": "Por que um provedor de nuvem como a AWS consegue oferecer preços por uso mais baixos do que uma empresa conseguiria obter montando sua própria infraestrutura?",
+  "alternativas": [
+   {
+    "texto": "Porque o uso de centenas de milhares de clientes é agregado, o que gera economias de escala",
+    "correta": true
+   },
+   {
+    "texto": "Porque cada cliente recebe hardware gratuito",
+    "correta": false
+   },
+   {
+    "texto": "Porque os clientes pagam sempre o mesmo valor, independentemente do uso",
+    "correta": false
+   },
+   {
+    "texto": "Porque a AWS não tem custos com data centers",
+    "correta": false
+   }
+  ],
+  "explicacao": "Ao agregar o uso de muitos clientes, a AWS alcança maiores economias de escala, o que se traduz em preços por uso menores. Esses ganhos de escala são uma das vantagens da nuvem.",
+  "fonte": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 327,
+  "uid": "1013a3c3",
+  "tipo": "multipla",
+  "tema": "Conceitos de nuvem",
+  "subtema": "Conceitos de nuvem e Well-Architected",
+  "gabarito": "documentacao",
+  "enunciado": "Quais custos fazem parte da operação de um data center próprio (on-premises) e deixam de existir para a empresa ao migrar a infraestrutura para a nuvem? (Selecione DOIS.)",
+  "alternativas": [
+   {
+    "texto": "Energia elétrica e refrigeração do data center",
+    "correta": true
+   },
+   {
+    "texto": "Aquisição e manutenção de servidores físicos",
+    "correta": true
+   },
+   {
+    "texto": "Pagamento por minuto de build no AWS CodeBuild",
+    "correta": false
+   },
+   {
+    "texto": "Pagamento por requisição ao AWS Lambda",
+    "correta": false
+   },
+   {
+    "texto": "Pagamento pelo armazenamento de objetos no Amazon S3",
+    "correta": false
+   }
+  ],
+  "explicacao": "Num data center próprio a empresa arca com hardware, energia, refrigeração, espaço físico e a equipe para operar tudo isso. Ao usar a nuvem, ela deixa de gastar com o trabalho pesado de instalar e manter os servidores e passa a pagar pelo uso dos serviços.",
+  "fonte": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 328,
+  "uid": "c79eabd3",
+  "tipo": "unica",
+  "tema": "Conceitos de nuvem",
+  "subtema": "Conceitos de nuvem e Well-Architected",
+  "gabarito": "documentacao",
+  "enunciado": "Qual é a diferença entre os modelos de licenciamento BYOL (traga sua própria licença) e licença incluída?",
+  "alternativas": [
+   {
+    "texto": "No BYOL o cliente usa licenças que já possui. Na licença incluída, o custo do software já está embutido no preço do recurso",
+    "correta": true
+   },
+   {
+    "texto": "No BYOL a AWS fornece a licença sem custo. Na licença incluída, o cliente compra a licença separadamente",
+    "correta": false
+   },
+   {
+    "texto": "No BYOL o software só pode ser usado fora da AWS. Na licença incluída, só dentro da AWS",
+    "correta": false
+   },
+   {
+    "texto": "Os dois modelos são idênticos e diferem apenas no nome",
+    "correta": false
+   }
+  ],
+  "explicacao": "Com BYOL, a empresa leva para a nuvem licenças de software que já comprou, o que pode evitar pagar duas vezes. Com licença incluída, o preço do recurso já contém o software, sem compra separada. O AWS License Manager ajuda a controlar o uso das licenças.",
+  "fonte": "https://docs.aws.amazon.com/license-manager/latest/userguide/license-manager.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 329,
+  "uid": "c2f135ad",
+  "tipo": "unica",
+  "tema": "Conceitos de nuvem",
+  "subtema": "Conceitos de nuvem e Well-Architected",
+  "gabarito": "documentacao",
+  "enunciado": "O que significa dimensionar adequadamente (rightsizing) os recursos na nuvem?",
+  "alternativas": [
+   {
+    "texto": "Ajustar o tipo e o tamanho dos recursos à necessidade real da carga de trabalho, para reduzir custos sem prejudicar o desempenho",
+    "correta": true
+   },
+   {
+    "texto": "Escolher sempre o maior tipo de instância disponível para evitar problemas de desempenho",
+    "correta": false
+   },
+   {
+    "texto": "Reservar capacidade por três anos para todos os recursos",
+    "correta": false
+   },
+   {
+    "texto": "Manter os recursos ligados o tempo todo, independentemente do uso",
+    "correta": false
+   }
+  ],
+  "explicacao": "Rightsizing é adequar os recursos à demanda real: recursos grandes demais desperdiçam dinheiro e recursos pequenos demais prejudicam o desempenho. O AWS Compute Optimizer ajuda a encontrar recomendações de dimensionamento.",
+  "fonte": "https://docs.aws.amazon.com/compute-optimizer/latest/ug/what-is-compute-optimizer.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 330,
+  "uid": "9549b626",
+  "tipo": "multipla",
+  "tema": "Conceitos de nuvem",
+  "subtema": "Conceitos de nuvem e Well-Architected",
+  "gabarito": "documentacao",
+  "enunciado": "Quais são benefícios de automatizar tarefas de implantação e operação na nuvem? (Selecione DOIS.)",
+  "alternativas": [
+   {
+    "texto": "Redução de erros causados por etapas manuais",
+    "correta": true
+   },
+   {
+    "texto": "Implantações mais rápidas e consistentes",
+    "correta": true
+   },
+   {
+    "texto": "Eliminação da necessidade de monitorar as aplicações",
+    "correta": false
+   },
+   {
+    "texto": "Garantia de que a conta nunca terá custos",
+    "correta": false
+   },
+   {
+    "texto": "Aumento do número de etapas manuais necessárias",
+    "correta": false
+   }
+  ],
+  "explicacao": "A automação (por exemplo, com infraestrutura como código e pipelines de entrega contínua) reduz erros manuais e torna as implantações mais rápidas e repetíveis. Ela não elimina o monitoramento nem os custos.",
+  "fonte": "https://docs.aws.amazon.com/wellarchitected/latest/framework/operational-excellence.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
  }
 ]
