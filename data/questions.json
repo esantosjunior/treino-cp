@@ -29,6 +29,8 @@
     "justificativa": "O Amazon Connect é uma central de atendimento na nuvem. Não fornece uma conexão de rede."
    }
   ],
+  "explicacao": "O AWS Site-to-Site VPN cria um túnel criptografado entre a rede on-premises e a AWS pela internet existente. O Direct Connect usa uma conexão dedicada, e não a internet.",
+  "fonte": "https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html",
   "origem": "Captura de tela 2026-11-09 091100.png"
  },
  {
@@ -61,6 +63,8 @@
     "justificativa": "O CloudTrail fornece um registro de auditoria de chamadas de API. Não identifica grupos de segurança com acesso irrestrito."
    }
   ],
+  "explicacao": "O AWS Trusted Advisor inspeciona o ambiente e recomenda ações em categorias como otimização de custos, segurança, tolerância a falhas e desempenho. Uma das verificações de segurança aponta grupos de segurança com acesso irrestrito.",
+  "fonte": "https://docs.aws.amazon.com/awssupport/latest/user/trusted-advisor.html",
   "origem": "Captura de tela 2026-11-09 091216.png"
  },
  {
@@ -93,6 +97,8 @@
     "justificativa": "O AWS SCT converte o esquema de um mecanismo de banco de dados para outro. Não migra o servidor para executá-lo no EC2."
    }
   ],
+  "explicacao": "O AWS Application Migration Service (MGN) automatiza a migração do tipo lift-and-shift: replica servidores físicos, virtuais ou de outras nuvens para instâncias do EC2, junto com os bancos de dados e aplicações que rodam neles. O DMS migra os dados do banco, mas não o servidor.",
+  "fonte": "https://docs.aws.amazon.com/mgn/latest/ug/what-is-application-migration-service.html",
   "origem": "Captura de tela 2026-11-09 091231.png"
  },
  {
@@ -101,7 +107,7 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Bancos de dados",
-  "gabarito": "inferido",
+  "gabarito": "documentacao",
   "enunciado": "Qual é o problema que a solução Amazon ElastiCache resolve?",
   "alternativas": [
    {
@@ -121,6 +127,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O ElastiCache é um serviço de cache em memória: guarda em memória os dados acessados com frequência. Assim, a aplicação lê com latência muito baixa e alto throughput, o que alivia gargalos de desempenho do banco de dados.",
+  "fonte": "https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/WhatIs.html",
   "origem": "Captura de tela 2026-11-12 112106.png"
  },
  {
@@ -129,7 +137,7 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Monitoramento e gerenciamento",
-  "gabarito": "inferido",
+  "gabarito": "documentacao",
   "enunciado": "Um cliente corporativo com uma rede multirregional da AWS está procurando maneiras de avaliar e reduzir custos continuamente e, ao mesmo tempo, garantir que tudo esteja seguro e funcionando de forma eficiente. Ele também está interessado em aprender as práticas recomendadas da AWS para aplicar em suas operações. Qual solução MELHOR atenderia às suas necessidades?",
   "alternativas": [
    {
@@ -149,6 +157,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Trusted Advisor avalia continuamente a conta e dá recomendações para reduzir custos, melhorar a segurança, o desempenho e a tolerância a falhas, com base em práticas recomendadas da AWS.",
+  "fonte": "https://docs.aws.amazon.com/awssupport/latest/user/trusted-advisor.html",
   "origem": "Captura de tela 2026-11-13 154832.png"
  },
  {
@@ -181,6 +191,8 @@
     "justificativa": "O Amazon Connect é uma central de atendimento na nuvem. Não conecta uma rede on-premises à AWS."
    }
   ],
+  "explicacao": "O AWS Direct Connect cria uma conexão de rede privada e dedicada entre o data center e a AWS, que não passa pela internet pública e oferece desempenho mais consistente do que uma VPN.",
+  "fonte": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html",
   "origem": "Captura de tela 2026-11-09 091257.png"
  },
  {
@@ -213,6 +225,8 @@
     "justificativa": "O Organizations fornece governança e faturamento centralizados para um ambiente da AWS com várias contas."
    }
   ],
+  "explicacao": "O AWS Organizations permite criar uma organização com várias contas, aplicar governança central (por exemplo, com políticas de controle de serviço) e consolidar o faturamento em uma única fatura.",
+  "fonte": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html",
   "origem": "Captura de tela 2026-11-09 091313.png"
  },
  {
@@ -245,6 +259,8 @@
     "justificativa": "O Shield oferece proteção contra ataques DDoS. Não implementa criptografia em trânsito."
    }
   ],
+  "explicacao": "O AWS Certificate Manager (ACM) cria, armazena e renova certificados SSL/TLS, que protegem os dados em trânsito. O AWS RAM compartilha recursos, o Security Hub mostra a postura de segurança e o Shield protege contra DDoS.",
+  "fonte": "https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html",
   "origem": "Captura de tela 2026-11-09 091330.png"
  },
  {
@@ -277,6 +293,9 @@
     "justificativa": "Você pode ligar ou conversar com o suporte técnico usando o Business Support ou o Enterprise Support. O Business Support é o plano mínimo com esse recurso."
    }
   ],
+  "observacao": "Atenção: a documentação atual da AWS diz que o Business Support será descontinuado em 1º de janeiro de 2027 e substituído pelo Business Support+. O guia do exame (versão 1.3) cita Basic, Business Support+, Enterprise Support e Unified Operations. Se a prova mostrar 'Business Support+', a ideia é a mesma: é o plano mínimo com suporte técnico por telefone.",
+  "explicacao": "Nos planos anteriores, o Business Support era o mínimo com suporte técnico 24 horas por telefone, chat e e-mail. Atualmente, a AWS Business Support+ oferece acesso 24x7 por telefone, web e chat a engenheiros de suporte. Na documentação atual, os planos são Basic, Business Support+, Enterprise Support e Unified Operations.",
+  "fonte": "https://docs.aws.amazon.com/awssupport/latest/user/aws-support-plans.html",
   "origem": "Captura de tela 2026-11-09 091455.png"
  },
  {
@@ -314,6 +333,8 @@
     "justificativa": "Várias zonas de disponibilidade melhoram a disponibilidade geral, mas não alteram a carga geral do aplicativo."
    }
   ],
+  "explicacao": "As Zonas de Disponibilidade são locais isolados dentro de uma Região, com energia, rede e conectividade independentes. Distribuir as instâncias entre elas evita um único ponto de falha e aumenta a disponibilidade. Isso não reduz o custo operacional nem diminui a latência entre Regiões.",
+  "fonte": "https://docs.aws.amazon.com/wellarchitected/latest/framework/reliability.html",
   "origem": "Captura de tela 2026-11-09 091521.png"
  },
  {
@@ -346,6 +367,8 @@
     "justificativa": "O DynamoDB é um banco de dados NoSQL totalmente gerenciado, não relacional."
    }
   ],
+  "explicacao": "O Amazon Aurora é um banco de dados relacional, compatível com MySQL e PostgreSQL, que combina o desempenho e a disponibilidade de bancos comerciais com a simplicidade e o custo de bancos de código aberto. O DynamoDB é NoSQL.",
+  "fonte": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html",
   "origem": "Captura de tela 2026-11-09 091539.png"
  },
  {
@@ -378,6 +401,8 @@
     "justificativa": "O Inspector é um serviço automatizado de avaliação de segurança de aplicativos em instâncias do EC2. Não classifica dados do S3."
    }
   ],
+  "explicacao": "O Amazon Macie usa machine learning e correspondência de padrões para descobrir, classificar e proteger dados sensíveis armazenados no S3. O GuardDuty detecta ameaças, o Secrets Manager guarda segredos e o Inspector procura vulnerabilidades.",
+  "fonte": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
   "origem": "Captura de tela 2026-11-09 091558.png"
  },
  {
@@ -410,6 +435,8 @@
     "justificativa": "Esse pilar trata de proteger dados, sistemas e ativos. Usar várias zonas de disponibilidade não torna o aplicativo mais seguro."
    }
   ],
+  "explicacao": "Implantar o RDS em várias Zonas de Disponibilidade reduz pontos únicos de falha e permite failover automático. Isso é uma prática do pilar Confiabilidade do Well-Architected Framework.",
+  "fonte": "https://docs.aws.amazon.com/wellarchitected/latest/framework/reliability.html",
   "origem": "Captura de tela 2026-11-09 091709.png"
  },
  {
@@ -442,6 +469,8 @@
     "justificativa": "Com as Spot Instances, é possível acessar a capacidade não utilizada do EC2, com desconto."
    }
   ],
+  "explicacao": "As instâncias spot usam capacidade ociosa do EC2 com desconto grande, mas podem ser interrompidas pela AWS quando a capacidade for necessária. Servem para cargas flexíveis e tolerantes a interrupções.",
+  "fonte": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html",
   "origem": "Captura de tela 2026-11-09 091725.png"
  },
  {
@@ -479,6 +508,8 @@
     "justificativa": "É um recurso de gerenciamento de banco de dados. Não concede acesso à conta da AWS."
    }
   ],
+  "explicacao": "O acesso programático (CLI, SDK, API) usa um par de credenciais: a ID da chave de acesso e a chave de acesso secreta. Chaves primárias e secundárias são conceitos de banco de dados.",
+  "fonte": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html",
   "origem": "Captura de tela 2026-11-09 091740.png"
  },
  {
@@ -516,6 +547,8 @@
     "justificativa": "O S3 é um serviço de armazenamento de objetos."
    }
   ],
+  "explicacao": "O Amazon S3 é um serviço de armazenamento de objetos, projetado para alta durabilidade (11 noves). Não é um sistema de arquivos de rede, um armazenamento de arquivos local nem um sistema de arquivos global.",
+  "fonte": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html",
   "origem": "Captura de tela 2026-11-09 091753.png"
  },
  {
@@ -548,6 +581,8 @@
     "justificativa": "O Elastic Beanstalk implanta e dimensiona aplicativos web com gerenciamento automático de infraestrutura. Não reduz a latência do site."
    }
   ],
+  "explicacao": "O Amazon CloudFront é uma rede de entrega de conteúdo (CDN) que guarda cópias do conteúdo em locais de borda próximos dos usuários, o que reduz a latência e aumenta a velocidade de transferência.",
+  "fonte": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html",
   "origem": "Captura de tela 2026-11-09 091816.png"
  },
  {
@@ -580,6 +615,8 @@
     "justificativa": "O Transcribe converte áudio em texto. Não converte texto em fala."
    }
   ],
+  "explicacao": "O Amazon Polly converte texto em fala, o que permite ler textos em voz alta. O Textract extrai texto de documentos, o Translate traduz e o Transcribe converte áudio em texto.",
+  "fonte": "https://docs.aws.amazon.com/polly/latest/dg/what-is.html",
   "origem": "Captura de tela 2026-11-09 091832.png"
  },
  {
@@ -617,6 +654,8 @@
     "justificativa": "A AWS não permite acesso aos data centers. Os clientes não podem visitá-los pessoalmente."
    }
   ],
+  "explicacao": "O cliente é responsável pela segurança na nuvem: grupos de segurança do EC2, usuários e políticas do IAM, dados e sistema operacional das instâncias. A AWS cuida da segurança da nuvem, ou seja, da infraestrutura física e dos serviços gerenciados.",
+  "fonte": "https://aws.amazon.com/compliance/shared-responsibility-model/",
   "origem": "Captura de tela 2026-11-09 091846.png"
  },
  {
@@ -654,6 +693,8 @@
     "justificativa": "O CloudFront é uma CDN global que entrega dados, vídeos, aplicativos e APIs com baixa latência e alta velocidade de transferência."
    }
   ],
+  "explicacao": "Implantar aplicações em várias Regiões reduz a latência para usuários em diferentes países. O CloudFront também usa locais de borda no mundo todo para entregar o conteúdo mais perto dos usuários.",
+  "fonte": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html",
   "origem": "Captura de tela 2026-11-09 091905.png"
  },
  {
@@ -686,6 +727,8 @@
     "justificativa": "O EventBridge é um barramento de eventos sem servidor para conectar aplicações. Não fornece alertas de notificação."
    }
   ],
+  "explicacao": "O Amazon SNS publica mensagens em um tópico e as entrega a todos os assinantes (e-mail, SMS, funções Lambda), o que serve para alertar toda a equipe. O SQS é uma fila de mensagens e não faz o envio para um grupo.",
+  "fonte": "https://docs.aws.amazon.com/sns/latest/dg/welcome.html",
   "origem": "Captura de tela 2026-11-09 091919.png"
  },
  {
@@ -723,6 +766,8 @@
     "justificativa": "As cobranças dependem do número de solicitações para as funções."
    }
   ],
+  "explicacao": "Depois do nível gratuito, o Lambda cobra pelo número de solicitações e pelo tempo de execução do código (duração). Quantidade de funções, versões e a linguagem usada não entram no preço.",
+  "fonte": "https://aws.amazon.com/lambda/pricing/",
   "origem": "Captura de tela 2026-11-09 091933.png"
  },
  {
@@ -731,7 +776,7 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
-  "gabarito": "inferido",
+  "gabarito": "documentacao",
   "enunciado": "Você trabalha para uma organização de caridade local. Sua organização tem dados sensíveis que devem permanecer em seu país por motivos de conformidade. No entanto, você também precisa de uma solução que possa ser escalada rapidamente para lidar com os picos sazonais de demanda. Você decide manter os recursos on-premises para fins de conformidade e usar recursos baseados na nuvem para scaling dinâmico. Que tipo de implantação na nuvem essa situação descreve?",
   "alternativas": [
    {
@@ -751,6 +796,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Na implantação híbrida, parte da infraestrutura fica on-premises (aqui, os dados sensíveis que devem permanecer no país) e parte usa recursos na nuvem, como a capacidade extra para os picos sazonais.",
+  "fonte": "https://aws.amazon.com/types-of-cloud-computing/",
   "origem": "Captura de tela 2026-11-09 093312.png"
  },
  {
@@ -759,7 +806,7 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
-  "gabarito": "inferido",
+  "gabarito": "documentacao",
   "enunciado": "Uma empresa de varejo planeja lançar uma nova linha de roupas, mas está tendo dificuldades para prever com precisão a capacidade de servidor necessária para dar conta do lançamento. Qual benefício da nuvem AWS é o mais relevante para essa situação?",
   "alternativas": [
    {
@@ -779,6 +826,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Uma das seis vantagens da nuvem é parar de adivinhar a capacidade: em vez de estimar antes do lançamento e correr o risco de ter recursos ociosos ou insuficientes, a empresa ajusta a capacidade conforme a demanda real.",
+  "fonte": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
   "origem": "Captura de tela 2026-11-09 093830.png"
  },
  {
@@ -787,7 +836,7 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
-  "gabarito": "inferido",
+  "gabarito": "documentacao",
   "enunciado": "Você acabou de entrar em uma startup de tecnologia e a empresa está crescendo de forma rápida. A nova empresa decide que precisa projetar uma infraestrutura resiliente e dimensionável AWS para lidar com o aumento do tráfego e ajudar a garantir a alta disponibilidade. Qual declaração MELHOR descreve o benefício da alta disponibilidade na infraestrutura global da AWS?",
   "alternativas": [
    {
@@ -807,6 +856,8 @@
     "correta": false
    }
   ],
+  "explicacao": "A infraestrutura global da AWS é formada por Regiões e Zonas de Disponibilidade. Distribuir a aplicação por vários locais mantém o site em operação mesmo que um deles tenha problemas, o que caracteriza alta disponibilidade.",
+  "fonte": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html",
   "origem": "Captura de tela 2026-11-09 102412.png"
  },
  {
@@ -815,7 +866,7 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Responsabilidade compartilhada",
-  "gabarito": "inferido",
+  "gabarito": "documentacao",
   "enunciado": "Você trabalha para uma startup que está desenvolvendo uma aplicação na nuvem. Uma nova atualização de segurança está disponível para seu sistema operacional (SO) e você tem a tarefa de verificar se o sistema operacional está corrigido adequadamente. Qual declaração MELHOR descreve qual parte é responsável pela aplicação de patches de segurança ao sistema operacional que está sendo executado na nuvem?",
   "alternativas": [
    {
@@ -835,6 +886,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Em instâncias do EC2 (infraestrutura como serviço), o cliente gerencia o sistema operacional, incluindo os patches de segurança. Em serviços gerenciados, como RDS e Lambda, a AWS cuida do sistema operacional.",
+  "fonte": "https://aws.amazon.com/compliance/shared-responsibility-model/",
   "origem": "Captura de tela 2026-11-09 104610.png"
  },
  {
@@ -843,7 +896,7 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
-  "gabarito": "inferido",
+  "gabarito": "documentacao",
   "enunciado": "Uma agência governamental quer manter o controle total de sua infraestrutura de TI, mas planeja usar os AWS Cloud Services para aplicações específicas. Qual tipo de implantação é o MELHOR para essa situação?",
   "alternativas": [
    {
@@ -863,6 +916,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Na implantação híbrida, a organização mantém parte da TI sob seu controle (on-premises) e usa serviços da AWS para aplicações específicas, conectando os dois ambientes.",
+  "fonte": "https://aws.amazon.com/types-of-cloud-computing/",
   "origem": "Captura de tela 2026-11-09 122732.png"
  },
  {
@@ -893,6 +948,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Uma Região é uma localização geográfica com várias Zonas de Disponibilidade. Cada Zona é formada por um ou mais data centers discretos, com energia, rede e conectividade independentes. A relação nunca é inversa.",
+  "fonte": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html",
   "origem": "Captura de tela 2026-11-09 122953.png"
  },
  {
@@ -921,6 +978,8 @@
     "correta": true
    }
   ],
+  "explicacao": "No modelo cliente-servidor, o cliente envia solicitações e o servidor as processa e devolve as respostas. A computação em nuvem fornece servidores dimensionáveis, acessados pela internet, e não substitui o modelo.",
+  "fonte": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
   "origem": "Captura de tela 2026-11-09 123510.png"
  },
  {
@@ -953,6 +1012,8 @@
     "correta": true
    }
   ],
+  "explicacao": "A criptografia de dados do lado do cliente e a aplicação de patches no sistema operacional das instâncias são responsabilidades do cliente. Hardware, rede física, segurança dos data centers e software de serviços gerenciados são da AWS.",
+  "fonte": "https://aws.amazon.com/compliance/shared-responsibility-model/",
   "origem": "Captura de tela 2026-11-09 124012.png"
  },
  {
@@ -985,6 +1046,8 @@
     "correta": true
    }
   ],
+  "explicacao": "A infraestrutura global da AWS, com várias Regiões e Zonas de Disponibilidade, dá tolerância a falhas e alta disponibilidade, além de latência menor para usuários em diferentes locais.",
+  "fonte": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html",
   "origem": "Captura de tela 2026-11-09 124316.png"
  },
  {
@@ -1013,6 +1076,8 @@
     "correta": false
    }
   ],
+  "explicacao": "A AWS é responsável pela proteção da infraestrutura física, como data centers e hardware. O cliente se concentra na segurança dos seus dados, aplicações e acessos na nuvem.",
+  "fonte": "https://aws.amazon.com/compliance/shared-responsibility-model/",
   "origem": "Captura de tela 2026-11-09 124522.png"
  },
  {
@@ -1041,6 +1106,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Uma das vantagens da nuvem é parar de gastar dinheiro com a execução e a manutenção de data centers, o que libera a equipe para focar em projetos que diferenciam o negócio.",
+  "fonte": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
   "origem": "Captura de tela 2026-11-09 124700.png"
  },
  {
@@ -1070,6 +1137,8 @@
    "Gerenciado",
    "Totalmente gerenciado"
   ],
+  "explicacao": "Quanto mais gerenciado o serviço, menor a responsabilidade do cliente. Em recursos não gerenciados, como o EC2, o cliente cuida do sistema operacional, dos patches e da rede. Em serviços gerenciados, ele escolhe opções de implantação e configurações. Nos totalmente gerenciados, foca no código.",
+  "fonte": "https://aws.amazon.com/compliance/shared-responsibility-model/",
   "origem": "Captura de tela 2026-11-09 125451.png"
  },
  {
@@ -1077,7 +1146,7 @@
   "uid": "c32eb950",
   "tipo": "unica",
   "tema": "Segurança e conformidade",
-  "subtema": "Computação",
+  "subtema": "Responsabilidade compartilhada",
   "gabarito": "confirmado",
   "enunciado": "Uma equipe de desenvolvimento de uma startup de fintech está criando um novo microsserviço voltado para o cliente com o uso da solução AWS Lambda. A AWS cuida da infraestrutura, mas a equipe está focada em atender aos rígidos requisitos de segurança e conformidade. Qual tarefa ainda é responsabilidade da equipe ao usar o Lambda?",
   "alternativas": [
@@ -1098,6 +1167,8 @@
     "correta": false
    }
   ],
+  "explicacao": "No Lambda a AWS gerencia a infraestrutura, o sistema operacional e o ambiente de execução. O cliente continua responsável pelo código, pelas permissões de acesso (IAM) e pelo tratamento dos dados.",
+  "fonte": "https://aws.amazon.com/compliance/shared-responsibility-model/",
   "origem": "Captura de tela 2026-11-09 130616.png"
  },
  {
@@ -1106,7 +1177,7 @@
   "tipo": "multipla",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
-  "gabarito": "inferido",
+  "gabarito": "documentacao",
   "enunciado": "Uma empresa de fotografia oferece edição e armazenamento de fotos na nuvem. Para simplificar as operações, ela usa a solução AWS Lambda para processar fotos de forma automática, ao redimensionar imagens, aplicar filtros e organizar arquivos, sempre que um cliente carregue uma nova imagem. Quais componentes principais estão envolvidos na execução de um fluxo de trabalho automatizado de processamento de fotos com a solução Lambda? (Selecione TRÊS opções.)",
   "alternativas": [
    {
@@ -1134,6 +1205,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Um fluxo com o Lambda envolve a função (o código), o gatilho (por exemplo, o envio de uma imagem) e o runtime (o ambiente da linguagem usada). Provisionar servidores, configurar scaling manual e escolher o sistema operacional não são necessários, pois a AWS cuida disso.",
+  "fonte": "https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-concepts.html",
   "origem": "Captura de tela 2026-11-09 130739.png"
  },
  {
@@ -1142,7 +1215,7 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
-  "gabarito": "inferido",
+  "gabarito": "documentacao",
   "enunciado": "Um desenvolvedor acabou de criar uma aplicação que funciona de forma perfeita em seu laptop. No entanto, quando sua equipe tenta implantá-la em um ambiente diferente, ela trava devido à falta de dependências e incompatibilidades de configuração. Como os contêineres ajudam a resolver esse problema?",
   "alternativas": [
    {
@@ -1162,6 +1235,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Um contêiner empacota a aplicação e suas dependências e configurações em uma unidade que executa da mesma forma em qualquer ambiente. Isso resolve problemas de dependências ausentes e de configuração diferente entre máquinas.",
+  "fonte": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html",
   "origem": "Captura de tela 2026-11-09 141626.png"
  },
  {
@@ -1196,6 +1271,8 @@
    "Armazena, gerencia e implanta imagens de contêiner compatíveis com a Open Container Initiative (OCI)",
    "Mecanismo computacional sem servidor para contêineres que elimina a necessidade de gerenciar servidores"
   ],
+  "explicacao": "O ECS orquestra contêineres na AWS. O EKS é o serviço Kubernetes gerenciado. O ECR armazena e gerencia as imagens de contêiner. O Fargate é o mecanismo de computação sem servidor para contêineres, que dispensa gerenciar servidores.",
+  "fonte": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html",
   "origem": "Captura de tela 2026-11-09 145449.png"
  },
  {
@@ -1204,7 +1281,7 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
-  "gabarito": "inferido",
+  "gabarito": "documentacao",
   "enunciado": "Uma empresa financeira precisa executar workloads on-premises devido aos rígidos requisitos de conformidade, mas deseja usar os serviços e as ferramentas da AWS de forma consistente em todos os ambientes. Qual serviço atende às suas necessidades?",
   "alternativas": [
    {
@@ -1224,6 +1301,8 @@
     "correta": true
    }
   ],
+  "explicacao": "O AWS Outposts leva a infraestrutura, os serviços e as ferramentas da AWS para o ambiente on-premises do cliente, com experiência consistente de nuvem híbrida. É a escolha quando a carga precisa ficar no local, por exigência de conformidade ou latência.",
+  "fonte": "https://docs.aws.amazon.com/outposts/latest/userguide/what-is-outposts.html",
   "origem": "Captura de tela 2026-11-09 150827.png"
  },
  {
@@ -1258,6 +1337,8 @@
    "Um serviço simplificado com servidores virtuais privados (VPSs), armazenamento e rede",
    "Um serviço de nuvem híbrida que estende a AWS para on-premises"
   ],
+  "explicacao": "O Elastic Beanstalk implanta e escala aplicações web. O AWS Batch executa cargas de trabalho em lote. O Lightsail oferece servidores virtuais privados simples, com armazenamento e rede. O Outposts estende a AWS para o ambiente on-premises.",
+  "fonte": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html",
   "origem": "Captura de tela 2026-11-09 151324.png"
  },
  {
@@ -1266,7 +1347,7 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
-  "gabarito": "inferido",
+  "gabarito": "documentacao",
   "enunciado": "Uma startup está criando um aplicativo web e procura uma maneira simples de implantar código sem gerenciar a infraestrutura. Ela precisa ter o auto scaling e o monitoramento gerenciados para ela. Qual serviço da AWS deve ser usado?",
   "alternativas": [
    {
@@ -1286,6 +1367,8 @@
     "correta": false
    }
   ],
+  "explicacao": "No Elastic Beanstalk você envia o código e o serviço cuida do provisionamento, do balanceamento de carga, do auto scaling e do monitoramento. Usar o EC2 diretamente exigiria que a equipe gerenciasse tudo isso.",
+  "fonte": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html",
   "origem": "Captura de tela 2026-11-09 151339.png"
  },
  {
@@ -1314,6 +1397,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Empacotar a aplicação e todas as dependências em um contêiner garante o mesmo comportamento em desenvolvimento, teste e produção. Manter versões diferentes ou recriar o ambiente manualmente reintroduz as inconsistências.",
+  "fonte": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html",
   "origem": "Captura de tela 2026-11-09 151627.png"
  },
  {
@@ -1342,6 +1427,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Depois de armazenar a imagem no ECR, é preciso um orquestrador, como o Amazon ECS ou o Amazon EKS, para iniciar e parar contêineres, ajustar a escala conforme a demanda e monitorar a integridade.",
+  "fonte": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html",
   "origem": "Captura de tela 2026-11-09 151845.png"
  },
  {
@@ -1370,6 +1457,8 @@
     "correta": false
    }
   ],
+  "explicacao": "No Lambda a AWS gerencia servidores, sistema operacional, runtime e scaling. O cliente é responsável pelo código da aplicação e pelas permissões de acesso.",
+  "fonte": "https://aws.amazon.com/compliance/shared-responsibility-model/",
   "origem": "Captura de tela 2026-11-09 152006.png"
  },
  {
@@ -1378,7 +1467,7 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
-  "gabarito": "inferido",
+  "gabarito": "documentacao",
   "enunciado": "Uma empresa de pesquisa farmacêutica precisa executar milhares de simulações para analisar o enovelamento de proteínas. Essas tarefas computacionais pesadas são executadas em paralelo e não exigem interação em tempo real. A empresa quer que os trabalhos sejam programados e escalados de forma automática de acordo com a demanda computacional. Qual serviço da AWS MELHOR se adapta a essa workload?",
   "alternativas": [
    {
@@ -1398,6 +1487,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O AWS Batch executa tarefas de computação em lote, como milhares de simulações em paralelo, provisionando os recursos necessários e programando os trabalhos. Funciona bem para cargas pesadas que não exigem interação em tempo real.",
+  "fonte": "https://docs.aws.amazon.com/batch/latest/userguide/what-is-batch.html",
   "origem": "Captura de tela 2026-11-09 152101.png"
  },
  {
@@ -1426,6 +1517,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Amazon Lightsail reúne computação, armazenamento e rede em pacotes simples e de preço previsível, com pouca configuração. Atende bem a sites e blogs de pouco tráfego.",
+  "fonte": "https://docs.aws.amazon.com/lightsail/latest/userguide/what-is-amazon-lightsail.html",
   "origem": "Captura de tela 2026-11-09 152155.png"
  },
  {
@@ -1454,6 +1547,8 @@
     "correta": false
    }
   ],
+  "explicacao": "No modelo sem servidor (serverless), a AWS gerencia servidores, scaling e disponibilidade, e o desenvolvedor foca só no código. O AWS Lambda é o exemplo mais conhecido.",
+  "fonte": "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html",
   "origem": "Captura de tela 2026-11-09 152305.png"
  },
  {
@@ -1461,7 +1556,7 @@
   "uid": "1d93262f",
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
-  "subtema": "Armazenamento",
+  "subtema": "Computação",
   "gabarito": "confirmado",
   "enunciado": "Qual cenário é o MELHOR para usar a solução AWS Lambda?",
   "alternativas": [
@@ -1482,6 +1577,8 @@
     "correta": true
    }
   ],
+  "explicacao": "O Lambda é ideal para tarefas curtas disparadas por eventos, como processar uma imagem assim que ela é enviada ao S3. Não serve para servidores com controle total do sistema operacional, cargas de várias horas ou bancos de dados relacionais.",
+  "fonte": "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html",
   "origem": "Captura de tela 2026-11-09 152409.png"
  },
  {
@@ -1510,6 +1607,8 @@
     "correta": false
    }
   ],
+  "explicacao": "A imagem fica no Amazon ECR, o Amazon EKS orquestra os contêineres com Kubernetes e o AWS Fargate executa os contêineres sem que a equipe gerencie servidores.",
+  "fonte": "https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html",
   "origem": "Captura de tela 2026-11-09 152510.png"
  },
  {
@@ -1538,6 +1637,8 @@
     "correta": false
    }
   ],
+  "explicacao": "As instâncias de computação acelerada usam aceleradores de hardware, como GPUs, para tarefas como renderização gráfica, machine learning e simulações complexas.",
+  "fonte": "https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-types.html",
   "origem": "Captura de tela 2026-11-09 152831.png"
  },
  {
@@ -1566,6 +1667,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O EC2 Auto Scaling ajusta o número de instâncias conforme a demanda. O ELB distribui o tráfego entre elas. Os dois trabalham juntos: as instâncias novas passam a receber tráfego automaticamente.",
+  "fonte": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html",
   "origem": "Captura de tela 2026-11-09 152944.png"
  },
  {
@@ -1594,6 +1697,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Em uma arquitetura fracamente acoplada, os componentes são independentes e se comunicam por interfaces, como filas de mensagens. Se um componente falha, os outros podem continuar funcionando.",
+  "fonte": "https://docs.aws.amazon.com/wellarchitected/latest/framework/reliability.html",
   "origem": "Captura de tela 2026-11-09 153048.png"
  },
  {
@@ -1622,6 +1727,8 @@
     "correta": false
    }
   ],
+  "explicacao": "As instâncias otimizadas para computação oferecem processadores de alto desempenho e servem para cargas que exigem muita CPU, como modelagem científica e processamento em lote.",
+  "fonte": "https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-types.html",
   "origem": "Captura de tela 2026-11-09 153252.png"
  },
  {
@@ -1650,6 +1757,8 @@
     "correta": false
    }
   ],
+  "explicacao": "As instâncias de uso geral oferecem equilíbrio entre computação, memória e rede e atendem a uma grande variedade de cargas, como servidores web e aplicações pequenas e médias.",
+  "fonte": "https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-types.html",
   "origem": "Captura de tela 2026-11-09 153401.png"
  },
  {
@@ -1678,6 +1787,8 @@
     "correta": false
    }
   ],
+  "explicacao": "As instâncias sob demanda não exigem compromisso de longo prazo e cobram por uso, o que é ideal quando a demanda é incerta ou a carga é nova. Reservadas e Savings Plans exigem compromisso, e as spot podem ser interrompidas.",
+  "fonte": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-purchasing-options.html",
   "origem": "Captura de tela 2026-11-09 153522.png"
  },
  {
@@ -1706,6 +1817,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O SNS envia notificações imediatas aos assinantes de um tópico. Quem pode processar depois pode assinar o tópico por meio de uma fila do SQS. O ELB e o EC2 não servem para notificação.",
+  "fonte": "https://docs.aws.amazon.com/sns/latest/dg/welcome.html",
   "origem": "Captura de tela 2026-11-09 153604.png"
  },
  {
@@ -1734,6 +1847,8 @@
     "correta": true
    }
   ],
+  "explicacao": "Os Savings Plans dão desconto em troca do compromisso de uso por 1 ou 3 anos e combinam com cargas constantes e críticas. As instâncias spot são mais baratas, mas podem ser interrompidas, então servem para trabalhos em lote que não são urgentes.",
+  "fonte": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-purchasing-options.html",
   "origem": "Captura de tela 2026-11-09 153717.png"
  },
  {
@@ -1762,6 +1877,8 @@
     "correta": false
    }
   ],
+  "explicacao": "A AMI contém o sistema operacional, o software e a configuração necessários para iniciar uma instância. Usá-la como base garante que todas as instâncias novas, inclusive as criadas pelo Auto Scaling, sejam idênticas.",
+  "fonte": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html",
   "origem": "Captura de tela 2026-11-09 153759.png"
  },
  {
@@ -1790,6 +1907,9 @@
     "correta": true
    }
   ],
+  "observacao": "A alternativa certa da captura diz que os usuários compartilham a mesma instância, o que não é preciso: o que se compartilha é o host físico, não a instância. Foi a melhor entre as quatro opções.",
+  "explicacao": "Multilocação significa que instâncias (máquinas virtuais) de clientes diferentes compartilham o mesmo host físico, e o hipervisor mantém o isolamento entre elas.",
+  "fonte": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html",
   "origem": "Captura de tela 2026-11-09 153914.png"
  },
  {
@@ -1818,6 +1938,8 @@
     "correta": true
    }
   ],
+  "explicacao": "Na nuvem os recursos são provisionados sob demanda e podem ser escalados e gerenciados de acordo com a necessidade, sem compra antecipada de equipamentos.",
+  "fonte": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
   "origem": "Captura de tela 2026-11-09 153959.png"
  },
  {
@@ -1846,6 +1968,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O EC2 Auto Scaling adiciona ou remove instâncias automaticamente com base em métricas e políticas definidas, tanto para aumentar quanto para reduzir a capacidade.",
+  "fonte": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html",
   "origem": "Captura de tela 2026-11-09 154043.png"
  },
  {
@@ -1854,7 +1978,7 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
-  "gabarito": "inferido",
+  "gabarito": "documentacao",
   "enunciado": "Uma empresa de manufatura está executando um conjunto de workloads previsíveis nos próximos três anos e deseja otimizar os custos. Qual opção deve ser escolhida?",
   "alternativas": [
    {
@@ -1874,6 +1998,8 @@
     "correta": false
    }
   ],
+  "explicacao": "As instâncias reservadas dão desconto em troca de compromisso de 1 ou 3 anos e são indicadas para cargas previsíveis e constantes. Os Savings Plans também seriam uma boa opção para o mesmo cenário.",
+  "fonte": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-purchasing-options.html",
   "origem": "Captura de tela 2026-11-09 154147.png"
  },
  {
@@ -1902,6 +2028,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O EC2 oferece capacidade sob demanda, pagamento pelo uso e provisionamento em minutos. Isso é mais flexível e rápido de começar do que comprar e manter servidores próprios.",
+  "fonte": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html",
   "origem": "Captura de tela 2026-11-09 154230.png"
  },
  {
@@ -1930,6 +2058,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Console de Gerenciamento da AWS é a interface gráfica baseada em navegador para acessar e gerenciar os serviços da AWS. A AWS CLI e os SDKs são ferramentas de linha de comando e de programação.",
+  "fonte": "https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/getting-started.html",
   "origem": "Captura de tela 2026-11-09 155412.png"
  },
  {
@@ -1958,6 +2088,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Na multilocação, várias máquinas virtuais executam isoladas entre si, mas compartilham os recursos de um mesmo host físico.",
+  "fonte": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html",
   "origem": "Captura de tela 2026-11-09 155518.png"
  },
  {
@@ -1966,7 +2098,7 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
-  "gabarito": "inferido",
+  "gabarito": "documentacao",
   "enunciado": "No momento de preparar o lançamento de uma nova instância do Amazon EC2, quais informações são essenciais e precisam ser especificadas?",
   "alternativas": [
    {
@@ -1986,6 +2118,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Duas escolhas são indispensáveis ao iniciar uma instância: a AMI (que define o sistema operacional e o software) e o tipo de instância (CPU, memória e rede). As outras opções não são requisitos para iniciar.",
+  "fonte": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html",
   "origem": "Captura de tela 2026-11-09 155557.png"
  },
  {
@@ -2014,6 +2148,8 @@
     "correta": false
    }
   ],
+  "explicacao": "A cobrança de uma instância sob demanda vale enquanto ela está em execução. Instâncias interrompidas ou encerradas deixam de gerar custo de computação. Atenção: volumes do EBS e endereços IP elásticos associados podem continuar gerando custo.",
+  "fonte": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-lifecycle.html",
   "origem": "Captura de tela 2026-11-09 155642.png"
  },
  {
@@ -2042,6 +2178,8 @@
     "correta": true
    }
   ],
+  "explicacao": "As instâncias otimizadas para memória são projetadas para processar grandes conjuntos de dados na memória, como análise de dados em tempo real e bancos em memória.",
+  "fonte": "https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-types.html",
   "origem": "Captura de tela 2026-11-09 162840.png"
  },
  {
@@ -2049,7 +2187,7 @@
   "uid": "e67c427c",
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
-  "subtema": "Armazenamento",
+  "subtema": "Computação",
   "gabarito": "confirmado",
   "enunciado": "Uma empresa do setor de varejo está implementando uma solução para analisar seu histórico de dados de vendas, que está armazenado localmente. O ponto crítico para essa solução é a necessidade de acessar rapidamente grandes conjuntos de dados, o que exige uma taxa de throughput consistentemente alta para que a recuperação das informações seja veloz. Qual tipo de instância do Amazon EC2 seria o MAIS adequado para esse caso de uso?",
   "alternativas": [
@@ -2070,6 +2208,8 @@
     "correta": true
    }
   ],
+  "explicacao": "As instâncias otimizadas para armazenamento são projetadas para cargas que exigem alto throughput de leitura e gravação em grandes conjuntos de dados no armazenamento local, com acesso rápido às informações.",
+  "fonte": "https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-types.html",
   "origem": "Captura de tela 2026-11-09 163038.png"
  },
  {
@@ -2098,6 +2238,8 @@
     "correta": false
    }
   ],
+  "explicacao": "A AWS CLI permite automatizar tarefas e criar scripts para gerenciar os serviços da AWS, o que reduz etapas manuais e erros. Ela funciona em Windows, macOS e Linux e não é uma interface visual.",
+  "fonte": "https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html",
   "origem": "Captura de tela 2026-11-09 163733.png"
  },
  {
@@ -2126,6 +2268,8 @@
     "correta": true
    }
   ],
+  "explicacao": "Em serviços de computação como o EC2, o cliente configura, protege e gerencia o sistema operacional, a rede (grupos de segurança) e as aplicações. A AWS protege a infraestrutura subjacente, como hardware e hipervisor.",
+  "fonte": "https://aws.amazon.com/compliance/shared-responsibility-model/",
   "origem": "Captura de tela 2026-11-09 163809.png"
  },
  {
@@ -2162,6 +2306,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Para iniciar uma instância é preciso escolher a AMI, o tipo de instância e a configuração de armazenamento. Balanceamento de carga, permissões e comportamento de encerramento são configurações adicionais, não requisitos básicos.",
+  "fonte": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html",
   "origem": "Captura de tela 2026-11-09 164336.png"
  },
  {
@@ -2190,6 +2336,8 @@
     "correta": false
    }
   ],
+  "explicacao": "A AMI pré-configura o sistema operacional e o software da instância. O tamanho da instância é definido pelo tipo, a rede pelas configurações de VPC e os dados persistentes ficam em volumes.",
+  "fonte": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html",
   "origem": "Captura de tela 2026-11-09 164347.png"
  },
  {
@@ -2218,6 +2366,8 @@
     "correta": true
    }
   ],
+  "explicacao": "As instâncias spot oferecem a maior economia ao usar a capacidade ociosa do EC2. Como podem ser interrompidas, servem para processamento em lote que tolera interrupções.",
+  "fonte": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html",
   "origem": "Captura de tela 2026-11-09 170358.png"
  },
  {
@@ -2225,7 +2375,7 @@
   "uid": "c0f6152a",
   "tipo": "unica",
   "tema": "Cobrança e suporte",
-  "subtema": "Computação",
+  "subtema": "Preços, custos e suporte",
   "gabarito": "confirmado",
   "enunciado": "Uma empresa de serviços financeiros precisa executar aplicações sensíveis que lidem com dados confidenciais de clientes e precisam de que tudo esteja em conformidade com as regulamentações do setor. Eles precisam de controle total sobre o servidor físico, incluindo o posicionamento da instância e a alocação de recursos. Qual opção de preço ela deve escolher?",
   "alternativas": [
@@ -2246,6 +2396,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Dedicated Host é um servidor físico dedicado ao cliente, que dá visibilidade e controle sobre o posicionamento das instâncias e ajuda a atender requisitos de conformidade e de licenciamento por soquete ou núcleo.",
+  "fonte": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-overview.html",
   "origem": "Captura de tela 2026-11-09 170417.png"
  },
  {
@@ -2274,6 +2426,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Escalabilidade e elasticidade permitem aumentar e reduzir os recursos de forma dinâmica, conforme a demanda em tempo real, e pagar somente pelo que é usado.",
+  "fonte": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
   "origem": "Captura de tela 2026-11-09 171757.png"
  },
  {
@@ -2302,6 +2456,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Distribuir instâncias do EC2 em várias Zonas de Disponibilidade dá alta disponibilidade: se uma Zona falhar, as instâncias das outras continuam atendendo o tráfego.",
+  "fonte": "https://docs.aws.amazon.com/wellarchitected/latest/framework/reliability.html",
   "origem": "Captura de tela 2026-11-09 171831.png"
  },
  {
@@ -2330,6 +2486,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Na AWS é possível provisionar recursos que escalam automaticamente conforme a demanda, sem comprar capacidade em excesso para cobrir picos.",
+  "fonte": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html",
   "origem": "Captura de tela 2026-11-09 171903.png"
  },
  {
@@ -2358,6 +2516,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Elastic Load Balancing distribui automaticamente o tráfego de entrada entre vários destinos, como instâncias do EC2, o que ajuda a escalar a aplicação e a mantê-la disponível.",
+  "fonte": "https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html",
   "origem": "Captura de tela 2026-11-09 172452.png"
  },
  {
@@ -2386,6 +2546,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O ELB distribui a carga entre várias instâncias. Quem adiciona ou remove instâncias conforme a demanda é o EC2 Auto Scaling, não o ELB.",
+  "fonte": "https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html",
   "origem": "Captura de tela 2026-11-09 172518.png"
  },
  {
@@ -2414,6 +2576,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Em uma arquitetura fortemente acoplada, os componentes dependem uns dos outros e a falha de um pode derrubar os demais. Na fracamente acoplada, eles operam de forma independente, o que facilita escalar e manter a disponibilidade.",
+  "fonte": "https://docs.aws.amazon.com/wellarchitected/latest/framework/reliability.html",
   "origem": "Captura de tela 2026-11-09 173342.png"
  },
  {
@@ -2442,6 +2606,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Amazon SQS funciona como um buffer entre os serviços: guarda as mensagens até que o serviço consumidor consiga processá-las, mesmo que ele fique indisponível por um tempo. Isso mantém os serviços desacoplados.",
+  "fonte": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html",
   "origem": "Captura de tela 2026-11-09 173426.png"
  },
  {
@@ -2449,7 +2615,7 @@
   "uid": "bdec4078",
   "tipo": "multipla",
   "tema": "Conceitos de nuvem",
-  "subtema": "Governança e conformidade",
+  "subtema": "Conceitos de nuvem e Well-Architected",
   "gabarito": "confirmado",
   "enunciado": "Um engenheiro de nuvem de uma agência governamental tem a tarefa de selecionar uma região da AWS para implantar os recursos da agência. Quais fatores são MAIS importantes a serem considerados ao selecionar uma Região? (Selecione DUAS alternativas.)",
   "alternativas": [
@@ -2474,6 +2640,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Ao escolher uma Região, os principais fatores são a conformidade (requisitos regulatórios e de residência de dados) e a proximidade com os usuários, que reduz a latência. Também contam a disponibilidade dos serviços e o preço.",
+  "fonte": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html",
   "origem": "Captura de tela 2026-11-09 174538.png"
  },
  {
@@ -2503,6 +2671,8 @@
    "Locais separados e distintos com um ou mais data centers projetados para serem isolados de falhas em outras áreas",
    "Locais que armazenam conteúdo em cache para fornecer dados, vídeos e aplicações aos usuários com menor latência"
   ],
+  "explicacao": "A Região é uma localização geográfica com vários data centers. A Zona de Disponibilidade são locais isolados dentro da Região. Os locais da borda guardam conteúdo em cache próximo dos usuários, para reduzir a latência.",
+  "fonte": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html",
   "origem": "Captura de tela 2026-11-09 175234.png"
  },
  {
@@ -2531,6 +2701,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O CloudFormation permite descrever a infraestrutura em modelos (infraestrutura como código), incluindo EC2, ELB e Auto Scaling. Assim a mesma configuração é implantada de forma consistente e repetível em vários ambientes.",
+  "fonte": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html",
   "origem": "Captura de tela 2026-11-09 175937.png"
  },
  {
@@ -2559,6 +2731,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Para implantações consistentes e repetíveis em várias Regiões, com poucos erros manuais, a melhor abordagem é a infraestrutura como código com o AWS CloudFormation. Fazer tudo manualmente pelo console aumenta o risco de erro.",
+  "fonte": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html",
   "origem": "Captura de tela 2026-11-09 180048.png"
  },
  {
@@ -2589,6 +2763,8 @@
     "correta": false
    }
   ],
+  "explicacao": "As Regiões são locais físicos com várias Zonas de Disponibilidade. Os locais da borda ficam fora das Regiões e guardam em cache o conteúdo acessado com frequência, como na rede do CloudFront.",
+  "fonte": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html",
   "origem": "Captura de tela 2026-11-09 180200.png"
  },
  {
@@ -2621,6 +2797,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Usar várias Regiões reduz a latência para usuários finais em diferentes locais, e várias Zonas de Disponibilidade dão alta disponibilidade e tolerância a falhas. Não aumentam a capacidade de armazenamento nem a segurança.",
+  "fonte": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html",
   "origem": "Captura de tela 2026-11-09 180243.png"
  },
  {
@@ -2628,7 +2806,7 @@
   "uid": "e451d65a",
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
-  "subtema": "Governança e conformidade",
+  "subtema": "Conceitos de nuvem e Well-Architected",
   "gabarito": "confirmado",
   "enunciado": "Uma organização sem fins lucrativos está migrando todos os seus recursos para a nuvem AWS. Ela está tentando decidir em qual Região AWS implantar seus recursos. Qual opção lista os fatores que a organização precisa considerar ao decidir onde colocar seus recursos de nuvem?",
   "alternativas": [
@@ -2649,6 +2827,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Os critérios para escolher a Região da AWS são conformidade e residência de dados, proximidade com os clientes (latência), disponibilidade dos serviços necessários naquela Região e preços.",
+  "fonte": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html",
   "origem": "Captura de tela 2026-11-09 180352.png"
  },
  {
@@ -2677,6 +2857,8 @@
     "correta": true
    }
   ],
+  "explicacao": "Com o CloudFormation os usuários descrevem e configuram os recursos da AWS em código, o que automatiza o provisionamento e o gerenciamento da infraestrutura, reduz erros e mantém consistência entre ambientes.",
+  "fonte": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html",
   "origem": "Captura de tela 2026-11-09 180502.png"
  },
  {
@@ -2685,7 +2867,7 @@
   "tipo": "multipla",
   "tema": "Tecnologia e serviços",
   "subtema": "Redes e entrega de conteúdo",
-  "gabarito": "inferido",
+  "gabarito": "documentacao",
   "enunciado": "Quais são os usos de uma sub-rede em uma Amazon VPC? (Selecione TRÊS opções.)",
   "alternativas": [
    {
@@ -2713,6 +2895,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Uma sub-rede é um intervalo de endereços IP dentro da VPC. Ela serve para organizar os recursos e, conforme a rota, para deixá-los acessíveis pela internet (sub-rede pública) ou isolados e privados (sub-rede privada).",
+  "fonte": "https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html",
   "origem": "Captura de tela 2026-11-10 102751.png"
  },
  {
@@ -2741,6 +2925,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Um gateway privado virtual com conexão VPN liga o data center à VPC de forma segura. A sub-rede privada mantém os recursos isolados do público, ao contrário de um gateway da internet com sub-rede pública.",
+  "fonte": "https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html",
   "origem": "Captura de tela 2026-11-10 104714.png"
  },
  {
@@ -2769,6 +2955,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O AWS Direct Connect oferece uma conexão dedicada com alta largura de banda, adequada para migrações em larga escala e para transferências contínuas de dados em uma arquitetura de nuvem híbrida. As VPNs usam a internet e têm largura de banda mais limitada.",
+  "fonte": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html",
   "origem": "Captura de tela 2026-11-10 104852.png"
  },
  {
@@ -2797,6 +2985,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O gateway privado virtual é o lado da AWS de uma conexão VPN ou Direct Connect com a VPC. Ele permite tráfego protegido entre a rede on-premises aprovada e a sub-rede privada, ao contrário do gateway da internet.",
+  "fonte": "https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html",
   "origem": "Captura de tela 2026-11-10 105022.png"
  },
  {
@@ -2804,7 +2994,7 @@
   "uid": "e76bfc27",
   "tipo": "unica",
   "tema": "Segurança e conformidade",
-  "subtema": "Computação",
+  "subtema": "Redes e entrega de conteúdo",
   "gabarito": "confirmado",
   "enunciado": "Um cliente de varejo está configurando sua aplicação na nuvem AWS. A aplicação exige muito controle na definição de regras de tráfego para as instâncias individuais da solução Amazon EC2 em sua sub-rede pública. Qual solução MELHOR atenderia aos requisitos para proteger os recursos?",
   "alternativas": [
@@ -2825,6 +3015,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Grupos de segurança funcionam como firewall virtual no nível da instância e permitem definir regras de entrada e saída para cada uma. As ACLs de rede atuam no nível da sub-rede.",
+  "fonte": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html",
   "origem": "Captura de tela 2026-11-10 110612.png"
  },
  {
@@ -2853,6 +3045,8 @@
     "correta": false
    }
   ],
+  "explicacao": "As ACLs de rede filtram o tráfego no nível da sub-rede e não guardam estado (stateless): é preciso permitir também o tráfego de retorno. Os grupos de segurança são stateful e atuam no nível da instância.",
+  "fonte": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html",
   "origem": "Captura de tela 2026-11-10 110848.png"
  },
  {
@@ -2881,6 +3075,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O CloudFront coloca em cache o conteúdo nos locais de borda e o entrega com baixa latência a usuários no mundo todo, e o custo de transferência é reduzido ao evitar buscar sempre na origem.",
+  "fonte": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html",
   "origem": "Captura de tela 2026-11-10 180519.png"
  },
  {
@@ -2909,6 +3105,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Amazon Route 53 é um serviço de DNS que também permite registrar e gerenciar nomes de domínio em um único lugar.",
+  "fonte": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html",
   "origem": "Captura de tela 2026-11-10 180549.png"
  },
  {
@@ -2937,6 +3135,8 @@
     "correta": true
    }
   ],
+  "explicacao": "O AWS Direct Connect cria uma conexão de rede dedicada e privada entre o data center e a AWS, sem passar pela internet pública. É adequado para grandes volumes de dados e para requisitos de conformidade. O gateway privado virtual termina a conexão na VPC.",
+  "fonte": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html",
   "origem": "Captura de tela 2026-11-10 181118.png"
  },
  {
@@ -2965,7 +3165,9 @@
     "correta": false
    }
   ],
-  "observacao": "Na captura, a alternativa marcada (definição de VPC) estava com borda vermelha, ou seja, errada. A resposta abaixo foi deduzida pelo enunciado.",
+  "observacao": "A captura não mostrou o gabarito. A resposta foi escolhida por eliminação, pois as demais opções descrevem outros conceitos (Zona de Disponibilidade, DNS e VPC).",
+  "explicacao": "Em termos gerais, uma rede é um conjunto de dispositivos interconectados que trocam dados e recursos. As outras alternativas descrevem a Zona de Disponibilidade, o DNS e a Amazon VPC.",
+  "fonte": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html",
   "origem": "Captura de tela 2026-11-10 181531.png"
  },
  {
@@ -2973,7 +3175,7 @@
   "uid": "b12575f3",
   "tipo": "unica",
   "tema": "Segurança e conformidade",
-  "subtema": "Computação",
+  "subtema": "Redes e entrega de conteúdo",
   "gabarito": "confirmado",
   "enunciado": "Um cliente de varejo está hospedando sua aplicação em uma Amazon VPC e quer configurar regras de tráfego para as instâncias da solução Amazon EC2 em execução em uma sub-rede pública. A aplicação exige que várias regras sejam definidas no nível da instância. Qual solução ou atributo atenderia às suas necessidades?",
   "alternativas": [
@@ -2994,6 +3196,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Regras de tráfego no nível da instância são definidas nos grupos de segurança. Eles controlam o tráfego que entra e sai de cada instância do EC2.",
+  "fonte": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html",
   "origem": "Captura de tela 2026-11-10 181719.png"
  },
  {
@@ -3022,6 +3226,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Site-to-Site VPN cria conexões seguras e criptografadas pela internet existente, com custo menor do que uma conexão dedicada como o Direct Connect. É a opção mais econômica quando não é preciso aumentar a largura de banda.",
+  "fonte": "https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html",
   "origem": "Captura de tela 2026-11-10 181821.png"
  },
  {
@@ -3050,6 +3256,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O AWS Client VPN é um serviço de VPN gerenciado, baseado em cliente, que permite a usuários remotos acessar com segurança os recursos da AWS, com escala rápida e autenticação avançada.",
+  "fonte": "https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/what-is.html",
   "origem": "Captura de tela 2026-11-10 181936.png"
  },
  {
@@ -3078,6 +3286,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Proteger o tráfego de rede com ACLs de rede e grupos de segurança é responsabilidade do cliente. A AWS protege hardware, software de serviço e acesso físico aos data centers.",
+  "fonte": "https://aws.amazon.com/compliance/shared-responsibility-model/",
   "origem": "Captura de tela 2026-11-10 182248.png"
  },
  {
@@ -3106,6 +3316,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Uma sub-rede privada não tem rota direta para a internet, o que mantém os recursos isolados dos usuários da internet. A sub-rede pública tem rota para um gateway da internet.",
+  "fonte": "https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html",
   "origem": "Captura de tela 2026-11-10 182402.png"
  },
  {
@@ -3134,6 +3346,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O DNS (Domain Name System) traduz nomes de domínio legíveis por pessoas em endereços IP que as máquinas usam para se comunicar. Na AWS, o serviço de DNS é o Amazon Route 53.",
+  "fonte": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html",
   "origem": "Captura de tela 2026-11-10 182830.png"
  },
  {
@@ -3162,6 +3376,8 @@
     "correta": true
    }
   ],
+  "explicacao": "Uma Zona de Disponibilidade são data centers isolados dentro de uma Região. Implantar recursos em várias Zonas aumenta a disponibilidade e a tolerância a falhas da aplicação.",
+  "fonte": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html",
   "origem": "Captura de tela 2026-11-10 182942.png"
  },
  {
@@ -3190,6 +3406,8 @@
     "correta": true
    }
   ],
+  "explicacao": "As ACLs de rede atuam na sub-rede e aceitam regras de permitir e de negar para o tráfego de entrada e de saída. Os grupos de segurança só têm regras de permitir e atuam na instância.",
+  "fonte": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html",
   "origem": "Captura de tela 2026-11-10 183112.png"
  },
  {
@@ -3218,6 +3436,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Route 53 gerencia registros de domínio e direciona o tráfego da internet para recursos na AWS e fora dela por meio do DNS.",
+  "fonte": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html",
   "origem": "Captura de tela 2026-11-10 183141.png"
  },
  {
@@ -3246,6 +3466,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O AWS Direct Connect fornece uma conexão dedicada com a AWS, com experiência de rede mais consistente e largura de banda maior do que as conexões pela internet.",
+  "fonte": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html",
   "origem": "Captura de tela 2026-11-10 183231.png"
  },
  {
@@ -3274,6 +3496,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O gateway privado virtual é o componente do lado da AWS que termina a conexão VPN com a VPC e viabiliza a conexão segura e privada com o data center em uma arquitetura híbrida.",
+  "fonte": "https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html",
   "origem": "Captura de tela 2026-11-10 183319.png"
  },
  {
@@ -3302,6 +3526,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O armazenamento de instância é conectado fisicamente ao host e oferece E/S de alto desempenho para dados temporários, que podem ser perdidos quando a instância é interrompida ou encerrada. Não é persistente nem compartilhável entre instâncias.",
+  "fonte": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html",
   "origem": "Captura de tela 2026-11-11 092612.png"
  },
  {
@@ -3330,6 +3556,8 @@
     "correta": true
    }
   ],
+  "explicacao": "O Amazon EBS fornece armazenamento em bloco persistente, de baixa latência, para instâncias do EC2. Cada volume é replicado automaticamente dentro da sua Zona de Disponibilidade para proteger contra falhas de componentes.",
+  "fonte": "https://docs.aws.amazon.com/ebs/latest/userguide/what-is-ebs.html",
   "origem": "Captura de tela 2026-11-11 092731.png"
  },
  {
@@ -3358,6 +3586,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Os volumes do EBS existem independentemente do ciclo de vida da instância e mantêm os dados quando ela é parada. Atenção: por padrão, o volume raiz é excluído quando a instância é encerrada, a menos que esse comportamento seja alterado. Os volumes de dados adicionais persistem.",
+  "fonte": "https://docs.aws.amazon.com/ebs/latest/userguide/what-is-ebs.html",
   "origem": "Captura de tela 2026-11-11 093122.png"
  },
  {
@@ -3386,6 +3616,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Os snapshots do EBS são cópias pontuais de um volume. Dá para criar rapidamente novos volumes a partir de um snapshot, o que facilita montar ambientes de teste idênticos à produção.",
+  "fonte": "https://docs.aws.amazon.com/ebs/latest/userguide/ebs-snapshots.html",
   "origem": "Captura de tela 2026-11-11 093934.png"
  },
  {
@@ -3414,6 +3646,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Amazon Data Lifecycle Manager automatiza a criação, a retenção e a exclusão de snapshots do EBS e de AMIs baseadas em EBS, de acordo com um cronograma. Isso ajuda a cumprir requisitos de retenção e a controlar custos.",
+  "fonte": "https://docs.aws.amazon.com/ebs/latest/userguide/snapshot-lifecycle.html",
   "origem": "Captura de tela 2026-11-11 094055.png"
  },
  {
@@ -3442,6 +3676,8 @@
     "correta": true
    }
   ],
+  "explicacao": "O S3 armazena qualquer quantidade de objetos e é adequado para guardar e distribuir conteúdo de aplicativos móveis e arquivos gerados pelos usuários, como fotos e vídeos. Não executa bancos relacionais, máquinas virtuais nem processamento de streaming.",
+  "fonte": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html",
   "origem": "Captura de tela 2026-11-11 094936.png"
  },
  {
@@ -3470,6 +3706,8 @@
     "correta": false
    }
   ],
+  "explicacao": "As configurações de Bloqueio de Acesso Público (Block Public Access) do S3, no nível da conta ou do bucket, sobrepõem as políticas e impedem o acesso público. Para liberar o acesso, é preciso desativar o bloqueio no nível correspondente.",
+  "fonte": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html",
   "origem": "Captura de tela 2026-11-11 095122.png"
  },
  {
@@ -3498,6 +3736,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O S3 foi projetado para 99,999999999% (11 noves) de durabilidade, com os dados guardados de forma redundante em várias instalações. É altamente escalável e oferece vários mecanismos de controle de acesso.",
+  "fonte": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/DataDurability.html",
   "origem": "Captura de tela 2026-11-11 095300.png"
  },
  {
@@ -3526,6 +3766,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Uma regra de ciclo de vida do S3 move objetos automaticamente entre classes conforme a idade. Dados acessados com frequência ficam na S3 Standard, passam para a Standard-IA quando o acesso diminui e para o S3 Glacier quando raramente são usados, reduzindo o custo.",
+  "fonte": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html",
   "origem": "Captura de tela 2026-11-11 100440.png"
  },
  {
@@ -3554,6 +3796,8 @@
     "correta": true
    }
   ],
+  "explicacao": "O ciclo de vida do S3 define regras para fazer a transição automática de objetos entre classes de armazenamento ou excluí-los, com base na idade ou no padrão de uso.",
+  "fonte": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html",
   "origem": "Captura de tela 2026-11-11 100737.png"
  },
  {
@@ -3582,6 +3826,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Amazon EFS é um sistema de arquivos elástico: cresce e diminui automaticamente conforme os arquivos são adicionados ou removidos, sem interromper as aplicações. Ele é compartilhado entre várias instâncias.",
+  "fonte": "https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html",
   "origem": "Captura de tela 2026-11-11 110902.png"
  },
  {
@@ -3589,7 +3835,7 @@
   "uid": "71ee6adb",
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
-  "subtema": "Computação",
+  "subtema": "Armazenamento",
   "gabarito": "confirmado",
   "enunciado": "A AnyCompany Retail está planejando migrar seu armazenamento de arquivos on-premises para a AWS. Eles precisam de uma solução que permita que suas equipes globais de desenvolvimento colaborem no mesmo conjunto de arquivos simultaneamente. Qual atributo do Amazon EFS o torna uma boa opção para esse cenário?",
   "alternativas": [
@@ -3610,6 +3856,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Amazon EFS é um sistema de arquivos compartilhado que milhares de instâncias do EC2 podem acessar ao mesmo tempo, com baixa latência. Isso permite que várias equipes trabalhem no mesmo conjunto de arquivos.",
+  "fonte": "https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html",
   "origem": "Captura de tela 2026-11-11 111006.png"
  },
  {
@@ -3638,6 +3886,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Amazon S3 File Gateway permite que aplicações on-premises usem os protocolos de arquivo NFS e SMB, enquanto os arquivos ficam armazenados como objetos no S3. Os dados usados com frequência ficam em cache local.",
+  "fonte": "https://docs.aws.amazon.com/filegateway/latest/files3/what-is-file-s3.html",
   "origem": "Captura de tela 2026-11-11 111159.png"
  },
  {
@@ -3666,6 +3916,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Amazon FSx para Windows File Server oferece compartilhamentos de arquivos totalmente gerenciados, com suporte ao protocolo SMB e integração com o Microsoft Active Directory.",
+  "fonte": "https://docs.aws.amazon.com/fsx/latest/WindowsGuide/what-is.html",
   "origem": "Captura de tela 2026-11-11 112950.png"
  },
  {
@@ -3694,6 +3946,8 @@
     "correta": true
    }
   ],
+  "explicacao": "No modo volume em cache (cached), o conjunto de dados completo fica no Amazon S3 e os dados acessados com frequência ficam em cache no local, o que dá acesso de baixa latência sem precisar de armazenamento local para tudo.",
+  "fonte": "https://docs.aws.amazon.com/storagegateway/latest/vgw/WhatIsStorageGateway.html",
   "origem": "Captura de tela 2026-11-11 113055.png"
  },
  {
@@ -3722,6 +3976,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Elastic Disaster Recovery replica os servidores continuamente em nível de bloco para a AWS e permite iniciar réplicas em minutos na recuperação, o que reduz o tempo de recuperação com equipe de TI pequena.",
+  "fonte": "https://docs.aws.amazon.com/drs/latest/userguide/what-is-drs.html",
   "origem": "Captura de tela 2026-11-11 113241.png"
  },
  {
@@ -3750,6 +4006,8 @@
     "correta": false
    }
   ],
+  "explicacao": "As classes de armazenamento do S3 oferecem opções otimizadas por padrão de acesso e custo, como Standard, Standard-IA e Glacier. Isso permite pagar menos por dados que são acessados com menos frequência.",
+  "fonte": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html",
   "origem": "Captura de tela 2026-11-11 114134.png"
  },
  {
@@ -3778,6 +4036,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Amazon EFS é um sistema de arquivos elástico e totalmente gerenciado, que aumenta e diminui automaticamente conforme os arquivos são adicionados ou removidos, sem necessidade de provisionar capacidade.",
+  "fonte": "https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html",
   "origem": "Captura de tela 2026-11-11 114218.png"
  },
  {
@@ -3806,6 +4066,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Amazon FSx oferece sistemas de arquivos totalmente gerenciados baseados em tecnologias populares, como Windows File Server, Lustre, NetApp ONTAP e OpenZFS.",
+  "fonte": "https://docs.aws.amazon.com/fsx/latest/WindowsGuide/what-is.html",
   "origem": "Captura de tela 2026-11-11 114341.png"
  },
  {
@@ -3834,6 +4096,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Amazon S3 é um serviço de armazenamento de objetos que permite guardar e recuperar qualquer quantidade de dados, de qualquer lugar da web, com escalabilidade e alta durabilidade.",
+  "fonte": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html",
   "origem": "Captura de tela 2026-11-11 114438.png"
  },
  {
@@ -3862,6 +4126,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O S3 atende todos os critérios: capacidade praticamente ilimitada, alta durabilidade, compartilhamento por URL, organização por prefixos, classes de armazenamento mais baratas para dados pouco acessados e controles de acesso.",
+  "fonte": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html",
   "origem": "Captura de tela 2026-11-11 114736.png"
  },
  {
@@ -3890,6 +4156,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Amazon EBS é armazenamento em bloco persistente para instâncias do EC2, anexado como um disco. Não é temporário (isso é o armazenamento de instância) nem compartilhado entre várias instâncias como o EFS.",
+  "fonte": "https://docs.aws.amazon.com/ebs/latest/userguide/what-is-ebs.html",
   "origem": "Captura de tela 2026-11-11 114830.png",
   "origemExtra": [
    "Captura de tela 2026-11-11 114838.png"
@@ -3921,6 +4189,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O FSx para Windows File Server é totalmente gerenciado e oferece protocolo SMB, integração com o Active Directory, desduplicação de dados, alta disponibilidade e baixa latência, o que o torna a opção para migrar compartilhamentos de arquivos do Windows.",
+  "fonte": "https://docs.aws.amazon.com/fsx/latest/WindowsGuide/what-is.html",
   "origem": "Captura de tela 2026-11-11 114951.png"
  },
  {
@@ -3949,6 +4219,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O EFS é totalmente gerenciado, escala automaticamente, dispensa planejamento de capacidade e permite que várias instâncias do EC2, inclusive Linux, acessem o mesmo sistema de arquivos ao mesmo tempo.",
+  "fonte": "https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html",
   "origem": "Captura de tela 2026-11-11 115055.png"
  },
  {
@@ -3977,6 +4249,8 @@
     "correta": true
    }
   ],
+  "explicacao": "Cada classe do S3 tem preço próprio de armazenamento, taxas de recuperação e tempo mínimo de armazenamento. Quanto mais barato o armazenamento, em geral maiores as taxas de recuperação e as durações mínimas.",
+  "fonte": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html",
   "origem": "Captura de tela 2026-11-11 115143.png"
  },
  {
@@ -4005,6 +4279,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Os snapshots do EBS são backups pontuais e incrementais dos volumes. Servem para backups regulares, criar volumes idênticos para testes e recuperação de desastres, com custo baixo e sem exigir a interrupção da aplicação.",
+  "fonte": "https://docs.aws.amazon.com/ebs/latest/userguide/ebs-snapshots.html",
   "origem": "Captura de tela 2026-11-11 115306.png"
  },
  {
@@ -4033,6 +4309,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O AWS Storage Gateway conecta aplicações on-premises ao armazenamento na nuvem, oferecendo acesso a armazenamento praticamente ilimitado da AWS. É uma solução de armazenamento híbrida.",
+  "fonte": "https://docs.aws.amazon.com/storagegateway/latest/vgw/WhatIsStorageGateway.html",
   "origem": "Captura de tela 2026-11-11 115345.png"
  },
  {
@@ -4061,6 +4339,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O File Gateway do Storage Gateway mantém os fluxos de trabalho baseados em arquivos (NFS e SMB), guarda os arquivos no S3 e mantém em cache local os usados com frequência, o que dá acesso de baixa latência sem interromper as operações.",
+  "fonte": "https://docs.aws.amazon.com/filegateway/latest/files3/what-is-file-s3.html",
   "origem": "Captura de tela 2026-11-11 115519.png"
  },
  {
@@ -4068,7 +4348,7 @@
   "uid": "2d155c17",
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
-  "subtema": "Computação",
+  "subtema": "Armazenamento",
   "gabarito": "confirmado",
   "enunciado": "A AnyCompany AI está desenvolvendo uma aplicação de machine learning que exige processamento de dados extremamente rápido para conjuntos de dados temporários de treinamento do modelo. Os dados são gerados durante as sessões de treinamento e armazenados separadamente em um armazenamento persistente. A equipe está tentando determinar a melhor solução de armazenamento para usar junto com sua aplicação. A solução precisa atender aos seguintes critérios: o maior desempenho de E/S possível; conectado diretamente às suas instâncias do Amazon EC2; armazenamento temporário, em que os dados não persistem quando as instâncias são interrompidas ou encerradas. Qual serviço da AWS melhor atende às necessidades de armazenamento temporário descritas nesse cenário?",
   "alternativas": [
@@ -4089,6 +4369,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O armazenamento de instância é físico, conectado diretamente ao host, e oferece desempenho de E/S muito alto. Os dados são temporários e se perdem quando a instância é interrompida ou encerrada, o que serve para dados temporários de treinamento.",
+  "fonte": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html",
   "origem": "Captura de tela 2026-11-11 115647.png"
  },
  {
@@ -4117,6 +4399,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Amazon EBS oferece armazenamento em bloco persistente e de baixa latência. Os volumes podem ser conectados e desconectados, ter o tamanho aumentado sem interromper a instância e receber snapshots para backups pontuais.",
+  "fonte": "https://docs.aws.amazon.com/ebs/latest/userguide/what-is-ebs.html",
   "origem": "Captura de tela 2026-11-11 115836.png"
  },
  {
@@ -4145,6 +4429,8 @@
     "correta": true
    }
   ],
+  "explicacao": "O AWS Elastic Disaster Recovery minimiza o tempo de inatividade e a perda de dados com replicação contínua e recuperação rápida de servidores on-premises e na nuvem, usando armazenamento acessível e computação mínima.",
+  "fonte": "https://docs.aws.amazon.com/drs/latest/userguide/what-is-drs.html",
   "origem": "Captura de tela 2026-11-11 115938.png"
  },
  {
@@ -4173,6 +4459,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Um serviço de banco de dados gerenciado cuida de tarefas administrativas como backups, patches e escalabilidade, e assim a equipe pode se concentrar em desenvolver novos atributos. Hospedar o banco no EC2 devolve essas tarefas à equipe.",
+  "fonte": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html",
   "origem": "Captura de tela 2026-11-11 175246.png",
   "origemExtra": [
    "Captura de tela 2026-11-11 175253.png"
@@ -4204,6 +4492,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Aurora tem uma arquitetura de armazenamento distribuído, de alto desempenho e alta disponibilidade, e a AWS informa até cinco vezes o throughput do MySQL padrão, o que atende picos de transações.",
+  "fonte": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html",
   "origem": "Captura de tela 2026-11-11 180154.png"
  },
  {
@@ -4232,6 +4522,8 @@
     "correta": true
    }
   ],
+  "explicacao": "A implantação Multi-AZ do Amazon RDS mantém uma réplica em outra Zona de Disponibilidade e faz failover automático em caso de falha, o que dá alta disponibilidade com mínimo de tempo de inatividade. Backups, patches e armazenamento gerenciados reduzem a sobrecarga operacional.",
+  "fonte": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html",
   "origem": "Captura de tela 2026-11-11 180304.png"
  },
  {
@@ -4239,7 +4531,7 @@
   "uid": "e32ef88a",
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
-  "subtema": "Computação",
+  "subtema": "Bancos de dados",
   "gabarito": "confirmado",
   "enunciado": "Uma empresa de recursos humanos está criando uma aplicação que deve armazenar informações de profissionais com padrões de tráfego imprevisíveis. Sua aplicação exige desempenho consistente em todos os momentos, e a equipe de desenvolvimento quer se concentrar nos atributos em vez de se concentrar nas tarefas de gerenciamento de banco de dados. Qual é o recurso do Amazon DynamoDB que MELHOR atende às necessidades dessa workload?",
   "alternativas": [
@@ -4260,6 +4552,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O auto scaling do DynamoDB ajusta automaticamente a capacidade de leitura e gravação provisionada conforme o tráfego. Isso mantém o desempenho consistente com padrões imprevisíveis, sem gerenciar servidores.",
+  "fonte": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AutoScaling.html",
   "origem": "Captura de tela 2026-11-12 111706.png"
  },
  {
@@ -4288,6 +4582,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O AWS Backup centraliza e automatiza o backup de vários serviços da AWS, o que resolve o problema de abordagens de backup fragmentadas, com uma ferramenta diferente para cada serviço.",
+  "fonte": "https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html",
   "origem": "Captura de tela 2026-11-12 112145.png"
  },
  {
@@ -4316,6 +4612,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Amazon DocumentDB é um banco de dados de documentos totalmente gerenciado e compatível com o MongoDB, o que facilita migrar e executar cargas de trabalho que já usam MongoDB.",
+  "fonte": "https://docs.aws.amazon.com/documentdb/latest/developerguide/what-is.html",
   "origem": "Captura de tela 2026-11-12 112216.png"
  },
  {
@@ -4344,6 +4642,8 @@
     "correta": true
    }
   ],
+  "explicacao": "O Amazon Neptune é um banco de dados de grafos, otimizado para dados altamente conectados, com consultas de baixa latência sobre relacionamentos.",
+  "fonte": "https://docs.aws.amazon.com/neptune/latest/userguide/intro.html",
   "origem": "Captura de tela 2026-11-12 112254.png"
  },
  {
@@ -4372,6 +4672,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O DynamoDB é um banco de dados NoSQL de chave-valor e documentos, totalmente gerenciado, com desempenho rápido e previsível em qualquer escala. Não é relacional, nem de grafos e não exige definição rígida de esquema.",
+  "fonte": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html",
   "origem": "Captura de tela 2026-11-12 112427.png"
  },
  {
@@ -4400,6 +4702,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Neptune é usado para gerenciar e consultar com eficiência conjuntos de dados altamente conectados, como redes sociais, detecção de fraudes e mecanismos de recomendação.",
+  "fonte": "https://docs.aws.amazon.com/neptune/latest/userguide/intro.html",
   "origem": "Captura de tela 2026-11-12 112512.png"
  },
  {
@@ -4428,6 +4732,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Em bancos de dados totalmente gerenciados, a AWS cuida de provisionamento, scaling, patches e backups. O cliente continua responsável por projetar as estruturas de dados e gerenciar os controles de acesso.",
+  "fonte": "https://aws.amazon.com/compliance/shared-responsibility-model/",
   "origem": "Captura de tela 2026-11-12 112602.png"
  },
  {
@@ -4456,6 +4762,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O AWS Backup oferece políticas e monitoramento de backup centralizados e funciona em várias contas e Regiões da AWS, inclusive com recursos de várias contas do AWS Organizations.",
+  "fonte": "https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html",
   "origem": "Captura de tela 2026-11-12 112647.png"
  },
  {
@@ -4484,6 +4792,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Os bancos NoSQL, como o DynamoDB, usam esquemas flexíveis: itens da mesma tabela podem ter atributos diferentes. Os bancos relacionais exigem tabelas com estrutura rígida e predefinida.",
+  "fonte": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html",
   "origem": "Captura de tela 2026-11-12 112754.png"
  },
  {
@@ -4512,6 +4822,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Amazon RDS é um serviço gerenciado que facilita configurar, operar e escalar bancos de dados relacionais na nuvem, com backups e patches automatizados.",
+  "fonte": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html",
   "origem": "Captura de tela 2026-11-12 112846.png"
  },
  {
@@ -4540,6 +4852,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Instalar o banco de dados diretamente no EC2 faz sentido quando o desenvolvedor precisa de controle total sobre o banco e acesso ao sistema operacional, à instalação e à configuração. Em troca, ele assume a administração.",
+  "fonte": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html",
   "origem": "Captura de tela 2026-11-12 113021.png"
  },
  {
@@ -4568,6 +4882,8 @@
     "correta": true
    }
   ],
+  "explicacao": "O cache em memória guarda os dados acessados com frequência na memória, o que acelera o acesso, melhora o desempenho e a escalabilidade da aplicação e alivia a carga do banco. É o papel do Amazon ElastiCache.",
+  "fonte": "https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/WhatIs.html",
   "origem": "Captura de tela 2026-11-12 113112.png"
  },
  {
@@ -4596,6 +4912,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Aurora é uma opção para trocar bancos de dados comerciais de alto custo por uma solução compatível com MySQL ou PostgreSQL, com desempenho e confiabilidade de nível empresarial a um custo menor.",
+  "fonte": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html",
   "origem": "Captura de tela 2026-11-12 113201.png"
  },
  {
@@ -4624,6 +4942,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O AWS DMS migra bancos de dados para a AWS mantendo o banco de origem em operação durante a migração, o que minimiza o tempo de inatividade da aplicação. Não otimiza consultas SQL nem agenda backups.",
+  "fonte": "https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html",
   "origem": "Captura de tela 2026-11-12 113305.png"
  },
  {
@@ -4652,6 +4972,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O DocumentDB armazena dados em documentos JSON flexíveis, o que o torna adequado para catálogos de produtos, perfis de usuários e gerenciamento de conteúdo.",
+  "fonte": "https://docs.aws.amazon.com/documentdb/latest/developerguide/what-is.html",
   "origem": "Captura de tela 2026-11-12 113402.png"
  },
  {
@@ -4680,6 +5002,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O treinamento de machine learning encontra padrões em dados históricos e produz um modelo de ML, que depois faz previsões ou decisões sobre dados novos. Não há um livro de regras explícito escrito por pessoas.",
+  "fonte": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
   "origem": "Captura de tela 2026-11-12 160720.png"
  },
  {
@@ -4708,6 +5032,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Amazon Comprehend é um serviço de processamento de linguagem natural que extrai insights do texto, como o sentimento dos clientes expresso nos comentários.",
+  "fonte": "https://docs.aws.amazon.com/comprehend/latest/dg/what-is.html",
   "origem": "Captura de tela 2026-11-12 161624.png"
  },
  {
@@ -4736,6 +5062,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Amazon Lex permite criar interfaces conversacionais, como chatbots e assistentes de voz, usando a mesma tecnologia da Alexa. O Comprehend analisa texto e o Personalize faz recomendações.",
+  "fonte": "https://docs.aws.amazon.com/lexv2/latest/dg/what-is.html",
   "origem": "Captura de tela 2026-11-12 161754.png"
  },
  {
@@ -4764,6 +5092,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Amazon SageMaker AI reúne ferramentas para criar, treinar e implantar modelos de ML, com a infraestrutura gerenciada pela AWS. Serve a data scientists e analistas.",
+  "fonte": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
   "origem": "Captura de tela 2026-11-12 161924.png"
  },
  {
@@ -4792,6 +5122,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Um framework de ML, como o PyTorch, é uma biblioteca de software com componentes pré-construídos e otimizados para criar, treinar e executar modelos. Ele não é um serviço gerenciado nem uma instância.",
+  "fonte": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
   "origem": "Captura de tela 2026-11-12 162046.png"
  },
  {
@@ -4820,6 +5152,8 @@
     "correta": true
    }
   ],
+  "explicacao": "A IA generativa é alimentada por modelos de base (foundation models, FMs): modelos muito grandes, pré-treinados em vastas coleções de dados e que podem ser adaptados a várias tarefas.",
+  "fonte": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html",
   "origem": "Captura de tela 2026-11-12 162700.png"
  },
  {
@@ -4848,6 +5182,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Amazon Bedrock é um serviço totalmente gerenciado que dá acesso, por uma API, a modelos de base de várias empresas para gerar texto, imagens e outros conteúdos, sem gerenciar infraestrutura.",
+  "fonte": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html",
   "origem": "Captura de tela 2026-11-12 163512.png"
  },
  {
@@ -4876,6 +5212,8 @@
     "correta": true
    }
   ],
+  "explicacao": "O Amazon Q Developer é um assistente de IA generativa para desenvolvimento de software: sugere e gera código, explica e depura, e ajuda a acelerar as entregas.",
+  "fonte": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html",
   "origem": "Captura de tela 2026-11-12 163602.png"
  },
  {
@@ -4904,6 +5242,8 @@
     "correta": false
    }
   ],
+  "explicacao": "ETL significa extrair, transformar e carregar: coletar dados de várias fontes, convertê-los para um formato útil e carregá-los no destino de análise.",
+  "fonte": "https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html",
   "origem": "Captura de tela 2026-11-12 164311.png"
  },
  {
@@ -4932,6 +5272,8 @@
     "correta": true
    }
   ],
+  "explicacao": "Os analistas transformam dados históricos brutos para encontrar informações e tendências valiosas que apoiem decisões do negócio.",
+  "fonte": "https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html",
   "origem": "Captura de tela 2026-11-12 164421.png"
  },
  {
@@ -4964,6 +5306,8 @@
     "correta": true
    }
   ],
+  "explicacao": "O Kinesis Data Streams e o Amazon Data Firehose ingerem dados de streaming em um pipeline. O Redshift e o EMR processam ou armazenam, e o Glue Data Catalog guarda metadados.",
+  "fonte": "https://docs.aws.amazon.com/streams/latest/dev/introduction.html",
   "origem": "Captura de tela 2026-11-13 110924.png"
  },
  {
@@ -4992,6 +5336,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O AWS Glue é um serviço de integração de dados que executa as tarefas de ETL (descobrir, preparar e transformar dados). O QuickSight visualiza, o Firehose ingere e o S3 armazena.",
+  "fonte": "https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html",
   "origem": "Captura de tela 2026-11-13 110959.png"
  },
  {
@@ -4999,7 +5345,7 @@
   "uid": "ad5deec9",
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
-  "subtema": "Armazenamento",
+  "subtema": "Analytics e dados",
   "gabarito": "confirmado",
   "enunciado": "A equipe de data analytics deve ingerir grandes quantidades de dados não estruturados em seu pipeline. Qual serviço da AWS é a MELHOR opção para armazenar esses dados?",
   "alternativas": [
@@ -5020,6 +5366,8 @@
     "correta": true
    }
   ],
+  "explicacao": "O Amazon S3 armazena qualquer volume de dados não estruturados e é a base mais usada para data lakes. O Athena e o Redshift consultam dados, e o Firehose entrega dados em destinos como o S3.",
+  "fonte": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html",
   "origem": "Captura de tela 2026-11-13 111045.png"
  },
  {
@@ -5052,6 +5400,8 @@
     "correta": true
    }
   ],
+  "explicacao": "O Amazon QuickSight (painéis de business intelligence) e o Amazon OpenSearch Service (painéis e buscas) servem para visualizar dados. Firehose ingere, Athena consulta e Glue transforma.",
+  "fonte": "https://docs.aws.amazon.com/quicksight/latest/user/welcome.html",
   "origem": "Captura de tela 2026-11-13 111128.png"
  },
  {
@@ -5080,6 +5430,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Amazon Kinesis Data Streams coleta e processa dados em tempo real, em grande volume, sem que a equipe precise gerenciar servidores ou scaling.",
+  "fonte": "https://docs.aws.amazon.com/streams/latest/dev/introduction.html",
   "origem": "Captura de tela 2026-11-13 113501.png"
  },
  {
@@ -5108,6 +5460,8 @@
     "correta": true
    }
   ],
+  "explicacao": "O Amazon Polly é o serviço de IA pré-criado que converte texto em fala.",
+  "fonte": "https://docs.aws.amazon.com/polly/latest/dg/what-is.html",
   "origem": "Captura de tela 2026-11-13 113616.png"
  },
  {
@@ -5136,6 +5490,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Na programação clássica, a pessoa escreve regras explícitas. No machine learning, o computador aprende padrões a partir de dados históricos e usa esses padrões para fazer previsões.",
+  "fonte": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
   "origem": "Captura de tela 2026-11-13 113719.png"
  },
  {
@@ -5164,6 +5520,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Amazon S3 é a escolha comum para data lakes, que guardam grandes quantidades de dados brutos. O Amazon Redshift é um data warehouse, otimizado para business intelligence e consultas analíticas.",
+  "fonte": "https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html",
   "origem": "Captura de tela 2026-11-13 113821.png"
  },
  {
@@ -5196,6 +5554,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Os modelos de base são pré-treinados em vastas coleções de dados e podem ser adaptados para várias tarefas. Eles não são programados com regras explícitas, não são treinados para uma tarefa única e não servem apenas para imagens.",
+  "fonte": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html",
   "origem": "Captura de tela 2026-11-13 113926.png"
  },
  {
@@ -5224,6 +5584,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Amazon Personalize cria recomendações personalizadas em tempo real, como produtos para cada cliente, usando a mesma tecnologia de recomendação da Amazon.com.",
+  "fonte": "https://docs.aws.amazon.com/personalize/latest/dg/what-is-personalize.html",
   "origem": "Captura de tela 2026-11-13 114021.png"
  },
  {
@@ -5252,6 +5614,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Amazon SageMaker AI permite criar, treinar e implantar modelos personalizados de ML sem gerenciar a infraestrutura subjacente.",
+  "fonte": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
   "origem": "Captura de tela 2026-11-13 114116.png"
  },
  {
@@ -5280,6 +5644,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Amazon Q Business é um assistente de IA generativa pré-construído para a empresa: responde perguntas, resolve problemas e executa ações com base nos dados e repositórios da própria organização.",
+  "fonte": "https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/what-is.html",
   "origem": "Captura de tela 2026-11-13 114203.png"
  },
  {
@@ -5308,6 +5674,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Os pipelines de dados automatizam o processo de ETL e o tornam mais eficiente e repetível. Eles não eliminam as transformações nem mudam a quantidade de dados coletados.",
+  "fonte": "https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html",
   "origem": "Captura de tela 2026-11-13 114326.png"
  },
  {
@@ -5336,6 +5704,8 @@
     "correta": true
    }
   ],
+  "explicacao": "O Amazon Bedrock oferece, por uma única API, acesso a modelos de base da Amazon e de startups líderes em IA. Ele não é gratuito, nem um repositório de código aberto ou um armazenamento.",
+  "fonte": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html",
   "origem": "Captura de tela 2026-11-13 114452.png"
  },
  {
@@ -5364,6 +5734,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Autorização verifica o que um usuário já identificado tem permissão de fazer, por exemplo transferir um valor alto. Autenticação, por sua vez, confirma quem é o usuário (login).",
+  "fonte": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html",
   "origem": "Captura de tela 2026-11-13 115526.png"
  },
  {
@@ -5392,6 +5764,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Proteger os dados dos pacientes armazenados no S3 e no RDS (controle de acesso, criptografia e configuração) é responsabilidade do cliente. A AWS cuida da segurança física, do hipervisor e da manutenção do hardware.",
+  "fonte": "https://aws.amazon.com/compliance/shared-responsibility-model/",
   "origem": "Captura de tela 2026-11-13 115638.png"
  },
  {
@@ -5420,6 +5794,8 @@
     "correta": false
    }
   ],
+  "explicacao": "A autenticação multifator (MFA) exige dois ou mais métodos de verificação para entrar, por exemplo senha e um código gerado em um dispositivo. Ela não exige trocar a senha a cada 30 dias, usar VPN nem registrar cartão de crédito.",
+  "fonte": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html",
   "origem": "Captura de tela 2026-11-13 130909.png"
  },
  {
@@ -5448,6 +5824,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Os perfis (roles) do IAM fornecem credenciais temporárias a quem os assume. Usuários e grupos têm credenciais permanentes e políticas definem as permissões, mas não são o mecanismo de acesso temporário.",
+  "fonte": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html",
   "origem": "Captura de tela 2026-11-13 131037.png"
  },
  {
@@ -5476,6 +5854,8 @@
     "correta": true
    }
   ],
+  "explicacao": "A política do IAM é o documento que define as permissões, como acessar um bucket específico do S3. Usuários, grupos e perfis são as identidades às quais a política é anexada.",
+  "fonte": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html",
   "origem": "Captura de tela 2026-11-13 131121.png"
  },
  {
@@ -5504,6 +5884,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O AWS Secrets Manager guarda, controla o acesso, faz a rotação e recupera credenciais de banco de dados, chaves de API e outros segredos. O IAM e o IAM Identity Center tratam de identidades e permissões.",
+  "fonte": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html",
   "origem": "Captura de tela 2026-11-13 131206.png"
  },
  {
@@ -5532,6 +5914,8 @@
     "correta": true
    }
   ],
+  "explicacao": "Em um DDoS (negação de serviço distribuída) o ataque parte de vários computadores e dispositivos comprometidos ao mesmo tempo, o que o torna mais difícil de bloquear do que um DoS originado de uma única fonte.",
+  "fonte": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-overview.html",
   "origem": "Captura de tela 2026-11-13 131949.png"
  },
  {
@@ -5539,7 +5923,7 @@
   "uid": "5391ab8e",
   "tipo": "multipla",
   "tema": "Segurança e conformidade",
-  "subtema": "Computação",
+  "subtema": "Segurança e identidade",
   "gabarito": "confirmado",
   "enunciado": "Recentemente, uma boutique on-line sofreu uma série de ataques direcionados de negação de serviço distribuída (DDoS). O proprietário quer aprimorar a segurança do aplicativo web da boutique usando a infraestrutura da AWS. Quais componentes a boutique pode usar para proteger o aplicativo web na AWS contra ataques de DDoS? (Selecione DUAS alternativas.)",
   "alternativas": [
@@ -5564,6 +5948,8 @@
     "correta": true
    }
   ],
+  "explicacao": "Os grupos de segurança limitam o tráfego que chega às instâncias e o ELB distribui o tráfego entre elas, sem expor as instâncias diretamente. A AWS também protege automaticamente todos os clientes contra os ataques DDoS mais comuns com o AWS Shield Standard.",
+  "fonte": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-overview.html",
   "origem": "Captura de tela 2026-11-13 132045.png"
  },
  {
@@ -5592,6 +5978,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Criptografar é transformar dados em um formato ilegível usando uma chave, e decodificar (descriptografar) é revertê-lo com a chave correta. Assim, só quem tem a chave autorizada acessa o conteúdo.",
+  "fonte": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html",
   "origem": "Captura de tela 2026-11-13 132846.png"
  },
  {
@@ -5620,6 +6008,8 @@
     "correta": true
    }
   ],
+  "explicacao": "Os certificados SSL/TLS emitidos e gerenciados pelo ACM protegem os dados enquanto trafegam entre o banco de dados e o aplicativo. S3, DynamoDB e Macie não criptografam dados em trânsito por si próprios nesse cenário.",
+  "fonte": "https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html",
   "origem": "Captura de tela 2026-11-13 132934.png"
  },
  {
@@ -5648,6 +6038,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Amazon Detective analisa e visualiza dados de segurança ao longo do tempo para investigar a causa raiz de achados e atividades suspeitas. O GuardDuty detecta a ameaça, o Inspector procura vulnerabilidades e o Security Hub reúne achados.",
+  "fonte": "https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html",
   "origem": "Captura de tela 2026-11-13 133508.png"
  },
  {
@@ -5676,6 +6068,8 @@
     "correta": true
    }
   ],
+  "explicacao": "O AWS Security Hub agrega achados de segurança de vários serviços da AWS em uma visão única e verifica a conformidade com padrões e práticas recomendadas, o que ajuda na preparação de auditorias.",
+  "fonte": "https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html",
   "origem": "Captura de tela 2026-11-13 133604.png"
  },
  {
@@ -5704,6 +6098,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O AWS Shield Standard protege todos os clientes da AWS automaticamente, sem custo adicional, contra os ataques DDoS mais comuns e frequentes nas camadas de rede e transporte. O Shield Advanced é a versão paga, com proteção ampliada.",
+  "fonte": "https://docs.aws.amazon.com/waf/latest/developerguide/shield-chapter.html",
   "origem": "Captura de tela 2026-11-13 133725.png"
  },
  {
@@ -5732,6 +6128,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O AWS KMS cria e gerencia chaves de criptografia de forma centralizada e se integra a vários serviços da AWS. O ACM gerencia certificados e o Macie descobre dados sensíveis. O WAF é um firewall de aplicações web.",
+  "fonte": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html",
   "origem": "Captura de tela 2026-11-13 133810.png"
  },
  {
@@ -5764,6 +6162,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Para proteger o usuário-raiz, use uma senha forte e ative a MFA. Ele não deve ser excluído, compartilhado nem duplicado: cada conta tem um único usuário-raiz, e o uso diário deve ser feito com usuários do IAM.",
+  "fonte": "https://docs.aws.amazon.com/IAM/latest/UserGuide/root-user-best-practices.html",
   "origem": "Captura de tela 2026-11-13 133900.png"
  },
  {
@@ -5792,6 +6192,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Conceder apenas as permissões necessárias para uma tarefa é o princípio de menor privilégio. No IAM, tudo é negado por padrão e o acesso é liberado somente quando necessário.",
+  "fonte": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
   "origem": "Captura de tela 2026-11-13 133952.png"
  },
  {
@@ -5820,6 +6222,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O AWS IAM Identity Center oferece login único (SSO) para várias contas e aplicações da AWS, usando uma origem de identidade existente da empresa. O IAM gerencia usuários e permissões dentro de cada conta.",
+  "fonte": "https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html",
   "origem": "Captura de tela 2026-11-13 134039.png"
  },
  {
@@ -5827,7 +6231,7 @@
   "uid": "bb959d54",
   "tipo": "unica",
   "tema": "Segurança e conformidade",
-  "subtema": "Computação",
+  "subtema": "Segurança e identidade",
   "gabarito": "confirmado",
   "enunciado": "A equipe de segurança de uma grande empresa de desenvolvimento de software precisa verificar várias aplicações em busca de vulnerabilidades de segurança e desvios das práticas recomendadas de segurança. As aplicações estão sendo executadas no Amazon EC2, no AWS Lambda e em contêineres. Qual serviço da AWS eles devem escolher para as avaliações de segurança?",
   "alternativas": [
@@ -5848,6 +6252,8 @@
     "correta": true
    }
   ],
+  "explicacao": "O Amazon Inspector verifica automaticamente instâncias do EC2, funções do Lambda e imagens de contêiner em busca de vulnerabilidades de software e exposição de rede.",
+  "fonte": "https://docs.aws.amazon.com/inspector/latest/user/what-is-inspector.html",
   "origem": "Captura de tela 2026-11-13 134130.png"
  },
  {
@@ -5876,6 +6282,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Um grupo do IAM reúne usuários, e as permissões anexadas ao grupo são herdadas por todos os seus membros. Ao adicionar o novo bucket à política do grupo, todos os designers passam a ter acesso.",
+  "fonte": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html",
   "origem": "Captura de tela 2026-11-13 134223.png"
  },
  {
@@ -5904,6 +6312,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Informar nome de usuário e senha é autenticação: o sistema confirma a identidade de quem está acessando. Autorização vem depois e define o que essa pessoa pode fazer.",
+  "fonte": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html",
   "origem": "Captura de tela 2026-11-13 134313.png"
  },
  {
@@ -5932,6 +6342,8 @@
     "correta": true
    }
   ],
+  "explicacao": "A AWS é responsável pela segurança da nuvem, o que inclui a segurança física dos data centers. Criptografia dos dados do cliente, IAM e grupos de segurança são responsabilidades do cliente.",
+  "fonte": "https://aws.amazon.com/compliance/shared-responsibility-model/",
   "origem": "Captura de tela 2026-11-13 134343.png"
  },
  {
@@ -5960,6 +6372,8 @@
     "correta": false
    }
   ],
+  "explicacao": "A criptografia de dados em trânsito usa o protocolo TLS (sucessor do SSL), baseado em certificados SSL/TLS. As chaves criptográficas são usadas mais para dados em repouso, e MFA e senhas fortes tratam de autenticação.",
+  "fonte": "https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html",
   "origem": "Captura de tela 2026-11-13 134417.png"
  },
  {
@@ -5967,7 +6381,7 @@
   "uid": "ec3b3ad8",
   "tipo": "multipla",
   "tema": "Tecnologia e serviços",
-  "subtema": "Computação",
+  "subtema": "Monitoramento e gerenciamento",
   "gabarito": "confirmado",
   "enunciado": "Uma empresa de comércio eletrônico está hospedando sua aplicação de cliente em várias instâncias da solução Amazon EC2. A aplicação enfrenta tráfego flutuante e problemas ocasionais de desempenho que estão afetando a experiência do cliente. Como a solução Amazon CloudWatch pode ajudar o cliente? (Selecione TRÊS opções.)",
   "alternativas": [
@@ -5996,6 +6410,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O CloudWatch oferece painéis para visualizar métricas, alarmes que podem acionar ações como criar mais instâncias, e logs para investigar erros. Ele não entrega conteúdo em locais da borda (CloudFront), não faz previsões de compra nem projeta arquiteturas.",
+  "fonte": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html",
   "origem": "Captura de tela 2026-11-13 140032.png"
  },
  {
@@ -6024,6 +6440,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O AWS CloudTrail registra a atividade de API da conta e entrega arquivos de log em um bucket do S3, que podem ser mantidos para auditoria e conformidade. O CloudWatch Logs serve para logs de aplicações e de sistemas.",
+  "fonte": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html",
   "origem": "Captura de tela 2026-11-13 140507.png"
  },
  {
@@ -6056,6 +6474,8 @@
     "correta": true
    }
   ],
+  "explicacao": "No AWS Artifact você acessa, sob demanda, relatórios de segurança e conformidade da AWS e analisa, aceita e gerencia contratos com a AWS. Consolidar contas é função do Organizations e criar usuários é função do IAM.",
+  "fonte": "https://docs.aws.amazon.com/artifact/latest/ug/what-is-aws-artifact.html",
   "origem": "Captura de tela 2026-11-13 141242.png"
  },
  {
@@ -6084,6 +6504,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O AWS Config avalia continuamente as configurações dos recursos em relação a regras definidas, como permitir somente certos tipos de instância do EC2, e registra o histórico de alterações. Isso permite auditar se a equipe segue a lista aprovada.",
+  "fonte": "https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html",
   "origem": "Captura de tela 2026-11-13 141741.png"
  },
  {
@@ -6116,6 +6538,8 @@
     "correta": true
    }
   ],
+  "explicacao": "As políticas de controle de serviço (SCPs) são aplicadas à raiz da organização, a unidades organizacionais (UOs) e a contas de membros. Elas definem o máximo de permissões disponíveis, mas não são anexadas diretamente a usuários, grupos ou perfis do IAM.",
+  "fonte": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html",
   "origem": "Captura de tela 2026-11-13 142257.png"
  },
  {
@@ -6144,6 +6568,8 @@
     "correta": true
    }
   ],
+  "explicacao": "O AWS Organizations permite agrupar contas em unidades organizacionais, gerenciá-las de forma central e consolidar o faturamento em uma única fatura.",
+  "fonte": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html",
   "origem": "Captura de tela 2026-11-13 155518.png"
  },
  {
@@ -6172,6 +6598,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O AWS CloudTrail registra as ações feitas na conta da AWS (console, CLI, SDKs e APIs), mostrando quem fez o quê e quando. O CloudWatch monitora métricas e logs, e o Artifact entrega relatórios de conformidade.",
+  "fonte": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html",
   "origem": "Captura de tela 2026-11-13 155604.png"
  },
  {
@@ -6200,6 +6628,8 @@
     "correta": false
    }
   ],
+  "explicacao": "A zona de pouso (landing zone) do AWS Control Tower é o ambiente multiconta bem estruturado que contém as unidades organizacionais, contas, usuários e recursos que você quer sujeitar às regras de governança.",
+  "fonte": "https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html",
   "origem": "Captura de tela 2026-11-13 155658.png"
  },
  {
@@ -6228,6 +6658,8 @@
     "correta": false
    }
   ],
+  "explicacao": "A política de controle de serviços (SCP) do AWS Organizations define quais serviços e ações da AWS as contas da organização podem usar. Ela restringe as permissões máximas, independentemente do que o IAM conceder.",
+  "fonte": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html",
   "origem": "Captura de tela 2026-11-13 155810.png"
  },
  {
@@ -6257,6 +6689,8 @@
    }
   ],
   "observacao": "Na captura, AWS Artifact estava marcado como errado. A resposta correta é o Centro de conformidade para o cliente (AWS Customer Compliance Center).",
+  "explicacao": "O Centro de conformidade para o cliente (AWS Customer Compliance Center) reúne histórias de conformidade de clientes, respostas às principais perguntas e listas de verificação de auditoria. O AWS Artifact, por outro lado, entrega relatórios e contratos sob demanda.",
+  "fonte": "https://aws.amazon.com/compliance/customer-center/",
   "origem": "Captura de tela 2026-11-13 155929.png"
  },
  {
@@ -6264,7 +6698,7 @@
   "uid": "5649c27b",
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
-  "subtema": "Computação",
+  "subtema": "Monitoramento e gerenciamento",
   "gabarito": "confirmado",
   "enunciado": "Uma empresa de roupas esportivas está hospedando sua aplicação nas instâncias da solução Amazon EC2. Ela quer coletar métricas em suas instâncias do EC2 e gostaria de receber notificações quando a utilização ultrapassar os limites. Ela também quer ter uma ação configurada para automatizar o aumento do número de instâncias do EC2 quando a utilização ultrapassar o limite. Qual serviço da AWS atenderia melhor às suas necessidades?",
   "alternativas": [
@@ -6285,6 +6719,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O CloudWatch coleta métricas das instâncias, envia notificações quando a utilização passa de um limite (alarmes) e pode acionar uma ação de Auto Scaling para aumentar o número de instâncias.",
+  "fonte": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html",
   "origem": "Captura de tela 2026-11-13 160055.png"
  },
  {
@@ -6314,6 +6750,8 @@
    }
   ],
   "observacao": "Na captura, AWS Trusted Advisor estava marcado como errado. A resposta correta é o AWS Artifact.",
+  "explicacao": "O AWS Artifact oferece, sem custo e sob demanda, acesso a relatórios de segurança e conformidade da AWS e a determinados contratos on-line. O Trusted Advisor dá recomendações de práticas recomendadas.",
+  "fonte": "https://docs.aws.amazon.com/artifact/latest/ug/what-is-aws-artifact.html",
   "origem": "Captura de tela 2026-11-13 164925.png"
  },
  {
@@ -6342,6 +6780,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O AWS License Manager ajuda a gerenciar licenças de software (inclusive no modelo traga sua própria licença), a impor limites de uso e a reduzir o risco de não conformidade.",
+  "fonte": "https://docs.aws.amazon.com/license-manager/latest/userguide/license-manager.html",
   "origem": "Captura de tela 2026-11-13 165022.png"
  },
  {
@@ -6370,6 +6810,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O AWS Config registra e avalia as configurações dos recursos em relação a regras definidas, o que permite verificar se a equipe usa somente os recursos de computação aprovados.",
+  "fonte": "https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html",
   "origem": "Captura de tela 2026-11-13 165113.png"
  },
  {
@@ -6398,6 +6840,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O AWS Service Catalog permite criar catálogos de produtos aprovados e oferecer autoatendimento para os profissionais iniciarem os recursos, com governança e configurações padronizadas.",
+  "fonte": "https://docs.aws.amazon.com/servicecatalog/latest/adminguide/introduction.html",
   "origem": "Captura de tela 2026-11-13 165210.png"
  },
  {
@@ -6426,6 +6870,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Os principais fatores determinantes de custo na AWS são computação, armazenamento e transferência de dados de saída. A transferência de entrada para a AWS geralmente não é cobrada. Há preços em outras categorias, mas esses três são os principais.",
+  "fonte": "https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works/welcome.html",
   "origem": "Captura de tela 2026-11-13 172523.png"
  },
  {
@@ -6454,6 +6900,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O AWS Budgets permite definir orçamentos de custo ou de uso e receber alertas quando o valor real ou previsto passa de um limite. O Cost Explorer visualiza e analisa custos, mas o alerta por limite é o recurso do Budgets.",
+  "fonte": "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html",
   "origem": "Captura de tela 2026-11-13 173412.png"
  },
  {
@@ -6482,6 +6930,9 @@
     "correta": false
    }
   ],
+  "observacao": "Atenção: a documentação atual da AWS informa que o Developer Support será descontinuado em 1º de janeiro de 2027. O guia do exame (versão 1.3) não cita o Developer Support. Pode aparecer em material mais antigo, mas na prova atual devem aparecer Basic, Business Support+, Enterprise Support e Unified Operations.",
+  "explicacao": "O Developer Support é voltado a ambientes de teste e desenvolvimento, com suporte técnico em horário comercial por e-mail e respostas em 12 a 24 horas. Ele não oferece suporte 24/7 nem acesso às verificações completas do Trusted Advisor.",
+  "fonte": "https://docs.aws.amazon.com/awssupport/latest/user/aws-support-plans.html",
   "origem": "Captura de tela 2026-11-13 173648.png"
  },
  {
@@ -6514,6 +6965,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O AWS Marketplace oferece softwares de terceiros, inclusive aplicações SaaS, conjuntos de dados e ferramentas de analytics. Armazenamento, máquinas virtuais e hardware on-premises não são o foco da pergunta.",
+  "fonte": "https://docs.aws.amazon.com/marketplace/latest/buyerguide/what-is-marketplace.html",
   "origem": "Captura de tela 2026-11-13 174150.png"
  },
  {
@@ -6550,6 +7003,8 @@
     "correta": true
    }
   ],
+  "explicacao": "Os recursos de autossuporte da AWS incluem a documentação (guias do usuário), os guias de SDK e o blog da AWS. Arquitetos de soluções e o AWS Professional Services são assistência técnica com pessoas, e o Centro de Confiança e Segurança trata de denúncias de abuso.",
+  "fonte": "https://docs.aws.amazon.com/awssupport/latest/user/aws-support-plans.html",
   "origem": "Captura de tela 2026-11-13 175059.png"
  },
  {
@@ -6578,6 +7033,8 @@
     "correta": false
    }
   ],
+  "explicacao": "A Rede de Parceiros da AWS (APN) reúne parceiros, como fornecedores de software e integradores de sistemas, e ajuda empresas a criar, comercializar e vender soluções baseadas na AWS.",
+  "fonte": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain4.html",
   "origem": "Captura de tela 2026-11-13 175151.png"
  },
  {
@@ -6606,6 +7063,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Enterprise Support é o plano com resposta de até 15 minutos para casos críticos de produção, além de um Technical Account Manager (TAM) designado e revisões estratégicas de negócio.",
+  "fonte": "https://docs.aws.amazon.com/awssupport/latest/user/aws-support-plans.html",
   "origem": "Captura de tela 2026-11-13 175242.png"
  },
  {
@@ -6634,6 +7093,9 @@
     "correta": false
    }
   ],
+  "observacao": "A captura não mostrou o gabarito. Esta é a melhor opção entre as quatro, mas não achei o benefício de financiamento citado de forma explícita no guia do exame.",
+  "explicacao": "Entre os benefícios de ser parceiro da AWS estão programas de financiamento. O guia do exame cita ainda treinamento e certificação para parceiros, eventos e descontos por volume. As alternativas 'exclusivo', 'hardware dedicado' e 'acesso antecipado a todos os serviços' são exageradas ou inexistentes.",
+  "fonte": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain4.html",
   "origem": "Captura de tela 2026-11-13 175410.png"
  },
  {
@@ -6670,6 +7132,8 @@
     "correta": true
    }
   ],
+  "explicacao": "A AWS cobra por uso (pague pelo que consumir), dá descontos por volume (pague menos usando mais) e oferece economia ao se comprometer com uso por um período, como Savings Plans e instâncias reservadas. Não há despesas fixas obrigatórias, contratos fixos nem pagamento total antecipado obrigatório.",
+  "fonte": "https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works/welcome.html",
   "origem": "Captura de tela 2026-11-13 175545.png"
  },
  {
@@ -6698,6 +7162,8 @@
     "correta": false
    }
   ],
+  "explicacao": "A Calculadora de Preços da AWS (AWS Pricing Calculator) estima o custo de serviços e configurações específicos antes de começar. O Cost Explorer analisa custos passados, o Budgets monitora orçamentos e o Organizations gerencia contas.",
+  "fonte": "https://docs.aws.amazon.com/pricing-calculator/latest/userguide/what-is-pricing-calculator.html",
   "origem": "Captura de tela 2026-11-13 175634.png"
  },
  {
@@ -6726,6 +7192,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Com o AWS Organizations você consolida as informações de faturamento de várias contas em uma única fatura e gerencia as contas de forma central, o que facilita acompanhar os custos dos departamentos.",
+  "fonte": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html",
   "origem": "Captura de tela 2026-11-13 175657.png"
  },
  {
@@ -6754,6 +7222,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O AWS Professional Services é uma equipe de especialistas que ajuda as empresas a alcançar resultados com a AWS, incluindo consultoria sobre práticas recomendadas de segurança e auditorias do ambiente. O re:Post é uma comunidade de perguntas e respostas.",
+  "fonte": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain4.html",
   "origem": "Captura de tela 2026-11-13 175809.png"
  },
  {
@@ -6761,7 +7231,7 @@
   "uid": "c4ba47ed",
   "tipo": "unica",
   "tema": "Cobrança e suporte",
-  "subtema": "Governança e conformidade",
+  "subtema": "Preços, custos e suporte",
   "gabarito": "confirmado",
   "enunciado": "Uma grande empresa deseja encontrar soluções de software prontas para conformidade para garantir que elas atendam às regulamentações do setor. Ela está explorando os serviços da AWS para ajudar no processo e quer implementar a solução o mais rápido possível. Qual opção é a MAIS adequada para essa empresa e seus requisitos?",
   "alternativas": [
@@ -6782,6 +7252,8 @@
     "correta": true
    }
   ],
+  "explicacao": "O AWS Marketplace é um catálogo digital com soluções de software de terceiros, inclusive para conformidade, que podem ser implantadas rapidamente e cobradas na fatura da AWS.",
+  "fonte": "https://docs.aws.amazon.com/marketplace/latest/buyerguide/what-is-marketplace.html",
   "origem": "Captura de tela 2026-11-13 175913.png"
  },
  {
@@ -6818,6 +7290,8 @@
     "correta": true
    }
   ],
+  "explicacao": "Os principais influenciadores de custo são computação, armazenamento e transferência de dados de saída. A transferência de dados de entrada, em geral, não é cobrada.",
+  "fonte": "https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works/welcome.html",
   "origem": "Captura de tela 2026-11-13 180757.png"
  },
  {
@@ -6846,6 +7320,8 @@
     "correta": false
    }
   ],
+  "explicacao": "A perspectiva Plataforma do AWS CAF cobre os princípios e padrões para implementar novas soluções na nuvem e migrar cargas de trabalho on-premises, com modelos de arquitetura para entender e comunicar a estrutura dos sistemas de TI.",
+  "fonte": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/welcome.html",
   "origem": "Captura de tela 2026-11-15 121802.png"
  },
  {
@@ -6874,6 +7350,8 @@
     "correta": true
    }
   ],
+  "explicacao": "Recomprar (repurchase, também chamado de 'drop and shop') substitui a aplicação por uma versão ou produto diferente, como trocar um software com licença tradicional por um SaaS.",
+  "fonte": "https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/migration-strategies.html",
   "origem": "Captura de tela 2026-11-15 122330.png"
  },
  {
@@ -6902,6 +7380,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Migration Evaluator ajuda a criar um caso de negócios para a migração, com estimativas de custo baseadas no uso real do ambiente atual. O Application Discovery Service coleta dados dos servidores e o Migration Hub acompanha a migração.",
+  "fonte": "https://aws.amazon.com/migration-evaluator/",
   "origem": "Captura de tela 2026-11-15 122854.png"
  },
  {
@@ -6930,6 +7410,8 @@
     "correta": true
    }
   ],
+  "explicacao": "O AWS Migration Hub dá uma visão central de todas as tarefas de migração e permite acompanhar o progresso entre ferramentas e aplicações.",
+  "fonte": "https://docs.aws.amazon.com/migrationhub/latest/ug/whatishub.html",
   "origem": "Captura de tela 2026-11-15 122935.png"
  },
  {
@@ -6958,6 +7440,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O AWS Schema Conversion Tool (SCT) converte o esquema e os objetos do banco de dados de um mecanismo para outro (por exemplo, de comercial para código aberto). Quem move os dados é o DMS.",
+  "fonte": "https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_Welcome.html",
   "origem": "Captura de tela 2026-11-15 123612.png"
  },
  {
@@ -6986,6 +7470,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O AWS DataSync automatiza e acelera a transferência de dados entre o armazenamento on-premises e serviços como o S3. Permite agendar tarefas, acompanhar o progresso e ver relatórios, e funciona pela internet ou por conexão dedicada.",
+  "fonte": "https://docs.aws.amazon.com/datasync/latest/userguide/what-is-datasync.html",
   "origem": "Captura de tela 2026-11-15 123716.png"
  },
  {
@@ -7014,6 +7500,8 @@
     "correta": false
    }
   ],
+  "explicacao": "As sete estratégias de migração (7 Rs) são: realocar (relocate), redefinir a hospedagem (rehost), redefinir a plataforma (replatform), refatorar (refactor), recomprar (repurchase), reter (retain) e retirar (retire).",
+  "fonte": "https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/migration-strategies.html",
   "origem": "Captura de tela 2026-11-15 123848.png"
  },
  {
@@ -7042,6 +7530,8 @@
     "correta": true
    }
   ],
+  "explicacao": "A perspectiva Pessoas do AWS CAF trata do gerenciamento de mudanças, do treinamento e da cultura da organização para uma adoção bem-sucedida da nuvem.",
+  "fonte": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/welcome.html",
   "origem": "Captura de tela 2026-11-15 124000.png"
  },
  {
@@ -7070,6 +7560,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Migration Evaluator fornece uma avaliação da TI atual e uma estimativa de custos na AWS, base para criar um caso de negócios que convença o CFO e os stakeholders.",
+  "fonte": "https://aws.amazon.com/migration-evaluator/",
   "origem": "Captura de tela 2026-11-15 124106.png"
  },
  {
@@ -7098,6 +7590,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O AWS Migration Hub centraliza em um só lugar as tarefas e o progresso da migração e da modernização das aplicações.",
+  "fonte": "https://docs.aws.amazon.com/migrationhub/latest/ug/whatishub.html",
   "origem": "Captura de tela 2026-11-15 124148.png"
  },
  {
@@ -7126,6 +7620,9 @@
     "correta": false
    }
   ],
+  "observacao": "A alternativa certa da captura diz que o CAF 'fornece ferramentas'. Tecnicamente o CAF é um framework de orientações e práticas recomendadas, mas as outras opções descrevem o Migration Hub, o DMS e os sete Rs, então é a mais adequada.",
+  "explicacao": "O AWS CAF reúne orientações e práticas recomendadas para acelerar a jornada de adoção da nuvem, organizar os recursos e alinhar o gerenciamento durante a transição. Quem centraliza o acompanhamento das migrações é o Migration Hub.",
+  "fonte": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/welcome.html",
   "origem": "Captura de tela 2026-11-15 124240.png",
   "origemExtra": [
    "Captura de tela 2026-11-15 124233.png"
@@ -7157,6 +7654,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O DataSync automatiza a transferência, permite programar para fora do horário de pico e mostra o progresso e os relatórios de tarefas. Ele não exige conexão dedicada e criptografa os dados em trânsito.",
+  "fonte": "https://docs.aws.amazon.com/datasync/latest/userguide/what-is-datasync.html",
   "origem": "Captura de tela 2026-11-15 124342.png",
   "origemExtra": [
    "Captura de tela 2026-11-15 124335.png"
@@ -7188,6 +7687,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O AWS DMS migra o banco de dados para um banco gerenciado pela AWS, mantendo a origem em operação, e com recursos de avaliação e de conversão de esquema ajuda a planejar, converter e migrar.",
+  "fonte": "https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html",
   "origem": "Captura de tela 2026-11-15 124455.png"
  },
  {
@@ -7216,6 +7717,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O AWS Application Migration Service (MGN) migra servidores para a AWS com mudanças mínimas, e depois a aplicação pode ser modernizada para reduzir custos. O Migration Hub só acompanha, e o Discovery Service só coleta informações.",
+  "fonte": "https://docs.aws.amazon.com/mgn/latest/ug/what-is-application-migration-service.html",
   "origem": "Captura de tela 2026-11-15 124547.png"
  },
  {
@@ -7244,6 +7747,8 @@
     "correta": true
    }
   ],
+  "explicacao": "O AWS Transfer Family oferece transferência segura de arquivos totalmente gerenciada, para dentro e fora do S3 e do EFS, com protocolos como SFTP, FTPS e FTP.",
+  "fonte": "https://docs.aws.amazon.com/transfer/latest/userguide/what-is-aws-transfer-family.html",
   "origem": "Captura de tela 2026-11-15 124657.png"
  },
  {
@@ -7272,6 +7777,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O AWS X-Ray ajuda a depurar e analisar o desempenho de aplicações, rastreando as solicitações de ponta a ponta e mostrando um mapa dos serviços envolvidos.",
+  "fonte": "https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html",
   "origem": "Captura de tela 2026-11-15 130230.png"
  },
  {
@@ -7300,6 +7807,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Amazon Connect é uma central de atendimento na nuvem com roteamento de contatos, gravação e analytics de chamadas, além de recursos de IA.",
+  "fonte": "https://docs.aws.amazon.com/connect/latest/adminguide/what-is-amazon-connect.html",
   "origem": "Captura de tela 2026-11-15 130308.png"
  },
  {
@@ -7332,6 +7841,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Soluções de IoT conectam dispositivos físicos à internet para coletar e trocar dados, como um dispositivo vestível e uma tomada com Wi-Fi controlada remotamente. Aplicativos e sites puramente de software não são dispositivos IoT.",
+  "fonte": "https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html",
   "origem": "Captura de tela 2026-11-15 130359.png"
  },
  {
@@ -7360,6 +7871,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Amazon AppStream 2.0 transmite aplicações para os navegadores dos usuários, o que dá acesso seguro a aplicações sem instalar nada nos dispositivos. O WorkSpaces entrega desktops completos.",
+  "fonte": "https://docs.aws.amazon.com/appstream2/latest/developerguide/what-is-appstream.html",
   "origem": "Captura de tela 2026-11-15 130449.png"
  },
  {
@@ -7388,6 +7901,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Automatizar as implantações com integração e entrega contínuas (CI/CD) reduz etapas manuais, erros e inconsistências entre ambientes. É uma prática do pilar Excelência operacional.",
+  "fonte": "https://docs.aws.amazon.com/wellarchitected/latest/framework/operational-excellence.html",
   "origem": "Captura de tela 2026-11-15 131224.png"
  },
  {
@@ -7416,6 +7931,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O AWS Well-Architected Tool avalia as cargas de trabalho em relação às práticas recomendadas dos seis pilares do Well-Architected Framework e indica melhorias.",
+  "fonte": "https://docs.aws.amazon.com/wellarchitected/latest/userguide/intro.html",
   "origem": "Captura de tela 2026-11-15 131304.png"
  },
  {
@@ -7444,6 +7961,8 @@
     "correta": true
    }
   ],
+  "explicacao": "O AWS IoT Core conecta dispositivos, como equipamentos de linha de montagem, à nuvem de forma segura e permite coletar e analisar os dados para detectar problemas de desempenho.",
+  "fonte": "https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html",
   "origem": "Captura de tela 2026-11-15 132109.png"
  },
  {
@@ -7451,7 +7970,7 @@
   "uid": "cd69f069",
   "tipo": "unica",
   "tema": "Cobrança e suporte",
-  "subtema": "Computação",
+  "subtema": "Preços, custos e suporte",
   "gabarito": "confirmado",
   "enunciado": "Uma empresa está usando um grande tipo de instância da solução Amazon EC2 para um site de pouco tráfego, e o monitoramento mostra que o uso da CPU raramente ultrapassa 10%. O que seria um bom próximo passo?",
   "alternativas": [
@@ -7472,6 +7991,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Com a CPU abaixo de 10% o tipo de instância está superdimensionado. Dimensionar adequadamente (rightsizing) para um tipo menor reduz o custo sem prejudicar o desempenho. O AWS Compute Optimizer ajuda a identificar essas oportunidades.",
+  "fonte": "https://docs.aws.amazon.com/compute-optimizer/latest/ug/what-is-compute-optimizer.html",
   "origem": "Captura de tela 2026-11-15 132212.png"
  },
  {
@@ -7500,6 +8021,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Amazon WorkSpaces oferece desktops virtuais na nuvem (DaaS), com acesso seguro de qualquer lugar. Os usuários realizam as mesmas tarefas que fariam em um computador físico do escritório.",
+  "fonte": "https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces.html",
   "origem": "Captura de tela 2026-11-15 132310.png"
  },
  {
@@ -7528,6 +8051,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O Amazon SES envia e-mails em larga escala, com métricas de entrega e engajamento, o que atende ao marketing e a mensagens transacionais.",
+  "fonte": "https://docs.aws.amazon.com/ses/latest/dg/Welcome.html",
   "origem": "Captura de tela 2026-11-15 132350.png"
  },
  {
@@ -7556,6 +8081,8 @@
     "correta": false
    }
   ],
+  "explicacao": "O AWS Amplify ajuda desenvolvedores web e mobile a criar aplicações full-stack e a adicionar rapidamente atributos como autenticação e armazenamento, com o mínimo de gerenciamento de infraestrutura.",
+  "fonte": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html",
   "origem": "Captura de tela 2026-11-15 132516.png"
  },
  {
@@ -7584,6 +8111,8 @@
     "correta": false
    }
   ],
+  "explicacao": "Com a aplicação em uma única instância e Zona, qualquer falha a deixa indisponível. Implantar em várias Zonas de Disponibilidade melhora a tolerância a falhas, que faz parte do pilar Confiabilidade.",
+  "fonte": "https://docs.aws.amazon.com/wellarchitected/latest/framework/reliability.html",
   "origem": "Captura de tela 2026-11-15 132610.png"
  },
  {
@@ -9727,6 +10256,394 @@
   ],
   "explicacao": "A automação (por exemplo, com infraestrutura como código e pipelines de entrega contínua) reduz erros manuais e torna as implantações mais rápidas e repetíveis. Ela não elimina o monitoramento nem os custos.",
   "fonte": "https://docs.aws.amazon.com/wellarchitected/latest/framework/operational-excellence.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 331,
+  "uid": "a6fcde25",
+  "tipo": "unica",
+  "tema": "Cobrança e suporte",
+  "subtema": "Preços, custos e suporte",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa precisa de acesso 24 horas por dia, por telefone, web e chat, a engenheiros de suporte da AWS. Qual é o plano de AWS Support de menor nível que oferece esse recurso?",
+  "alternativas": [
+   {
+    "texto": "AWS Business Support+",
+    "correta": true
+   },
+   {
+    "texto": "AWS Basic Support",
+    "correta": false
+   },
+   {
+    "texto": "AWS Enterprise Support",
+    "correta": false
+   },
+   {
+    "texto": "AWS Unified Operations",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Basic Support, incluído para todos os clientes, atende a dúvidas de conta e faturamento. O Business Support+ é o plano de entrada com acesso 24x7 por telefone, web e chat a engenheiros de suporte, mais de 500 verificações do Trusted Advisor e respostas contextuais com IA generativa. Os planos Enterprise e Unified Operations têm mais benefícios e preço maior.",
+  "fonte": "https://docs.aws.amazon.com/awssupport/latest/user/aws-support-plans.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 332,
+  "uid": "79fa8023",
+  "tipo": "unica",
+  "tema": "Cobrança e suporte",
+  "subtema": "Preços, custos e suporte",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa precisa dos benefícios do Business Support+ e também de um Technical Account Manager (TAM) designado e de tempo de resposta de até 15 minutos para casos críticos de produção. Qual plano de AWS Support atende a esses requisitos?",
+  "alternativas": [
+   {
+    "texto": "AWS Enterprise Support",
+    "correta": true
+   },
+   {
+    "texto": "AWS Basic Support",
+    "correta": false
+   },
+   {
+    "texto": "AWS Business Support+",
+    "correta": false
+   },
+   {
+    "texto": "Nenhum plano oferece TAM designado",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Enterprise Support inclui todos os benefícios do Business Support+ e acrescenta um TAM designado, resposta de até 15 minutos para casos críticos de produção, acesso ao AWS Security Incident Response, revisões estratégicas de negócio e gerenciamento de eventos com o AWS Countdown.",
+  "fonte": "https://docs.aws.amazon.com/awssupport/latest/user/aws-support-plans.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 333,
+  "uid": "36f62589",
+  "tipo": "multipla",
+  "tema": "Cobrança e suporte",
+  "subtema": "Preços, custos e suporte",
+  "gabarito": "documentacao",
+  "enunciado": "Quais recursos todos os clientes da AWS recebem automaticamente com o AWS Basic Support? (Selecione DOIS.)",
+  "alternativas": [
+   {
+    "texto": "Respostas para dúvidas sobre a conta e o faturamento",
+    "correta": true
+   },
+   {
+    "texto": "Documentação, whitepapers e guias de práticas recomendadas",
+    "correta": true
+   },
+   {
+    "texto": "Suporte técnico por telefone 24x7",
+    "correta": false
+   },
+   {
+    "texto": "Um Technical Account Manager designado",
+    "correta": false
+   },
+   {
+    "texto": "Mais de 500 verificações do AWS Trusted Advisor",
+    "correta": false
+   }
+  ],
+  "explicacao": "Todos os clientes têm 24x7 respostas a dúvidas de conta e faturamento, fóruns de suporte, verificações de integridade dos serviços, documentação, whitepapers e guias. Suporte técnico por telefone, TAM e o conjunto completo de verificações do Trusted Advisor exigem planos pagos.",
+  "fonte": "https://docs.aws.amazon.com/awssupport/latest/user/aws-support-plans.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 334,
+  "uid": "c2208e2a",
+  "tipo": "unica",
+  "tema": "Cobrança e suporte",
+  "subtema": "Preços, custos e suporte",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa quer orientação consultiva sobre a arquitetura das suas aplicações, gerenciamento de eventos de infraestrutura, um Technical Account Manager e um especialista de domínio designados, além de revisões de cargas de trabalho críticas e runbooks personalizados. Qual plano atende a esses requisitos?",
+  "alternativas": [
+   {
+    "texto": "AWS Unified Operations",
+    "correta": true
+   },
+   {
+    "texto": "AWS Basic Support",
+    "correta": false
+   },
+   {
+    "texto": "AWS Business Support+",
+    "correta": false
+   },
+   {
+    "texto": "AWS Trusted Advisor",
+    "correta": false
+   }
+  ],
+  "explicacao": "O AWS Unified Operations oferece orientação de arquitetura de aplicações, gerenciamento de eventos de infraestrutura, TAM e especialista de domínio (DSE) designados, uma assinatura do AWS Countdown Premium e revisões de cargas de trabalho críticas com runbooks personalizados. O Trusted Advisor é uma ferramenta de recomendações, não um plano de suporte.",
+  "fonte": "https://docs.aws.amazon.com/awssupport/latest/user/aws-support-plans.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 335,
+  "uid": "35da5127",
+  "tipo": "multipla",
+  "tema": "Cobrança e suporte",
+  "subtema": "Preços, custos e suporte",
+  "gabarito": "documentacao",
+  "enunciado": "Quais recursos o AWS Business Support+ oferece além do que o Basic Support já inclui? (Selecione DOIS.)",
+  "alternativas": [
+   {
+    "texto": "Respostas contextuais em tempo real com IA generativa",
+    "correta": true
+   },
+   {
+    "texto": "Mais de 500 verificações do AWS Trusted Advisor",
+    "correta": true
+   },
+   {
+    "texto": "Um Technical Account Manager designado",
+    "correta": false
+   },
+   {
+    "texto": "Resposta de até 15 minutos para casos críticos de produção",
+    "correta": false
+   },
+   {
+    "texto": "Um especialista de domínio designado para a aplicação",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Business Support+ acrescenta respostas com IA generativa, acesso 24x7 a engenheiros, mais de 500 verificações do Trusted Advisor, a API do AWS Support e suporte a software de terceiros. O TAM designado e a resposta de 15 minutos são do Enterprise Support, e o especialista de domínio é do Unified Operations.",
+  "fonte": "https://docs.aws.amazon.com/awssupport/latest/user/aws-support-plans.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 336,
+  "uid": "bc18bf5d",
+  "tipo": "unica",
+  "tema": "Cobrança e suporte",
+  "subtema": "Preços, custos e suporte",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa quer saber quanto cada projeto e cada departamento gasta na AWS, categorizando os custos por rótulos aplicados aos recursos. Qual recurso atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "Tags de alocação de custos",
+    "correta": true
+   },
+   {
+    "texto": "Grupos de segurança",
+    "correta": false
+   },
+   {
+    "texto": "Políticas de controle de serviço (SCPs)",
+    "correta": false
+   },
+   {
+    "texto": "Perfis do IAM",
+    "correta": false
+   }
+  ],
+  "explicacao": "As tags de alocação de custos organizam os custos por categorias de negócio, como centros de custo, aplicações ou responsáveis. Depois de ativadas no console de Billing and Cost Management, aparecem no relatório de alocação de custos e no Cost Explorer.",
+  "fonte": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 337,
+  "uid": "36a97776",
+  "tipo": "unica",
+  "tema": "Cobrança e suporte",
+  "subtema": "Preços, custos e suporte",
+  "gabarito": "documentacao",
+  "enunciado": "Quais são os tipos de tags de alocação de custos e o que é preciso fazer para que elas apareçam no Cost Explorer e nos relatórios de custos?",
+  "alternativas": [
+   {
+    "texto": "Tags geradas pela AWS e tags definidas pelo usuário. Ambos os tipos precisam ser ativados no console de Billing and Cost Management",
+    "correta": true
+   },
+   {
+    "texto": "Só existem tags definidas pelo usuário, e elas aparecem automaticamente",
+    "correta": false
+   },
+   {
+    "texto": "Só existem tags geradas pela AWS, aplicadas apenas a instâncias do EC2",
+    "correta": false
+   },
+   {
+    "texto": "Tags de custo funcionam sem nenhuma ativação, mas só em contas gratuitas",
+    "correta": false
+   }
+  ],
+  "explicacao": "A AWS oferece dois tipos: as tags geradas pela AWS (prefixo aws:) e as definidas pelo usuário (prefixo user:). Cada tipo precisa ser ativado separadamente antes de aparecer no Cost Explorer ou no relatório de alocação de custos, e a ativação pode levar até 24 horas.",
+  "fonte": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 338,
+  "uid": "31dd05c2",
+  "tipo": "unica",
+  "tema": "Cobrança e suporte",
+  "subtema": "Monitoramento e gerenciamento",
+  "gabarito": "documentacao",
+  "enunciado": "Qual afirmação sobre o AWS Health Dashboard é verdadeira?",
+  "alternativas": [
+   {
+    "texto": "Está disponível para todos os clientes, sem custo adicional e sem necessidade de configuração",
+    "correta": true
+   },
+   {
+    "texto": "Só pode ser usado por clientes do plano Enterprise Support",
+    "correta": false
+   },
+   {
+    "texto": "Exige a instalação de um agente em cada instância do EC2",
+    "correta": false
+   },
+   {
+    "texto": "Mostra apenas informações de faturamento da conta",
+    "correta": false
+   }
+  ],
+  "explicacao": "O AWS Health Dashboard dá visibilidade contínua sobre o desempenho dos recursos e a disponibilidade dos serviços da AWS. Está disponível para todos os clientes autenticados, sem custo e sem configuração, e é alimentado pela AWS Health API.",
+  "fonte": "https://docs.aws.amazon.com/health/latest/ug/what-is-aws-health.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 339,
+  "uid": "927e0ba2",
+  "tipo": "multipla",
+  "tema": "Cobrança e suporte",
+  "subtema": "Monitoramento e gerenciamento",
+  "gabarito": "documentacao",
+  "enunciado": "Quais planos de AWS Support permitem usar a AWS Health API para integrar eventos de integridade a sistemas próprios e de terceiros? (Selecione TRÊS.)",
+  "alternativas": [
+   {
+    "texto": "AWS Business Support+",
+    "correta": true
+   },
+   {
+    "texto": "AWS Enterprise Support",
+    "correta": true
+   },
+   {
+    "texto": "AWS Unified Operations",
+    "correta": true
+   },
+   {
+    "texto": "AWS Basic Support",
+    "correta": false
+   },
+   {
+    "texto": "Apenas contas dentro do nível gratuito (Free Tier)",
+    "correta": false
+   }
+  ],
+  "explicacao": "O painel (Health Dashboard) é para todos, mas a AWS Health API, usada para integrar com sistemas próprios e de terceiros, exige os planos Business Support+, Enterprise Support ou Unified Operations. Todos os clientes também podem receber eventos do AWS Health pelo Amazon EventBridge sem custo adicional.",
+  "fonte": "https://docs.aws.amazon.com/health/latest/ug/what-is-aws-health.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 340,
+  "uid": "17d354f4",
+  "tipo": "unica",
+  "tema": "Cobrança e suporte",
+  "subtema": "Preços, custos e suporte",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa descobre que um recurso hospedado na AWS está sendo usado para enviar spam e distribuir conteúdo malicioso. A quem ela deve reportar o uso abusivo de recursos da AWS?",
+  "alternativas": [
+   {
+    "texto": "À equipe AWS Trust and Safety",
+    "correta": true
+   },
+   {
+    "texto": "Ao AWS Artifact",
+    "correta": false
+   },
+   {
+    "texto": "Ao AWS Cost Explorer",
+    "correta": false
+   },
+   {
+    "texto": "À Rede de Parceiros da AWS (APN)",
+    "correta": false
+   }
+  ],
+  "explicacao": "A equipe AWS Trust and Safety é responsável por receber e tratar denúncias de abuso de recursos da AWS. O Artifact fornece relatórios de conformidade, o Cost Explorer analisa custos e a APN reúne parceiros.",
+  "fonte": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain4.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 341,
+  "uid": "d83a2be4",
+  "tipo": "multipla",
+  "tema": "Cobrança e suporte",
+  "subtema": "Preços, custos e suporte",
+  "gabarito": "documentacao",
+  "enunciado": "Quais são benefícios de ser um parceiro da AWS, segundo o guia do exame? (Selecione DOIS.)",
+  "alternativas": [
+   {
+    "texto": "Treinamento e certificação para parceiros",
+    "correta": true
+   },
+   {
+    "texto": "Descontos por volume para parceiros",
+    "correta": true
+   },
+   {
+    "texto": "Uso gratuito e ilimitado de todos os serviços da AWS",
+    "correta": false
+   },
+   {
+    "texto": "Acesso ao código-fonte interno dos serviços da AWS",
+    "correta": false
+   },
+   {
+    "texto": "Isenção de todas as taxas de transferência de dados",
+    "correta": false
+   }
+  ],
+  "explicacao": "O guia do exame cita como benefícios de ser parceiro da AWS o treinamento e a certificação para parceiros, eventos para parceiros e descontos por volume. Não há uso gratuito ilimitado, acesso a código-fonte interno nem isenção de todas as taxas.",
+  "fonte": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain4.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 342,
+  "uid": "ab81aeac",
+  "tipo": "unica",
+  "tema": "Cobrança e suporte",
+  "subtema": "Preços, custos e suporte",
+  "gabarito": "documentacao",
+  "enunciado": "Um desenvolvedor quer pesquisar respostas para perguntas técnicas frequentes e também perguntar a uma comunidade de especialistas da AWS e de outros usuários. Qual recurso atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "AWS re:Post",
+    "correta": true
+   },
+   {
+    "texto": "AWS Artifact",
+    "correta": false
+   },
+   {
+    "texto": "AWS Budgets",
+    "correta": false
+   },
+   {
+    "texto": "AWS CloudTrail",
+    "correta": false
+   }
+  ],
+  "explicacao": "O AWS re:Post é a comunidade de perguntas e respostas técnicas, com o conteúdo do AWS Knowledge Center. Faz parte dos recursos técnicos citados no guia do exame, junto com o AWS Prescriptive Guidance, whitepapers, blogs e documentação.",
+  "fonte": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain4.html",
   "autoral": true,
   "origem": "Elaborada com base na documentação oficial da AWS"
  }
