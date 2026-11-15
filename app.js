@@ -356,7 +356,7 @@
   function blocoPergunta(it, revelar, aoMudar) {
     const q = it.q;
     const no = h('div', null,
-      h('div', { class: 'tags' }, h('span', { class: 'tag' }, q.tema), h('span', { class: 'tag alt' }, q.subtema)),
+      h('div', { class: 'tags' }, h('span', { class: 'tag' }, q.tema), h('span', { class: 'tag alt' }, q.subtema), q.autoral ? h('span', { class: 'tag' }, 'Elaborada com base na documentação') : null),
       h('p', { class: 'enunciado' }, q.enunciado));
     if (q.tipo === 'multipla') {
       const n = q.alternativas.filter((a) => a.correta).length;
