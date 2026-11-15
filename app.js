@@ -9,6 +9,7 @@
 
   const app = document.getElementById('app');
   let Q = [];
+  let meta = carregarMeta();
   let store = carregar();
   let view = 'home';
   let cfg = cfgPadrao();
@@ -55,9 +56,24 @@
   const classeBarra = (p) => (p < 60 ? 'baixo' : p < 75 ? 'medio' : '');
 
   // ---------- armazenamento local ----------
-  function carregar() {
+  // Perfis locais: o perfil 'p1' usa a chave original (mantém o progresso que já existia).
+  const META = CHAVE + '.perfis';
+  function carregarMeta() {
     try {
-      const j = JSON.parse(localStorage.getItem(CHAVE));
+      const m = JSON.parse(localStorage.getItem(META));
+      if (m && Array.isArray(m.lista) && m.lista.length && m.lista.some((p) => p.id === m.ativo)) return m;
+    } catch (e) { /* cria o padrão */ }
+    return { ativo: 'p1', lista: [{ id: 'p1', nome: 'Principal' }] };
+  }
+  function salvarMeta() {
+    try { localStorage.setItem(META, JSON.stringify(meta)); } catch (e) { /* sem espaço ou bloqueado */ }
+  }
+  const chavePerfil = (id) => (id === 'p1' ? CHAVE : `${CHAVE}.${id}`);
+  const perfilAtivo = () => meta.lista.find((p) => p.id === meta.ativo);
+
+  function carregar(chave) {
+    try {
+      const j = JSON.parse(localStorage.getItem(chave || chavePerfil(meta.ativo)));
       if (j && typeof j === 'object') {
         return {
           stats: j.stats && typeof j.stats === 'object' ? j.stats : {},
@@ -69,7 +85,7 @@
     return { stats: {}, historico: [], marcadas: [] };
   }
   function salvar() {
-    try { localStorage.setItem(CHAVE, JSON.stringify(store)); } catch (e) { /* sem espaço ou bloqueado */ }
+    try { localStorage.setItem(chavePerfil(meta.ativo), JSON.stringify(store)); } catch (e) { /* sem espaço ou bloqueado */ }
   }
   function registrar(q, ok) {
     const s = store.stats[q.uid] || { t: 0, a: 0, ultima: null, data: 0 };
@@ -79,6 +95,49 @@
     s.data = Date.now();
     store.stats[q.uid] = s;
     salvar();
+  }
+
+  function criarPerfil(nome) {
+    const n = String(nome || '').trim().slice(0, 30);
+    if (!n) return null;
+    const id = 'p' + Date.now().toString(36);
+    meta.lista.push({ id, nome: n });
+    salvarMeta();
+    return id;
+  }
+  function trocarPerfil(id) {
+    if (!meta.lista.some((p) => p.id === id)) return;
+    meta.ativo = id;
+    salvarMeta();
+    store = carregar();
+    cfg = cfgPadrao();
+    sess = null;
+    resultado = null;
+  }
+  function renomearPerfil(id, nome) {
+    const n = String(nome || '').trim().slice(0, 30);
+    const p = meta.lista.find((x) => x.id === id);
+    if (!n || !p) return;
+    p.nome = n;
+    salvarMeta();
+  }
+  function apagarPerfil(id) {
+    if (meta.lista.length < 2 || !meta.lista.some((p) => p.id === id)) return false;
+    try { localStorage.removeItem(chavePerfil(id)); } catch (e) { /* ignora */ }
+    meta.lista = meta.lista.filter((p) => p.id !== id);
+    if (meta.ativo === id) {
+      meta.ativo = meta.lista[0].id;
+      store = carregar();
+    }
+    salvarMeta();
+    return true;
+  }
+  function resumoPerfil(id) {
+    const dados = id === meta.ativo ? store : carregar(chavePerfil(id));
+    let t = 0, a = 0;
+    const vistas = Object.keys(dados.stats).length;
+    for (const s of Object.values(dados.stats)) { t += s.t; a += s.a; }
+    return t ? `${vistas} vistas · ${pct(a, t)}% de acertos` : 'sem respostas ainda';
   }
 
   // ---------- regras das perguntas ----------
@@ -280,7 +339,7 @@
   }
   function render(manter) {
     if (view !== 'quiz' && view !== 'revisao') pararTimer();
-    const mapa = { home: viewHome, config: viewConfig, quiz: viewQuiz, revisao: viewRevisao, resultado: viewResultado, stats: viewStats };
+    const mapa = { home: viewHome, config: viewConfig, quiz: viewQuiz, revisao: viewRevisao, resultado: viewResultado, stats: viewStats, perfis: viewPerfis };
     mount((mapa[view] || viewHome)(), manter);
   }
 
@@ -318,6 +377,7 @@
     return h('div', null,
       h('h1', null, 'Treino AWS Cloud Practitioner'),
       h('p', { class: 'suave' }, `CLF-C02 · ${Q.length} perguntas · funciona offline`),
+      h('div', { class: 'chips' }, h('button', { class: 'chip', onclick: () => go('perfis') }, `Perfil: ${perfilAtivo().nome} · trocar`)),
       h('div', { class: 'resumo' }, caixa(`${vistas}/${Q.length}`, 'vistas'), caixa(t ? pct(a, t) + '%' : '–', 'acertos'), caixa(erradas, 'a revisar')),
       menuBtn('Simulado do exame', `${SIM.total} perguntas, ${SIM.minutos} min, sem gabarito até o fim. Segue os pesos dos domínios do exame.`, iniciarSimulado, true),
       menuBtn('Treino inteligente', '20 perguntas: prioriza o que você errou e o que ainda não viu.', treinoInteligente),
@@ -499,6 +559,42 @@
         blocoPergunta(it, true, null), painelResposta(it))));
   }
 
+  function viewPerfis() {
+    const cartoes = meta.lista.map((p) => {
+      const ativo = p.id === meta.ativo;
+      return h('div', { class: 'card' },
+        h('div', { class: 'linha-stat' }, h('b', null, p.nome + (ativo ? ' (em uso)' : '')), h('span', { class: 'suave' }, resumoPerfil(p.id))),
+        h('div', { class: 'barra-acoes' },
+          ativo ? null : h('button', {
+            class: 'btn primario',
+            onclick: () => { trocarPerfil(p.id); view = 'home'; history.pushState({ v: 'home' }, ''); render(); },
+          }, 'Usar'),
+          h('button', {
+            class: 'btn',
+            onclick: () => { const n = prompt('Novo nome do perfil:', p.nome); if (n) { renomearPerfil(p.id, n); render(true); } },
+          }, 'Renomear'),
+          h('button', {
+            class: 'btn perigo', disabled: meta.lista.length < 2,
+            onclick: () => {
+              if (confirm(`Apagar o perfil "${p.nome}" e todo o progresso dele neste aparelho?`)) { apagarPerfil(p.id); render(true); }
+            },
+          }, 'Apagar')));
+    });
+    return h('div', null,
+      topo('Perfis', () => history.back()),
+      h('p', { class: 'suave' }, 'Cada perfil tem o próprio histórico, erros e marcações. Os perfis ficam só neste aparelho e não têm senha: servem para separar o progresso de quem usa o mesmo celular. Em outro celular, o progresso já é separado automaticamente.'),
+      cartoes,
+      h('div', { class: 'barra-acoes' },
+        h('button', {
+          class: 'btn primario',
+          onclick: () => {
+            const n = prompt('Nome do novo perfil:');
+            const id = n ? criarPerfil(n) : null;
+            if (id) { trocarPerfil(id); view = 'home'; history.pushState({ v: 'home' }, ''); render(); }
+          },
+        }, 'Novo perfil')));
+  }
+
   function agregar(campo) {
     const m = {};
     for (const q of Q) {
@@ -548,7 +644,7 @@
           h('b', null, `${pct(x.acertos, x.total)}% (${x.acertos}/${x.total})`)))
         : h('p', { class: 'suave' }, 'Nenhuma sessão concluída ainda.')),
       h('h2', null, 'Backup do progresso'),
-      h('p', { class: 'suave' }, 'O progresso fica só neste aparelho. Exporte um arquivo para guardar ou levar a outro celular.'),
+      h('p', { class: 'suave' }, `Backup do perfil "${perfilAtivo().nome}". O progresso fica só neste aparelho: exporte um arquivo para guardar ou levar a outro celular.`),
       h('div', { class: 'barra-acoes' },
         h('button', { class: 'btn', onclick: exportar }, 'Exportar'),
         h('button', { class: 'btn', onclick: () => entrada.click() }, 'Importar')),
@@ -597,10 +693,37 @@
     ok(new Set(sim.map((q) => q.uid)).size === sim.length, 'simulado com repetidas');
     ok(!sim.some((q) => q.tipo === 'pareamento'), 'simulado não deve ter pergunta de associação');
     DOMINIOS.forEach((d) => ok(sim.filter((q) => q.tema === d).length === c[d], `cota de ${d} não respeitada`));
+    testePerfis(falhas);
     const interfaceTestada = testeInterface(falhas);
     const saida = { total: Q.length, cotas: c, interfaceTestada, falhas, resultado: falhas.length ? 'FALHOU' : 'OK' };
     document.title = saida.resultado;
     app.replaceChildren(h('pre', { id: 'autoteste' }, JSON.stringify(saida, null, 1)));
+  }
+
+  function testePerfis(falhas) {
+    const ok = (cond, msg) => { if (!cond) falhas.push(msg); };
+    const metaBak = JSON.stringify(meta);
+    const storeBak = JSON.stringify(store);
+    const ativoBak = meta.ativo;
+    try {
+      const antes = JSON.stringify(store.stats);
+      const id = criarPerfil('Teste');
+      ok(!!id, 'criar perfil');
+      trocarPerfil(id);
+      ok(Object.keys(store.stats).length === 0, 'perfil novo deve começar vazio');
+      registrar(Q[0], true);
+      ok(Object.keys(store.stats).length === 1, 'registro no perfil novo');
+      trocarPerfil(ativoBak);
+      ok(JSON.stringify(store.stats) === antes, 'o perfil original não pode mudar');
+      ok(apagarPerfil(id), 'apagar perfil');
+      ok(localStorage.getItem(chavePerfil(id)) === null, 'dados do perfil apagado devem sumir');
+    } catch (e) {
+      falhas.push('exceção em perfis: ' + e.message);
+    } finally {
+      meta = JSON.parse(metaBak);
+      salvarMeta();
+      store = JSON.parse(storeBak);
+    }
   }
 
   // Simula toques na interface: treino, simulado completo, painel, resultado e estatísticas.
@@ -677,7 +800,7 @@
     render();
     const atalho = new URLSearchParams(location.search).get('ir'); // usado só para capturas de tela de teste
     if (atalho === 'treino') treinoInteligente();
-    else if (atalho === 'config' || atalho === 'stats') go(atalho);
+    else if (atalho === 'config' || atalho === 'stats' || atalho === 'perfis') go(atalho);
     if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
       navigator.serviceWorker.register('sw.js').catch(() => { /* offline não disponível */ });
     }
