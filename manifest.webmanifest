@@ -1,0 +1,17 @@
+{
+  "name": "Treino AWS Cloud Practitioner (CLF-C02)",
+  "short_name": "Treino CLF-C02",
+  "description": "Quiz offline para estudar para a certificação AWS Certified Cloud Practitioner.",
+  "lang": "pt-BR",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#232f3e",
+  "theme_color": "#232f3e",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
