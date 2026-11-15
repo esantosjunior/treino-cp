@@ -10646,5 +10646,2358 @@
   "fonte": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain4.html",
   "autoral": true,
   "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 343,
+  "uid": "3ef321fd",
+  "tipo": "multipla",
+  "tema": "Segurança e conformidade",
+  "subtema": "Segurança e identidade",
+  "gabarito": "documentacao",
+  "enunciado": "Quais tarefas exigem as credenciais do usuário-raiz em uma conta da AWS autônoma, que não faz parte de uma organização? (Selecione DUAS.)",
+  "alternativas": [
+   {
+    "texto": "Fechar a conta da AWS",
+    "correta": true
+   },
+   {
+    "texto": "Restaurar as permissões de um administrador do IAM que revogou as próprias permissões por engano",
+    "correta": true
+   },
+   {
+    "texto": "Criar um bucket do Amazon S3",
+    "correta": false
+   },
+   {
+    "texto": "Iniciar uma instância do Amazon EC2",
+    "correta": false
+   },
+   {
+    "texto": "Criar um usuário do IAM",
+    "correta": false
+   }
+  ],
+  "explicacao": "Algumas tarefas só podem ser feitas como usuário-raiz, como fechar a conta, alterar o e-mail e a senha do usuário-raiz e restaurar permissões de IAM. Criar buckets, iniciar instâncias e criar usuários do IAM podem ser feitos com usuários ou perfis do IAM com as permissões adequadas.",
+  "fonte": "https://docs.aws.amazon.com/IAM/latest/UserGuide/root-user-tasks.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 344,
+  "uid": "7851c074",
+  "tipo": "unica",
+  "tema": "Segurança e conformidade",
+  "subtema": "Segurança e identidade",
+  "gabarito": "documentacao",
+  "enunciado": "Qual é a prática recomendada para o uso do usuário-raiz de uma conta da AWS?",
+  "alternativas": [
+   {
+    "texto": "Usá-lo só para tarefas que exigem credenciais raiz e fazer o trabalho diário com um usuário administrativo",
+    "correta": true
+   },
+   {
+    "texto": "Usá-lo para todas as tarefas administrativas do dia a dia",
+    "correta": false
+   },
+   {
+    "texto": "Compartilhar a senha com toda a equipe de TI para garantir o acesso",
+    "correta": false
+   },
+   {
+    "texto": "Criar chaves de acesso para o usuário-raiz e usá-las em todas as aplicações",
+    "correta": false
+   }
+  ],
+  "explicacao": "O usuário-raiz tem acesso total à conta, então deve ser protegido com senha forte e MFA e usado só nas tarefas que exigem esse nível de acesso. Para o dia a dia, a AWS recomenda um usuário administrativo, por exemplo no IAM Identity Center.",
+  "fonte": "https://docs.aws.amazon.com/IAM/latest/UserGuide/root-user-best-practices.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 345,
+  "uid": "e9664c06",
+  "tipo": "unica",
+  "tema": "Segurança e conformidade",
+  "subtema": "Segurança e identidade",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa quer que os funcionários acessem a AWS com as credenciais corporativas que já usam, sem criar um usuário do IAM para cada pessoa. Que conceito de gerenciamento de identidades atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "Identidade federada",
+    "correta": true
+   },
+   {
+    "texto": "Compartilhar um único usuário do IAM entre todos os funcionários",
+    "correta": false
+   },
+   {
+    "texto": "Usar o usuário-raiz da conta para cada funcionário",
+    "correta": false
+   },
+   {
+    "texto": "Distribuir chaves de acesso permanentes a todos",
+    "correta": false
+   }
+  ],
+  "explicacao": "Na federação, a AWS confia em um provedor de identidades externo, como o diretório corporativo. Os usuários entram com as credenciais que já têm e assumem perfis com permissões temporárias. O IAM Identity Center facilita esse acesso.",
+  "fonte": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 346,
+  "uid": "bb5eaa36",
+  "tipo": "unica",
+  "tema": "Segurança e conformidade",
+  "subtema": "Segurança e identidade",
+  "gabarito": "documentacao",
+  "enunciado": "Uma aplicação na conta A precisa acessar um bucket do Amazon S3 que está na conta B, sem usar credenciais permanentes compartilhadas. Qual recurso do IAM atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "Um perfil (role) do IAM entre contas",
+    "correta": true
+   },
+   {
+    "texto": "Uma chave de acesso do usuário-raiz da conta B",
+    "correta": false
+   },
+   {
+    "texto": "Um grupo do IAM compartilhado nas duas contas",
+    "correta": false
+   },
+   {
+    "texto": "Um grupo de segurança que libera o bucket",
+    "correta": false
+   }
+  ],
+  "explicacao": "Um perfil do IAM entre contas permite que uma identidade da conta A assuma temporariamente permissões definidas na conta B. As credenciais são temporárias, e não há necessidade de compartilhar chaves permanentes.",
+  "fonte": "https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 347,
+  "uid": "171cc587",
+  "tipo": "unica",
+  "tema": "Segurança e conformidade",
+  "subtema": "Segurança e identidade",
+  "gabarito": "documentacao",
+  "enunciado": "Qual é a diferença entre uma política gerenciada pela AWS e uma política gerenciada pelo cliente (personalizada) no IAM?",
+  "alternativas": [
+   {
+    "texto": "A política gerenciada pela AWS é criada e mantida pela AWS, e a personalizada é criada e controlada pelo cliente, o que permite permissões mais específicas",
+    "correta": true
+   },
+   {
+    "texto": "A política gerenciada pela AWS só vale para o usuário-raiz, e a personalizada vale para todos os usuários",
+    "correta": false
+   },
+   {
+    "texto": "A política personalizada não pode ser editada depois de criada",
+    "correta": false
+   },
+   {
+    "texto": "As duas são idênticas e diferem apenas pelo nome",
+    "correta": false
+   }
+  ],
+  "explicacao": "As políticas gerenciadas pela AWS cobrem casos de uso comuns e são mantidas pela AWS. As políticas gerenciadas pelo cliente são criadas por você e ajustadas às suas necessidades, o que ajuda a aplicar o princípio de menor privilégio.",
+  "fonte": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 348,
+  "uid": "6dc98e2c",
+  "tipo": "unica",
+  "tema": "Segurança e conformidade",
+  "subtema": "Segurança e identidade",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa quer exigir que todos os usuários do IAM da conta criem senhas com um tamanho mínimo e tipos de caracteres específicos. Onde esses requisitos são definidos?",
+  "alternativas": [
+   {
+    "texto": "Na política de senhas da conta do IAM",
+    "correta": true
+   },
+   {
+    "texto": "Em um grupo de segurança da VPC",
+    "correta": false
+   },
+   {
+    "texto": "Em uma ACL de rede",
+    "correta": false
+   },
+   {
+    "texto": "Em uma regra do AWS WAF",
+    "correta": false
+   }
+  ],
+  "explicacao": "A política de senhas da conta do IAM define requisitos como comprimento mínimo, tipos de caracteres e expiração das senhas dos usuários do IAM. Grupos de segurança, ACLs e o WAF controlam tráfego de rede.",
+  "fonte": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_account-policy.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 349,
+  "uid": "37e31ad6",
+  "tipo": "unica",
+  "tema": "Segurança e conformidade",
+  "subtema": "Segurança e identidade",
+  "gabarito": "documentacao",
+  "enunciado": "Qual recurso do AWS Systems Manager armazena parâmetros de configuração e valores secretos de forma segura, para que não fiquem escritos no código da aplicação?",
+  "alternativas": [
+   {
+    "texto": "Parameter Store",
+    "correta": true
+   },
+   {
+    "texto": "Run Command",
+    "correta": false
+   },
+   {
+    "texto": "Patch Manager",
+    "correta": false
+   },
+   {
+    "texto": "Session Manager",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Parameter Store, do Systems Manager, armazena dados de configuração e segredos de forma centralizada e segura. O Secrets Manager também guarda segredos e acrescenta rotação automática.",
+  "fonte": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 350,
+  "uid": "b1c1b29a",
+  "tipo": "unica",
+  "tema": "Segurança e conformidade",
+  "subtema": "Segurança e identidade",
+  "gabarito": "documentacao",
+  "enunciado": "Qual prática é recomendada para dar a uma aplicação acesso a serviços da AWS?",
+  "alternativas": [
+   {
+    "texto": "Usar perfis do IAM com credenciais temporárias, em vez de chaves de acesso permanentes sempre que possível",
+    "correta": true
+   },
+   {
+    "texto": "Gravar as chaves de acesso no código-fonte da aplicação",
+    "correta": false
+   },
+   {
+    "texto": "Usar as chaves de acesso do usuário-raiz",
+    "correta": false
+   },
+   {
+    "texto": "Compartilhar a mesma chave de acesso entre todas as aplicações e desenvolvedores",
+    "correta": false
+   }
+  ],
+  "explicacao": "Credenciais temporárias de perfis do IAM reduzem o risco de vazamento, porque expiram. Chaves permanentes no código, especialmente as do usuário-raiz, são um risco grande de segurança.",
+  "fonte": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 351,
+  "uid": "48d66901",
+  "tipo": "multipla",
+  "tema": "Segurança e conformidade",
+  "subtema": "Governança e conformidade",
+  "gabarito": "documentacao",
+  "enunciado": "Quais recursos registram informações úteis para investigar a segurança de um ambiente na AWS? (Selecione DOIS.)",
+  "alternativas": [
+   {
+    "texto": "AWS CloudTrail, que registra as chamadas de API e as ações na conta",
+    "correta": true
+   },
+   {
+    "texto": "VPC Flow Logs, que registram o tráfego de rede das interfaces da VPC",
+    "correta": true
+   },
+   {
+    "texto": "Calculadora de Preços da AWS",
+    "correta": false
+   },
+   {
+    "texto": "AWS Budgets",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Polly",
+    "correta": false
+   }
+  ],
+  "explicacao": "O CloudTrail mostra quem fez o quê e quando na conta, e os VPC Flow Logs registram o tráfego IP das interfaces de rede. Ambos servem para investigação e auditoria de segurança. A Calculadora, o Budgets e o Polly não registram eventos de segurança.",
+  "fonte": "https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 352,
+  "uid": "6b33fea6",
+  "tipo": "unica",
+  "tema": "Segurança e conformidade",
+  "subtema": "Governança e conformidade",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa precisa verificar se um serviço específico da AWS está dentro do escopo de um programa de conformidade, como o PCI DSS ou o HIPAA, pois os requisitos podem variar entre os serviços. Onde ela pode consultar essa informação?",
+  "alternativas": [
+   {
+    "texto": "Na página de serviços no escopo dos programas de conformidade da AWS e nos relatórios do AWS Artifact",
+    "correta": true
+   },
+   {
+    "texto": "No AWS Cost Explorer",
+    "correta": false
+   },
+   {
+    "texto": "No Amazon CloudWatch Logs",
+    "correta": false
+   },
+   {
+    "texto": "No AWS Budgets",
+    "correta": false
+   }
+  ],
+  "explicacao": "A AWS publica quais serviços estão no escopo de cada programa de conformidade, e o AWS Artifact entrega relatórios e certificações sob demanda. A conformidade é uma responsabilidade compartilhada, e o cliente deve conferir se os serviços que usa atendem ao que precisa.",
+  "fonte": "https://aws.amazon.com/compliance/services-in-scope/",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 353,
+  "uid": "3fcafffb",
+  "tipo": "unica",
+  "tema": "Segurança e conformidade",
+  "subtema": "Segurança e identidade",
+  "gabarito": "documentacao",
+  "enunciado": "Qual exemplo descreve criptografia de dados em repouso?",
+  "alternativas": [
+   {
+    "texto": "Um volume do Amazon EBS criptografado com uma chave do AWS KMS",
+    "correta": true
+   },
+   {
+    "texto": "Um navegador conectado a um site por HTTPS",
+    "correta": false
+   },
+   {
+    "texto": "Uma conexão VPN entre o data center e a AWS",
+    "correta": false
+   },
+   {
+    "texto": "Um certificado TLS emitido pelo ACM para um balanceador de carga",
+    "correta": false
+   }
+  ],
+  "explicacao": "Criptografia em repouso protege dados armazenados, como volumes, buckets e bancos, geralmente com chaves do KMS. HTTPS, VPN e certificados TLS protegem dados em trânsito.",
+  "fonte": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 354,
+  "uid": "0af0aa22",
+  "tipo": "unica",
+  "tema": "Segurança e conformidade",
+  "subtema": "Segurança e identidade",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa quer usar um firewall ou outro produto de segurança de um fornecedor terceiro dentro do seu ambiente na AWS. Onde ela pode encontrar e contratar esse tipo de produto?",
+  "alternativas": [
+   {
+    "texto": "AWS Marketplace",
+    "correta": true
+   },
+   {
+    "texto": "AWS Artifact",
+    "correta": false
+   },
+   {
+    "texto": "AWS Budgets",
+    "correta": false
+   },
+   {
+    "texto": "AWS Health Dashboard",
+    "correta": false
+   }
+  ],
+  "explicacao": "O AWS Marketplace oferece produtos de segurança de terceiros que podem ser contratados e implantados na AWS, com a cobrança integrada à fatura da AWS.",
+  "fonte": "https://docs.aws.amazon.com/marketplace/latest/buyerguide/what-is-marketplace.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 355,
+  "uid": "7bbcb6b8",
+  "tipo": "unica",
+  "tema": "Segurança e conformidade",
+  "subtema": "Responsabilidade compartilhada",
+  "gabarito": "documentacao",
+  "enunciado": "Em qual das opções o cliente tem a MENOR responsabilidade pelo gerenciamento do sistema operacional e da plataforma de execução?",
+  "alternativas": [
+   {
+    "texto": "AWS Lambda",
+    "correta": true
+   },
+   {
+    "texto": "Amazon EC2",
+    "correta": false
+   },
+   {
+    "texto": "Servidores em um data center próprio",
+    "correta": false
+   },
+   {
+    "texto": "Amazon EC2 com uma AMI personalizada",
+    "correta": false
+   }
+  ],
+  "explicacao": "A responsabilidade do cliente muda conforme o serviço. No EC2 o cliente gerencia o sistema operacional. No Lambda, a AWS gerencia servidores, sistema operacional e plataforma, e o cliente cuida do código e das permissões. Em data center próprio, tudo é do cliente.",
+  "fonte": "https://aws.amazon.com/compliance/shared-responsibility-model/",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 356,
+  "uid": "d11ffff0",
+  "tipo": "unica",
+  "tema": "Segurança e conformidade",
+  "subtema": "Segurança e identidade",
+  "gabarito": "documentacao",
+  "enunciado": "Qual recurso do IAM ajuda a identificar usuários com credenciais ou senhas que não são usadas há muito tempo, listando o status das credenciais de todos os usuários da conta?",
+  "alternativas": [
+   {
+    "texto": "O relatório de credenciais do IAM",
+    "correta": true
+   },
+   {
+    "texto": "O AWS Cost and Usage Reports",
+    "correta": false
+   },
+   {
+    "texto": "O Amazon Route 53",
+    "correta": false
+   },
+   {
+    "texto": "A Calculadora de Preços da AWS",
+    "correta": false
+   }
+  ],
+  "explicacao": "O relatório de credenciais do IAM lista todos os usuários da conta e o status das suas credenciais, como senhas, chaves de acesso e MFA, e ajuda em auditorias e na limpeza de credenciais antigas.",
+  "fonte": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_getting-report.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 357,
+  "uid": "2d4b584f",
+  "tipo": "unica",
+  "tema": "Segurança e conformidade",
+  "subtema": "Segurança e identidade",
+  "gabarito": "documentacao",
+  "enunciado": "Qual serviço da AWS monitora continuamente as contas e as cargas de trabalho em busca de atividades maliciosas e comportamentos não autorizados, usando machine learning e inteligência de ameaças?",
+  "alternativas": [
+   {
+    "texto": "Amazon GuardDuty",
+    "correta": true
+   },
+   {
+    "texto": "Amazon Inspector",
+    "correta": false
+   },
+   {
+    "texto": "AWS Artifact",
+    "correta": false
+   },
+   {
+    "texto": "AWS Certificate Manager (ACM)",
+    "correta": false
+   }
+  ],
+  "explicacao": "O GuardDuty é um serviço de detecção de ameaças: analisa fontes como logs do CloudTrail e de DNS e tráfego de rede para identificar atividade suspeita. O Inspector procura vulnerabilidades em instâncias, funções e imagens de contêiner.",
+  "fonte": "https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 358,
+  "uid": "05265673",
+  "tipo": "unica",
+  "tema": "Segurança e conformidade",
+  "subtema": "Segurança e identidade",
+  "gabarito": "documentacao",
+  "enunciado": "Qual é a diferença entre o AWS Shield Standard e o AWS Shield Advanced?",
+  "alternativas": [
+   {
+    "texto": "O Standard protege todos os clientes automaticamente, sem custo adicional. O Advanced é pago e oferece proteção ampliada contra DDoS",
+    "correta": true
+   },
+   {
+    "texto": "O Standard é pago e o Advanced é gratuito para todos os clientes",
+    "correta": false
+   },
+   {
+    "texto": "O Standard protege contra injeção de SQL e o Advanced protege contra malware",
+    "correta": false
+   },
+   {
+    "texto": "Os dois exigem a instalação de um agente em cada instância",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Shield Standard protege automaticamente todos os clientes contra os ataques DDoS mais comuns nas camadas de rede e transporte, sem custo extra. O Shield Advanced é um serviço pago com proteção ampliada. Injeção de SQL é tratada pelo AWS WAF.",
+  "fonte": "https://docs.aws.amazon.com/waf/latest/developerguide/shield-chapter.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 359,
+  "uid": "c1d3f12d",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Monitoramento e gerenciamento",
+  "gabarito": "documentacao",
+  "enunciado": "Uma equipe de desenvolvimento quer chamar serviços da AWS a partir do código de uma aplicação escrita em Python, sem montar manualmente as chamadas de API. O que ela deve usar?",
+  "alternativas": [
+   {
+    "texto": "O AWS SDK para Python",
+    "correta": true
+   },
+   {
+    "texto": "O Console de Gerenciamento da AWS",
+    "correta": false
+   },
+   {
+    "texto": "O AWS Artifact",
+    "correta": false
+   },
+   {
+    "texto": "A Calculadora de Preços da AWS",
+    "correta": false
+   }
+  ],
+  "explicacao": "Os SDKs da AWS oferecem bibliotecas para várias linguagens e facilitam o acesso programático aos serviços (assinatura das requisições, tratamento de erros, novas tentativas). O console é uma interface gráfica, e a CLI é usada no terminal.",
+  "fonte": "https://docs.aws.amazon.com/sdkref/latest/guide/overview.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 360,
+  "uid": "a0a3e77e",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Monitoramento e gerenciamento",
+  "gabarito": "documentacao",
+  "enunciado": "Uma equipe precisa criar o mesmo ambiente de forma idêntica e repetida em vários ambientes (desenvolvimento, teste e produção). Qual método de implantação é o mais indicado?",
+  "alternativas": [
+   {
+    "texto": "Infraestrutura como código, por exemplo com o AWS CloudFormation",
+    "correta": true
+   },
+   {
+    "texto": "Criar cada recurso manualmente no Console de Gerenciamento da AWS",
+    "correta": false
+   },
+   {
+    "texto": "Pedir a cada desenvolvedor que configure os recursos como preferir",
+    "correta": false
+   },
+   {
+    "texto": "Usar o AWS Artifact para copiar os recursos",
+    "correta": false
+   }
+  ],
+  "explicacao": "O console serve bem para operações pontuais e para explorar. Para processos repetíveis e consistentes, a infraestrutura como código (IaC) é a melhor opção, porque os mesmos modelos criam ambientes idênticos e reduzem erros manuais.",
+  "fonte": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 361,
+  "uid": "819387b0",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Conceitos de nuvem e Well-Architected",
+  "gabarito": "documentacao",
+  "enunciado": "Uma startup executa todas as suas aplicações na AWS e não mantém nenhuma infraestrutura própria. Qual modelo de implantação ela adota?",
+  "alternativas": [
+   {
+    "texto": "Nuvem (cloud-based)",
+    "correta": true
+   },
+   {
+    "texto": "Híbrido",
+    "correta": false
+   },
+   {
+    "texto": "On-premises",
+    "correta": false
+   },
+   {
+    "texto": "Colocation sem uso de nuvem",
+    "correta": false
+   }
+  ],
+  "explicacao": "Na implantação em nuvem, todos os componentes da aplicação rodam na nuvem. Na híbrida, parte da infraestrutura fica on-premises e se conecta à nuvem. Na on-premises, toda a infraestrutura fica no data center da empresa.",
+  "fonte": "https://aws.amazon.com/types-of-cloud-computing/",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 362,
+  "uid": "0d1520ac",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Conceitos de nuvem e Well-Architected",
+  "gabarito": "documentacao",
+  "enunciado": "Em relação às Zonas de Disponibilidade de uma Região da AWS, qual afirmação é verdadeira?",
+  "alternativas": [
+   {
+    "texto": "Elas não compartilham pontos únicos de falha, pois cada uma tem energia, rede e conectividade independentes",
+    "correta": true
+   },
+   {
+    "texto": "Todas as Zonas de uma Região usam a mesma fonte de energia",
+    "correta": false
+   },
+   {
+    "texto": "Uma Zona de Disponibilidade é um único servidor físico",
+    "correta": false
+   },
+   {
+    "texto": "Uma Região tem sempre uma única Zona de Disponibilidade",
+    "correta": false
+   }
+  ],
+  "explicacao": "As Zonas de Disponibilidade são locais separados e isolados dentro de uma Região, com um ou mais data centers, projetados para que uma falha em uma Zona não afete as outras. Uma Região tem várias Zonas.",
+  "fonte": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 363,
+  "uid": "9d3a79a5",
+  "tipo": "multipla",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Conceitos de nuvem e Well-Architected",
+  "gabarito": "documentacao",
+  "enunciado": "Quais são motivos válidos para usar várias Regiões da AWS? (Selecione DOIS.)",
+  "alternativas": [
+   {
+    "texto": "Recuperação de desastres e continuidade de negócios",
+    "correta": true
+   },
+   {
+    "texto": "Atender usuários em outros continentes com baixa latência",
+    "correta": true
+   },
+   {
+    "texto": "Eliminar a necessidade de fazer backups",
+    "correta": false
+   },
+   {
+    "texto": "Reduzir o número de contas da AWS",
+    "correta": false
+   },
+   {
+    "texto": "Isentar a empresa de qualquer cobrança de transferência de dados",
+    "correta": false
+   }
+  ],
+  "explicacao": "Várias Regiões ajudam na recuperação de desastres e continuidade de negócios, na baixa latência para usuários em locais distantes e em requisitos de soberania de dados. Elas não substituem backups, não reduzem contas e não isentam cobranças de transferência.",
+  "fonte": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 364,
+  "uid": "9d013020",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Conceitos de nuvem e Well-Architected",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa precisa manter os dados de seus clientes dentro de um país específico, por exigência legal (soberania de dados). O que ela deve fazer ao usar a AWS?",
+  "alternativas": [
+   {
+    "texto": "Escolher uma Região localizada nesse país e não replicar os dados para Regiões de outros países",
+    "correta": true
+   },
+   {
+    "texto": "Usar qualquer Região, pois a AWS escolhe automaticamente onde guardar os dados",
+    "correta": false
+   },
+   {
+    "texto": "Armazenar os dados somente em locais da borda do CloudFront",
+    "correta": false
+   },
+   {
+    "texto": "Replicar os dados para todas as Regiões para garantir a conformidade",
+    "correta": false
+   }
+  ],
+  "explicacao": "A escolha da Região define onde os dados ficam. Para atender a exigências de localização de dados, o cliente escolhe uma Região no país exigido e controla se e para onde replica os dados. Locais da borda servem para cache de conteúdo, não para armazenamento primário.",
+  "fonte": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 365,
+  "uid": "11e3a6c9",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Redes e entrega de conteúdo",
+  "gabarito": "documentacao",
+  "enunciado": "Instâncias em uma sub-rede privada precisam baixar atualizações da internet, mas não devem receber conexões iniciadas pela internet. Qual componente da VPC atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "Gateway NAT",
+    "correta": true
+   },
+   {
+    "texto": "Gateway da internet ligado diretamente às instâncias",
+    "correta": false
+   },
+   {
+    "texto": "Lista de controle de acesso à rede (ACL de rede)",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Route 53",
+    "correta": false
+   }
+  ],
+  "explicacao": "O gateway NAT permite que instâncias de sub-rede privada se conectem a serviços fora da VPC, mas impede que serviços externos iniciem conexões com elas. O gateway NAT público fica em uma sub-rede pública e usa um endereço IP elástico.",
+  "fonte": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 366,
+  "uid": "518fc5dc",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Redes e entrega de conteúdo",
+  "gabarito": "documentacao",
+  "enunciado": "Qual componente da VPC permite a comunicação entre os recursos de uma sub-rede pública e a internet?",
+  "alternativas": [
+   {
+    "texto": "Gateway da internet",
+    "correta": true
+   },
+   {
+    "texto": "Gateway privado virtual",
+    "correta": false
+   },
+   {
+    "texto": "Grupo de segurança",
+    "correta": false
+   },
+   {
+    "texto": "AWS Direct Connect",
+    "correta": false
+   }
+  ],
+  "explicacao": "O gateway da internet é o componente que permite a comunicação entre a VPC e a internet. Uma sub-rede é pública quando sua tabela de rotas tem uma rota para o gateway da internet.",
+  "fonte": "https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 367,
+  "uid": "008430f8",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Redes e entrega de conteúdo",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa quer que o Amazon Route 53 envie os usuários para uma Região secundária se a aplicação na Região principal ficar indisponível. Qual recurso atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "Roteamento de failover com verificações de integridade",
+    "correta": true
+   },
+   {
+    "texto": "Uma regra do AWS WAF",
+    "correta": false
+   },
+   {
+    "texto": "Um grupo do Auto Scaling",
+    "correta": false
+   },
+   {
+    "texto": "Um volume do Amazon EBS",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Route 53 monitora a integridade dos recursos com verificações de integridade (health checks) e, com a política de roteamento de failover, direciona o tráfego para o recurso secundário quando o principal falha.",
+  "fonte": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 368,
+  "uid": "bf6a6091",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Redes e entrega de conteúdo",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa quer melhorar a disponibilidade e o desempenho de uma aplicação para usuários no mundo todo, direcionando o tráfego pela rede global da AWS por meio de endereços IP estáticos de entrada. Qual serviço atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "AWS Global Accelerator",
+    "correta": true
+   },
+   {
+    "texto": "AWS Site-to-Site VPN",
+    "correta": false
+   },
+   {
+    "texto": "Gateway NAT",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Route 53 apenas para registro de domínios",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Global Accelerator fornece endereços IP estáticos de entrada e direciona o tráfego dos usuários pela rede global da AWS até o ponto de extremidade saudável mais próximo, o que melhora a disponibilidade e o desempenho.",
+  "fonte": "https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 369,
+  "uid": "4a54d146",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Armazenamento",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa guarda no Amazon S3 dados cujo padrão de acesso é desconhecido ou muda com o tempo, e quer reduzir o custo automaticamente, sem taxas de recuperação. Qual classe de armazenamento atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "S3 Intelligent-Tiering",
+    "correta": true
+   },
+   {
+    "texto": "S3 Glacier Deep Archive",
+    "correta": false
+   },
+   {
+    "texto": "S3 One Zone-IA",
+    "correta": false
+   },
+   {
+    "texto": "S3 Express One Zone",
+    "correta": false
+   }
+  ],
+  "explicacao": "O S3 Intelligent-Tiering monitora o acesso e move os objetos automaticamente entre camadas de acesso para reduzir o custo, sem taxas de recuperação. Há uma pequena taxa mensal de monitoramento e automação por objeto.",
+  "fonte": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 370,
+  "uid": "c15b1e9d",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Armazenamento",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa quer guardar no Amazon S3 dados que podem ser recriados e que são pouco acessados, a um custo menor que o S3 Standard-IA, aceitando que os dados fiquem em uma única Zona de Disponibilidade. Qual classe atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "S3 One Zone-IA",
+    "correta": true
+   },
+   {
+    "texto": "S3 Standard",
+    "correta": false
+   },
+   {
+    "texto": "S3 Standard-IA",
+    "correta": false
+   },
+   {
+    "texto": "S3 Glacier Deep Archive",
+    "correta": false
+   }
+  ],
+  "explicacao": "O S3 One Zone-IA guarda os dados em uma única Zona de Disponibilidade e custa menos que o Standard-IA, mas não é resiliente à perda dessa Zona. Por isso serve para dados que podem ser recriados.",
+  "fonte": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 371,
+  "uid": "e3084cbd",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Armazenamento",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa precisa arquivar dados por muitos anos, que raramente ou quase nunca serão acessados, e aceita esperar horas para recuperá-los, buscando o menor custo possível. Qual classe de armazenamento do S3 atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "S3 Glacier Deep Archive",
+    "correta": true
+   },
+   {
+    "texto": "S3 Standard",
+    "correta": false
+   },
+   {
+    "texto": "S3 Intelligent-Tiering",
+    "correta": false
+   },
+   {
+    "texto": "S3 Glacier Instant Retrieval",
+    "correta": false
+   }
+  ],
+  "explicacao": "O S3 Glacier Deep Archive é voltado para dados acessados menos de uma vez por ano, com recuperação em horas e a duração mínima de armazenamento de 180 dias. Os objetos precisam ser restaurados antes do acesso.",
+  "fonte": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 372,
+  "uid": "0a689076",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Armazenamento",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa guarda arquivos de longa duração que são acessados cerca de uma vez por trimestre, mas que precisam estar disponíveis em milissegundos quando solicitados. Qual classe de armazenamento do S3 é a mais indicada?",
+  "alternativas": [
+   {
+    "texto": "S3 Glacier Instant Retrieval",
+    "correta": true
+   },
+   {
+    "texto": "S3 Glacier Flexible Retrieval",
+    "correta": false
+   },
+   {
+    "texto": "S3 Glacier Deep Archive",
+    "correta": false
+   },
+   {
+    "texto": "S3 Express One Zone",
+    "correta": false
+   }
+  ],
+  "explicacao": "O S3 Glacier Instant Retrieval serve para dados de longa duração, raramente acessados (cerca de uma vez por trimestre), com recuperação em milissegundos. No Flexible Retrieval a recuperação leva de minutos a horas, e no Deep Archive, de horas.",
+  "fonte": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 373,
+  "uid": "d5897281",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Analytics e dados",
+  "gabarito": "documentacao",
+  "enunciado": "Uma equipe quer consultar, com SQL padrão, dados que estão armazenados no Amazon S3, sem provisionar nem gerenciar servidores. Qual serviço atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "Amazon Athena",
+    "correta": true
+   },
+   {
+    "texto": "Amazon ElastiCache",
+    "correta": false
+   },
+   {
+    "texto": "AWS Backup",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Polly",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Amazon Athena é um serviço de consultas interativas sem servidor: analisa dados no S3 com SQL padrão e você paga pelas consultas executadas.",
+  "fonte": "https://docs.aws.amazon.com/athena/latest/ug/what-is.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 374,
+  "uid": "8bb41d12",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "IA e machine learning",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa quer extrair automaticamente texto, formulários e tabelas de documentos digitalizados, como faturas e contratos. Qual serviço da AWS atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "Amazon Textract",
+    "correta": true
+   },
+   {
+    "texto": "Amazon Polly",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Lex",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Personalize",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Amazon Textract usa machine learning para extrair texto impresso e manuscrito, formulários e tabelas de documentos digitalizados. O Polly converte texto em fala, o Lex cria chatbots e o Personalize faz recomendações.",
+  "fonte": "https://docs.aws.amazon.com/textract/latest/dg/what-is.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 375,
+  "uid": "03d5c6c5",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "IA e machine learning",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa de comércio eletrônico quer traduzir automaticamente as descrições dos produtos para vários idiomas. Qual serviço da AWS atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "Amazon Translate",
+    "correta": true
+   },
+   {
+    "texto": "Amazon Transcribe",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Rekognition",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Textract",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Amazon Translate traduz texto entre idiomas usando machine learning. O Transcribe converte fala em texto, o Rekognition analisa imagens e vídeos e o Textract extrai texto de documentos.",
+  "fonte": "https://docs.aws.amazon.com/translate/latest/dg/what-is.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 376,
+  "uid": "4b65db25",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Analytics e dados",
+  "gabarito": "documentacao",
+  "enunciado": "Uma equipe precisa processar grandes volumes de dados com frameworks de big data, como Apache Spark e Hadoop, sem montar e gerenciar o próprio cluster. Qual serviço da AWS atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "Amazon EMR",
+    "correta": true
+   },
+   {
+    "texto": "Amazon SES",
+    "correta": false
+   },
+   {
+    "texto": "AWS Shield",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Lightsail",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Amazon EMR executa frameworks de big data, como Spark e Hadoop, em clusters gerenciados, para processar e analisar grandes volumes de dados.",
+  "fonte": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-what-is-emr.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 377,
+  "uid": "fab6eee6",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Aplicações, IoT e outros",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa quer que os funcionários acessem aplicações web internas e aplicações SaaS por meio de um navegador seguro e gerenciado, sem armazenar dados nos dispositivos dos usuários. Qual serviço atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "Amazon WorkSpaces Secure Browser",
+    "correta": true
+   },
+   {
+    "texto": "Amazon Connect",
+    "correta": false
+   },
+   {
+    "texto": "AWS Amplify",
+    "correta": false
+   },
+   {
+    "texto": "AWS IoT Core",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Amazon WorkSpaces Secure Browser é um serviço de computação do usuário final que entrega um navegador gerenciado, para acessar aplicações web e SaaS com segurança, mantendo os dados fora dos dispositivos locais. O WorkSpaces entrega desktops completos e o AppStream 2.0 transmite aplicações.",
+  "fonte": "https://docs.aws.amazon.com/workspaces-web/latest/adminguide/what-is-workspaces-web.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 378,
+  "uid": "6a900cbf",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Monitoramento e gerenciamento",
+  "gabarito": "documentacao",
+  "enunciado": "Uma aplicação gera pedidos que precisam ser processados por outro componente, no ritmo dele, sem perder mensagens caso o processamento fique lento. Qual serviço da AWS fornece uma fila de mensagens gerenciada para isso?",
+  "alternativas": [
+   {
+    "texto": "Amazon Simple Queue Service (Amazon SQS)",
+    "correta": true
+   },
+   {
+    "texto": "Amazon Simple Notification Service (Amazon SNS)",
+    "correta": false
+   },
+   {
+    "texto": "AWS Shield",
+    "correta": false
+   },
+   {
+    "texto": "Amazon CloudFront",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Amazon SQS é um serviço de filas de mensagens totalmente gerenciado: as mensagens ficam na fila até que o consumidor as processe, o que desacopla os componentes. O SNS entrega a mesma mensagem a vários assinantes.",
+  "fonte": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 379,
+  "uid": "f30a728f",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Migração e transferência",
+  "gabarito": "documentacao",
+  "enunciado": "Antes de migrar, uma empresa precisa descobrir quais servidores existem no data center, como são usados e quais dependências há entre eles. Qual serviço da AWS ajuda a coletar essas informações?",
+  "alternativas": [
+   {
+    "texto": "AWS Application Discovery Service",
+    "correta": true
+   },
+   {
+    "texto": "AWS DataSync",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Route 53",
+    "correta": false
+   },
+   {
+    "texto": "AWS Budgets",
+    "correta": false
+   }
+  ],
+  "explicacao": "O AWS Application Discovery Service coleta dados de configuração, uso e desempenho dos servidores on-premises e o mapeamento das dependências entre eles, o que ajuda a planejar a migração. O DataSync transfere dados.",
+  "fonte": "https://docs.aws.amazon.com/application-discovery/latest/userguide/what-is-appdiscovery.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 380,
+  "uid": "67758d4c",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Migração e transferência",
+  "gabarito": "documentacao",
+  "enunciado": "Quais informações o AWS Application Discovery Service coleta sobre os servidores on-premises para apoiar o planejamento de uma migração?",
+  "alternativas": [
+   {
+    "texto": "Configuração, dados de utilização e dependências de rede entre os servidores",
+    "correta": true
+   },
+   {
+    "texto": "Somente o custo mensal de energia elétrica do data center",
+    "correta": false
+   },
+   {
+    "texto": "O código-fonte das aplicações",
+    "correta": false
+   },
+   {
+    "texto": "As senhas dos usuários do sistema operacional",
+    "correta": false
+   }
+  ],
+  "explicacao": "O serviço coleta informações de configuração, uso e desempenho dos servidores e mapeia as conexões entre eles, e os dados são usados para agrupar aplicações e estimar custos antes da migração.",
+  "fonte": "https://docs.aws.amazon.com/application-discovery/latest/userguide/what-is-appdiscovery.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 381,
+  "uid": "6946f7c7",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Analytics e dados",
+  "gabarito": "documentacao",
+  "enunciado": "Um analista faz consultas ocasionais em arquivos de log armazenados no Amazon S3 e não quer manter um cluster ou data warehouse sempre ligado. Qual serviço é o mais indicado?",
+  "alternativas": [
+   {
+    "texto": "Amazon Athena",
+    "correta": true
+   },
+   {
+    "texto": "Amazon Redshift com um cluster dedicado",
+    "correta": false
+   },
+   {
+    "texto": "Amazon ElastiCache",
+    "correta": false
+   },
+   {
+    "texto": "AWS Direct Connect",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Athena consulta os dados diretamente no S3 com SQL, sem servidores para gerenciar, e você paga pelas consultas executadas. O Redshift é um data warehouse para análises mais intensas e contínuas.",
+  "fonte": "https://docs.aws.amazon.com/athena/latest/ug/what-is.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 382,
+  "uid": "fd5486a1",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Analytics e dados",
+  "gabarito": "documentacao",
+  "enunciado": "Uma equipe de dados quer controle sobre frameworks de big data, como Apache Spark e Hadoop, e sobre o ambiente do cluster que os executa. Qual serviço da AWS atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "Amazon EMR",
+    "correta": true
+   },
+   {
+    "texto": "Amazon QuickSight",
+    "correta": false
+   },
+   {
+    "texto": "AWS CloudTrail",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Polly",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Amazon EMR executa frameworks de big data, como Spark e Hadoop, em clusters gerenciados, e permite configurar o ambiente. O AWS Glue é voltado a ETL sem servidor, e o QuickSight é de visualização.",
+  "fonte": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-what-is-emr.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 383,
+  "uid": "21a33f6a",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Analytics e dados",
+  "gabarito": "documentacao",
+  "enunciado": "Qual componente do AWS Glue guarda metadados sobre as fontes de dados e as tabelas, para que outros serviços de análise possam descobrir e consultar os dados?",
+  "alternativas": [
+   {
+    "texto": "AWS Glue Data Catalog",
+    "correta": true
+   },
+   {
+    "texto": "AWS Glue Direct Connect",
+    "correta": false
+   },
+   {
+    "texto": "AWS Glue Shield",
+    "correta": false
+   },
+   {
+    "texto": "AWS Glue Marketplace",
+    "correta": false
+   }
+  ],
+  "explicacao": "O AWS Glue Data Catalog é um repositório central de metadados (esquemas e tabelas), usado por serviços como o Athena e o Redshift para localizar e consultar dados. Os demais nomes não existem.",
+  "fonte": "https://docs.aws.amazon.com/glue/latest/dg/catalog-and-crawler.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 384,
+  "uid": "47fa0f86",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Analytics e dados",
+  "gabarito": "documentacao",
+  "enunciado": "Uma equipe de negócios quer criar painéis interativos e visualizações a partir de dados armazenados no Amazon S3, no Athena e no Redshift, sem gerenciar servidores. Qual serviço atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "Amazon QuickSight (Amazon Quick)",
+    "correta": true
+   },
+   {
+    "texto": "Amazon Kinesis Data Streams",
+    "correta": false
+   },
+   {
+    "texto": "AWS Glue",
+    "correta": false
+   },
+   {
+    "texto": "AWS Transfer Family",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Amazon QuickSight (hoje parte do Amazon Quick) é o serviço de business intelligence da AWS: cria painéis interativos e visualizações a partir de várias fontes de dados.",
+  "fonte": "https://docs.aws.amazon.com/quicksight/latest/user/welcome.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 385,
+  "uid": "42843b2e",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Analytics e dados",
+  "gabarito": "documentacao",
+  "enunciado": "Qual serviço da AWS é um data warehouse em escala de petabytes, voltado para consultas analíticas complexas e business intelligence?",
+  "alternativas": [
+   {
+    "texto": "Amazon Redshift",
+    "correta": true
+   },
+   {
+    "texto": "Amazon DynamoDB",
+    "correta": false
+   },
+   {
+    "texto": "Amazon ElastiCache",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Neptune",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Amazon Redshift é um data warehouse gerenciado, otimizado para consultas analíticas em grandes volumes de dados. O DynamoDB é um banco NoSQL transacional, o ElastiCache é um cache em memória e o Neptune é um banco de grafos.",
+  "fonte": "https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 386,
+  "uid": "aefcb15b",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Monitoramento e gerenciamento",
+  "gabarito": "documentacao",
+  "enunciado": "Uma equipe quer executar uma função do AWS Lambda todas as noites, às 2h da manhã, sem manter servidores para agendar a tarefa. Qual serviço pode acionar a função em um horário programado?",
+  "alternativas": [
+   {
+    "texto": "Amazon EventBridge, com uma regra agendada",
+    "correta": true
+   },
+   {
+    "texto": "AWS Shield",
+    "correta": false
+   },
+   {
+    "texto": "AWS Direct Connect",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Macie",
+    "correta": false
+   }
+  ],
+  "explicacao": "O EventBridge permite criar regras agendadas, com expressão de horário, que acionam alvos como funções do Lambda, sem servidores para gerenciar.",
+  "fonte": "https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule-schedule.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 387,
+  "uid": "b13ada59",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Aplicações, IoT e outros",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa quer montar uma central de atendimento com ligações e chat, em minutos, sem comprar hardware de telefonia nem manter servidores. Qual serviço da AWS atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "Amazon Connect",
+    "correta": true
+   },
+   {
+    "texto": "Amazon SES",
+    "correta": false
+   },
+   {
+    "texto": "Amazon WorkSpaces",
+    "correta": false
+   },
+   {
+    "texto": "AWS Amplify",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Amazon Connect é uma central de atendimento omnichannel na nuvem, com voz e chat, roteamento de contatos e analytics, sem infraestrutura de telefonia própria. O SES envia e-mails.",
+  "fonte": "https://docs.aws.amazon.com/connect/latest/adminguide/what-is-amazon-connect.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 388,
+  "uid": "b88045c7",
+  "tipo": "multipla",
+  "tema": "Cobrança e suporte",
+  "subtema": "Preços, custos e suporte",
+  "gabarito": "documentacao",
+  "enunciado": "Que tipos de orçamento o AWS Budgets permite criar? (Selecione DOIS.)",
+  "alternativas": [
+   {
+    "texto": "Orçamento de custo",
+    "correta": true
+   },
+   {
+    "texto": "Orçamento de uso",
+    "correta": true
+   },
+   {
+    "texto": "Orçamento de latência de rede",
+    "correta": false
+   },
+   {
+    "texto": "Orçamento de nível de segurança",
+    "correta": false
+   },
+   {
+    "texto": "Orçamento de número de usuários do IAM",
+    "correta": false
+   }
+  ],
+  "explicacao": "O AWS Budgets permite definir orçamentos de custo, de uso e também de utilização e cobertura de instâncias reservadas e Savings Plans, com alertas quando o valor real ou previsto passa de um limite.",
+  "fonte": "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 389,
+  "uid": "b3f63dcf",
+  "tipo": "unica",
+  "tema": "Cobrança e suporte",
+  "subtema": "Preços, custos e suporte",
+  "gabarito": "documentacao",
+  "enunciado": "Uma equipe financeira quer analisar os dados detalhados do AWS Cost and Usage Reports usando consultas SQL. Qual serviço pode ser usado para consultar esses relatórios entregues no Amazon S3?",
+  "alternativas": [
+   {
+    "texto": "Amazon Athena",
+    "correta": true
+   },
+   {
+    "texto": "Amazon Route 53",
+    "correta": false
+   },
+   {
+    "texto": "AWS WAF",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Lightsail",
+    "correta": false
+   }
+  ],
+  "explicacao": "Os relatórios do CUR são entregues em um bucket do S3, e o Amazon Athena permite consultá-los com SQL sem carregar os dados em outro banco.",
+  "fonte": "https://docs.aws.amazon.com/cur/latest/userguide/cur-query-athena.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 390,
+  "uid": "1fd7008a",
+  "tipo": "unica",
+  "tema": "Cobrança e suporte",
+  "subtema": "Preços, custos e suporte",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa quer visualizar em gráficos os custos e o uso dos últimos meses, filtrar por serviço ou por tag e ver uma previsão dos gastos futuros. Qual ferramenta atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "AWS Cost Explorer",
+    "correta": true
+   },
+   {
+    "texto": "AWS Artifact",
+    "correta": false
+   },
+   {
+    "texto": "AWS Health Dashboard",
+    "correta": false
+   },
+   {
+    "texto": "AWS Config",
+    "correta": false
+   }
+  ],
+  "explicacao": "O AWS Cost Explorer permite visualizar e analisar custos e uso ao longo do tempo, com filtros por serviço, conta ou tags, e inclui previsões. O Budgets, por sua vez, alerta quando um limite é ultrapassado.",
+  "fonte": "https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 391,
+  "uid": "c53acd13",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Monitoramento e gerenciamento",
+  "gabarito": "documentacao",
+  "enunciado": "Um administrador quer criar recursos da AWS pelo terminal e automatizar tarefas repetitivas com scripts. Qual ferramenta atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "AWS Command Line Interface (AWS CLI)",
+    "correta": true
+   },
+   {
+    "texto": "AWS Artifact",
+    "correta": false
+   },
+   {
+    "texto": "Calculadora de Preços da AWS",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Polly",
+    "correta": false
+   }
+  ],
+  "explicacao": "A AWS CLI permite gerenciar os serviços da AWS por comandos no terminal e automatizar tarefas com scripts. Ela usa as mesmas APIs que o console e os SDKs.",
+  "fonte": "https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 392,
+  "uid": "0b63ce22",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Aplicações, IoT e outros",
+  "gabarito": "documentacao",
+  "enunciado": "Em um pipeline do AWS CodePipeline, qual serviço da AWS pode ser adicionado como etapa para compilar o código e executar os testes?",
+  "alternativas": [
+   {
+    "texto": "AWS CodeBuild",
+    "correta": true
+   },
+   {
+    "texto": "AWS Shield",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Macie",
+    "correta": false
+   },
+   {
+    "texto": "AWS Artifact",
+    "correta": false
+   }
+  ],
+  "explicacao": "O CodePipeline orquestra as etapas do fluxo de entrega, e o CodeBuild pode ser incluído como etapa de build ou de teste, para compilar o código e gerar artefatos.",
+  "fonte": "https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 393,
+  "uid": "7b59faae",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Aplicações, IoT e outros",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa quer que os usuários usem um aplicativo de desktop pesado, como um software de design (CAD), direto no navegador, sem instalá-lo nos computadores. Qual serviço atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "Amazon AppStream 2.0",
+    "correta": true
+   },
+   {
+    "texto": "AWS Amplify",
+    "correta": false
+   },
+   {
+    "texto": "AWS IoT Core",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Connect",
+    "correta": false
+   }
+  ],
+  "explicacao": "O AppStream 2.0 transmite aplicações de desktop para o navegador dos usuários, de forma segura, sem instalação nos dispositivos. O WorkSpaces entrega um desktop completo.",
+  "fonte": "https://docs.aws.amazon.com/appstream2/latest/developerguide/what-is-appstream.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 394,
+  "uid": "313ef3a7",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Aplicações, IoT e outros",
+  "gabarito": "documentacao",
+  "enunciado": "Uma equipe quer hospedar uma aplicação web front-end e implantar as alterações de código automaticamente, com o mínimo de configuração de infraestrutura. Qual serviço atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "AWS Amplify",
+    "correta": true
+   },
+   {
+    "texto": "AWS Direct Connect",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Redshift",
+    "correta": false
+   },
+   {
+    "texto": "AWS Batch",
+    "correta": false
+   }
+  ],
+  "explicacao": "O AWS Amplify ajuda a criar e a hospedar aplicações web e mobile, com implantação contínua a cada alteração de código.",
+  "fonte": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 395,
+  "uid": "f6987b5a",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Aplicações, IoT e outros",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa tem milhares de sensores que precisam enviar mensagens à nuvem de forma segura, usando protocolos leves como o MQTT. Qual serviço da AWS atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "AWS IoT Core",
+    "correta": true
+   },
+   {
+    "texto": "Amazon Polly",
+    "correta": false
+   },
+   {
+    "texto": "AWS Backup",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Lightsail",
+    "correta": false
+   }
+  ],
+  "explicacao": "O AWS IoT Core conecta dispositivos à nuvem de forma segura, aceita protocolos como o MQTT e roteia as mensagens para outros serviços da AWS.",
+  "fonte": "https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 396,
+  "uid": "c0b31dfe",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "IA e machine learning",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa quer analisar milhares de avaliações de produtos para identificar o idioma, as entidades citadas e o sentimento (positivo ou negativo) de cada texto. Qual serviço atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "Amazon Comprehend",
+    "correta": true
+   },
+   {
+    "texto": "Amazon Rekognition",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Polly",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Transcribe",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Comprehend usa processamento de linguagem natural para detectar idioma, entidades, frases-chave e sentimento em textos. O Rekognition analisa imagens e vídeos.",
+  "fonte": "https://docs.aws.amazon.com/comprehend/latest/dg/what-is.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 397,
+  "uid": "bf26ca9f",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "IA e machine learning",
+  "gabarito": "documentacao",
+  "enunciado": "Quais tecnologias o Amazon Lex usa para criar interfaces de conversação, como chatbots por voz e por texto?",
+  "alternativas": [
+   {
+    "texto": "Reconhecimento automático de fala e compreensão de linguagem natural",
+    "correta": true
+   },
+   {
+    "texto": "Compressão de vídeo e análise de imagens",
+    "correta": false
+   },
+   {
+    "texto": "Replicação de bancos de dados e criptografia",
+    "correta": false
+   },
+   {
+    "texto": "Balanceamento de carga e cache de conteúdo",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Lex combina reconhecimento automático de fala (ASR) e compreensão de linguagem natural (NLU) para entender o que o usuário diz ou escreve e responder em uma conversa.",
+  "fonte": "https://docs.aws.amazon.com/lexv2/latest/dg/what-is.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 398,
+  "uid": "979f0c81",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "IA e machine learning",
+  "gabarito": "documentacao",
+  "enunciado": "Uma seguradora recebe milhares de formulários de sinistro digitalizados e quer capturar automaticamente os campos preenchidos e as tabelas, sem digitar nada. Qual serviço atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "Amazon Textract",
+    "correta": true
+   },
+   {
+    "texto": "Amazon Translate",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Lex",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Personalize",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Textract vai além do reconhecimento simples de texto: identifica campos de formulários e tabelas em documentos digitalizados e extrai os dados com machine learning.",
+  "fonte": "https://docs.aws.amazon.com/textract/latest/dg/what-is.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 399,
+  "uid": "c7cc8abb",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "IA e machine learning",
+  "gabarito": "documentacao",
+  "enunciado": "Uma plataforma de vídeos quer gerar legendas automaticamente a partir do áudio dos vídeos enviados. Qual serviço atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "Amazon Transcribe",
+    "correta": true
+   },
+   {
+    "texto": "Amazon Polly",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Rekognition",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Textract",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Transcribe converte fala em texto, o que permite gerar legendas e transcrições. O Polly faz o contrário, convertendo texto em fala.",
+  "fonte": "https://docs.aws.amazon.com/transcribe/latest/dg/what-is.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 400,
+  "uid": "533a21e4",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "IA e machine learning",
+  "gabarito": "documentacao",
+  "enunciado": "Um aplicativo de mensagens quer traduzir automaticamente as conversas dos usuários entre idiomas diferentes. Qual serviço da AWS atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "Amazon Translate",
+    "correta": true
+   },
+   {
+    "texto": "Amazon Comprehend",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Transcribe",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Polly",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Amazon Translate traduz textos entre idiomas com machine learning e pode ser integrado a aplicações de mensagens. O Comprehend analisa o texto, mas não o traduz.",
+  "fonte": "https://docs.aws.amazon.com/translate/latest/dg/what-is.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 401,
+  "uid": "21afd66f",
+  "tipo": "unica",
+  "tema": "Segurança e conformidade",
+  "subtema": "Governança e conformidade",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa usa licenças de software próprias em várias contas da AWS e quer definir regras de uso (por exemplo, um limite de núcleos de CPU) para evitar violações de licenciamento. Qual serviço atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "AWS License Manager",
+    "correta": true
+   },
+   {
+    "texto": "AWS Budgets",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Inspector",
+    "correta": false
+   },
+   {
+    "texto": "AWS Shield",
+    "correta": false
+   }
+  ],
+  "explicacao": "O License Manager permite criar regras que refletem os termos das licenças, controlar o uso e reduzir o risco de não conformidade, inclusive em várias contas de uma organização.",
+  "fonte": "https://docs.aws.amazon.com/license-manager/latest/userguide/license-manager.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 402,
+  "uid": "38794b95",
+  "tipo": "unica",
+  "tema": "Segurança e conformidade",
+  "subtema": "Governança e conformidade",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa quer que as equipes lancem recursos por conta própria, mas somente a partir de produtos pré-aprovados, baseados em modelos padronizados do AWS CloudFormation. Qual serviço atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "AWS Service Catalog",
+    "correta": true
+   },
+   {
+    "texto": "AWS Artifact",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Macie",
+    "correta": false
+   },
+   {
+    "texto": "AWS Direct Connect",
+    "correta": false
+   }
+  ],
+  "explicacao": "No Service Catalog, administradores organizam produtos aprovados (por exemplo, modelos do CloudFormation) em portfólios, e as equipes os implantam por autoatendimento, com governança e configuração padronizada.",
+  "fonte": "https://docs.aws.amazon.com/servicecatalog/latest/adminguide/introduction.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 403,
+  "uid": "8db66c45",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Monitoramento e gerenciamento",
+  "gabarito": "documentacao",
+  "enunciado": "Um administrador quer aplicar patches e executar comandos em centenas de instâncias do Amazon EC2 de uma só vez, sem acessar cada uma individualmente. Qual serviço atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "AWS Systems Manager",
+    "correta": true
+   },
+   {
+    "texto": "Amazon CloudFront",
+    "correta": false
+   },
+   {
+    "texto": "AWS Artifact",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Rekognition",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Systems Manager oferece gerenciamento operacional centralizado de recursos: aplicar patches, executar comandos e automatizar tarefas em muitas instâncias ao mesmo tempo.",
+  "fonte": "https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 404,
+  "uid": "99eadb9d",
+  "tipo": "unica",
+  "tema": "Conceitos de nuvem",
+  "subtema": "Conceitos de nuvem e Well-Architected",
+  "gabarito": "documentacao",
+  "enunciado": "Qual afirmação sobre o AWS Well-Architected Tool é verdadeira?",
+  "alternativas": [
+   {
+    "texto": "Está disponível no console sem custo e permite revisar as cargas de trabalho respondendo a perguntas por pilar",
+    "correta": true
+   },
+   {
+    "texto": "É um serviço pago que migra automaticamente as cargas de trabalho",
+    "correta": false
+   },
+   {
+    "texto": "Só pode ser usado por clientes do plano Enterprise Support",
+    "correta": false
+   },
+   {
+    "texto": "Cria automaticamente toda a infraestrutura de uma aplicação",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Well-Architected Tool é gratuito, fica no Console de Gerenciamento e ajuda a avaliar as cargas de trabalho em relação às práticas recomendadas dos seis pilares, por meio de perguntas.",
+  "fonte": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/welcome.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 405,
+  "uid": "87e08df3",
+  "tipo": "multipla",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Migração e transferência",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa vai migrar um banco de dados Oracle on-premises para o Amazon Aurora PostgreSQL, um mecanismo diferente. Quais serviços ela deve usar? (Selecione DOIS.)",
+  "alternativas": [
+   {
+    "texto": "AWS Schema Conversion Tool (AWS SCT), para converter o esquema e o código do banco",
+    "correta": true
+   },
+   {
+    "texto": "AWS Database Migration Service (AWS DMS), para migrar os dados",
+    "correta": true
+   },
+   {
+    "texto": "Amazon CloudFront",
+    "correta": false
+   },
+   {
+    "texto": "AWS Shield",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Polly",
+    "correta": false
+   }
+  ],
+  "explicacao": "Em migrações entre mecanismos diferentes (heterogêneas), o SCT converte o esquema e o código do banco de origem para o formato do destino, e o DMS move os dados com o mínimo de inatividade.",
+  "fonte": "https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_Welcome.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 406,
+  "uid": "a6c90c38",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Redes e entrega de conteúdo",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa quer expor suas APIs com autenticação, limitação de requisições (throttling) e cache, sem gerenciar servidores. Qual serviço da AWS atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "Amazon API Gateway",
+    "correta": true
+   },
+   {
+    "texto": "AWS Direct Connect",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Route 53",
+    "correta": false
+   },
+   {
+    "texto": "AWS Backup",
+    "correta": false
+   }
+  ],
+  "explicacao": "O API Gateway é um serviço gerenciado que publica e protege APIs, com recursos como autenticação, controle de taxa de requisições e cache.",
+  "fonte": "https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 407,
+  "uid": "68254d11",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Redes e entrega de conteúdo",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa de jogos online quer melhorar o desempenho do tráfego TCP e UDP dos jogadores no mundo todo, usando a rede global da AWS. Qual serviço atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "AWS Global Accelerator",
+    "correta": true
+   },
+   {
+    "texto": "Amazon CloudFront, que serve apenas para armazenar páginas web em cache",
+    "correta": false
+   },
+   {
+    "texto": "AWS Site-to-Site VPN",
+    "correta": false
+   },
+   {
+    "texto": "Gateway NAT",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Global Accelerator melhora o desempenho de aplicações que usam TCP e UDP, direcionando o tráfego pela rede global da AWS até o endpoint saudável mais próximo. O CloudFront é voltado para entrega e cache de conteúdo HTTP.",
+  "fonte": "https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 408,
+  "uid": "9b1947dc",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Redes e entrega de conteúdo",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa de software quer oferecer seu serviço a clientes em outras VPCs e contas da AWS, de forma privada, sem passar pela internet pública. Qual recurso atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "AWS PrivateLink",
+    "correta": true
+   },
+   {
+    "texto": "Gateway da internet",
+    "correta": false
+   },
+   {
+    "texto": "Amazon CloudFront",
+    "correta": false
+   },
+   {
+    "texto": "AWS Shield",
+    "correta": false
+   }
+  ],
+  "explicacao": "O PrivateLink permite que um serviço seja acessado de forma privada por outras VPCs e contas, mantendo o tráfego na rede da AWS, sem gateway da internet nem NAT.",
+  "fonte": "https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 409,
+  "uid": "a29e7feb",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Redes e entrega de conteúdo",
+  "gabarito": "documentacao",
+  "enunciado": "Qual topologia de rede o AWS Transit Gateway permite, em vez de muitas conexões de peering entre cada par de VPCs?",
+  "alternativas": [
+   {
+    "texto": "Hub e spoke, com o Transit Gateway como ponto central de conexão",
+    "correta": true
+   },
+   {
+    "texto": "Uma malha completa, com uma conexão direta entre cada par de redes",
+    "correta": false
+   },
+   {
+    "texto": "Uma única VPC gigante para todas as contas",
+    "correta": false
+   },
+   {
+    "texto": "Uma conexão exclusiva por internet pública",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Transit Gateway funciona como um hub central ao qual VPCs e redes on-premises se conectam (spokes), o que simplifica a topologia e o roteamento em comparação com a malha de peering.",
+  "fonte": "https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 410,
+  "uid": "624cf6df",
+  "tipo": "unica",
+  "tema": "Segurança e conformidade",
+  "subtema": "Segurança e identidade",
+  "gabarito": "documentacao",
+  "enunciado": "Uma equipe de segurança quer analisar e correlacionar logs do AWS CloudTrail, VPC Flow Logs e achados do GuardDuty em um grafo interativo, para investigar a causa de um incidente. Qual serviço atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "Amazon Detective",
+    "correta": true
+   },
+   {
+    "texto": "AWS Artifact",
+    "correta": false
+   },
+   {
+    "texto": "AWS Certificate Manager (ACM)",
+    "correta": false
+   },
+   {
+    "texto": "AWS Budgets",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Detective coleta e organiza dados de várias fontes (como CloudTrail, VPC Flow Logs e GuardDuty) e os apresenta em visualizações que ajudam a investigar a causa raiz de incidentes e atividades suspeitas.",
+  "fonte": "https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 411,
+  "uid": "adfcef7e",
+  "tipo": "multipla",
+  "tema": "Segurança e conformidade",
+  "subtema": "Segurança e identidade",
+  "gabarito": "documentacao",
+  "enunciado": "Quais fontes de dados o Amazon GuardDuty analisa para detectar atividades maliciosas? (Selecione DUAS.)",
+  "alternativas": [
+   {
+    "texto": "Eventos de gerenciamento do AWS CloudTrail",
+    "correta": true
+   },
+   {
+    "texto": "Logs de fluxo (flow logs) da VPC",
+    "correta": true
+   },
+   {
+    "texto": "O código-fonte das aplicações",
+    "correta": false
+   },
+   {
+    "texto": "As faturas mensais da AWS",
+    "correta": false
+   },
+   {
+    "texto": "Os preços dos serviços",
+    "correta": false
+   }
+  ],
+  "explicacao": "O GuardDuty analisa fontes como eventos do CloudTrail, logs de fluxo da VPC e logs de DNS, sem exigir agentes. Ele não lê código-fonte nem faturas.",
+  "fonte": "https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 412,
+  "uid": "58ebddc2",
+  "tipo": "unica",
+  "tema": "Segurança e conformidade",
+  "subtema": "Segurança e identidade",
+  "gabarito": "documentacao",
+  "enunciado": "No AWS IAM Identity Center, qual recurso define o conjunto de permissões que será atribuído a usuários ou grupos em uma ou mais contas da AWS?",
+  "alternativas": [
+   {
+    "texto": "Conjunto de permissões (permission set)",
+    "correta": true
+   },
+   {
+    "texto": "Grupo de segurança",
+    "correta": false
+   },
+   {
+    "texto": "Lista de controle de acesso à rede",
+    "correta": false
+   },
+   {
+    "texto": "Chave de acesso do usuário-raiz",
+    "correta": false
+   }
+  ],
+  "explicacao": "No IAM Identity Center, um conjunto de permissões é um modelo que define o nível de acesso atribuído a usuários e grupos nas contas de uma organização, o que centraliza o acesso de login único.",
+  "fonte": "https://docs.aws.amazon.com/singlesignon/latest/userguide/permissionsetsconcept.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 413,
+  "uid": "0fd91ad3",
+  "tipo": "unica",
+  "tema": "Segurança e conformidade",
+  "subtema": "Segurança e identidade",
+  "gabarito": "documentacao",
+  "enunciado": "Qual serviço verifica continuamente as instâncias do Amazon EC2, as imagens de contêiner e as funções do AWS Lambda em busca de vulnerabilidades de software conhecidas?",
+  "alternativas": [
+   {
+    "texto": "Amazon Inspector",
+    "correta": true
+   },
+   {
+    "texto": "Amazon Macie",
+    "correta": false
+   },
+   {
+    "texto": "AWS Artifact",
+    "correta": false
+   },
+   {
+    "texto": "AWS CloudTrail",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Inspector descobre automaticamente as cargas de trabalho e verifica vulnerabilidades de software e exposição de rede em instâncias do EC2, imagens de contêiner e funções do Lambda.",
+  "fonte": "https://docs.aws.amazon.com/inspector/latest/user/what-is-inspector.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 414,
+  "uid": "dad05809",
+  "tipo": "unica",
+  "tema": "Segurança e conformidade",
+  "subtema": "Segurança e identidade",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa quer identificar dados pessoais, como números de cartão de crédito e documentos de identificação, armazenados em buckets do Amazon S3. Qual serviço atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "Amazon Macie",
+    "correta": true
+   },
+   {
+    "texto": "Amazon Inspector",
+    "correta": false
+   },
+   {
+    "texto": "AWS Shield",
+    "correta": false
+   },
+   {
+    "texto": "AWS Direct Connect",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Macie usa machine learning e correspondência de padrões para encontrar dados sensíveis, como informações pessoais, em buckets do S3, e gera achados para a equipe de segurança.",
+  "fonte": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 415,
+  "uid": "2716c8ad",
+  "tipo": "multipla",
+  "tema": "Segurança e conformidade",
+  "subtema": "Governança e conformidade",
+  "gabarito": "documentacao",
+  "enunciado": "Quais recursos podem ser compartilhados entre contas com o AWS Resource Access Manager (AWS RAM)? (Selecione DOIS.)",
+  "alternativas": [
+   {
+    "texto": "Sub-redes da VPC",
+    "correta": true
+   },
+   {
+    "texto": "Transit Gateways",
+    "correta": true
+   },
+   {
+    "texto": "Instâncias do Amazon EC2 em execução",
+    "correta": false
+   },
+   {
+    "texto": "Objetos individuais do Amazon S3",
+    "correta": false
+   },
+   {
+    "texto": "Senhas do IAM",
+    "correta": false
+   }
+  ],
+  "explicacao": "O RAM compartilha recursos como sub-redes, Transit Gateways, regras do Route 53 Resolver e configurações do License Manager com outras contas ou dentro de uma organização.",
+  "fonte": "https://docs.aws.amazon.com/ram/latest/userguide/what-is.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 416,
+  "uid": "ec098c22",
+  "tipo": "unica",
+  "tema": "Segurança e conformidade",
+  "subtema": "Segurança e identidade",
+  "gabarito": "documentacao",
+  "enunciado": "Uma equipe quer que as senhas dos bancos de dados sejam trocadas automaticamente em intervalos regulares, sem alterar o código das aplicações. Qual serviço atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "AWS Secrets Manager",
+    "correta": true
+   },
+   {
+    "texto": "AWS Artifact",
+    "correta": false
+   },
+   {
+    "texto": "Amazon CloudFront",
+    "correta": false
+   },
+   {
+    "texto": "AWS Budgets",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Secrets Manager guarda segredos e faz a rotação automática de credenciais, como senhas de bancos de dados. As aplicações buscam o valor atual do segredo, sem armazenar a senha no código.",
+  "fonte": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 417,
+  "uid": "25ee07d9",
+  "tipo": "unica",
+  "tema": "Segurança e conformidade",
+  "subtema": "Governança e conformidade",
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa quer verificar se sua conta segue padrões e práticas recomendadas de segurança, como as da AWS e do CIS, e reunir os alertas de vários serviços em um só lugar. Qual serviço atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "AWS Security Hub",
+    "correta": true
+   },
+   {
+    "texto": "Amazon Polly",
+    "correta": false
+   },
+   {
+    "texto": "AWS Direct Connect",
+    "correta": false
+   },
+   {
+    "texto": "Amazon Lightsail",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Security Hub agrega achados de segurança de vários serviços da AWS e executa verificações automáticas de conformidade com padrões e práticas recomendadas, fornecendo uma visão única da postura de segurança.",
+  "fonte": "https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
  }
 ]
