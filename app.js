@@ -3,6 +3,7 @@
   const CHAVE = 'clf-c02.v1';
   // Estas constantes ficam no topo de propósito: carregarMeta() e carregar() rodam logo abaixo,
   // e usá-las antes de serem definidas lança erro e zera o progresso.
+  const VERSAO = '2026-11-15.4';
   const META = CHAVE + '.perfis';
   const chavePerfil = (id) => (id === 'p1' ? CHAVE : `${CHAVE}.${id}`);
   const DOMINIOS = ['Conceitos de nuvem', 'Segurança e conformidade', 'Tecnologia e serviços', 'Cobrança e suporte'];
@@ -20,6 +21,25 @@
   let sess = null;
   let resultado = null;
   let timer = null;
+
+  // ---------- atualização do app ----------
+  // Apaga só as cópias do modo offline (service worker e cache de arquivos) e busca tudo de novo.
+  // Não mexe no progresso: ele fica no localStorage, que esta função nunca toca.
+  async function atualizarApp() {
+    try {
+      if ('serviceWorker' in navigator) {
+        const regs = await navigator.serviceWorker.getRegistrations();
+        await Promise.all(regs.map((r) => r.unregister()));
+      }
+      if (window.caches) {
+        const chaves = await caches.keys();
+        await Promise.all(chaves.map((k) => caches.delete(k)));
+      }
+      const arquivos = ['index.html', 'styles.css', 'app.js', 'sw.js', 'manifest.webmanifest', 'data/questions.json'];
+      await Promise.all(arquivos.map((u) => fetch(u, { cache: 'reload' }).catch(() => null)));
+    } catch (e) { /* segue para recarregar */ }
+    location.reload();
+  }
 
   // ---------- utilidades ----------
   function h(tag, props, ...filhos) {
@@ -387,7 +407,9 @@
       menuBtn('Praticar por tema', 'Escolha domínios, assuntos e quantidade.', () => go('config')),
       menuBtn(`Rever as que errei (${erradas})`, 'Perguntas em que a última tentativa foi errada.', () => iniciarFiltro('erradas'), false, erradas === 0),
       menuBtn(`Marcadas (${marc})`, 'Perguntas que você marcou com a bandeira.', () => iniciarFiltro('marcadas'), false, marc === 0),
-      menuBtn('Estatísticas e backup', 'Desempenho por domínio e assunto, histórico e exportação.', () => go('stats')));
+      menuBtn('Estatísticas e backup', 'Desempenho por domínio e assunto, histórico e exportação.', () => go('stats')),
+      h('p', { class: 'suave', style: 'text-align:center;margin-top:18px' },
+        `Versão ${VERSAO} · `, h('button', { class: 'chip', onclick: atualizarApp }, 'Atualizar app')));
   }
 
   function viewConfig() {
@@ -838,7 +860,15 @@
     if (atalho === 'treino') treinoInteligente();
     else if (atalho === 'config' || atalho === 'stats' || atalho === 'perfis') go(atalho);
     if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
-      navigator.serviceWorker.register('sw.js').catch(() => { /* offline não disponível */ });
+      const haviaControlador = !!navigator.serviceWorker.controller;
+      let recarregou = false;
+      // Quando uma versão nova do service worker assume, recarrega uma vez (sem interromper uma prova em andamento).
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (haviaControlador && !recarregou && !sess) { recarregou = true; location.reload(); }
+      });
+      navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' })
+        .then((reg) => reg.update())
+        .catch(() => { /* offline não disponível */ });
     }
   }
   iniciarApp();
