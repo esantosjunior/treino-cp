@@ -1,6 +1,10 @@
 'use strict';
 (() => {
   const CHAVE = 'clf-c02.v1';
+  // Estas constantes ficam no topo de propósito: carregarMeta() e carregar() rodam logo abaixo,
+  // e usá-las antes de serem definidas lança erro e zera o progresso.
+  const META = CHAVE + '.perfis';
+  const chavePerfil = (id) => (id === 'p1' ? CHAVE : `${CHAVE}.${id}`);
   const DOMINIOS = ['Conceitos de nuvem', 'Segurança e conformidade', 'Tecnologia e serviços', 'Cobrança e suporte'];
   // Pesos oficiais dos domínios do exame CLF-C02 (guia do exame).
   const PESOS = { 'Conceitos de nuvem': 24, 'Segurança e conformidade': 30, 'Tecnologia e serviços': 34, 'Cobrança e suporte': 12 };
@@ -57,31 +61,30 @@
 
   // ---------- armazenamento local ----------
   // Perfis locais: o perfil 'p1' usa a chave original (mantém o progresso que já existia).
-  const META = CHAVE + '.perfis';
   function carregarMeta() {
-    try {
-      const m = JSON.parse(localStorage.getItem(META));
+    let m = null;
+    try { m = JSON.parse(localStorage.getItem(META)); } catch (e) { /* JSON inválido: cria o padrão */ }
+    {
       if (m && Array.isArray(m.lista) && m.lista.length && m.lista.some((p) => p.id === m.ativo)) return m;
-    } catch (e) { /* cria o padrão */ }
+    }
     return { ativo: 'p1', lista: [{ id: 'p1', nome: 'Principal' }] };
   }
   function salvarMeta() {
     try { localStorage.setItem(META, JSON.stringify(meta)); } catch (e) { /* sem espaço ou bloqueado */ }
   }
-  const chavePerfil = (id) => (id === 'p1' ? CHAVE : `${CHAVE}.${id}`);
   const perfilAtivo = () => meta.lista.find((p) => p.id === meta.ativo);
 
   function carregar(chave) {
-    try {
-      const j = JSON.parse(localStorage.getItem(chave || chavePerfil(meta.ativo)));
-      if (j && typeof j === 'object') {
-        return {
-          stats: j.stats && typeof j.stats === 'object' ? j.stats : {},
-          historico: Array.isArray(j.historico) ? j.historico : [],
-          marcadas: Array.isArray(j.marcadas) ? j.marcadas : [],
-        };
-      }
-    } catch (e) { /* começa vazio */ }
+    const k = chave || chavePerfil(meta.ativo);
+    let j = null;
+    try { j = JSON.parse(localStorage.getItem(k)); } catch (e) { /* JSON inválido: começa vazio */ }
+    if (j && typeof j === 'object') {
+      return {
+        stats: j.stats && typeof j.stats === 'object' ? j.stats : {},
+        historico: Array.isArray(j.historico) ? j.historico : [],
+        marcadas: Array.isArray(j.marcadas) ? j.marcadas : [],
+      };
+    }
     return { stats: {}, historico: [], marcadas: [] };
   }
   function salvar() {
@@ -700,6 +703,38 @@
     app.replaceChildren(h('pre', { id: 'autoteste' }, JSON.stringify(saida, null, 1)));
   }
 
+  // Testa a persistência com recargas reais. Rode as fases 1, 2, 3 e 4 em sequência, no mesmo navegador
+  // (fontes/testar_persistencia.ps1). Não use no seu aparelho: a fase 1 grava dados de teste.
+  function testePersistencia() {
+    const fase = Number(new URLSearchParams(location.search).get('persist'));
+    const falhas = [];
+    const ok = (cond, msg) => { if (!cond) falhas.push(`fase ${fase}: ${msg}`); };
+    if (fase === 1) {
+      // Simula os dados da versão sem perfis: só a chave original, sem metadados de perfil.
+      localStorage.removeItem(META);
+      localStorage.setItem(CHAVE, JSON.stringify({ stats: { antigo: { t: 3, a: 2, ultima: true, data: 1 } }, historico: [], marcadas: [] }));
+    } else if (fase === 2) {
+      ok(meta.ativo === 'p1' && meta.lista[0].nome === 'Principal', 'perfil Principal ausente');
+      ok(store.stats.antigo && store.stats.antigo.t === 3, 'o histórico antigo se perdeu na migração');
+      const id = criarPerfil('Teste');
+      trocarPerfil(id);
+      registrar(Q[0], false);
+    } else if (fase === 3) {
+      ok(meta.lista.some((p) => p.nome === 'Teste'), 'o perfil criado sumiu após recarregar');
+      ok(perfilAtivo() && perfilAtivo().nome === 'Teste', 'o perfil em uso não foi mantido');
+      ok(Object.keys(store.stats).length === 1, 'o registro do perfil novo sumiu');
+      trocarPerfil('p1');
+      ok(store.stats.antigo && store.stats.antigo.t === 3, 'o perfil Principal foi alterado');
+    } else if (fase === 4) {
+      ok(meta.ativo === 'p1', 'a troca de perfil não foi mantida');
+      ok(store.stats.antigo && store.stats.antigo.t === 3, 'o histórico do Principal sumiu');
+      Object.keys(localStorage).filter((k) => k.startsWith(CHAVE)).forEach((k) => localStorage.removeItem(k));
+    }
+    const saida = { fase, falhas, resultado: falhas.length ? 'FALHOU' : 'OK' };
+    document.title = saida.resultado;
+    app.replaceChildren(h('pre', { id: 'autoteste' }, JSON.stringify(saida)));
+  }
+
   function testePerfis(falhas) {
     const ok = (cond, msg) => { if (!cond) falhas.push(msg); };
     const metaBak = JSON.stringify(meta);
@@ -795,6 +830,7 @@
         h('button', { class: 'btn primario', onclick: () => location.reload() }, 'Tentar de novo')));
       return;
     }
+    if (location.search.includes('persist=')) return testePersistencia();
     if (location.search.includes('autoteste')) return autoteste();
     history.replaceState({ v: 'home' }, '');
     render();
