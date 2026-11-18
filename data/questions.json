@@ -5,6 +5,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [
+   "VPN (Site-to-Site/Client)"
+  ],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "Uma empresa exige uma conexão criptografada entre os servidores on-premises da empresa e a AWS. A conexão deve usar a conexão de internet existente da empresa. Qual solução atenderá a esses requisitos?",
   "alternativas": [
@@ -39,6 +43,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Monitoramento e gerenciamento",
+  "servicos": [
+   "Trusted Advisor"
+  ],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "Qual serviço da AWS identifica grupos de segurança que permitam acesso irrestrito aos recursos da AWS de um usuário?",
   "alternativas": [
@@ -73,6 +81,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Migração e transferência",
+  "servicos": [
+   "EC2",
+   "Application Migration (MGN)"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma empresa tem um servidor on-premises baseado em Linux com um banco de dados Oracle executado nele. A empresa quer migrar o servidor de banco de dados para ser executado em uma instância do Amazon EC2 na AWS. Qual serviço a empresa deve usar para concluir a migração?",
   "alternativas": [
@@ -107,6 +119,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Bancos de dados",
+  "servicos": [
+   "ElastiCache"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Qual é o problema que a solução Amazon ElastiCache resolve?",
   "alternativas": [
@@ -137,6 +152,10 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Monitoramento e gerenciamento",
+  "servicos": [
+   "Trusted Advisor"
+  ],
+  "simulado": 2,
   "gabarito": "documentacao",
   "enunciado": "Um cliente corporativo com uma rede multirregional da AWS está procurando maneiras de avaliar e reduzir custos continuamente e, ao mesmo tempo, garantir que tudo esteja seguro e funcionando de forma eficiente. Ele também está interessado em aprender as práticas recomendadas da AWS para aplicar em suas operações. Qual solução MELHOR atenderia às suas necessidades?",
   "alternativas": [
@@ -167,6 +186,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [
+   "Direct Connect"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma empresa quer estabelecer uma conexão consistente e privada do data center on-premises da empresa com a nuvem AWS. Qual serviço da AWS atenderá a esses requisitos?",
   "alternativas": [
@@ -201,6 +223,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Governança e conformidade",
+  "servicos": [
+   "Organizations"
+  ],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "Cada departamento de uma empresa tem sua própria conta independente da AWS e seu próprio método de pagamento. A empresa precisa centralizar a governança departamental e consolidar pagamentos. Como a empresa pode atingir esses objetivos usando serviços ou recursos da AWS?",
   "alternativas": [
@@ -235,6 +261,9 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "ACM"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Qual serviço da AWS deve ser usado para implementar criptografia em trânsito?",
   "alternativas": [
@@ -269,6 +298,9 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [
+   "AWS Support (planos)"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Qual é o plano MÍNIMO do AWS Support que fornece suporte técnico por meio de chamadas telefônicas?",
   "alternativas": [
@@ -304,6 +336,10 @@
   "tipo": "multipla",
   "tema": "Conceitos de nuvem",
   "subtema": "Computação",
+  "servicos": [
+   "EC2"
+  ],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "Quais são as vantagens de implantar um aplicativo com instâncias do Amazon EC2 em várias zonas de disponibilidade? (Selecione DUAS.)",
   "alternativas": [
@@ -343,6 +379,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Bancos de dados",
+  "servicos": [
+   "Aurora"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma empresa necessita de um banco de dados relacional na AWS que registre os pedidos de novos clientes em um site. Qual serviço ou recurso da AWS atenderá a esse requisito?",
   "alternativas": [
@@ -377,6 +416,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "Macie",
+   "S3"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Um usuário precisa descobrir, classificar e proteger automaticamente dados sigilosos armazenados no Amazon S3. Qual serviço da AWS pode atender a esses requisitos?",
   "alternativas": [
@@ -411,6 +454,9 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [
+   "RDS"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Um usuário implanta uma instância de banco de dados do Amazon RDS em várias zonas de disponibilidade. Essa estratégia envolve qual pilar do AWS Well-Architected Framework?",
   "alternativas": [
@@ -445,6 +491,10 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [
+   "EC2"
+  ],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "Qual serviço da AWS permite que os clientes comprem capacidade não utilizada do Amazon EC2 a uma taxa com desconto frequente?",
   "alternativas": [
@@ -479,6 +529,8 @@
   "tipo": "multipla",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Quais componentes de credencial são necessários para obter acesso programático a uma conta da AWS? (Selecione DOIS.)",
   "alternativas": [
@@ -518,6 +570,9 @@
   "tipo": "multipla",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "S3"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Quais das funcionalidades são características do Amazon S3? (Selecione DUAS.)",
   "alternativas": [
@@ -557,6 +612,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [
+   "CloudFront",
+   "S3"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma empresa está hospedando um site estático em um único bucket do Amazon S3. Qual serviço da AWS alcançará menor latência e altas velocidades de transferência?",
   "alternativas": [
@@ -591,6 +650,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "IA e machine learning",
+  "servicos": [
+   "Polly"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma empresa quer criar um aplicativo de aprendizagem para estudantes. O aplicativo deve dar aos alunos a opção de escolher um botão para que o texto seja lido em voz alta para eles. Qual serviço de machine learning da AWS atenderá a esse requisito?",
   "alternativas": [
@@ -625,6 +687,10 @@
   "tipo": "multipla",
   "tema": "Segurança e conformidade",
   "subtema": "Responsabilidade compartilhada",
+  "servicos": [
+   "EC2",
+   "IAM"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Quais tarefas são de responsabilidade do cliente de acordo com o modelo de responsabilidade compartilhada da AWS? (Selecione DUAS.)",
   "alternativas": [
@@ -664,6 +730,10 @@
   "tipo": "multipla",
   "tema": "Conceitos de nuvem",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [
+   "CloudFront"
+  ],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "Quais são os benefícios de usar a Nuvem AWS para empresas com clientes em muitos países ao redor do mundo? (Selecione DOIS.)",
   "alternativas": [
@@ -703,6 +773,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Monitoramento e gerenciamento",
+  "servicos": [
+   "SNS"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma equipe de desenvolvimento de aplicações precisa de uma solução que envie um alerta para toda a equipe se um teste de garantia de qualidade falhar em uma aplicação. Qual serviço da AWS a equipe deve usar para atender ao requisito?",
   "alternativas": [
@@ -737,6 +810,9 @@
   "tipo": "multipla",
   "tema": "Cobrança e suporte",
   "subtema": "Computação",
+  "servicos": [
+   "Lambda"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Como a AWS cobra pelo uso do AWS Lambda depois que o nível gratuito é ultrapassado? (Selecione DUAS.)",
   "alternativas": [
@@ -776,6 +852,7 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
   "gabarito": "documentacao",
   "enunciado": "Você trabalha para uma organização de caridade local. Sua organização tem dados sensíveis que devem permanecer em seu país por motivos de conformidade. No entanto, você também precisa de uma solução que possa ser escalada rapidamente para lidar com os picos sazonais de demanda. Você decide manter os recursos on-premises para fins de conformidade e usar recursos baseados na nuvem para scaling dinâmico. Que tipo de implantação na nuvem essa situação descreve?",
   "alternativas": [
@@ -806,6 +883,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 3,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa de varejo planeja lançar uma nova linha de roupas, mas está tendo dificuldades para prever com precisão a capacidade de servidor necessária para dar conta do lançamento. Qual benefício da nuvem AWS é o mais relevante para essa situação?",
   "alternativas": [
@@ -836,6 +915,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 3,
   "gabarito": "documentacao",
   "enunciado": "Você acabou de entrar em uma startup de tecnologia e a empresa está crescendo de forma rápida. A nova empresa decide que precisa projetar uma infraestrutura resiliente e dimensionável AWS para lidar com o aumento do tráfego e ajudar a garantir a alta disponibilidade. Qual declaração MELHOR descreve o benefício da alta disponibilidade na infraestrutura global da AWS?",
   "alternativas": [
@@ -866,6 +947,7 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Responsabilidade compartilhada",
+  "servicos": [],
   "gabarito": "documentacao",
   "enunciado": "Você trabalha para uma startup que está desenvolvendo uma aplicação na nuvem. Uma nova atualização de segurança está disponível para seu sistema operacional (SO) e você tem a tarefa de verificar se o sistema operacional está corrigido adequadamente. Qual declaração MELHOR descreve qual parte é responsável pela aplicação de patches de segurança ao sistema operacional que está sendo executado na nuvem?",
   "alternativas": [
@@ -896,6 +978,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 1,
   "gabarito": "documentacao",
   "enunciado": "Uma agência governamental quer manter o controle total de sua infraestrutura de TI, mas planeja usar os AWS Cloud Services para aplicações específicas. Qual tipo de implantação é o MELHOR para essa situação?",
   "alternativas": [
@@ -926,6 +1010,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Você trabalha para uma empresa de roupas esportivas que está expandindo as operações para clientes globais. A empresa quer implantar recursos em vários locais da AWS para alcançar alta disponibilidade. Você tem a tarefa de explicar os conceitos básicos da infraestrutura global da AWS para seu diretor de operações (COO). O COO precisa de ajuda para entender a diferença entre Regiões e Zonas de Disponibilidade da AWS. Qual declaração MELHOR descreve a diferença entre Regiões e Zonas de Disponibilidade da AWS?",
   "alternativas": [
@@ -958,6 +1044,7 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
   "gabarito": "confirmado",
   "enunciado": "Você é um desenvolvedor de software que trabalha para uma empresa que planeja migrar sua aplicação existente para a nuvem. O líder de sua equipe pediu que você explicasse o modelo cliente-servidor para o restante da equipe e como a computação em nuvem se encaixa nesse modelo. Qual declaração MELHOR descreve o modelo cliente-servidor e sua relação com a computação em nuvem?",
   "alternativas": [
@@ -988,6 +1075,8 @@
   "tipo": "multipla",
   "tema": "Segurança e conformidade",
   "subtema": "Responsabilidade compartilhada",
+  "servicos": [],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "Você é arquiteto de nuvem em uma empresa que migrou recentemente sua infraestrutura para a AWS. Seu gerente pediu que você interrogasse sua equipe para saber quais são as responsabilidades do cliente quando se trata de proteção dos recursos da nuvem. Qual é a responsabilidade do cliente de acordo com o modelo de responsabilidade compartilhada da AWS? (Selecione DUAS alternativas.)",
   "alternativas": [
@@ -1022,6 +1111,7 @@
   "tipo": "multipla",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
   "gabarito": "confirmado",
   "enunciado": "Sua empresa está planejando iniciar um novo aplicativo web que atenderá usuários em todo o mundo. Para ajudar a garantir que a aplicação tenha um bom desempenho e permaneça confiável, a equipe de TI planeja usar a AWS em sua vasta infraestrutura global. O que MELHOR descreve os benefícios da infraestrutura global da AWS relacionados a essa situação? (Selecione DUAS alternativas.)",
   "alternativas": [
@@ -1056,6 +1146,7 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Responsabilidade compartilhada",
+  "servicos": [],
   "gabarito": "confirmado",
   "enunciado": "Uma empresa financeira está interessada em migrar para a nuvem. Ela está curiosa para saber se terá profissionais suficientes para proteger seu espaço de escritório e a infraestrutura física de seus recursos de computação em nuvem. Qual declaração MELHOR descreve a responsabilidade da empresa quando se trata de proteger a infraestrutura física da nuvem?",
   "alternativas": [
@@ -1086,6 +1177,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Preços, custos e suporte",
+  "servicos": [],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "Uma grande empresa está buscando reduzir os custos operacionais. Ela espera reduzir a sobrecarga operacional associada ao gerenciamento de sua própria infraestrutura física. Qual opção descreve MELHOR a vantagem da nuvem pela qual essa empresa pode se beneficiar?",
   "alternativas": [
@@ -1116,6 +1209,7 @@
   "tipo": "pareamento",
   "tema": "Segurança e conformidade",
   "subtema": "Responsabilidade compartilhada",
+  "servicos": [],
   "gabarito": "confirmado",
   "enunciado": "Combine as responsabilidades com o modelo de serviço correto da AWS.",
   "pares": [
@@ -1147,6 +1241,9 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Responsabilidade compartilhada",
+  "servicos": [
+   "Lambda"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma equipe de desenvolvimento de uma startup de fintech está criando um novo microsserviço voltado para o cliente com o uso da solução AWS Lambda. A AWS cuida da infraestrutura, mas a equipe está focada em atender aos rígidos requisitos de segurança e conformidade. Qual tarefa ainda é responsabilidade da equipe ao usar o Lambda?",
   "alternativas": [
@@ -1177,6 +1274,9 @@
   "tipo": "multipla",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
+  "servicos": [
+   "Lambda"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma empresa de fotografia oferece edição e armazenamento de fotos na nuvem. Para simplificar as operações, ela usa a solução AWS Lambda para processar fotos de forma automática, ao redimensionar imagens, aplicar filtros e organizar arquivos, sempre que um cliente carregue uma nova imagem. Quais componentes principais estão envolvidos na execução de um fluxo de trabalho automatizado de processamento de fotos com a solução Lambda? (Selecione TRÊS opções.)",
   "alternativas": [
@@ -1215,6 +1315,7 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
+  "servicos": [],
   "gabarito": "documentacao",
   "enunciado": "Um desenvolvedor acabou de criar uma aplicação que funciona de forma perfeita em seu laptop. No entanto, quando sua equipe tenta implantá-la em um ambiente diferente, ela trava devido à falta de dependências e incompatibilidades de configuração. Como os contêineres ajudam a resolver esse problema?",
   "alternativas": [
@@ -1245,6 +1346,12 @@
   "tipo": "pareamento",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
+  "servicos": [
+   "ECR",
+   "ECS",
+   "EKS",
+   "Fargate"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Combine cada serviço de contêiner da AWS com sua definição.",
   "pares": [
@@ -1281,6 +1388,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
+  "servicos": [
+   "Outposts"
+  ],
+  "simulado": 2,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa financeira precisa executar workloads on-premises devido aos rígidos requisitos de conformidade, mas deseja usar os serviços e as ferramentas da AWS de forma consistente em todos os ambientes. Qual serviço atende às suas necessidades?",
   "alternativas": [
@@ -1311,6 +1422,12 @@
   "tipo": "pareamento",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
+  "servicos": [
+   "Batch",
+   "Elastic Beanstalk",
+   "Lightsail",
+   "Outposts"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Combine cada serviço da AWS com a descrição correta.",
   "pares": [
@@ -1347,6 +1464,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
+  "servicos": [
+   "Elastic Beanstalk",
+   "Auto Scaling"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma startup está criando um aplicativo web e procura uma maneira simples de implantar código sem gerenciar a infraestrutura. Ela precisa ter o auto scaling e o monitoramento gerenciados para ela. Qual serviço da AWS deve ser usado?",
   "alternativas": [
@@ -1377,6 +1498,8 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
+  "servicos": [],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "Uma equipe de desenvolvimento de uma empresa de comércio eletrônico está trabalhando em um novo site. A aplicação funciona bem em suas máquinas locais, mas quando ela tenta implantá-la em um ambiente de teste, ela não funciona conforme o esperado. A equipe quer garantir que a aplicação seja executada de forma consistente em todos os ambientes de desenvolvimento, teste e produção daqui para frente. Qual solução a equipe deve usar para garantir que a aplicação seja executada da mesma forma em todos os ambientes?",
   "alternativas": [
@@ -1407,6 +1530,12 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
+  "servicos": [
+   "ECR",
+   "ECS",
+   "EKS"
+  ],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Uma equipe de desenvolvimento de uma empresa de viagens armazenou a imagem do contêiner do sistema de reservas de hotéis na solução Amazon Elastic Container Registry (Amazon ECR) e está pronta para implantá-la. Ela precisa de um serviço que possa iniciar e parar contêineres de forma automática de acordo com o tráfego, aumentar ou reduzir a escala verticalmente de acordo com a demanda e monitorar a integridade do sistema. De qual serviço a equipe precisará em seguida?",
   "alternativas": [
@@ -1437,6 +1566,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Responsabilidade compartilhada",
+  "servicos": [
+   "Lambda"
+  ],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "O que está no escopo da responsabilidade do cliente quanto ao gerenciamento de um serviço sem servidor como a solução AWS Lambda?",
   "alternativas": [
@@ -1467,6 +1600,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
+  "servicos": [
+   "Batch"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma empresa de pesquisa farmacêutica precisa executar milhares de simulações para analisar o enovelamento de proteínas. Essas tarefas computacionais pesadas são executadas em paralelo e não exigem interação em tempo real. A empresa quer que os trabalhos sejam programados e escalados de forma automática de acordo com a demanda computacional. Qual serviço da AWS MELHOR se adapta a essa workload?",
   "alternativas": [
@@ -1497,6 +1633,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
+  "servicos": [
+   "Lightsail"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Um desenvolvedor freelancer está criando um blog para um cliente com tráfego mínimo. Ele quer uma solução básica e econômica que inclua armazenamento e computação em um único pacote, sem precisar lidar com configurações complexas ou questões de scaling. Qual serviço da AWS é o MAIS adequado?",
   "alternativas": [
@@ -1527,6 +1666,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Computação",
+  "servicos": [],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "Um desenvolvedor está lançando um microsserviço e quer se concentrar apenas na escrita e implantação de código. Ele não quer gerenciar servidores, lidar com o scaling ou se preocupar com a disponibilidade da infraestrutura. Qual modelo de serviço da AWS é o MELHOR para esse caso de uso?",
   "alternativas": [
@@ -1557,6 +1698,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
+  "servicos": [
+   "Lambda",
+   "S3"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Qual cenário é o MELHOR para usar a solução AWS Lambda?",
   "alternativas": [
@@ -1587,6 +1732,11 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
+  "servicos": [
+   "ECR",
+   "EKS",
+   "Fargate"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma empresa está lançando uma aplicação de fotos em contêineres e criou a imagem do contêiner que precisa ser armazenada com segurança. Ela planeja usar o Kubernetes para orquestração e prefere não gerenciar nenhum servidor. Qual combinação de serviços da AWS MELHOR atende às suas necessidades?",
   "alternativas": [
@@ -1617,6 +1767,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
+  "servicos": [
+   "EC2"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma empresa do setor de mídia desenvolve um projeto que requer a renderização de efeitos visuais e simulações de alta complexidade. Para que esse processo de renderização seja executado com eficiência, é necessário um poder computacional elevado, além de aceleradores de hardware capazes de suportar uma workload intensa. Qual tipo de instância do Amazon EC2 seria a MELHOR escolha para essa tarefa?",
   "alternativas": [
@@ -1647,6 +1800,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
+  "servicos": [
+   "EC2",
+   "Auto Scaling"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Como o Amazon EC2 Auto Scaling e o Elastic Load Balancing (ELB) trabalham juntos na AWS?",
   "alternativas": [
@@ -1677,6 +1834,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "O que acontece se um componente falhar em uma arquitetura fracamente acoplada?",
   "alternativas": [
@@ -1707,6 +1866,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
+  "servicos": [
+   "EC2"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma equipe de pesquisa universitária está executando simulações de modelagem climática que exigem uma potência substancial da CPU para processar algoritmos complexos e analisar grandes conjuntos de dados. Por que as instâncias do Amazon EC2 otimizadas para computação são ideais para essa tarefa?",
   "alternativas": [
@@ -1737,6 +1899,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Preços, custos e suporte",
+  "servicos": [
+   "EC2"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma startup está desenvolvendo uma nova aplicação web e opta por hospedá-la em instâncias Amazon EC2 da família de Uso Geral. Qual é a justificativa para essa escolha de tipo de instância?",
   "alternativas": [
@@ -1767,6 +1932,8 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "Uma agência de marketing está na fase de desenvolvimento de uma nova aplicação web. A projeção é de um crescimento constante, porém, existe uma incerteza sobre o volume de tráfego nos meses iniciais. A prioridade da agência é ter flexibilidade, sem a necessidade de firmar um compromisso de longo prazo. Qual opção de preço eles devem usar?",
   "alternativas": [
@@ -1797,6 +1964,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Monitoramento e gerenciamento",
+  "servicos": [
+   "SNS"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma empresa de desenvolvimento de software precisa notificar a equipe de engenharia sempre que um novo bug for relatado em seu sistema de rastreamento de bugs. Alguns membros da equipe precisam ser notificados imediatamente, enquanto outros podem processar os relatórios de erros posteriormente. Qual serviço a empresa de desenvolvimento de software deve escolher com base nos requisitos?",
   "alternativas": [
@@ -1827,6 +1997,9 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [
+   "EC2"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma empresa tem workloads críticas em estado estacionário e trabalhos em lotes que não são urgentes. Como eles devem otimizar os custos usando os Savings Plans e as instâncias spot do Amazon EC2?",
   "alternativas": [
@@ -1857,6 +2030,7 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
+  "servicos": [],
   "gabarito": "confirmado",
   "enunciado": "Qual é a função principal de uma Imagem de Máquina da Amazon (AMI) ao dimensionar aplicações?",
   "alternativas": [
@@ -1887,6 +2061,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
+  "servicos": [
+   "EC2"
+  ],
   "gabarito": "confirmado",
   "enunciado": "No contexto do Amazon EC2, qual é a definição correta do termo multilocação?",
   "alternativas": [
@@ -1918,6 +2095,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "Qual opção melhor descreve como os recursos de computação são provisionados e gerenciados na nuvem?",
   "alternativas": [
@@ -1948,6 +2127,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
+  "servicos": [
+   "EC2",
+   "Auto Scaling"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Como o Amazon EC2 Auto Scaling funciona na AWS?",
   "alternativas": [
@@ -1978,6 +2161,7 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [],
   "gabarito": "documentacao",
   "enunciado": "Uma empresa de manufatura está executando um conjunto de workloads previsíveis nos próximos três anos e deseja otimizar os custos. Qual opção deve ser escolhida?",
   "alternativas": [
@@ -2008,6 +2192,10 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Computação",
+  "servicos": [
+   "EC2"
+  ],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Ao comparar o Amazon EC2 com a alternativa de manter servidores on-premises, qual das seguintes afirmações é a correta?",
   "alternativas": [
@@ -2038,6 +2226,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Monitoramento e gerenciamento",
+  "servicos": [
+   "Console de Gerenciamento"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Qual ferramenta pode ser usada para interagir com os serviços da AWS por meio de uma interface gráfica de usuário (GUI)?",
   "alternativas": [
@@ -2068,6 +2259,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
+  "servicos": [
+   "EC2"
+  ],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "Dentro do contexto das instâncias Amazon EC2, como podemos definir o conceito de multilocação?",
   "alternativas": [
@@ -2098,6 +2293,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
+  "servicos": [
+   "EC2"
+  ],
   "gabarito": "documentacao",
   "enunciado": "No momento de preparar o lançamento de uma nova instância do Amazon EC2, quais informações são essenciais e precisam ser especificadas?",
   "alternativas": [
@@ -2128,6 +2326,9 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Computação",
+  "servicos": [
+   "EC2"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Imagine que uma empresa usa instâncias do Amazon EC2 para implantar sua aplicação. O que aconteceria se eles precisassem interromper ou encerrar as instâncias do EC2?",
   "alternativas": [
@@ -2158,6 +2359,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
+  "servicos": [
+   "EC2"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma instituição financeira precisa executar uma aplicação de análise de dados em tempo real. Essa aplicação processa volumes gigantescos de dados, distribuídos em diversos servidores, e precisa entregar resultados de consultas de forma quase instantânea. O requisito principal é um processamento de dados veloz, com um foco especial em manipular enormes volumes de informação com eficiência. Qual tipo de instância do Amazon EC2 seria a MELHOR escolha para essa tarefa?",
   "alternativas": [
@@ -2188,6 +2392,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
+  "servicos": [
+   "EC2"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma empresa do setor de varejo está implementando uma solução para analisar seu histórico de dados de vendas, que está armazenado localmente. O ponto crítico para essa solução é a necessidade de acessar rapidamente grandes conjuntos de dados, o que exige uma taxa de throughput consistentemente alta para que a recuperação das informações seja veloz. Qual tipo de instância do Amazon EC2 seria o MAIS adequado para esse caso de uso?",
   "alternativas": [
@@ -2218,6 +2425,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Monitoramento e gerenciamento",
+  "servicos": [
+   "AWS CLI",
+   "Console de Gerenciamento"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Qual é a principal vantagem de usar a AWS Command Line Interface (AWS CLI) em relação ao Console de Gerenciamento da AWS?",
   "alternativas": [
@@ -2248,6 +2459,9 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Responsabilidade compartilhada",
+  "servicos": [
+   "EC2"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Qual é a responsabilidade do cliente ao usar serviços de computação como o Amazon EC2 de acordo com o modelo de responsabilidade compartilhada da AWS?",
   "alternativas": [
@@ -2278,6 +2492,9 @@
   "tipo": "multipla",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
+  "servicos": [
+   "EC2"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Quais são as configurações necessárias ao iniciar uma instância do Amazon EC2 para um servidor web? (Selecione TRÊS opções.)",
   "alternativas": [
@@ -2316,6 +2533,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
+  "servicos": [
+   "EC2"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Para que é usada uma Amazon Machine Image (AMI) ao iniciar uma instância do Amazon EC2?",
   "alternativas": [
@@ -2346,6 +2566,9 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [
+   "EC2"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma startup está executando uma carga de trabalho de processamento em lote que pode tolerar interrupções ocasionais e deseja reduzir os custos aproveitando a capacidade não utilizada do Amazon EC2. Qual opção de preço ofereceria a eles mais economia?",
   "alternativas": [
@@ -2376,6 +2599,8 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Uma empresa de serviços financeiros precisa executar aplicações sensíveis que lidem com dados confidenciais de clientes e precisam de que tudo esteja em conformidade com as regulamentações do setor. Eles precisam de controle total sobre o servidor físico, incluindo o posicionamento da instância e a alocação de recursos. Qual opção de preço ela deve escolher?",
   "alternativas": [
@@ -2406,6 +2631,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "Qual é o principal benefício da escalabilidade e elasticidade na AWS?",
   "alternativas": [
@@ -2436,6 +2663,9 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [
+   "EC2"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Qual é o principal motivo para a implantação de instâncias do Amazon EC2 em várias Zonas de Disponibilidade?",
   "alternativas": [
@@ -2466,6 +2696,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Como a AWS garante que uma empresa possa atender à demanda flutuante sem provisionar recursos em excesso?",
   "alternativas": [
@@ -2496,6 +2728,7 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
+  "servicos": [],
   "gabarito": "confirmado",
   "enunciado": "Como o Elastic Load Balancing (ELB) melhora a escalabilidade na AWS?",
   "alternativas": [
@@ -2526,6 +2759,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Computação",
+  "servicos": [
+   "EC2"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Qual tarefa o Elastic Load Balancing (ELB) executa?",
   "alternativas": [
@@ -2556,6 +2792,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "O que melhor descreve a principal diferença entre arquiteturas fortemente acopladas e fracamente acopladas?",
   "alternativas": [
@@ -2586,6 +2824,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Monitoramento e gerenciamento",
+  "servicos": [
+   "SQS"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Em um sistema bancário, quando os clientes transferem dinheiro, os detalhes da transação são enviados do serviço de transação para um serviço de detecção de fraudes para fins de verificação. Às vezes, o serviço de detecção de fraudes fica temporariamente inativo. Qual é a PRINCIPAL vantagem de usar o Amazon Simple Queue Service (Amazon SQS) nesse cenário bancário?",
   "alternativas": [
@@ -2616,6 +2857,8 @@
   "tipo": "multipla",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "Um engenheiro de nuvem de uma agência governamental tem a tarefa de selecionar uma região da AWS para implantar os recursos da agência. Quais fatores são MAIS importantes a serem considerados ao selecionar uma Região? (Selecione DUAS alternativas.)",
   "alternativas": [
@@ -2650,6 +2893,7 @@
   "tipo": "pareamento",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
   "gabarito": "confirmado",
   "enunciado": "Combine o elemento de infraestrutura global da AWS com a definição correta.",
   "pares": [
@@ -2681,6 +2925,12 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Monitoramento e gerenciamento",
+  "servicos": [
+   "EC2",
+   "Auto Scaling",
+   "CloudFormation"
+  ],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "Uma startup de tecnologia em rápido crescimento planeja lançar uma nova aplicação web que exigirá uma configuração de infraestrutura complexa, inclusive várias instâncias da solução Amazon EC2, grupos de Elastic Load Balancing e Auto Scaling. A aplicação deve ser implantada de forma consistente em diferentes ambientes. A solução AWS CloudFormation seria uma boa solução para gerenciar a infraestrutura da empresa?",
   "alternativas": [
@@ -2711,6 +2961,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Monitoramento e gerenciamento",
+  "servicos": [
+   "CloudFormation"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma equipe de uma empresa de tecnologia biomédica tem a tarefa de implantar uma nova aplicação médica em várias Regiões AWS para ajudar a manter a alta disponibilidade e a tolerância a falhas. A aplicação consiste em vários componentes, inclusive um servidor web, um banco de dados e uma fila de mensagens. A implantação precisa ser consistente e repetível e deve minimizar os erros manuais por meio da automação. Qual abordagem é a MAIS adequada para implantar essa aplicação de acordo com as necessidades de automação e consistência?",
   "alternativas": [
@@ -2741,6 +2994,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "Qual resposta MELHOR descreve a relação entre Regiões, Zonas de Disponibilidade e locais da borda da AWS?",
   "alternativas": [
@@ -2773,6 +3028,8 @@
   "tipo": "multipla",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "O que MELHOR descreve os principais benefícios do uso de várias Regiões AWS e várias Zonas de Disponibilidade? (Selecione DUAS alternativas.)",
   "alternativas": [
@@ -2807,6 +3064,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "Uma organização sem fins lucrativos está migrando todos os seus recursos para a nuvem AWS. Ela está tentando decidir em qual Região AWS implantar seus recursos. Qual opção lista os fatores que a organização precisa considerar ao decidir onde colocar seus recursos de nuvem?",
   "alternativas": [
@@ -2837,6 +3096,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Monitoramento e gerenciamento",
+  "servicos": [
+   "CloudFormation"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Qual resposta descreve os principais atributos e benefícios da solução AWS CloudFormation?",
   "alternativas": [
@@ -2867,6 +3129,9 @@
   "tipo": "multipla",
   "tema": "Tecnologia e serviços",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [
+   "VPC"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Quais são os usos de uma sub-rede em uma Amazon VPC? (Selecione TRÊS opções.)",
   "alternativas": [
@@ -2905,6 +3170,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [
+   "VPC",
+   "VPN (Site-to-Site/Client)"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma empresa está configurando sua Amazon VPC. Ela precisa conectar o data center corporativo pela internet com uma conexão segura. Ela também deseja garantir que os recursos sejam isolados do público. Qual solução MELHOR atenderia às suas necessidades?",
   "alternativas": [
@@ -2935,6 +3204,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [
+   "Direct Connect"
+  ],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "Uma empresa está realizando uma migração em grande escala de seu data center on-premises com seu data warehouse e backup de dados. Ela precisa de uma solução que atenda à grande quantidade de requisitos de largura de banda durante a migração. A solução também será usada para suas transferências contínuas de dados após a mudança, pois ela manterá parte de seu data center on-premises para uma solução de nuvem híbrida. Qual solução da AWS atenderia melhor às suas necessidades?",
   "alternativas": [
@@ -2965,6 +3238,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [
+   "VPC",
+   "VPN (Site-to-Site/Client)"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma empresa está escolhendo o tipo de gateway para sua rede. Ela precisa conectar seu data center corporativo com sua sub-rede privada na Amazon Virtual Private Cloud. O gateway da empresa precisa permitir que somente tráfego protegido da internet entre na solução Amazon VPC. Ela também deve permitir uma conexão entre a solução Amazon VPC e uma rede privada única e exclusivamente se for proveniente de uma rede aprovada. Que tipo de gateway MELHOR atenderia às suas necessidades? (O diagrama mostra um data center corporativo ligado por internet e conexão VPN a uma VPC com sub-rede e bancos de dados.)",
   "alternativas": [
@@ -2995,6 +3272,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [
+   "EC2"
+  ],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "Um cliente de varejo está configurando sua aplicação na nuvem AWS. A aplicação exige muito controle na definição de regras de tráfego para as instâncias individuais da solução Amazon EC2 em sua sub-rede pública. Qual solução MELHOR atenderia aos requisitos para proteger os recursos?",
   "alternativas": [
@@ -3025,6 +3306,8 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Qual componente de rede executa a filtragem de pacotes stateless?",
   "alternativas": [
@@ -3055,6 +3338,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [
+   "CloudFront"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Um cliente empresarial com uma equipe de vendas mundial está procurando oferecer sua grande biblioteca de conteúdo de treinamento de vendas. Eles querem garantir que sua equipe de vendas possa acessar o conteúdo de treinamento, rico em mídia, com baixa latência e com custos reduzidos. Qual serviço da AWS MELHOR atenderia às necessidades do cliente?",
   "alternativas": [
@@ -3085,6 +3371,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [
+   "Route 53"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Depois de anos trabalhando com diferentes empresas de registro de domínio, uma empresa de mídia está procurando uma solução para gerenciar todos os nomes de domínio existentes. Ela também quer registrar novos nomes de domínio. Idealmente, ela gostaria de gerenciar todos os nomes de domínio em um único serviço. Qual serviço da AWS melhor atenderia às necessidades do cliente?",
   "alternativas": [
@@ -3115,6 +3404,11 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [
+   "Direct Connect",
+   "VPC"
+  ],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "Uma empresa de saúde está procurando criar uma conexão de rede dedicada com a AWS. Ela usaria essa conexão para enviar cargas pesadas de dados pela internet para a AWS. Ela também tem requisitos de conformidade devido à natureza confidencial dos dados de seus pacientes. Qual tipo de conexão com a nuvem AWS MELHOR atenderia às suas necessidades?",
   "alternativas": [
@@ -3145,6 +3439,8 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [],
+  "simulado": 3,
   "gabarito": "inferido",
   "enunciado": "O que é rede na nuvem AWS?",
   "alternativas": [
@@ -3176,6 +3472,11 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [
+   "EC2",
+   "VPC"
+  ],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "Um cliente de varejo está hospedando sua aplicação em uma Amazon VPC e quer configurar regras de tráfego para as instâncias da solução Amazon EC2 em execução em uma sub-rede pública. A aplicação exige que várias regras sejam definidas no nível da instância. Qual solução ou atributo atenderia às suas necessidades?",
   "alternativas": [
@@ -3206,6 +3507,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [
+   "VPN (Site-to-Site/Client)"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Um cliente está explorando soluções para estabelecer conexões seguras e criptografadas entre as redes on-premises em seus data centers e filiais. Ele está procurando a maneira MAIS econômica de conectar os escritórios a outros sites e aos serviços da AWS. Ele não pretende aumentar a quantidade de largura de banda. Qual solução MELHOR atenderia às suas necessidades?",
   "alternativas": [
@@ -3236,6 +3540,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [
+   "VPN (Site-to-Site/Client)"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Um cliente empresarial acabou de se fundir com outra empresa e precisa de uma forma rápida de escalar e fornecer uma forma para que a nova equipe de vendas mundial acesse seus recursos na AWS. Ele quer um serviço totalmente gerenciado com autenticação avançada para seus novos profissionais remotos. Qual solução MELHOR atenderia às suas necessidades?",
   "alternativas": [
@@ -3266,6 +3573,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Responsabilidade compartilhada",
+  "servicos": [
+   "VPC"
+  ],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "Um cliente está criando seus recursos de aplicações em suas sub-redes de nuvem privada virtual (VPC). Ele quer proteger os recursos na nuvem de forma específica nas tarefas de proteção do tráfego de rede. Por qual componente o cliente é responsável de acordo com o modelo de responsabilidade compartilhada?",
   "alternativas": [
@@ -3296,6 +3607,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [
+   "VPC"
+  ],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Um cliente está criando uma Amazon VPC para sua aplicação. Ele quer criar um segmento privado na solução Amazon VPC para que os recursos iniciados possam ser isolados dos usuários na internet. Qual componente de rede MELHOR atenderia às suas necessidades?",
   "alternativas": [
@@ -3326,6 +3641,7 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [],
   "gabarito": "confirmado",
   "enunciado": "Qual é a função principal de um serviço de nome de domínio (DNS)?",
   "alternativas": [
@@ -3356,6 +3672,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "Qual é a função principal de uma Zona de Disponibilidade na nuvem AWS?",
   "alternativas": [
@@ -3386,6 +3704,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [
+   "VPC"
+  ],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "Um cliente está migrando sua aplicação para uma Amazon VPC e quer configurar um controle de tráfego no nível da sub-rede. Ele precisa de um amplo controle do tráfego de entrada e saída e gostaria de usar as regras do tipo permitir e negar. Qual solução ou atributo atenderia às suas necessidades?",
   "alternativas": [
@@ -3416,6 +3738,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [
+   "Route 53"
+  ],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Uma empresa de mídia precisa de um serviço para gerenciar os registros de domínio com diferentes provedores. Ela também usará o serviço para direcionar o tráfego da internet para seus recursos hospedados na nuvem AWS e em outros lugares. Qual solução da AWS MELHOR atenderia às suas necessidades?",
   "alternativas": [
@@ -3446,6 +3772,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [
+   "Direct Connect",
+   "VPC"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Um cliente procura uma forma de estabelecer uma conexão dedicada de sua rede on-premises com uma solução Amazon VPC. Ele precisa de uma solução que ofereça uma experiência de rede mais consistente com maior largura de banda. Qual tipo de conexão com a nuvem AWS MELHOR atenderia às suas necessidades?",
   "alternativas": [
@@ -3476,6 +3806,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [
+   "VPC"
+  ],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Uma empresa quer estabelecer uma conexão segura e privada entre o data center on-premises e a solução Amazon VPC para criar uma arquitetura de nuvem híbrida. Qual componente ela deve usar para ajudar a garantir uma conexão segura?",
   "alternativas": [
@@ -3506,6 +3840,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "EC2"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Um desenvolvedor está criando uma aplicação que processa grandes quantidades de dados e exige alto desempenho de E/S. Depois de processar os dados de uma operação, os resultados são exibidos para o usuário e não precisam ser retidos a longo prazo. Infelizmente, a solução de armazenamento atual da aplicação está enfrentando gargalos de desempenho durante os horários de pico de processamento. Como a implementação de um armazenamento de instâncias do EC2 pode melhorar o desempenho da aplicação?",
   "alternativas": [
@@ -3536,6 +3873,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "EBS"
+  ],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "A AnyCompany Finance está projetando uma aplicação que exige acesso consistente e de baixa latência aos dados financeiros. Eles estão procurando uma solução de armazenamento que ofereça armazenamento persistente em blocos. Por que o Amazon EBS seria adequado para armazenar dados nesse cenário?",
   "alternativas": [
@@ -3566,6 +3907,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "EC2",
+   "EBS"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma AnyCompany Software está migrando sua arquitetura de aplicações on-premises para a AWS. Eles estão particularmente preocupados com a persistência dos dados porque, em seu ambiente atual, sofreram perda de dados quando as máquinas virtuais (VMs) falharam. Eles querem entender como o Amazon Elastic Block Store (Amazon EBS) pode ajudar a atender aos requisitos de persistência de dados ao mover suas workloads para instâncias do Amazon EC2. Como o Amazon EBS resolve o problema de persistência de dados descrito nesse cenário?",
   "alternativas": [
@@ -3596,6 +3941,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "EBS"
+  ],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "Uma AnyCompany Commerce opera uma plataforma de negociação on-line com rápido crescimento. Sua equipe de desenvolvimento frequentemente precisa criar ambientes de teste que espelhem a produção para testar novos atributos, mas a configuração desses ambientes se tornou demorada e propensa a erros. Qual é o benefício mais significativo de usar snapshots do EBS nesse cenário?",
   "alternativas": [
@@ -3626,6 +3975,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "EBS"
+  ],
   "gabarito": "confirmado",
   "enunciado": "O AnyCompany Healthcare gerencia milhares de volumes do EBS contendo registros de pacientes. Eles precisam garantir que esses dados sejam copiados adequadamente, retidos de acordo com os requisitos de conformidade e que os snapshots antigos sejam removidos para controlar os custos. Qual problema o AWS Data Lifecycle Manager resolve principalmente nesse cenário?",
   "alternativas": [
@@ -3656,6 +4008,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "S3"
+  ],
   "gabarito": "confirmado",
   "enunciado": "A AnyCompany Mobile está avaliando soluções de armazenamento na nuvem para seu novo aplicativo móvel. Eles precisam de um serviço confiável que possa lidar com vários tipos de requisitos de armazenamento de dados à medida que sua base de usuários cresce. Com base nesse cenário, qual é um aspecto do Amazon S3 que eles poderiam usar nesse cenário?",
   "alternativas": [
@@ -3686,6 +4041,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Armazenamento",
+  "servicos": [
+   "S3"
+  ],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "A AnyCompany Marketing criou um bucket do Amazon S3 para hospedar imagens para seu novo site. As imagens precisam estar acessíveis a qualquer pessoa que visite o site sem autenticação. Depois de fazer upload das imagens para o bucket, os usuários relatam que não podem acessá-las, mesmo que a política de bucket esteja definida para permitir o acesso público. Qual é a causa mais provável desse problema de acesso?",
   "alternativas": [
@@ -3716,6 +4075,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [
+   "S3"
+  ],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "A AnyCompany Media está procurando uma nova solução de armazenamento na nuvem. Eles distribuem arquivos de vídeo grandes para usuários em todo o mundo e estão procurando um serviço que seja altamente durável, dimensionável e ofereça vários mecanismos de controle de acesso. Com base nesse cenário, qual atributo do Amazon S3 seria particularmente benéfico?",
   "alternativas": [
@@ -3746,6 +4109,10 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Armazenamento",
+  "servicos": [
+   "S3",
+   "S3 Glacier"
+  ],
   "gabarito": "confirmado",
   "enunciado": "O AnyCompany Business armazena uma quantidade crescente de dados de clientes no Amazon S3. Seu gerente está preocupado com os custos de armazenamento e pede que a TI implemente uma solução para transferir dados antigos para um armazenamento mais barato. Os dados são acessados com frequência nos primeiros 30 dias, ocasionalmente acessados nos próximos 60 dias e raramente acessados após 90 dias. O que eles devem fazer nessa situação para otimizar os custos e, ao mesmo tempo, manter o acesso adequado aos dados?",
   "alternativas": [
@@ -3776,6 +4143,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "S3"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Qual declaração melhor descreve o ciclo de vida do S3?",
   "alternativas": [
@@ -3806,6 +4176,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "EFS"
+  ],
   "gabarito": "confirmado",
   "enunciado": "A AnyCompany Financial precisa implementar uma nova aplicação de dados que analisará os dados do mercado. A aplicação deve ser capaz de aumentar ou diminuir os recursos de computação para atender à demanda de tráfego e, ao mesmo tempo, manter o acesso aos mesmos conjuntos de dados. Qual é a vantagem de usar o Amazon EFS como solução de armazenamento para a aplicação descrita nesse cenário?",
   "alternativas": [
@@ -3836,6 +4209,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "EC2",
+   "EFS"
+  ],
   "gabarito": "confirmado",
   "enunciado": "A AnyCompany Retail está planejando migrar seu armazenamento de arquivos on-premises para a AWS. Eles precisam de uma solução que permita que suas equipes globais de desenvolvimento colaborem no mesmo conjunto de arquivos simultaneamente. Qual atributo do Amazon EFS o torna uma boa opção para esse cenário?",
   "alternativas": [
@@ -3866,6 +4243,11 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "S3",
+   "Storage Gateway"
+  ],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "A AnyCompany tem uma grande coleção de arquivos armazenados no on-premises que precisam ser copiados para a nuvem AWS. Eles querem manter o acesso local aos arquivos usados com frequência e, ao mesmo tempo, usar o armazenamento na nuvem para economizar custos. Eles também querem minimizar as alterações em seus fluxos de trabalho e aplicações de compartilhamento de arquivos existentes. Qual tipo de AWS Storage Gateway MELHOR atende a esses requisitos?",
   "alternativas": [
@@ -3896,6 +4278,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "FSx"
+  ],
   "gabarito": "confirmado",
   "enunciado": "A AnyCompany Media deseja migrar seus compartilhamentos de arquivos para a AWS e, ao mesmo tempo, manter a compatibilidade com as aplicações existentes. Eles precisam de uma solução que ofereça suporte ao protocolo SMB (Server Message Block) e se integre ao Microsoft Active Directory. Qual serviço da AWS eles devem implementar nesse cenário?",
   "alternativas": [
@@ -3926,6 +4311,11 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "S3",
+   "Storage Gateway"
+  ],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "A AnyCompany Manufacturing armazena arquivos CAD que precisam ser acessados com frequência pelos engenheiros em seu data center on-premises. Eles querem manter o acesso local a esses dados e, ao mesmo tempo, se beneficiar dos recursos de armazenamento na nuvem AWS. Eles planejam implementar uma solução que forneça acesso de baixa latência aos arquivos usados com frequência enquanto fazem backup dos dados na AWS. Qual configuração do AWS Storage Gateway eles devem escolher?",
   "alternativas": [
@@ -3956,6 +4346,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [
+   "Elastic Disaster Recovery"
+  ],
   "gabarito": "confirmado",
   "enunciado": "A AnyCompany Telecommunications está preocupada com o possível tempo de inatividade após uma interrupção no último trimestre. Eles querem implementar uma solução de recuperação de desastres para sua frota de servidores on-premises, mas têm uma equipe de TI limitada. O CEO está particularmente preocupado com a manutenção de réplicas exatas dos servidores de produção e com a minimização do tempo de recuperação. Qual é o benefício chave de usar o AWS Elastic Disaster Recovery nesse cenário?",
   "alternativas": [
@@ -3986,6 +4379,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "S3"
+  ],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "Qual é a função principal das classes de armazenamento do Amazon S3?",
   "alternativas": [
@@ -4016,6 +4413,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "EFS"
+  ],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "Qual declaração melhor descreve o Amazon Elastic File System (Amazon EFS)?",
   "alternativas": [
@@ -4046,6 +4447,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "FSx"
+  ],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Qual declaração melhor descreve o Amazon FSx?",
   "alternativas": [
@@ -4076,6 +4481,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "S3"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Qual declaração melhor descreve o Amazon S3?",
   "alternativas": [
@@ -4106,6 +4514,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "S3"
+  ],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "A AnyCompany Marketing precisa de uma solução de armazenamento que possa ser usada para distribuir grandes coleções de imagens, vídeos e arquivos de design de alta resolução para as campanhas de seus clientes. Alguns ativos são acessados com frequência, enquanto outros são arquivados para referência ocasional. A solução precisa atender aos seguintes critérios: capacidade de armazenamento ilimitada; alta durabilidade; fácil compartilhamento de arquivos por meio de URLs; capacidade de organizar ativos por cliente e projeto; opções de armazenamento econômicas; controles de segurança para impedir o acesso não autorizado a ativos específicos. Qual serviço da AWS é o mais adequado para as necessidades de armazenamento descritas nesse cenário?",
   "alternativas": [
@@ -4136,6 +4548,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "EC2",
+   "EBS"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Qual das declarações descreve MELHOR o Amazon Elastic Block Store (Amazon EBS)?",
   "alternativas": [
@@ -4169,6 +4585,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "FSx"
+  ],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "A AnyCompany Marketing precisa migrar seus compartilhamentos de arquivos existentes para a AWS para apoiar suas equipes de design que trabalham com grandes arquivos criativos. Eles precisam de ajuda para escolher uma solução de armazenamento que possa facilitar essa migração. A solução precisa atender aos seguintes requisitos: serviço totalmente gerenciado; integração com aplicações do Windows; suporte ao protocolo SMB; integração com o Active Directory; suporte à desduplicação de dados; latências consistentes de menos de um milissegundo; alta disponibilidade. Qual serviço de armazenamento da AWS melhor atende aos requisitos descritos no cenário?",
   "alternativas": [
@@ -4199,6 +4619,11 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "EC2",
+   "EFS"
+  ],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "A AnyCompany Technology precisa implementar uma solução de armazenamento centralizada para sua equipe de desenvolvimento que permita que várias instâncias do Amazon EC2 acessem o mesmo sistema de arquivos simultaneamente. A solução precisa atender aos seguintes critérios: serviço totalmente gerenciado; escala automaticamente; elimina a necessidade de planejamento de capacidade; suporte a aplicações baseadas em Linux com interfaces de sistema de arquivos padrão; acesso consistente de baixa latência em todos os ambientes de desenvolvimento; alta durabilidade sem configurações complexas de replicação. Qual serviço de armazenamento da AWS é mais adequado para esse cenário?",
   "alternativas": [
@@ -4229,6 +4654,9 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Armazenamento",
+  "servicos": [
+   "S3"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Qual é a principal característica dos preços das classes de armazenamento do Amazon S3?",
   "alternativas": [
@@ -4259,6 +4687,11 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "EC2",
+   "EBS"
+  ],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "A AnyCompany Software está implantando uma aplicação de produção crítica em instâncias do Amazon EC2 com vários volumes do Amazon Elastic Block Store (Amazon EBS) contendo código da aplicação e dados do cliente. A equipe está procurando um serviço da AWS que possa usar para fazer backup dos dados de sua aplicação. A solução precisa: criar backups de dados regulares; criar ambientes duplicados para testes; criar uma estratégia de recuperação de desastres; criar backups completos ou incrementais sem afetar o desempenho da aplicação; oferecer economia para armazenamento de longo prazo. Qual serviço ou atributo da AWS melhor atenderia aos requisitos do cenário?",
   "alternativas": [
@@ -4289,6 +4722,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "Storage Gateway"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Qual declaração melhor descreve o AWS Storage Gateway?",
   "alternativas": [
@@ -4319,6 +4755,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "Storage Gateway"
+  ],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "A AnyCompany Manufacturing mantém uma grande quantidade de desenhos de engenharia e arquivos de projeto que suas equipes precisam acessar diariamente a partir de suas aplicações on-premises. Eles querem migrar gradualmente esses arquivos para a AWS para reduzir seus custos de armazenamento local e, ao mesmo tempo, manter o acesso de baixa latência aos arquivos usados com frequência. A solução precisa: integrar-se aos fluxos de trabalho existentes baseados em arquivos; fornecer um caminho perfeito para o armazenamento na nuvem sem interromper as operações atuais; manter o acesso local e de baixa latência aos arquivos usados com frequência. Qual serviço de armazenamento da AWS eles devem usar com base nesses requisitos?",
   "alternativas": [
@@ -4349,6 +4789,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "EC2"
+  ],
   "gabarito": "confirmado",
   "enunciado": "A AnyCompany AI está desenvolvendo uma aplicação de machine learning que exige processamento de dados extremamente rápido para conjuntos de dados temporários de treinamento do modelo. Os dados são gerados durante as sessões de treinamento e armazenados separadamente em um armazenamento persistente. A equipe está tentando determinar a melhor solução de armazenamento para usar junto com sua aplicação. A solução precisa atender aos seguintes critérios: o maior desempenho de E/S possível; conectado diretamente às suas instâncias do Amazon EC2; armazenamento temporário, em que os dados não persistem quando as instâncias são interrompidas ou encerradas. Qual serviço da AWS melhor atende às necessidades de armazenamento temporário descritas nesse cenário?",
   "alternativas": [
@@ -4379,6 +4822,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "EC2",
+   "EBS"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Recentemente, a AnyCompany Commerce migrou sua aplicação principal para uma instância do Amazon EC2 na AWS. À medida que sua base de clientes se expande, eles estão explorando soluções de armazenamento que podem crescer dinamicamente com as necessidades de dados da aplicação. A solução precisa: ter armazenamento em bloco persistente que forneça desempenho consistente de baixa latência; poder ser conectado e desconectado da instância do EC2 conforme necessário; redimensionar de forma independente a capacidade de armazenamento sem interromper a instância; criar backups pontuais para proteger dados essenciais do cliente e do inventário. Qual serviço de armazenamento da AWS melhor atenderia aos requisitos do cenário?",
   "alternativas": [
@@ -4409,6 +4856,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "Elastic Disaster Recovery"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Qual declaração melhor descreve o AWS Elastic Disaster Recovery?",
   "alternativas": [
@@ -4439,6 +4889,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Bancos de dados",
+  "servicos": [
+   "EC2"
+  ],
   "gabarito": "confirmado",
   "enunciado": "A AnyCompany Logistics está crescendo e expandindo sua plataforma on-line. A equipe de desenvolvimento deve escolher entre duas opções de banco de dados. Eles podem hospedar o próprio banco de dados em uma instância da solução Amazon EC2 ou usar o serviço de banco de dados totalmente gerenciado da AWS. A empresa quer reduzir as tarefas de manutenção de TI para que a equipe possa se concentrar mais no trabalho de desenvolvimento. Qual opção deve ser escolhida?",
   "alternativas": [
@@ -4472,6 +4925,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Bancos de dados",
+  "servicos": [
+   "Aurora"
+  ],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "A AnyCompany Financial está enfrentando tempos de resposta lentos com o banco de dados MySQL atual durante períodos de pico de transações. Ela processa mais de 100.000 transações por hora e exige alto throughput para a satisfação do cliente. O CTO está considerando a solução Amazon Aurora como uma maneira de melhorar de forma significativa o desempenho do banco de dados. Qual é o atributo do Aurora que MELHOR contempla esse cenário?",
   "alternativas": [
@@ -4502,6 +4959,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Bancos de dados",
+  "servicos": [
+   "RDS"
+  ],
   "gabarito": "confirmado",
   "enunciado": "A AnyCompany Retail quer migrar seu banco de dados de produtos para a nuvem AWS para reduzir a sobrecarga operacional. O banco de dados existente contém informações críticas de inventário e preços que exigem operação contínua com o mínimo de tempo de inatividade. A gerência está explorando a solução Amazon RDS como uma forma de reduzir o número de recursos de TI. Qual é o atributo da solução Amazon RDS que atende aos requisitos de banco de dados descritos nesse cenário?",
   "alternativas": [
@@ -4532,6 +4992,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Bancos de dados",
+  "servicos": [
+   "DynamoDB",
+   "Auto Scaling"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma empresa de recursos humanos está criando uma aplicação que deve armazenar informações de profissionais com padrões de tráfego imprevisíveis. Sua aplicação exige desempenho consistente em todos os momentos, e a equipe de desenvolvimento quer se concentrar nos atributos em vez de se concentrar nas tarefas de gerenciamento de banco de dados. Qual é o recurso do Amazon DynamoDB que MELHOR atende às necessidades dessa workload?",
   "alternativas": [
@@ -4562,6 +5026,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "Backup"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Qual é o principal problema que pode ser resolvido com a implementação da solução AWS Backup?",
   "alternativas": [
@@ -4592,6 +5059,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Bancos de dados",
+  "servicos": [
+   "DocumentDB"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Qual é o principal atributo da solução Amazon DocumentDB?",
   "alternativas": [
@@ -4622,6 +5092,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Bancos de dados",
+  "servicos": [
+   "Neptune"
+  ],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "Qual é a vantagem de usar a solução Amazon Neptune?",
   "alternativas": [
@@ -4652,6 +5126,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Bancos de dados",
+  "servicos": [
+   "DynamoDB"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Qual declaração MELHOR descreve a solução Amazon DynamoDB?",
   "alternativas": [
@@ -4682,6 +5159,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Bancos de dados",
+  "servicos": [
+   "Neptune"
+  ],
   "gabarito": "confirmado",
   "enunciado": "O que é um uso prático da solução Amazon Neptune?",
   "alternativas": [
@@ -4712,6 +5192,7 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Bancos de dados",
+  "servicos": [],
   "gabarito": "confirmado",
   "enunciado": "Qual declaração descreve as responsabilidades dos clientes que usam serviços de banco de dados totalmente gerenciados da AWS?",
   "alternativas": [
@@ -4742,6 +5223,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "Backup"
+  ],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "Qual é um atributo da solução AWS Backup?",
   "alternativas": [
@@ -4772,6 +5257,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Bancos de dados",
+  "servicos": [
+   "DynamoDB"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Qual é a principal forma pela qual os bancos de dados NoSQL, como Amazon DynamoDB, diferem dos bancos de dados relacionais?",
   "alternativas": [
@@ -4802,6 +5290,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Bancos de dados",
+  "servicos": [
+   "RDS"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Qual explicação MELHOR descreve a solução Amazon RDS?",
   "alternativas": [
@@ -4832,6 +5323,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Bancos de dados",
+  "servicos": [
+   "EC2"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Qual opção descreve um cenário em que uma solução não gerenciada, como um banco de dados instalado diretamente em uma instância da solução Amazon EC2, seria preferível quanto ao uso de um serviço de banco de dados da AWS totalmente gerenciado?",
   "alternativas": [
@@ -4862,6 +5356,7 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Bancos de dados",
+  "servicos": [],
   "gabarito": "confirmado",
   "enunciado": "Qual definição MELHOR descreve o armazenamento em cache em memória?",
   "alternativas": [
@@ -4892,6 +5387,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Bancos de dados",
+  "servicos": [
+   "Aurora"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Qual é um possível caso de uso da solução Amazon Aurora?",
   "alternativas": [
@@ -4922,6 +5420,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Bancos de dados",
+  "servicos": [
+   "DMS"
+  ],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Qual problema a solução AWS Database Migration Service (AWS DMS) resolve?",
   "alternativas": [
@@ -4952,6 +5454,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Bancos de dados",
+  "servicos": [
+   "DocumentDB"
+  ],
   "gabarito": "confirmado",
   "enunciado": "O que é um caso de uso prático para a solução Amazon DocumentDB (compatível com MongoDB)?",
   "alternativas": [
@@ -4982,6 +5487,8 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "IA e machine learning",
+  "servicos": [],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "O machine learning (ML) é um tipo de IA para treinar máquinas a realizar tarefas complexas sem instruções explícitas. Esse processo de treinamento envolve encontrar padrões em grandes quantidades de dados históricos. O que é produzido como resultado do processo de treinamento de ML?",
   "alternativas": [
@@ -5012,6 +5519,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "IA e machine learning",
+  "servicos": [
+   "Comprehend"
+  ],
   "gabarito": "confirmado",
   "enunciado": "A proprietária de uma concessionária de automóveis quer determinar por que seu departamento de serviços perdeu negócios no ano passado. Ela quer analisar um grande número de comentários documentados de clientes para entender melhor o sentimento do cliente. Qual serviço da AWS funcionaria bem para esse caso de uso?",
   "alternativas": [
@@ -5042,6 +5552,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "IA e machine learning",
+  "servicos": [
+   "Lex"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma empresa de saúde deseja adicionar uma interface conversacional à sua aplicação de suporte ao cliente usando uma solução pronta. Qual serviço da AWS eles poderiam escolher?",
   "alternativas": [
@@ -5072,6 +5585,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "IA e machine learning",
+  "servicos": [
+   "SageMaker"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma pequena empresa de tecnologia quer desenvolver seu próprio modelo personalizado de machine learning (ML) sem gerenciar a infraestrutura subjacente. A empresa está procurando uma solução que seus data scientists e analistas de negócios possam usar. Qual serviço da AWS eles devem escolher?",
   "alternativas": [
@@ -5102,6 +5618,7 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "IA e machine learning",
+  "servicos": [],
   "gabarito": "confirmado",
   "enunciado": "Uma equipe de engenheiros de machine learning (ML) está desenvolvendo um novo modelo de ML para uma aplicação altamente especializada. Eles precisam de controle total sobre o processo de treinamento de ML. Então, eles estão desenvolvendo sua própria solução personalizada usando o framework PyTorch ML. O que é um framework de ML?",
   "alternativas": [
@@ -5132,6 +5649,7 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "IA e machine learning",
+  "servicos": [],
   "gabarito": "confirmado",
   "enunciado": "A IA generativa é um tipo de aprendizado profundo alimentado por modelos de ML extremamente grandes que são pré-treinados em vastas coleções de dados. Como esses modelos são chamados?",
   "alternativas": [
@@ -5162,6 +5680,7 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "IA e machine learning",
+  "servicos": [],
   "gabarito": "confirmado",
   "enunciado": "Uma grande agência de publicidade deseja integrar rapidamente um novo atributo de geração de conteúdo em sua aplicação de design existente em toda a empresa. O novo atributo precisa ser capaz de gerar texto e imagens. A agência não quer gerenciar nenhuma nova infraestrutura. Qual serviço funcionaria melhor para esse caso de uso?",
   "alternativas": [
@@ -5192,6 +5711,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "IA e machine learning",
+  "servicos": [
+   "Amazon Q"
+  ],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Uma empresa de desenvolvimento de software está trabalhando em um novo produto com um deadline muito curto. A empresa precisa de uma forma de desenvolver código mais rapidamente sem sacrificar a confiabilidade ou a segurança. Qual serviço poderia ajudar melhor essa empresa a cumprir seu deadline?",
   "alternativas": [
@@ -5222,6 +5745,7 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Analytics e dados",
+  "servicos": [],
   "gabarito": "confirmado",
   "enunciado": "Os pipelines de dados são linhas de montagem automatizadas usadas para tornar o processo ETL eficiente e repetível. O que significa ETL?",
   "alternativas": [
@@ -5252,6 +5776,8 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Analytics e dados",
+  "servicos": [],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "No campo da data analytics, os analistas transformam dados históricos brutos em algo útil. O que esses analistas estão trabalhando para descobrir com esses dados transformados?",
   "alternativas": [
@@ -5282,6 +5808,9 @@
   "tipo": "multipla",
   "tema": "Tecnologia e serviços",
   "subtema": "Analytics e dados",
+  "servicos": [
+   "Kinesis"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma equipe de data analytics está criando um pipeline de dados automatizado na AWS. Quais serviços da AWS eles poderiam escolher para ingestão de dados? (Selecione DOIS.)",
   "alternativas": [
@@ -5316,6 +5845,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Analytics e dados",
+  "servicos": [
+   "Glue"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Qual serviço da AWS é mais adequado para processamento de dados em um pipeline de dados?",
   "alternativas": [
@@ -5346,6 +5878,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Analytics e dados",
+  "servicos": [
+   "S3"
+  ],
   "gabarito": "confirmado",
   "enunciado": "A equipe de data analytics deve ingerir grandes quantidades de dados não estruturados em seu pipeline. Qual serviço da AWS é a MELHOR opção para armazenar esses dados?",
   "alternativas": [
@@ -5376,6 +5911,11 @@
   "tipo": "multipla",
   "tema": "Tecnologia e serviços",
   "subtema": "Analytics e dados",
+  "servicos": [
+   "OpenSearch",
+   "QuickSight/Quick"
+  ],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Quais serviços da AWS a equipe de data analytics poderia escolher para visualização de dados? (Selecione DOIS.)",
   "alternativas": [
@@ -5410,6 +5950,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Analytics e dados",
+  "servicos": [
+   "Kinesis"
+  ],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "Uma empresa de serviços financeiros está desenvolvendo uma aplicação para analisar dados de ações em tempo real para que sua equipe de analistas possa tomar decisões comerciais imediatas. A empresa precisa ingerir dados do mercado de ações em tempo real sem se preocupar com servidores ou capacidade de scaling. Qual serviço da AWS atenderia a essa necessidade?",
   "alternativas": [
@@ -5440,6 +5984,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "IA e machine learning",
+  "servicos": [
+   "Polly"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma pequena equipe de desenvolvimento está procurando adicionar um atributo à sua aplicação que converta texto em fala. Qual serviço pré-criado de IA da AWS pode ser usado para essa tarefa?",
   "alternativas": [
@@ -5470,6 +6017,8 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "IA e machine learning",
+  "servicos": [],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Tanto a programação clássica quanto o machine learning podem ser usados para treinar computadores para realizar tarefas. Qual é a principal diferença entre as duas abordagens?",
   "alternativas": [
@@ -5500,6 +6049,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Analytics e dados",
+  "servicos": [
+   "Redshift",
+   "S3"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Os dados podem vir de muitas fontes diferentes. Para fornecer informações, os dados devem ser consolidados em um único local. Há duas opções de armazenamento para isso. Os data lakes armazenam grandes quantidades de dados brutos e os data warehouses são otimizados para business intelligence. Quais serviços da AWS são normalmente usados como data lake e data warehouse?",
   "alternativas": [
@@ -5530,6 +6083,7 @@
   "tipo": "multipla",
   "tema": "Tecnologia e serviços",
   "subtema": "IA e machine learning",
+  "servicos": [],
   "gabarito": "confirmado",
   "enunciado": "A IA generativa é um tipo de aprendizado profundo alimentado por modelos extremamente grandes de machine learning (ML), conhecidos como modelos de base (FMs). Quais são as características dos FMs? (Selecione DUAS alternativas.)",
   "alternativas": [
@@ -5564,6 +6118,7 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "IA e machine learning",
+  "servicos": [],
   "gabarito": "confirmado",
   "enunciado": "Uma empresa de comércio eletrônico deseja adicionar um mecanismo de recomendação de produtos à sua aplicação on-line para aumentar as vendas. A equipe de desenvolvimento quer que as recomendações sejam relevantes para cada cliente. Qual serviço pré-criado de IA da AWS funcionaria bem para esse caso de uso?",
   "alternativas": [
@@ -5594,6 +6149,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "IA e machine learning",
+  "servicos": [
+   "SageMaker"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Qual serviço da AWS pode ser usado para criar, treinar e implantar um modelo personalizado de machine learning (ML) sem se preocupar com a infraestrutura subjacente?",
   "alternativas": [
@@ -5624,6 +6182,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "IA e machine learning",
+  "servicos": [
+   "Amazon Q"
+  ],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "Uma grande organização de saúde quer melhorar a produtividade dos funcionários. A empresa está procurando um assistente de IA generativa pré-construído que possa responder perguntas, ajudar a resolver problemas e realizar ações usando os dados e a experiência encontrados em seus repositórios de informações. Qual serviço da AWS funcionaria bem para esse caso de uso?",
   "alternativas": [
@@ -5654,6 +6216,7 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Analytics e dados",
+  "servicos": [],
   "gabarito": "confirmado",
   "enunciado": "O processo de extração, transformação e carga (ETL) geralmente é usado para fornecer dados limpos e acessíveis em um formato que pode ser usado por ferramentas de análise e algoritmos de IA. Como um pipeline de dados melhora esse processo?",
   "alternativas": [
@@ -5684,6 +6247,7 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "IA e machine learning",
+  "servicos": [],
   "gabarito": "confirmado",
   "enunciado": "O Amazon Bedrock é um serviço totalmente gerenciado que foi projetado especificamente para trabalhar com grandes modelos de base (FMs) e criar aplicações de IA generativa. O que o serviço oferece para acessar FMs da Amazon e das principais startups de IA?",
   "alternativas": [
@@ -5714,6 +6278,8 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "Depois de fazer login em seu perfil bancário on-line com seu nome de usuário e senha, o cliente tenta transferir USD 10.000 de suas economias para sua conta corrente. O sistema verifica se o cliente tem privilégios suficientes para fazer transferências desse valor antes de continuar. De que tipo de verificação do sistema isso é um exemplo?",
   "alternativas": [
@@ -5744,6 +6310,11 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Responsabilidade compartilhada",
+  "servicos": [
+   "EC2",
+   "RDS",
+   "S3"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma empresa de saúde está se preparando para implantar um aplicativo web nas instâncias do Amazon EC2 que processará dados confidenciais de pacientes. A aplicação usará o Amazon RDS para armazenamento de banco de dados e o Amazon S3 para armazenamento de arquivos. A equipe de segurança da empresa está discutindo as responsabilidades de segurança para a implantação. Qual é a responsabilidade de segurança do cliente nesse cenário?",
   "alternativas": [
@@ -5774,6 +6345,7 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [],
   "gabarito": "confirmado",
   "enunciado": "Um administrador que cria uma conta AWS recebe as credenciais do usuário-raiz. Para proteger essa conta altamente privilegiada, eles devem definir imediatamente uma senha forte e ativar a autenticação multifator (MFA). O que a MFA exige que os usuários façam?",
   "alternativas": [
@@ -5804,6 +6376,9 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "IAM"
+  ],
   "gabarito": "confirmado",
   "enunciado": "O AWS Identity and Access Management (AWS IAM) fornece usuários, grupos, perfis e políticas para que você possa configurar o acesso com base nas necessidades operacionais e de segurança específicas da sua empresa. Qual deles foi projetado especificamente para fornecer acesso temporário às permissões?",
   "alternativas": [
@@ -5834,6 +6409,11 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "IAM",
+   "S3"
+  ],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Uma empresa de serviços financeiros quer dar a seus contadores acesso a um bucket do Amazon S3 específico. Quais desses controles do IAM são usados para definir esse acesso?",
   "alternativas": [
@@ -5864,6 +6444,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "Secrets Manager"
+  ],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "Uma equipe de desenvolvimento de software precisa gerenciar centralmente suas credenciais de banco de dados e chaves de API na AWS. Quais desses serviços a equipe deve escolher?",
   "alternativas": [
@@ -5894,6 +6478,7 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [],
   "gabarito": "confirmado",
   "enunciado": "Em um ataque de negação de serviço (DoS), um invasor inunda um aplicativo web com tráfego de rede excessivo. As solicitações legítimas do cliente são negadas se o aplicativo web ficar sobrecarregado e não puder mais responder. Qual a diferença entre um ataque de negação de serviço distribuída (DDoS)?",
   "alternativas": [
@@ -5924,6 +6509,8 @@
   "tipo": "multipla",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Recentemente, uma boutique on-line sofreu uma série de ataques direcionados de negação de serviço distribuída (DDoS). O proprietário quer aprimorar a segurança do aplicativo web da boutique usando a infraestrutura da AWS. Quais componentes a boutique pode usar para proteger o aplicativo web na AWS contra ataques de DDoS? (Selecione DUAS alternativas.)",
   "alternativas": [
@@ -5958,6 +6545,8 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "Quais processos envolvem o bloqueio e o desbloqueio de dados com uma chave especial para que somente usuários autorizados possam acessá-los?",
   "alternativas": [
@@ -5988,6 +6577,9 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "ACM"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma empresa de preparação de impostos precisa proteger dados confidenciais de clientes que são transferidos de seu banco de dados para seu aplicativo web na AWS. Quais desses serviços podem ajudá-la a proteger os dados em trânsito?",
   "alternativas": [
@@ -6018,6 +6610,9 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "Detective"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma equipe de segurança de um escritório jurídico detectou uma ameaça ao ambiente da AWS. Para investigar a causa raiz ao longo do tempo, eles precisam de visualizações interativas dos dados de segurança. Qual serviço da AWS é a MELHOR escolha para essa investigação?",
   "alternativas": [
@@ -6048,6 +6643,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "Security Hub"
+  ],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Uma agência governamental local precisa se preparar para uma futura auditoria de conformidade. A agência precisa agregar automaticamente as descobertas de segurança de vários serviços da AWS em uma visão abrangente. Quais desses serviços a agência deve escolher?",
   "alternativas": [
@@ -6078,6 +6677,9 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "Shield"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Recentemente, uma pequena empresa de serviços financeiros transferiu seus recursos on-line para a AWS. A equipe de segurança estava preocupada com a proteção contra tipos comuns e frequentes de ataques de negação de serviço distribuída (DDoS). Qual serviço da AWS protege automaticamente os clientes, sem nenhum custo, contra ataques de DDoS?",
   "alternativas": [
@@ -6108,6 +6710,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "KMS"
+  ],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "A equipe de segurança de uma grande empresa de comércio eletrônico precisa de uma forma centralizada de criar e gerenciar as chaves de criptografia que protegem seus dados na AWS. Qual desses serviços é o mais adequado para essa equipe?",
   "alternativas": [
@@ -6138,6 +6744,8 @@
   "tipo": "multipla",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Todas as contas da AWS recebem um usuário-raiz da conta da AWS. O usuário-raiz é o proprietário da conta e tem permissões totais para realizar qualquer ação. Quais são algumas maneiras de proteger essa conta poderosa? (Selecione DUAS alternativas.)",
   "alternativas": [
@@ -6172,6 +6780,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "IAM"
+  ],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "Com o AWS Identity and Access Management (AWS IAM), todas as ações são negadas por padrão. Ao conceder permissões, o acesso deve ser fornecido somente quando necessário. Como se chama esse conceito?",
   "alternativas": [
@@ -6202,6 +6814,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "IAM",
+   "IAM Identity Center"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma empresa de tecnologia está transferindo alguns de seus recursos para a AWS. A empresa quer fornecer acesso de Single Sign-On para seus funcionários na AWS usando sua origem de identidade existente. Qual serviço pode ajudar a empresa a fazer isso?",
   "alternativas": [
@@ -6232,6 +6848,12 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "EC2",
+   "Inspector",
+   "Lambda"
+  ],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "A equipe de segurança de uma grande empresa de desenvolvimento de software precisa verificar várias aplicações em busca de vulnerabilidades de segurança e desvios das práticas recomendadas de segurança. As aplicações estão sendo executadas no Amazon EC2, no AWS Lambda e em contêineres. Qual serviço da AWS eles devem escolher para as avaliações de segurança?",
   "alternativas": [
@@ -6262,6 +6884,11 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "IAM",
+   "S3"
+  ],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Uma grande empresa de marketing tem um conjunto padrão de permissões usado para conceder aos designers acesso a determinados buckets do Amazon S3. A empresa adicionou um novo bucket do S3 que todos os designers precisam acessar. Qual controle do AWS Identity and Access Management (AWS IAM) a empresa pode usar para atribuir permissões que serão herdadas por todos os seus designers?",
   "alternativas": [
@@ -6292,6 +6919,8 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "Um funcionário deseja verificar o portal on-line de funcionários da empresa para ver quantas horas de férias ele acumulou. Antes de acessar seus registros pessoais, eles inserem seu nome de usuário e senha para fazer login no site. O que acontece durante esse processo de login?",
   "alternativas": [
@@ -6322,6 +6951,8 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Responsabilidade compartilhada",
+  "servicos": [],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "Qual é a responsabilidade da AWS de acordo com o modelo de responsabilidade compartilhada da AWS?",
   "alternativas": [
@@ -6352,6 +6983,8 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Proteger dados confidenciais do cliente é um componente vital para manter a confiança do cliente. Isso envolve a criptografia de dados em repouso e em trânsito. O que é usado para criptografar dados em trânsito?",
   "alternativas": [
@@ -6382,6 +7015,10 @@
   "tipo": "multipla",
   "tema": "Tecnologia e serviços",
   "subtema": "Monitoramento e gerenciamento",
+  "servicos": [
+   "EC2",
+   "CloudWatch"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma empresa de comércio eletrônico está hospedando sua aplicação de cliente em várias instâncias da solução Amazon EC2. A aplicação enfrenta tráfego flutuante e problemas ocasionais de desempenho que estão afetando a experiência do cliente. Como a solução Amazon CloudWatch pode ajudar o cliente? (Selecione TRÊS opções.)",
   "alternativas": [
@@ -6420,6 +7057,11 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Governança e conformidade",
+  "servicos": [
+   "CloudTrail",
+   "S3"
+  ],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "Uma empresa quer armazenar os arquivos que contêm atividades de API para uma conta da AWS em um bucket do Amazon S3. Ela quer manter esses arquivos para fazer auditoria e atender aos requisitos de conformidade. Qual solução e recurso forneceriam esse recurso?",
   "alternativas": [
@@ -6450,6 +7092,9 @@
   "tipo": "multipla",
   "tema": "Segurança e conformidade",
   "subtema": "Governança e conformidade",
+  "servicos": [
+   "Artifact"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Quais tarefas é possível concluir na solução AWS Artifact? (Selecione DUAS alternativas.)",
   "alternativas": [
@@ -6484,6 +7129,11 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Governança e conformidade",
+  "servicos": [
+   "EC2",
+   "Config"
+  ],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "Um cliente corporativo com uma grande equipe de desenvolvedores procura uma forma de garantir diretrizes de configuração específicas para os desenvolvedores ao criar recursos da AWS. Ele quer avaliar e auditar os recursos da AWS para garantir que a equipe esteja usando a lista aprovada mais econômica de instâncias da solução Amazon EC2. Qual serviço da AWS atenderia melhor às necessidades do cliente?",
   "alternativas": [
@@ -6514,6 +7164,9 @@
   "tipo": "multipla",
   "tema": "Segurança e conformidade",
   "subtema": "Governança e conformidade",
+  "servicos": [
+   "Organizations"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Você está configurando políticas de controle de serviço (SCPs) na solução AWS Organizations. Em quais identidades e recursos as SCPs podem ser aplicadas? (Selecione DUAS alternativas.)",
   "alternativas": [
@@ -6548,6 +7201,9 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Governança e conformidade",
+  "servicos": [
+   "Organizations"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Um cliente corporativo cresceu de forma rápida e está tendo dificuldades para gerenciar o faturamento dos recursos e contas da AWS. Cada profissional criou contas independentes sem gerenciamento centralizado ou agrupamentos hierárquicos de contas. O cliente quer aumentar o faturamento e centralizar o gerenciamento em unidades organizacionais. Qual serviço da AWS atenderia melhor às necessidades desse cliente?",
   "alternativas": [
@@ -6578,6 +7234,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Governança e conformidade",
+  "servicos": [
+   "CloudTrail"
+  ],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "Uma empresa financeira com uma solução de nuvem híbrida quer acompanhar as alterações feitas em seus recursos da AWS, tanto na nuvem quanto on-premises. Especificamente, eles querem saber quem fez o quê e quando. Qual serviço da AWS atenderia melhor às suas necessidades?",
   "alternativas": [
@@ -6608,6 +7268,9 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Governança e conformidade",
+  "servicos": [
+   "Control Tower"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Qual é a finalidade de uma zona de pouso da solução AWS Control Tower?",
   "alternativas": [
@@ -6638,6 +7301,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Governança e conformidade",
+  "servicos": [
+   "Organizations"
+  ],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Um cliente está usando a solução AWS Organizations para gerenciar de maneira centralizada as contas de faturamento de sua empresa para otimizar e organizar os custos. Ele quer configurar regras ou restrições nos serviços da AWS, recursos e ações individuais de API que os usuários podem acessar. Qual recurso atenderia às suas necessidades?",
   "alternativas": [
@@ -6668,6 +7335,8 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Governança e conformidade",
+  "servicos": [],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "Onde os clientes podem encontrar recursos sobre conformidade da AWS, por exemplo, informações sobre histórias de conformidade de clientes, respostas às principais questões de conformidade e uma lista de verificação de auditoria de segurança?",
   "alternativas": [
@@ -6699,6 +7368,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Monitoramento e gerenciamento",
+  "servicos": [
+   "EC2",
+   "CloudWatch"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma empresa de roupas esportivas está hospedando sua aplicação nas instâncias da solução Amazon EC2. Ela quer coletar métricas em suas instâncias do EC2 e gostaria de receber notificações quando a utilização ultrapassar os limites. Ela também quer ter uma ação configurada para automatizar o aumento do número de instâncias do EC2 quando a utilização ultrapassar o limite. Qual serviço da AWS atenderia melhor às suas necessidades?",
   "alternativas": [
@@ -6729,6 +7402,9 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Governança e conformidade",
+  "servicos": [
+   "Artifact"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Qual serviço da AWS é um serviço que oferece de maneira gratuita acesso sob demanda a relatórios de segurança e conformidade da AWS e a determinados contratos on-line?",
   "alternativas": [
@@ -6760,6 +7436,10 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Governança e conformidade",
+  "servicos": [
+   "License Manager"
+  ],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Um cliente está migrando da abordagem on-premises para a nuvem e decidiu usar o modelo traga sua própria licença (BYOL) para economizar custos. Ele está preocupado com o gerenciamento das licenças, procura uma forma de reduzir o risco de não conformidade e quer impor limites de uso da licença. Qual solução melhor atenderia às suas necessidades?",
   "alternativas": [
@@ -6790,6 +7470,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Governança e conformidade",
+  "servicos": [
+   "Config"
+  ],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Um cliente de pesquisa com uma grande equipe de desenvolvedores procura uma forma de garantir diretrizes de configuração específicas para os desenvolvedores ao criar recursos da AWS. Ele procura uma forma de avaliar e auditar os recursos da AWS para garantir que a equipe esteja usando a lista aprovada de recursos de computação mais econômica. Qual solução ou recurso atenderia às suas necessidades?",
   "alternativas": [
@@ -6820,6 +7504,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Governança e conformidade",
+  "servicos": [
+   "Service Catalog"
+  ],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "Uma empresa financeira está procurando uma solução para gerenciar um conjunto selecionado de recursos da AWS para seus profissionais. Quando os profissionais precisam selecionar e iniciar um novo recurso da AWS, eles querem oferecer uma forma de autoatendimento para criar, compartilhar e implantar os recursos da AWS. Qual serviço da AWS atenderia melhor às suas necessidades?",
   "alternativas": [
@@ -6850,6 +7538,8 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "Você trabalha como engenheiro de nuvem para uma empresa de saúde. A diretoria de tecnologia quer armazenar os registros dos pacientes na nuvem. Ela pergunta sobre os fatores determinantes do custo. Qual resposta MELHOR descreve os principais fatores determinantes do custo da nuvem AWS?",
   "alternativas": [
@@ -6880,6 +7570,10 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [
+   "Budgets"
+  ],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "Uma agência governamental está começando a gerenciar os custos na nuvem AWS. Ela quer configurar notificações para enviar alertas que indicam quando os custos excederem um determinado limite em um determinado mês. Qual serviço da AWS ela usaria para realizar essa tarefa?",
   "alternativas": [
@@ -6910,6 +7604,11 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [
+   "AWS Support (planos)",
+   "Trusted Advisor"
+  ],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "Uma empresa de médio porte está tentando decidir o nível de AWS Support mais adequado às suas necessidades. A empresa tem os seguintes requisitos: assistência oportuna, mas não necessariamente suporte 24/7; verificações de segurança em nível Basic com a solução AWS Trusted Advisor; orientação geral sobre as práticas recomendadas; suporte para resposta a incidentes e solução de problemas dentro de 12 a 24 horas. Qual plano da solução AWS Support a empresa deve escolher com base nesses requisitos?",
   "alternativas": [
@@ -6941,6 +7640,9 @@
   "tipo": "multipla",
   "tema": "Cobrança e suporte",
   "subtema": "Analytics e dados",
+  "servicos": [
+   "Marketplace"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Você é um novo arquiteto de soluções em nuvem em uma empresa de tecnologia em crescimento. Seu gerente solicitou que você explorasse a solução AWS Marketplace para encontrar soluções que possam ajudar a melhorar a eficiência operacional da sua empresa e reduzir custos. De acordo com o que você aprendeu, quais opções estão disponíveis na solução AWS Marketplace? (Selecione DUAS alternativas.)",
   "alternativas": [
@@ -6975,6 +7677,10 @@
   "tipo": "multipla",
   "tema": "Cobrança e suporte",
   "subtema": "Monitoramento e gerenciamento",
+  "servicos": [
+   "AWS Support (planos)"
+  ],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "Além dos planos de AWS Support e de outras opções de assistência técnica, a AWS também fornece acesso a recursos de autossuporte. Quais opções os clientes da AWS têm disponíveis como recursos de autossuporte? (Selecione TRÊS opções.)",
   "alternativas": [
@@ -7013,6 +7719,8 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "Qual opção MELHOR descreve a função da Rede de Parceiros da AWS (APN)?",
   "alternativas": [
@@ -7043,6 +7751,10 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [
+   "AWS Support (planos)"
+  ],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "Você é chief technology officer de uma grande empresa com aplicações de missão crítica em execução na AWS. Sua organização exige o mais alto nível de suporte, inclusive tempos de resposta de 15 minutos ou menos quando os sistemas essenciais estão inativos. Qual plano de AWS Support você deve escolher?",
   "alternativas": [
@@ -7073,6 +7785,8 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [],
+  "simulado": 3,
   "gabarito": "inferido",
   "enunciado": "Qual opção MELHOR descreve um dos principais benefícios de ser um parceiro da AWS?",
   "alternativas": [
@@ -7104,6 +7818,7 @@
   "tipo": "multipla",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [],
   "gabarito": "confirmado",
   "enunciado": "Uma empresa financeira global atualmente possui seus recursos de tecnologia da informação (TI) on-premises e está avaliando a nuvem AWS. A empresa está acostumada com despesas fixas de capital e quer entender como pagaria migrando para a nuvem AWS. Quais opções MELHOR descrevem como os clientes pagam pela AWS? (Selecione TRÊS opções.)",
   "alternativas": [
@@ -7142,6 +7857,8 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Uma empresa de varejo on-line está interessada em avançar com a migração de uma aplicação, mas gostaria de estimar os custos antes de começar. Qual ferramenta ou serviço ela pode usar para estimar o custo dos serviços e configurações específicos da AWS de que precisam?",
   "alternativas": [
@@ -7172,6 +7889,9 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Governança e conformidade",
+  "servicos": [
+   "Organizations"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Você faz parte de uma equipe que deseja monitorar e gerenciar os custos de várias contas da AWS em diferentes departamentos de sua organização. Qual serviço da AWS você pode usar para gerenciar e consolidar com eficácia as informações de faturamento dessas contas?",
   "alternativas": [
@@ -7202,6 +7922,9 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [
+   "AWS Support (planos)"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Você é o líder técnico de uma empresa de comércio eletrônico de médio porte e está avaliando várias opções de suporte para sua infraestrutura da AWS. Seus desafios atuais incluem a otimização do desempenho do banco de dados e o planejamento de resposta a incidentes. Você também está buscando consultoria técnica sobre as práticas recomendadas para segurança. Pensando em outros planos de suporte que não os do AWS Support, qual opção é a MAIS INDICADA para obter consultoria sobre as práticas recomendadas de segurança e conduzir uma auditoria de segurança de seu ambiente da AWS?",
   "alternativas": [
@@ -7232,6 +7955,10 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [
+   "Marketplace"
+  ],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Uma grande empresa deseja encontrar soluções de software prontas para conformidade para garantir que elas atendam às regulamentações do setor. Ela está explorando os serviços da AWS para ajudar no processo e quer implementar a solução o mais rápido possível. Qual opção é a MAIS adequada para essa empresa e seus requisitos?",
   "alternativas": [
@@ -7262,6 +7989,8 @@
   "tipo": "multipla",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "A empresa EdTech está pensando em migrar sua aplicação educacional para a nuvem. O diretor financeiro (CFO) da empresa deseja entender como os preços dos serviços da AWS são calculados e quais fatores vão aumentar seu custo. Embora o preço varie com base em diversos fatores, quais das opções são os influenciadores fundamentais do custo com a AWS? (Selecione TRÊS opções.)",
   "alternativas": [
@@ -7300,6 +8029,7 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Migração e transferência",
+  "servicos": [],
   "gabarito": "confirmado",
   "enunciado": "Qual perspectiva da solução AWS Cloud Adoption Framework (AWS CAF) inclui princípios e padrões para implementar novas soluções na nuvem e migrar workloads on-premises para a nova plataforma na nuvem? Ela usa uma variedade de modelos de arquitetura para entender e comunicar a estrutura dos sistemas de TI.",
   "alternativas": [
@@ -7330,6 +8060,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Migração e transferência",
+  "servicos": [],
+  "simulado": 1,
   "gabarito": "confirmado",
   "enunciado": "Qual estratégia de migração envolve a mudança para um produto diferente?",
   "alternativas": [
@@ -7360,6 +8092,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Migração e transferência",
+  "servicos": [
+   "Migration Evaluator"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Um cliente está começando a migração e não sabe como criar um caso de negócios para justificar a mudança. Qual solução MELHOR atenderia aos requisitos?",
   "alternativas": [
@@ -7390,6 +8125,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Migração e transferência",
+  "servicos": [
+   "Migration Hub"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Um cliente está procurando uma ferramenta para ajudar a centralizar a visão de todas as suas tarefas de migração e ajudar a rastrear a migração. Qual solução MELHOR atenderia aos requisitos?",
   "alternativas": [
@@ -7420,6 +8158,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Migração e transferência",
+  "servicos": [
+   "SCT"
+  ],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "Um cliente corporativo deseja migrar os bancos de dados on-premises para a nuvem AWS. Ele está interessado em mudar o banco de dados comercial atual para um banco de dados de código aberto para reduzir os custos de licenciamento. Ele precisa de ajuda para converter todos os objetos do banco de dados para o novo tipo de banco de dados. Qual serviço da AWS MELHOR atenderia às necessidades do cliente?",
   "alternativas": [
@@ -7450,6 +8192,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Migração e transferência",
+  "servicos": [
+   "S3"
+  ],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Uma empresa de saúde está migrando grandes quantidades de dados no seu armazenamento on-premises na solução Amazon S3. Ela quer automatizar o processo e poder programar a migração para horários fora de pico e verificar o progresso e os relatórios de tarefas. Qual serviço atenderia melhor à necessidade de transferência de dados?",
   "alternativas": [
@@ -7480,6 +8226,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Migração e transferência",
+  "servicos": [],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Quais são as sete estratégias de migração comumente usadas quando os clientes migram para a nuvem AWS?",
   "alternativas": [
@@ -7510,6 +8258,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Migração e transferência",
+  "servicos": [],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "A equipe de migração quer garantir que a organização considere uma estratégia de gerenciamento de mudanças em toda a empresa para uma adoção bem-sucedida da nuvem. Qual perspectiva da solução Cloud Adoption Framework (CAF) eles usariam?",
   "alternativas": [
@@ -7540,6 +8290,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Migração e transferência",
+  "servicos": [
+   "Migration Evaluator"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma empresa de varejo está apenas começando a migração para a nuvem AWS. Ela precisa de ajuda para criar um caso de negócios para garantir o financiamento do diretor financeiro (CFO) e stakeholders. Qual serviço de migração atenderia MELHOR às suas necessidades?",
   "alternativas": [
@@ -7570,6 +8323,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Migração e transferência",
+  "servicos": [
+   "Migration Hub"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma empresa de mídia está na fase de migração e modernização de sua migração e quer um local centralizado para visualizar as tarefas de migração e progresso. Qual serviço de migração atenderia MELHOR às suas necessidades?",
   "alternativas": [
@@ -7600,6 +8356,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Migração e transferência",
+  "servicos": [],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "Qual é a função principal da solução AWS Cloud Adoption Framework (AWS CAF)?",
   "alternativas": [
@@ -7634,6 +8392,8 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Migração e transferência",
+  "servicos": [],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "Uma empresa de cartão de crédito está migrando grandes quantidades de dados sensíveis de seu armazenamento on-premises para a nuvem AWS. Ela quer automatizar o processo e programar a migração fora dos horários de pico. Ela também tem a necessidade de verificar o progresso e os relatórios de tarefas. Ela não têm uma conexão privada dedicada entre o data center e a nuvem AWS. Qual solução de migração on-line atenderia às suas necessidades?",
   "alternativas": [
@@ -7667,6 +8427,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Migração e transferência",
+  "servicos": [
+   "DMS"
+  ],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Durante a próxima migração, o administrador do banco de dados gostaria de migrar do banco de dados atual para um banco de dados gerenciado pela AWS para descarregar parte da administração do banco de dados. Ele também gostaria de usar uma ferramenta para planejar, avaliar, converter e migrar o banco de dados. Qual solução de migração atenderia MELHOR às suas necessidades?",
   "alternativas": [
@@ -7697,6 +8461,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Migração e transferência",
+  "servicos": [
+   "Application Migration (MGN)"
+  ],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "Uma agência ambiental está migrando as aplicações para a nuvem AWS. Durante a migração, ela também procura maneiras de modernizar e reduzir os custos de suas aplicações. Qual serviço de migração atenderia MELHOR às suas necessidades?",
   "alternativas": [
@@ -7727,6 +8495,8 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Migração e transferência",
+  "servicos": [],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "Uma empresa de engenharia está migrando grandes quantidades de arquivos de design de propriedade intelectual proprietários de seu data center on-premises para a nuvem AWS. Ela quer um serviço que tenha suporte totalmente gerenciado para transferências seguras de arquivos com vários protocolos diferentes, como Secure File Transfer Protocol (SFTP) e File Transfer Protocol Secure (FTPS). Qual solução de migração on-line atenderia às suas necessidades?",
   "alternativas": [
@@ -7757,6 +8527,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Monitoramento e gerenciamento",
+  "servicos": [
+   "X-Ray"
+  ],
   "gabarito": "confirmado",
   "enunciado": "A equipe de desenvolvimento de uma pequena empresa de marketing precisa de uma ferramenta de depuração e análise de desempenho para visualizar o comportamento de sua aplicação on-line. A aplicação está hospedada na AWS. Qual serviço da AWS essa equipe deve escolher?",
   "alternativas": [
@@ -7787,6 +8560,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Aplicações, IoT e outros",
+  "servicos": [
+   "Connect"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma grande empresa automotiva quer usar o poder da IA em seu centro de atendimento ao cliente. Ela precisa de uma solução que inclua roteamento, registro e analytics de chamadas. Qual serviço da AWS pode fornecer esses recursos?",
   "alternativas": [
@@ -7817,6 +8593,7 @@
   "tipo": "multipla",
   "tema": "Tecnologia e serviços",
   "subtema": "Aplicações, IoT e outros",
+  "servicos": [],
   "gabarito": "confirmado",
   "enunciado": "Quais opções são soluções de Internet das Coisas (IoT)? (Selecione DUAS alternativas.)",
   "alternativas": [
@@ -7851,6 +8628,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Aplicações, IoT e outros",
+  "servicos": [
+   "AppStream 2.0"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Um departamento de TI precisa fornecer aos profissionais acesso a vários aplicações on-line de software como serviço (SaaS). Qual serviço da AWS pode fornecer esse acesso?",
   "alternativas": [
@@ -7881,6 +8661,7 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
   "gabarito": "confirmado",
   "enunciado": "Uma equipe de desenvolvimento está lançando atualizações frequentes para uma aplicação hospedada na AWS. No momento, cada implantação exige etapas manuais que geralmente resultam em tempo de inatividade ou ambientes inconsistentes. Qual prática da solução AWS do Well-Architected Framework poderia ajudar nessa situação?",
   "alternativas": [
@@ -7911,6 +8692,10 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [
+   "Well-Architected Tool"
+  ],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Qual é a finalidade da solução AWS Well-Architected Tool (AWS WA Tool)?",
   "alternativas": [
@@ -7941,6 +8726,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Aplicações, IoT e outros",
+  "servicos": [
+   "IoT Core"
+  ],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Uma empresa de manufatura precisa de uma forma de monitorar os equipamentos de linha de montagem para detectar quaisquer problemas de desempenho. Qual serviço da AWS pode ajudá-la a criar uma solução de monitoramento para o equipamento?",
   "alternativas": [
@@ -7971,6 +8760,10 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [
+   "EC2"
+  ],
+  "simulado": 3,
   "gabarito": "confirmado",
   "enunciado": "Uma empresa está usando um grande tipo de instância da solução Amazon EC2 para um site de pouco tráfego, e o monitoramento mostra que o uso da CPU raramente ultrapassa 10%. O que seria um bom próximo passo?",
   "alternativas": [
@@ -8001,6 +8794,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Aplicações, IoT e outros",
+  "servicos": [
+   "WorkSpaces"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Uma pequena startup de tecnologia precisa fornecer à sua força de trabalho remota acesso seguro ao ambiente de trabalho. Os profissionais devem ser capazes de realizar as mesmas tarefas como se estivessem em um computador físico do escritório. Qual serviço da AWS eles podem usar para fornecer esse acesso remoto?",
   "alternativas": [
@@ -8031,6 +8827,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Aplicações, IoT e outros",
+  "servicos": [
+   "SES"
+  ],
   "gabarito": "confirmado",
   "enunciado": "O proprietário de uma grande empresa de hardware quer automatizar e otimizar os e-mails de marketing da empresa para melhorar o engajamento do cliente. Qual serviço da AWS funcionaria bem para esse caso de uso?",
   "alternativas": [
@@ -8061,6 +8860,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Aplicações, IoT e outros",
+  "servicos": [
+   "Amplify"
+  ],
   "gabarito": "confirmado",
   "enunciado": "Um desenvolvedor está trabalhando em uma aplicação full-stack hospedada na AWS. Ele está interessado na simplificação do processo de desenvolvimento ao adicionar de forma rápida atributos, como autenticação e armazenamento, com o mínimo de gerenciamento de infraestrutura. Qual serviço da AWS forneceria a melhor solução para as necessidades do desenvolvedor?",
   "alternativas": [
@@ -8091,6 +8893,10 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [
+   "EC2"
+  ],
+  "simulado": 2,
   "gabarito": "confirmado",
   "enunciado": "Uma startup está hospedando um aplicativo web crítico em uma única instância da solução Amazon EC2 em uma Zona de Disponibilidade. Depois de uma breve interrupção, ela decide reavaliar sua arquitetura. Que prática da solução AWS Well-Architected Framework poderia melhorar essa situação?",
   "alternativas": [
@@ -8121,6 +8927,11 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Aplicações, IoT e outros",
+  "servicos": [
+   "Step Functions",
+   "Lambda"
+  ],
+  "simulado": 3,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa precisa coordenar uma sequência de etapas que envolve várias funções do AWS Lambda, com tratamento de erros e novas tentativas. A equipe também quer visualizar o fluxo e o estado de cada execução. Qual serviço da AWS atende a esse requisito?",
   "alternativas": [
@@ -8152,6 +8963,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Aplicações, IoT e outros",
+  "servicos": [
+   "Step Functions"
+  ],
   "gabarito": "documentacao",
   "enunciado": "No AWS Step Functions, o que é uma máquina de estados (state machine)?",
   "alternativas": [
@@ -8183,6 +8997,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Aplicações, IoT e outros",
+  "servicos": [
+   "CodeBuild"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma equipe de desenvolvimento quer compilar o código-fonte, executar testes unitários e gerar artefatos prontos para implantação, sem provisionar nem gerenciar servidores de build. Qual serviço da AWS deve ser usado?",
   "alternativas": [
@@ -8214,6 +9031,9 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Aplicações, IoT e outros",
+  "servicos": [
+   "CodeBuild"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Como o AWS CodeBuild cobra pelo uso?",
   "alternativas": [
@@ -8245,6 +9065,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "IA e machine learning",
+  "servicos": [
+   "Rekognition"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma rede social quer detectar automaticamente conteúdo explícito ou inapropriado nas fotos enviadas pelos usuários. A equipe não tem experiência em machine learning. Qual serviço da AWS atende a essa necessidade?",
   "alternativas": [
@@ -8276,6 +9099,9 @@
   "tipo": "multipla",
   "tema": "Tecnologia e serviços",
   "subtema": "IA e machine learning",
+  "servicos": [
+   "Rekognition"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Quais tarefas o Amazon Rekognition pode realizar? (Selecione DUAS.)",
   "alternativas": [
@@ -8311,6 +9137,10 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Monitoramento e gerenciamento",
+  "servicos": [
+   "EC2",
+   "Compute Optimizer"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma empresa suspeita que várias instâncias do Amazon EC2 estão superdimensionadas e quer um serviço que analise as métricas de utilização e recomende tamanhos mais adequados para reduzir custos. Qual serviço atende a esse requisito?",
   "alternativas": [
@@ -8342,6 +9172,12 @@
   "tipo": "multipla",
   "tema": "Cobrança e suporte",
   "subtema": "Monitoramento e gerenciamento",
+  "servicos": [
+   "EC2",
+   "Compute Optimizer",
+   "Lambda"
+  ],
+  "simulado": 2,
   "gabarito": "documentacao",
   "enunciado": "Para quais recursos o AWS Compute Optimizer gera recomendações de dimensionamento? (Selecione DOIS.)",
   "alternativas": [
@@ -8377,6 +9213,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Monitoramento e gerenciamento",
+  "servicos": [
+   "Service Quotas"
+  ],
+  "simulado": 1,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa recebeu um erro ao tentar criar mais recursos porque atingiu o limite padrão da conta em uma Região. Qual serviço permite consultar os limites de cada serviço e solicitar o aumento?",
   "alternativas": [
@@ -8408,6 +9248,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Monitoramento e gerenciamento",
+  "servicos": [
+   "Service Quotas"
+  ],
   "gabarito": "documentacao",
   "enunciado": "No contexto do AWS Service Quotas, o que é uma cota de serviço?",
   "alternativas": [
@@ -8439,6 +9282,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "CloudHSM"
+  ],
+  "simulado": 2,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa precisa de módulos de segurança de hardware (HSMs) dedicados, de locatário único, com controle total das chaves de criptografia, para atender a requisitos rígidos de conformidade. Qual serviço da AWS atende a essa necessidade?",
   "alternativas": [
@@ -8470,6 +9317,9 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "CloudHSM"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Em comparação com um serviço totalmente gerenciado de chaves, o que muda para o cliente ao usar o AWS CloudHSM?",
   "alternativas": [
@@ -8501,6 +9351,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "Cognito"
+  ],
+  "simulado": 1,
   "gabarito": "documentacao",
   "enunciado": "Uma startup quer adicionar cadastro e login, inclusive com contas do Google e do Facebook, a um aplicativo móvel, sem criar um sistema próprio de autenticação. Qual serviço da AWS atende a esse requisito?",
   "alternativas": [
@@ -8532,6 +9386,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "Cognito",
+   "S3"
+  ],
   "gabarito": "documentacao",
   "enunciado": "No Amazon Cognito, qual componente troca um token confiável por credenciais temporárias da AWS, para que o aplicativo acesse serviços como o Amazon S3 em nome do usuário?",
   "alternativas": [
@@ -8563,6 +9421,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "Directory Service"
+  ],
+  "simulado": 2,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer executar na nuvem AWS aplicações que dependem do Microsoft Active Directory, usando um diretório gerenciado pela AWS. Qual serviço atende a esse requisito?",
   "alternativas": [
@@ -8594,6 +9456,9 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "Directory Service"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Qual afirmação descreve corretamente o AWS Managed Microsoft AD, uma das opções do AWS Directory Service?",
   "alternativas": [
@@ -8625,6 +9490,12 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "Organizations",
+   "Firewall Manager",
+   "WAF"
+  ],
+  "simulado": 1,
   "gabarito": "documentacao",
   "enunciado": "Uma organização com dezenas de contas no AWS Organizations quer aplicar automaticamente as mesmas regras do AWS WAF e dos grupos de segurança em todas as contas, inclusive nas que forem criadas no futuro. Qual serviço atende a esse requisito?",
   "alternativas": [
@@ -8656,6 +9527,11 @@
   "tipo": "multipla",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "Firewall Manager",
+   "Shield",
+   "WAF"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Quais proteções o AWS Firewall Manager pode configurar de forma centralizada? (Selecione DUAS.)",
   "alternativas": [
@@ -8691,6 +9567,12 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "KMS",
+   "EBS",
+   "S3"
+  ],
+  "simulado": 2,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer criar e controlar as chaves de criptografia usadas para proteger dados armazenados em outros serviços da AWS, como o Amazon S3 e o Amazon EBS. Qual serviço atende a esse requisito?",
   "alternativas": [
@@ -8722,6 +9604,9 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "KMS"
+  ],
   "gabarito": "documentacao",
   "enunciado": "No AWS KMS, o que caracteriza uma chave gerenciada pelo cliente (customer managed key)?",
   "alternativas": [
@@ -8753,6 +9638,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "WAF"
+  ],
+  "simulado": 2,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer proteger uma aplicação web contra ataques comuns da camada de aplicação (HTTP), como injeção de SQL e cross-site scripting (XSS). Qual serviço da AWS deve ser usado?",
   "alternativas": [
@@ -8784,6 +9673,11 @@
   "tipo": "multipla",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "CloudFront",
+   "WAF"
+  ],
+  "simulado": 1,
   "gabarito": "documentacao",
   "enunciado": "Em quais recursos o AWS WAF pode ser associado para proteger uma aplicação? (Selecione DOIS.)",
   "alternativas": [
@@ -8819,6 +9713,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Governança e conformidade",
+  "servicos": [
+   "RAM"
+  ],
+  "simulado": 3,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer compartilhar recursos, como sub-redes, com outras contas da mesma organização, sem precisar duplicá-los em cada conta. Qual serviço atende a esse requisito?",
   "alternativas": [
@@ -8850,6 +9748,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [
+   "Transit Gateway"
+  ],
+  "simulado": 3,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa tem muitas VPCs e redes on-premises e quer conectá-las por meio de um hub central, em vez de criar uma conexão de peering entre cada par de redes. Qual serviço atende a esse requisito?",
   "alternativas": [
@@ -8881,6 +9783,11 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [
+   "PrivateLink",
+   "VPC",
+   "VPN (Site-to-Site/Client)"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer que suas aplicações acessem, de forma privada, um serviço hospedado em outra VPC, sem usar a internet pública, gateway da internet, NAT nem VPN. Qual solução atende a esse requisito?",
   "alternativas": [
@@ -8912,6 +9819,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [
+   "API Gateway",
+   "Lambda"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer criar, publicar e gerenciar APIs em qualquer escala, para que aplicativos acessem funções do AWS Lambda e outros serviços de back-end. Qual serviço atende a esse requisito?",
   "alternativas": [
@@ -8943,6 +9854,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Monitoramento e gerenciamento",
+  "servicos": [
+   "Health Dashboard"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma equipe quer ser avisada sobre eventos que afetam seus recursos na AWS, como manutenções programadas e problemas em serviços que ela utiliza. Qual serviço mostra essas informações?",
   "alternativas": [
@@ -8974,6 +9888,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "IA e machine learning",
+  "servicos": [
+   "Transcribe"
+  ],
+  "simulado": 1,
   "gabarito": "documentacao",
   "enunciado": "Uma central de atendimento quer converter automaticamente as gravações das chamadas dos clientes em texto. Qual serviço da AWS atende a esse requisito?",
   "alternativas": [
@@ -9005,6 +9923,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Bancos de dados",
+  "servicos": [
+   "ElastiCache"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma aplicação sofre com leituras repetidas e lentas em um banco de dados. A equipe quer reduzir a latência e a carga do banco guardando em memória os dados acessados com frequência. Qual serviço atende a esse requisito?",
   "alternativas": [
@@ -9036,6 +9957,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Aplicações, IoT e outros",
+  "servicos": [
+   "X-Ray"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma equipe tem uma aplicação com vários microsserviços e quer rastrear as solicitações de ponta a ponta para encontrar gargalos de desempenho e erros. Qual serviço atende a esse requisito?",
   "alternativas": [
@@ -9067,6 +9991,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Analytics e dados",
+  "servicos": [
+   "OpenSearch"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer pesquisar e analisar grandes volumes de logs e documentos com buscas de texto e painéis de visualização. Qual serviço da AWS atende a esse requisito?",
   "alternativas": [
@@ -9098,6 +10025,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Monitoramento e gerenciamento",
+  "servicos": [
+   "EventBridge"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma aplicação precisa reagir a eventos gerados por serviços da AWS e por aplicações SaaS, usando regras que roteiam cada evento para o destino certo, sem servidores para gerenciar. Qual serviço atende a esse requisito?",
   "alternativas": [
@@ -9129,6 +10059,10 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [
+   "Cost and Usage Reports",
+   "S3"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma equipe financeira quer o conjunto mais detalhado de dados de custo e uso da conta, entregue em um bucket do Amazon S3 para análise própria. Qual recurso atende a esse requisito?",
   "alternativas": [
@@ -9160,6 +10094,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Monitoramento e gerenciamento",
+  "servicos": [
+   "SNS",
+   "Lambda"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma aplicação precisa enviar a mesma mensagem, ao mesmo tempo, para vários assinantes, como e-mail, SMS e funções do AWS Lambda. Qual serviço atende a esse requisito?",
   "alternativas": [
@@ -9191,6 +10129,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Aplicações, IoT e outros",
+  "servicos": [
+   "SES"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer enviar grandes volumes de e-mails de marketing e transacionais, com baixo custo e sem manter servidores de e-mail. Qual serviço da AWS atende a esse requisito?",
   "alternativas": [
@@ -9222,6 +10163,9 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [
+   "Marketplace"
+  ],
   "gabarito": "documentacao",
   "enunciado": "O que é o AWS Marketplace?",
   "alternativas": [
@@ -9253,6 +10197,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Bancos de dados",
+  "servicos": [
+   "DocumentDB"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma empresa tem uma aplicação que usa MongoDB e quer migrar para um banco de dados de documentos totalmente gerenciado na AWS, com compatibilidade com o MongoDB. Qual serviço atende a esse requisito?",
   "alternativas": [
@@ -9284,6 +10231,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Bancos de dados",
+  "servicos": [
+   "Neptune"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer criar uma aplicação de detecção de fraudes baseada nos relacionamentos entre contas, dispositivos e transações. Qual tipo de banco de dados e qual serviço da AWS são os mais indicados?",
   "alternativas": [
@@ -9315,6 +10265,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Aplicações, IoT e outros",
+  "servicos": [
+   "CodePipeline"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma equipe quer automatizar as etapas de build, teste e implantação de uma aplicação, sempre que o código for alterado, em um fluxo de entrega contínua. Qual serviço atende a esse requisito?",
   "alternativas": [
@@ -9346,6 +10299,9 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Governança e conformidade",
+  "servicos": [
+   "Config"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer registrar o histórico de configuração dos seus recursos da AWS e avaliar continuamente se eles seguem as regras definidas pela organização. Qual serviço atende a esse requisito?",
   "alternativas": [
@@ -9377,6 +10333,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Governança e conformidade",
+  "servicos": [
+   "Control Tower"
+  ],
+  "simulado": 1,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer configurar rapidamente um ambiente com várias contas, seguindo práticas recomendadas, com regras de governança (guardrails) aplicadas de forma automática. Qual serviço atende a esse requisito?",
   "alternativas": [
@@ -9408,6 +10368,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 2,
   "gabarito": "documentacao",
   "enunciado": "Uma equipe de desenvolvimento queria testar uma ideia nova, mas esperava semanas para receber servidores do departamento de TI. Na nuvem AWS, ela consegue disponibilizar os mesmos recursos em minutos. Qual vantagem da nuvem essa situação ilustra?",
   "alternativas": [
@@ -9439,6 +10401,7 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
   "gabarito": "documentacao",
   "enunciado": "Uma loja virtual recebe um pico de acessos na Black Friday e, depois, o tráfego volta ao normal. Qual característica da nuvem permite aumentar e reduzir os recursos automaticamente, conforme a demanda, para pagar só pelo que for necessário?",
   "alternativas": [
@@ -9470,6 +10433,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 1,
   "gabarito": "documentacao",
   "enunciado": "Uma aplicação crítica deve continuar disponível mesmo que um data center inteiro fique indisponível. Qual abordagem ajuda a atingir esse objetivo de alta disponibilidade?",
   "alternativas": [
@@ -9501,6 +10466,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 1,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa brasileira quer atender clientes de outro continente com baixa latência, sem construir um data center no exterior. Qual vantagem da nuvem AWS ajuda nesse caso?",
   "alternativas": [
@@ -9532,6 +10499,8 @@
   "tipo": "multipla",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 3,
   "gabarito": "documentacao",
   "enunciado": "Quais são vantagens de usar a computação em nuvem em vez de manter um data center próprio? (Selecione DUAS.)",
   "alternativas": [
@@ -9567,6 +10536,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 3,
   "gabarito": "documentacao",
   "enunciado": "Qual termo descreve a capacidade de um sistema continuar funcionando corretamente quando um de seus componentes falha?",
   "alternativas": [
@@ -9598,6 +10569,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 2,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer garantir que sua carga de trabalho execute a função esperada de forma correta e consistente, recupere-se de falhas e atenda à demanda. Qual pilar do AWS Well-Architected Framework trata desse objetivo?",
   "alternativas": [
@@ -9629,6 +10602,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 2,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa escolhe Regiões e tipos de instância com maior eficiência energética para reduzir o impacto ambiental das suas cargas de trabalho na nuvem. Qual pilar do AWS Well-Architected Framework orienta essa decisão?",
   "alternativas": [
@@ -9660,6 +10635,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 3,
   "gabarito": "documentacao",
   "enunciado": "Uma equipe cria procedimentos para operar suas cargas de trabalho, monitora a operação e melhora continuamente os processos depois de cada incidente. Qual pilar do AWS Well-Architected Framework descreve essas práticas?",
   "alternativas": [
@@ -9691,6 +10668,7 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
   "gabarito": "documentacao",
   "enunciado": "Uma empresa implementa gerenciamento de identidade, controles de detecção e criptografia para proteger seus dados, sistemas e ativos. Qual pilar do AWS Well-Architected Framework trata dessas práticas?",
   "alternativas": [
@@ -9722,6 +10700,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 1,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer usar os recursos de computação de forma eficiente para atender aos requisitos e manter essa eficiência à medida que a demanda e as tecnologias mudam. Qual pilar do AWS Well-Architected Framework trata desse objetivo?",
   "alternativas": [
@@ -9753,6 +10733,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 3,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer entender e controlar onde o dinheiro é gasto na nuvem e evitar custos desnecessários, sem deixar de entregar valor ao negócio. Qual pilar do AWS Well-Architected Framework trata desse objetivo?",
   "alternativas": [
@@ -9784,6 +10766,8 @@
   "tipo": "multipla",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 1,
   "gabarito": "documentacao",
   "enunciado": "Quais itens são pilares do AWS Well-Architected Framework? (Selecione DOIS.)",
   "alternativas": [
@@ -9819,6 +10803,8 @@
   "tipo": "multipla",
   "tema": "Conceitos de nuvem",
   "subtema": "Migração e transferência",
+  "servicos": [],
+  "simulado": 1,
   "gabarito": "documentacao",
   "enunciado": "Quais resultados de negócio o AWS Cloud Adoption Framework (AWS CAF) ajuda uma organização a alcançar? (Selecione DOIS.)",
   "alternativas": [
@@ -9854,6 +10840,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Migração e transferência",
+  "servicos": [],
+  "simulado": 1,
   "gabarito": "documentacao",
   "enunciado": "Qual perspectiva do AWS Cloud Adoption Framework (AWS CAF) ajuda a orquestrar as iniciativas de nuvem, maximizando os benefícios para a organização e minimizando os riscos da transformação?",
   "alternativas": [
@@ -9885,6 +10873,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Migração e transferência",
+  "servicos": [],
+  "simulado": 2,
   "gabarito": "documentacao",
   "enunciado": "Qual perspectiva do AWS Cloud Adoption Framework (AWS CAF) trata de garantir a confidencialidade, a integridade e a disponibilidade dos dados e das cargas de trabalho na nuvem?",
   "alternativas": [
@@ -9916,6 +10906,7 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Migração e transferência",
+  "servicos": [],
   "gabarito": "documentacao",
   "enunciado": "Uma empresa vai mover dezenas de servidores para a AWS exatamente como estão, sem alterar as aplicações, para migrar o mais rápido possível (lift-and-shift). Qual estratégia de migração ela está usando?",
   "alternativas": [
@@ -9947,6 +10938,10 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Migração e transferência",
+  "servicos": [
+   "RDS"
+  ],
+  "simulado": 1,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa migra seu banco de dados Microsoft SQL Server de servidores próprios para o Amazon RDS for SQL Server, sem mudar a lógica da aplicação, para reduzir a administração do banco. Qual estratégia de migração ela está usando?",
   "alternativas": [
@@ -9978,6 +10973,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Migração e transferência",
+  "servicos": [],
+  "simulado": 2,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa vai reprojetar uma aplicação monolítica em uma arquitetura de microsserviços com recursos nativos da nuvem, para melhorar agilidade, desempenho e escalabilidade. Qual estratégia de migração ela está usando?",
   "alternativas": [
@@ -10009,6 +11006,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Migração e transferência",
+  "servicos": [],
+  "simulado": 3,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa decide manter uma aplicação em seu data center por enquanto, porque ela depende de um equipamento especializado que não tem equivalente na nuvem. Qual estratégia de migração ela está adotando para essa aplicação?",
   "alternativas": [
@@ -10040,6 +11039,10 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Migração e transferência",
+  "servicos": [
+   "DMS"
+  ],
+  "simulado": 1,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer migrar um banco de dados para a AWS mantendo o banco de origem em operação e sincronizado com o novo até o momento da troca, para minimizar o tempo de inatividade. Qual abordagem de migração ela deve usar?",
   "alternativas": [
@@ -10071,6 +11074,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 3,
   "gabarito": "documentacao",
   "enunciado": "Uma startup não quer comprar servidores antecipadamente e prefere pagar somente pelos recursos de computação que consumir, mês a mês. Que tipo de despesa esse modelo representa?",
   "alternativas": [
@@ -10102,6 +11107,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 2,
   "gabarito": "documentacao",
   "enunciado": "Por que um provedor de nuvem como a AWS consegue oferecer preços por uso mais baixos do que uma empresa conseguiria obter montando sua própria infraestrutura?",
   "alternativas": [
@@ -10133,6 +11140,8 @@
   "tipo": "multipla",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 3,
   "gabarito": "documentacao",
   "enunciado": "Quais custos fazem parte da operação de um data center próprio (on-premises) e deixam de existir para a empresa ao migrar a infraestrutura para a nuvem? (Selecione DOIS.)",
   "alternativas": [
@@ -10168,6 +11177,8 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 2,
   "gabarito": "documentacao",
   "enunciado": "Qual é a diferença entre os modelos de licenciamento BYOL (traga sua própria licença) e licença incluída?",
   "alternativas": [
@@ -10199,6 +11210,7 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
   "gabarito": "documentacao",
   "enunciado": "O que significa dimensionar adequadamente (rightsizing) os recursos na nuvem?",
   "alternativas": [
@@ -10230,6 +11242,8 @@
   "tipo": "multipla",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 2,
   "gabarito": "documentacao",
   "enunciado": "Quais são benefícios de automatizar tarefas de implantação e operação na nuvem? (Selecione DOIS.)",
   "alternativas": [
@@ -10265,6 +11279,9 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [
+   "AWS Support (planos)"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma empresa precisa de acesso 24 horas por dia, por telefone, web e chat, a engenheiros de suporte da AWS. Qual é o plano de AWS Support de menor nível que oferece esse recurso?",
   "alternativas": [
@@ -10296,6 +11313,10 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [
+   "AWS Support (planos)"
+  ],
+  "simulado": 1,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa precisa dos benefícios do Business Support+ e também de um Technical Account Manager (TAM) designado e de tempo de resposta de até 15 minutos para casos críticos de produção. Qual plano de AWS Support atende a esses requisitos?",
   "alternativas": [
@@ -10327,6 +11348,7 @@
   "tipo": "multipla",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [],
   "gabarito": "documentacao",
   "enunciado": "Quais recursos todos os clientes da AWS recebem automaticamente com o AWS Basic Support? (Selecione DOIS.)",
   "alternativas": [
@@ -10362,6 +11384,8 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [],
+  "simulado": 3,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer orientação consultiva sobre a arquitetura das suas aplicações, gerenciamento de eventos de infraestrutura, um Technical Account Manager e um especialista de domínio designados, além de revisões de cargas de trabalho críticas e runbooks personalizados. Qual plano atende a esses requisitos?",
   "alternativas": [
@@ -10393,6 +11417,10 @@
   "tipo": "multipla",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [
+   "AWS Support (planos)",
+   "Trusted Advisor"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Quais recursos o AWS Business Support+ oferece além do que o Basic Support já inclui? (Selecione DOIS.)",
   "alternativas": [
@@ -10428,6 +11456,8 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [],
+  "simulado": 2,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer saber quanto cada projeto e cada departamento gasta na AWS, categorizando os custos por rótulos aplicados aos recursos. Qual recurso atende a esse requisito?",
   "alternativas": [
@@ -10459,6 +11489,9 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [
+   "Cost Explorer"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Quais são os tipos de tags de alocação de custos e o que é preciso fazer para que elas apareçam no Cost Explorer e nos relatórios de custos?",
   "alternativas": [
@@ -10490,6 +11523,10 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Monitoramento e gerenciamento",
+  "servicos": [
+   "Health Dashboard"
+  ],
+  "simulado": 2,
   "gabarito": "documentacao",
   "enunciado": "Qual afirmação sobre o AWS Health Dashboard é verdadeira?",
   "alternativas": [
@@ -10521,6 +11558,11 @@
   "tipo": "multipla",
   "tema": "Cobrança e suporte",
   "subtema": "Monitoramento e gerenciamento",
+  "servicos": [
+   "AWS Support (planos)",
+   "Health Dashboard"
+  ],
+  "simulado": 3,
   "gabarito": "documentacao",
   "enunciado": "Quais planos de AWS Support permitem usar a AWS Health API para integrar eventos de integridade a sistemas próprios e de terceiros? (Selecione TRÊS.)",
   "alternativas": [
@@ -10556,6 +11598,7 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [],
   "gabarito": "documentacao",
   "enunciado": "Uma empresa descobre que um recurso hospedado na AWS está sendo usado para enviar spam e distribuir conteúdo malicioso. A quem ela deve reportar o uso abusivo de recursos da AWS?",
   "alternativas": [
@@ -10587,6 +11630,7 @@
   "tipo": "multipla",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [],
   "gabarito": "documentacao",
   "enunciado": "Quais são benefícios de ser um parceiro da AWS, segundo o guia do exame? (Selecione DOIS.)",
   "alternativas": [
@@ -10622,6 +11666,7 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [],
   "gabarito": "documentacao",
   "enunciado": "Um desenvolvedor quer pesquisar respostas para perguntas técnicas frequentes e também perguntar a uma comunidade de especialistas da AWS e de outros usuários. Qual recurso atende a esse requisito?",
   "alternativas": [
@@ -10653,6 +11698,10 @@
   "tipo": "multipla",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "IAM"
+  ],
+  "simulado": 2,
   "gabarito": "documentacao",
   "enunciado": "Quais tarefas exigem as credenciais do usuário-raiz em uma conta da AWS autônoma, que não faz parte de uma organização? (Selecione DUAS.)",
   "alternativas": [
@@ -10688,6 +11737,8 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [],
+  "simulado": 3,
   "gabarito": "documentacao",
   "enunciado": "Qual é a prática recomendada para o uso do usuário-raiz de uma conta da AWS?",
   "alternativas": [
@@ -10719,6 +11770,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "IAM"
+  ],
+  "simulado": 2,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer que os funcionários acessem a AWS com as credenciais corporativas que já usam, sem criar um usuário do IAM para cada pessoa. Que conceito de gerenciamento de identidades atende a esse requisito?",
   "alternativas": [
@@ -10750,6 +11805,11 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "IAM",
+   "S3"
+  ],
+  "simulado": 3,
   "gabarito": "documentacao",
   "enunciado": "Uma aplicação na conta A precisa acessar um bucket do Amazon S3 que está na conta B, sem usar credenciais permanentes compartilhadas. Qual recurso do IAM atende a esse requisito?",
   "alternativas": [
@@ -10781,6 +11841,9 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "IAM"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Qual é a diferença entre uma política gerenciada pela AWS e uma política gerenciada pelo cliente (personalizada) no IAM?",
   "alternativas": [
@@ -10812,6 +11875,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "IAM"
+  ],
+  "simulado": 3,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer exigir que todos os usuários do IAM da conta criem senhas com um tamanho mínimo e tipos de caracteres específicos. Onde esses requisitos são definidos?",
   "alternativas": [
@@ -10843,6 +11910,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "Systems Manager"
+  ],
+  "simulado": 2,
   "gabarito": "documentacao",
   "enunciado": "Qual recurso do AWS Systems Manager armazena parâmetros de configuração e valores secretos de forma segura, para que não fiquem escritos no código da aplicação?",
   "alternativas": [
@@ -10874,6 +11945,9 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "IAM"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Qual prática é recomendada para dar a uma aplicação acesso a serviços da AWS?",
   "alternativas": [
@@ -10905,6 +11979,11 @@
   "tipo": "multipla",
   "tema": "Segurança e conformidade",
   "subtema": "Governança e conformidade",
+  "servicos": [
+   "CloudTrail",
+   "VPC"
+  ],
+  "simulado": 1,
   "gabarito": "documentacao",
   "enunciado": "Quais recursos registram informações úteis para investigar a segurança de um ambiente na AWS? (Selecione DOIS.)",
   "alternativas": [
@@ -10940,6 +12019,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Governança e conformidade",
+  "servicos": [
+   "Artifact"
+  ],
+  "simulado": 3,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa precisa verificar se um serviço específico da AWS está dentro do escopo de um programa de conformidade, como o PCI DSS ou o HIPAA, pois os requisitos podem variar entre os serviços. Onde ela pode consultar essa informação?",
   "alternativas": [
@@ -10971,6 +12054,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "KMS",
+   "EBS"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Qual exemplo descreve criptografia de dados em repouso?",
   "alternativas": [
@@ -11002,6 +12089,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "Marketplace"
+  ],
+  "simulado": 3,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer usar um firewall ou outro produto de segurança de um fornecedor terceiro dentro do seu ambiente na AWS. Onde ela pode encontrar e contratar esse tipo de produto?",
   "alternativas": [
@@ -11033,6 +12124,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Responsabilidade compartilhada",
+  "servicos": [
+   "Lambda"
+  ],
+  "simulado": 2,
   "gabarito": "documentacao",
   "enunciado": "Em qual das opções o cliente tem a MENOR responsabilidade pelo gerenciamento do sistema operacional e da plataforma de execução?",
   "alternativas": [
@@ -11064,6 +12159,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "IAM"
+  ],
+  "simulado": 1,
   "gabarito": "documentacao",
   "enunciado": "Qual recurso do IAM ajuda a identificar usuários com credenciais ou senhas que não são usadas há muito tempo, listando o status das credenciais de todos os usuários da conta?",
   "alternativas": [
@@ -11095,6 +12194,9 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "GuardDuty"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Qual serviço da AWS monitora continuamente as contas e as cargas de trabalho em busca de atividades maliciosas e comportamentos não autorizados, usando machine learning e inteligência de ameaças?",
   "alternativas": [
@@ -11126,6 +12228,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "Shield"
+  ],
+  "simulado": 1,
   "gabarito": "documentacao",
   "enunciado": "Qual é a diferença entre o AWS Shield Standard e o AWS Shield Advanced?",
   "alternativas": [
@@ -11157,6 +12263,7 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Monitoramento e gerenciamento",
+  "servicos": [],
   "gabarito": "documentacao",
   "enunciado": "Uma equipe de desenvolvimento quer chamar serviços da AWS a partir do código de uma aplicação escrita em Python, sem montar manualmente as chamadas de API. O que ela deve usar?",
   "alternativas": [
@@ -11188,6 +12295,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Monitoramento e gerenciamento",
+  "servicos": [
+   "CloudFormation"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma equipe precisa criar o mesmo ambiente de forma idêntica e repetida em vários ambientes (desenvolvimento, teste e produção). Qual método de implantação é o mais indicado?",
   "alternativas": [
@@ -11219,6 +12329,7 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
   "gabarito": "documentacao",
   "enunciado": "Uma startup executa todas as suas aplicações na AWS e não mantém nenhuma infraestrutura própria. Qual modelo de implantação ela adota?",
   "alternativas": [
@@ -11250,6 +12361,7 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
   "gabarito": "documentacao",
   "enunciado": "Em relação às Zonas de Disponibilidade de uma Região da AWS, qual afirmação é verdadeira?",
   "alternativas": [
@@ -11281,6 +12393,8 @@
   "tipo": "multipla",
   "tema": "Tecnologia e serviços",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 1,
   "gabarito": "documentacao",
   "enunciado": "Quais são motivos válidos para usar várias Regiões da AWS? (Selecione DOIS.)",
   "alternativas": [
@@ -11316,6 +12430,8 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "simulado": 1,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa precisa manter os dados de seus clientes dentro de um país específico, por exigência legal (soberania de dados). O que ela deve fazer ao usar a AWS?",
   "alternativas": [
@@ -11347,6 +12463,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [
+   "VPC"
+  ],
+  "simulado": 2,
   "gabarito": "documentacao",
   "enunciado": "Instâncias em uma sub-rede privada precisam baixar atualizações da internet, mas não devem receber conexões iniciadas pela internet. Qual componente da VPC atende a esse requisito?",
   "alternativas": [
@@ -11378,6 +12498,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [
+   "VPC"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Qual componente da VPC permite a comunicação entre os recursos de uma sub-rede pública e a internet?",
   "alternativas": [
@@ -11409,6 +12532,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [
+   "Route 53"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer que o Amazon Route 53 envie os usuários para uma Região secundária se a aplicação na Região principal ficar indisponível. Qual recurso atende a esse requisito?",
   "alternativas": [
@@ -11440,6 +12566,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [
+   "Global Accelerator"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer melhorar a disponibilidade e o desempenho de uma aplicação para usuários no mundo todo, direcionando o tráfego pela rede global da AWS por meio de endereços IP estáticos de entrada. Qual serviço atende a esse requisito?",
   "alternativas": [
@@ -11471,6 +12600,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "S3"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma empresa guarda no Amazon S3 dados cujo padrão de acesso é desconhecido ou muda com o tempo, e quer reduzir o custo automaticamente, sem taxas de recuperação. Qual classe de armazenamento atende a esse requisito?",
   "alternativas": [
@@ -11502,6 +12634,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "S3"
+  ],
+  "simulado": 2,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer guardar no Amazon S3 dados que podem ser recriados e que são pouco acessados, a um custo menor que o S3 Standard-IA, aceitando que os dados fiquem em uma única Zona de Disponibilidade. Qual classe atende a esse requisito?",
   "alternativas": [
@@ -11533,6 +12669,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "S3",
+   "S3 Glacier"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma empresa precisa arquivar dados por muitos anos, que raramente ou quase nunca serão acessados, e aceita esperar horas para recuperá-los, buscando o menor custo possível. Qual classe de armazenamento do S3 atende a esse requisito?",
   "alternativas": [
@@ -11564,6 +12704,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Armazenamento",
+  "servicos": [
+   "S3",
+   "S3 Glacier"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma empresa guarda arquivos de longa duração que são acessados cerca de uma vez por trimestre, mas que precisam estar disponíveis em milissegundos quando solicitados. Qual classe de armazenamento do S3 é a mais indicada?",
   "alternativas": [
@@ -11595,6 +12739,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Analytics e dados",
+  "servicos": [
+   "Athena",
+   "S3"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma equipe quer consultar, com SQL padrão, dados que estão armazenados no Amazon S3, sem provisionar nem gerenciar servidores. Qual serviço atende a esse requisito?",
   "alternativas": [
@@ -11626,6 +12774,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "IA e machine learning",
+  "servicos": [
+   "Textract"
+  ],
+  "simulado": 1,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer extrair automaticamente texto, formulários e tabelas de documentos digitalizados, como faturas e contratos. Qual serviço da AWS atende a esse requisito?",
   "alternativas": [
@@ -11657,6 +12809,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "IA e machine learning",
+  "servicos": [
+   "Translate"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma empresa de comércio eletrônico quer traduzir automaticamente as descrições dos produtos para vários idiomas. Qual serviço da AWS atende a esse requisito?",
   "alternativas": [
@@ -11688,6 +12843,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Analytics e dados",
+  "servicos": [
+   "EMR"
+  ],
+  "simulado": 2,
   "gabarito": "documentacao",
   "enunciado": "Uma equipe precisa processar grandes volumes de dados com frameworks de big data, como Apache Spark e Hadoop, sem montar e gerenciar o próprio cluster. Qual serviço da AWS atende a esse requisito?",
   "alternativas": [
@@ -11719,6 +12878,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Aplicações, IoT e outros",
+  "servicos": [
+   "WorkSpaces"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer que os funcionários acessem aplicações web internas e aplicações SaaS por meio de um navegador seguro e gerenciado, sem armazenar dados nos dispositivos dos usuários. Qual serviço atende a esse requisito?",
   "alternativas": [
@@ -11750,6 +12912,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Monitoramento e gerenciamento",
+  "servicos": [
+   "SQS"
+  ],
+  "simulado": 1,
   "gabarito": "documentacao",
   "enunciado": "Uma aplicação gera pedidos que precisam ser processados por outro componente, no ritmo dele, sem perder mensagens caso o processamento fique lento. Qual serviço da AWS fornece uma fila de mensagens gerenciada para isso?",
   "alternativas": [
@@ -11781,6 +12947,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Migração e transferência",
+  "servicos": [
+   "Application Discovery"
+  ],
+  "simulado": 3,
   "gabarito": "documentacao",
   "enunciado": "Antes de migrar, uma empresa precisa descobrir quais servidores existem no data center, como são usados e quais dependências há entre eles. Qual serviço da AWS ajuda a coletar essas informações?",
   "alternativas": [
@@ -11812,6 +12982,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Migração e transferência",
+  "servicos": [
+   "Application Discovery"
+  ],
+  "simulado": 2,
   "gabarito": "documentacao",
   "enunciado": "Quais informações o AWS Application Discovery Service coleta sobre os servidores on-premises para apoiar o planejamento de uma migração?",
   "alternativas": [
@@ -11843,6 +13017,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Analytics e dados",
+  "servicos": [
+   "Athena",
+   "S3"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Um analista faz consultas ocasionais em arquivos de log armazenados no Amazon S3 e não quer manter um cluster ou data warehouse sempre ligado. Qual serviço é o mais indicado?",
   "alternativas": [
@@ -11874,6 +13052,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Analytics e dados",
+  "servicos": [
+   "EMR"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma equipe de dados quer controle sobre frameworks de big data, como Apache Spark e Hadoop, e sobre o ambiente do cluster que os executa. Qual serviço da AWS atende a esse requisito?",
   "alternativas": [
@@ -11905,6 +13086,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Analytics e dados",
+  "servicos": [
+   "Glue"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Qual componente do AWS Glue guarda metadados sobre as fontes de dados e as tabelas, para que outros serviços de análise possam descobrir e consultar os dados?",
   "alternativas": [
@@ -11936,6 +13120,13 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Analytics e dados",
+  "servicos": [
+   "Athena",
+   "QuickSight/Quick",
+   "Redshift",
+   "S3"
+  ],
+  "simulado": 1,
   "gabarito": "documentacao",
   "enunciado": "Uma equipe de negócios quer criar painéis interativos e visualizações a partir de dados armazenados no Amazon S3, no Athena e no Redshift, sem gerenciar servidores. Qual serviço atende a esse requisito?",
   "alternativas": [
@@ -11967,6 +13158,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Analytics e dados",
+  "servicos": [
+   "Redshift"
+  ],
+  "simulado": 2,
   "gabarito": "documentacao",
   "enunciado": "Qual serviço da AWS é um data warehouse em escala de petabytes, voltado para consultas analíticas complexas e business intelligence?",
   "alternativas": [
@@ -11998,6 +13193,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Monitoramento e gerenciamento",
+  "servicos": [
+   "EventBridge",
+   "Lambda"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma equipe quer executar uma função do AWS Lambda todas as noites, às 2h da manhã, sem manter servidores para agendar a tarefa. Qual serviço pode acionar a função em um horário programado?",
   "alternativas": [
@@ -12029,6 +13228,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Aplicações, IoT e outros",
+  "servicos": [
+   "Connect"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer montar uma central de atendimento com ligações e chat, em minutos, sem comprar hardware de telefonia nem manter servidores. Qual serviço da AWS atende a esse requisito?",
   "alternativas": [
@@ -12060,6 +13262,10 @@
   "tipo": "multipla",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [
+   "Budgets"
+  ],
+  "simulado": 1,
   "gabarito": "documentacao",
   "enunciado": "Que tipos de orçamento o AWS Budgets permite criar? (Selecione DOIS.)",
   "alternativas": [
@@ -12095,6 +13301,12 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [
+   "Athena",
+   "Cost and Usage Reports",
+   "S3"
+  ],
+  "simulado": 1,
   "gabarito": "documentacao",
   "enunciado": "Uma equipe financeira quer analisar os dados detalhados do AWS Cost and Usage Reports usando consultas SQL. Qual serviço pode ser usado para consultar esses relatórios entregues no Amazon S3?",
   "alternativas": [
@@ -12126,6 +13338,9 @@
   "tipo": "unica",
   "tema": "Cobrança e suporte",
   "subtema": "Preços, custos e suporte",
+  "servicos": [
+   "Cost Explorer"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer visualizar em gráficos os custos e o uso dos últimos meses, filtrar por serviço ou por tag e ver uma previsão dos gastos futuros. Qual ferramenta atende a esse requisito?",
   "alternativas": [
@@ -12157,6 +13372,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Monitoramento e gerenciamento",
+  "servicos": [
+   "AWS CLI"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Um administrador quer criar recursos da AWS pelo terminal e automatizar tarefas repetitivas com scripts. Qual ferramenta atende a esse requisito?",
   "alternativas": [
@@ -12188,6 +13406,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Aplicações, IoT e outros",
+  "servicos": [
+   "CodeBuild",
+   "CodePipeline"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Em um pipeline do AWS CodePipeline, qual serviço da AWS pode ser adicionado como etapa para compilar o código e executar os testes?",
   "alternativas": [
@@ -12219,6 +13441,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Aplicações, IoT e outros",
+  "servicos": [
+   "AppStream 2.0"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer que os usuários usem um aplicativo de desktop pesado, como um software de design (CAD), direto no navegador, sem instalá-lo nos computadores. Qual serviço atende a esse requisito?",
   "alternativas": [
@@ -12250,6 +13475,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Aplicações, IoT e outros",
+  "servicos": [
+   "Amplify"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma equipe quer hospedar uma aplicação web front-end e implantar as alterações de código automaticamente, com o mínimo de configuração de infraestrutura. Qual serviço atende a esse requisito?",
   "alternativas": [
@@ -12281,6 +13509,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Aplicações, IoT e outros",
+  "servicos": [
+   "IoT Core"
+  ],
+  "simulado": 3,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa tem milhares de sensores que precisam enviar mensagens à nuvem de forma segura, usando protocolos leves como o MQTT. Qual serviço da AWS atende a esse requisito?",
   "alternativas": [
@@ -12312,6 +13544,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "IA e machine learning",
+  "servicos": [
+   "Comprehend"
+  ],
+  "simulado": 1,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer analisar milhares de avaliações de produtos para identificar o idioma, as entidades citadas e o sentimento (positivo ou negativo) de cada texto. Qual serviço atende a esse requisito?",
   "alternativas": [
@@ -12343,6 +13579,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "IA e machine learning",
+  "servicos": [
+   "Lex"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Quais tecnologias o Amazon Lex usa para criar interfaces de conversação, como chatbots por voz e por texto?",
   "alternativas": [
@@ -12374,6 +13613,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "IA e machine learning",
+  "servicos": [
+   "Textract"
+  ],
+  "simulado": 3,
   "gabarito": "documentacao",
   "enunciado": "Uma seguradora recebe milhares de formulários de sinistro digitalizados e quer capturar automaticamente os campos preenchidos e as tabelas, sem digitar nada. Qual serviço atende a esse requisito?",
   "alternativas": [
@@ -12405,6 +13648,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "IA e machine learning",
+  "servicos": [
+   "Transcribe"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma plataforma de vídeos quer gerar legendas automaticamente a partir do áudio dos vídeos enviados. Qual serviço atende a esse requisito?",
   "alternativas": [
@@ -12436,6 +13682,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "IA e machine learning",
+  "servicos": [
+   "Translate"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Um aplicativo de mensagens quer traduzir automaticamente as conversas dos usuários entre idiomas diferentes. Qual serviço da AWS atende a esse requisito?",
   "alternativas": [
@@ -12467,6 +13716,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Governança e conformidade",
+  "servicos": [
+   "License Manager"
+  ],
+  "simulado": 3,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa usa licenças de software próprias em várias contas da AWS e quer definir regras de uso (por exemplo, um limite de núcleos de CPU) para evitar violações de licenciamento. Qual serviço atende a esse requisito?",
   "alternativas": [
@@ -12498,6 +13751,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Governança e conformidade",
+  "servicos": [
+   "CloudFormation",
+   "Service Catalog"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer que as equipes lancem recursos por conta própria, mas somente a partir de produtos pré-aprovados, baseados em modelos padronizados do AWS CloudFormation. Qual serviço atende a esse requisito?",
   "alternativas": [
@@ -12529,6 +13786,11 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Monitoramento e gerenciamento",
+  "servicos": [
+   "EC2",
+   "Systems Manager"
+  ],
+  "simulado": 1,
   "gabarito": "documentacao",
   "enunciado": "Um administrador quer aplicar patches e executar comandos em centenas de instâncias do Amazon EC2 de uma só vez, sem acessar cada uma individualmente. Qual serviço atende a esse requisito?",
   "alternativas": [
@@ -12560,6 +13822,9 @@
   "tipo": "unica",
   "tema": "Conceitos de nuvem",
   "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [
+   "Well-Architected Tool"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Qual afirmação sobre o AWS Well-Architected Tool é verdadeira?",
   "alternativas": [
@@ -12591,6 +13856,11 @@
   "tipo": "multipla",
   "tema": "Tecnologia e serviços",
   "subtema": "Migração e transferência",
+  "servicos": [
+   "Aurora",
+   "DMS",
+   "SCT"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma empresa vai migrar um banco de dados Oracle on-premises para o Amazon Aurora PostgreSQL, um mecanismo diferente. Quais serviços ela deve usar? (Selecione DOIS.)",
   "alternativas": [
@@ -12626,6 +13896,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [
+   "API Gateway"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer expor suas APIs com autenticação, limitação de requisições (throttling) e cache, sem gerenciar servidores. Qual serviço da AWS atende a esse requisito?",
   "alternativas": [
@@ -12657,6 +13930,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [
+   "Global Accelerator"
+  ],
+  "simulado": 1,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa de jogos online quer melhorar o desempenho do tráfego TCP e UDP dos jogadores no mundo todo, usando a rede global da AWS. Qual serviço atende a esse requisito?",
   "alternativas": [
@@ -12688,6 +13965,10 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [
+   "PrivateLink"
+  ],
+  "simulado": 3,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa de software quer oferecer seu serviço a clientes em outras VPCs e contas da AWS, de forma privada, sem passar pela internet pública. Qual recurso atende a esse requisito?",
   "alternativas": [
@@ -12719,6 +14000,9 @@
   "tipo": "unica",
   "tema": "Tecnologia e serviços",
   "subtema": "Redes e entrega de conteúdo",
+  "servicos": [
+   "Transit Gateway"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Qual topologia de rede o AWS Transit Gateway permite, em vez de muitas conexões de peering entre cada par de VPCs?",
   "alternativas": [
@@ -12750,6 +14034,13 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "CloudTrail",
+   "VPC",
+   "Detective",
+   "GuardDuty"
+  ],
+  "simulado": 1,
   "gabarito": "documentacao",
   "enunciado": "Uma equipe de segurança quer analisar e correlacionar logs do AWS CloudTrail, VPC Flow Logs e achados do GuardDuty em um grafo interativo, para investigar a causa de um incidente. Qual serviço atende a esse requisito?",
   "alternativas": [
@@ -12781,6 +14072,12 @@
   "tipo": "multipla",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "CloudTrail",
+   "VPC",
+   "GuardDuty"
+  ],
+  "simulado": 2,
   "gabarito": "documentacao",
   "enunciado": "Quais fontes de dados o Amazon GuardDuty analisa para detectar atividades maliciosas? (Selecione DUAS.)",
   "alternativas": [
@@ -12816,6 +14113,10 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "IAM",
+   "IAM Identity Center"
+  ],
   "gabarito": "documentacao",
   "enunciado": "No AWS IAM Identity Center, qual recurso define o conjunto de permissões que será atribuído a usuários ou grupos em uma ou mais contas da AWS?",
   "alternativas": [
@@ -12847,6 +14148,12 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "EC2",
+   "Inspector",
+   "Lambda"
+  ],
+  "simulado": 3,
   "gabarito": "documentacao",
   "enunciado": "Qual serviço verifica continuamente as instâncias do Amazon EC2, as imagens de contêiner e as funções do AWS Lambda em busca de vulnerabilidades de software conhecidas?",
   "alternativas": [
@@ -12878,6 +14185,11 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "Macie",
+   "S3"
+  ],
+  "simulado": 2,
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer identificar dados pessoais, como números de cartão de crédito e documentos de identificação, armazenados em buckets do Amazon S3. Qual serviço atende a esse requisito?",
   "alternativas": [
@@ -12909,6 +14221,12 @@
   "tipo": "multipla",
   "tema": "Segurança e conformidade",
   "subtema": "Governança e conformidade",
+  "servicos": [
+   "Transit Gateway",
+   "VPC",
+   "RAM"
+  ],
+  "simulado": 3,
   "gabarito": "documentacao",
   "enunciado": "Quais recursos podem ser compartilhados entre contas com o AWS Resource Access Manager (AWS RAM)? (Selecione DOIS.)",
   "alternativas": [
@@ -12944,6 +14262,9 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Segurança e identidade",
+  "servicos": [
+   "Secrets Manager"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma equipe quer que as senhas dos bancos de dados sejam trocadas automaticamente em intervalos regulares, sem alterar o código das aplicações. Qual serviço atende a esse requisito?",
   "alternativas": [
@@ -12975,6 +14296,9 @@
   "tipo": "unica",
   "tema": "Segurança e conformidade",
   "subtema": "Governança e conformidade",
+  "servicos": [
+   "Security Hub"
+  ],
   "gabarito": "documentacao",
   "enunciado": "Uma empresa quer verificar se sua conta segue padrões e práticas recomendadas de segurança, como as da AWS e do CIS, e reunir os alertas de vários serviços em um só lugar. Qual serviço atende a esse requisito?",
   "alternativas": [

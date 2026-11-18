@@ -3,13 +3,15 @@
   const CHAVE = 'clf-c02.v1';
   // Estas constantes ficam no topo de propósito: carregarMeta() e carregar() rodam logo abaixo,
   // e usá-las antes de serem definidas lança erro e zera o progresso.
-  const VERSAO = '2026-11-16.1';
+  const VERSAO = '2026-11-16.2';
   const META = CHAVE + '.perfis';
   const chavePerfil = (id) => (id === 'p1' ? CHAVE : `${CHAVE}.${id}`);
   const DOMINIOS = ['Conceitos de nuvem', 'Segurança e conformidade', 'Tecnologia e serviços', 'Cobrança e suporte'];
   // Pesos oficiais dos domínios do exame CLF-C02 (guia do exame).
   const PESOS = { 'Conceitos de nuvem': 24, 'Segurança e conformidade': 30, 'Tecnologia e serviços': 34, 'Cobrança e suporte': 12 };
   const SIM = { total: 65, minutos: 90, aprovacao: 70 };
+  const CRONO = { total: 20, minutos: 20 };
+  const SIM_FIXOS = [1, 2, 3];
   const QTDS = [10, 20, 30, 50, 0];
 
   const app = document.getElementById('app');
@@ -206,8 +208,8 @@
     DOMINIOS.forEach((d, i) => { r[d] = base[i]; });
     return r;
   }
-  function montarSimulado() {
-    const c = cotas(SIM.total);
+  function montarSimulado(total = SIM.total) {
+    const c = cotas(total);
     const lista = [];
     for (const d of DOMINIOS) {
       // O exame real só tem pergunta de uma resposta e de várias respostas (sem associação).
@@ -242,6 +244,7 @@
       modo: opts.modo,
       feedback: opts.feedback,
       limiteSeg: opts.limiteSeg || null,
+      fixo: opts.fixo || null,
       inicio: Date.now(),
       idx: 0,
       itens: perguntas.map(criarItem),
@@ -253,6 +256,23 @@
     const lista = montarSimulado();
     iniciar(lista, { modo: 'simulado', feedback: 'final', limiteSeg: Math.round((lista.length * SIM.minutos * 60) / SIM.total) });
   }
+  function iniciarFixo(n) {
+    const lista = embaralhar(Q.filter((q) => q.simulado === n));
+    iniciar(lista, { modo: 'simulado', feedback: 'final', fixo: n, limiteSeg: SIM.minutos * 60 });
+  }
+  function iniciarCronometrado() {
+    iniciar(montarSimulado(CRONO.total), { modo: 'cronometrado', feedback: 'final', limiteSeg: CRONO.minutos * 60 });
+  }
+  function iniciarServico(nome) {
+    iniciar(embaralhar(Q.filter((q) => (q.servicos || []).includes(nome))), { modo: 'pratica', feedback: 'imediato' });
+  }
+  function notasFixo(n) {
+    const h = store.historico.filter((x) => x.fixo === n).map((x) => pct(x.acertos, x.total));
+    return h.length ? { ultima: h[h.length - 1], melhor: Math.max(...h), vezes: h.length } : null;
+  }
+  const nomeModo = (x) => (x.fixo ? `Simulado ${x.fixo}` : x.modo === 'simulado' ? 'Simulado sorteado'
+    : x.modo === 'cronometrado' ? 'Cronometrado' : 'Prática');
+
   function treinoInteligente() {
     iniciar(ordenarPrioridade(Q).slice(0, 20), { modo: 'pratica', feedback: 'imediato' });
   }
@@ -330,7 +350,7 @@
     const total = sess.itens.length;
     const branco = sess.itens.filter((it) => !respondida(it)).length;
     resultado = { modo: sess.modo, total, acertos, seg, porDom, branco, itens: sess.itens };
-    store.historico.push({ data: Date.now(), modo: sess.modo, total, acertos, seg, porDom });
+    store.historico.push({ data: Date.now(), modo: sess.modo, fixo: sess.fixo, total, acertos, seg, porDom });
     store.historico = store.historico.slice(-100);
     salvar();
     sess = null;
@@ -402,7 +422,16 @@
       h('p', { class: 'suave' }, `CLF-C02 · ${Q.length} perguntas · funciona offline`),
       h('div', { class: 'chips' }, h('button', { class: 'chip', onclick: () => go('perfis') }, `Perfil: ${perfilAtivo().nome} · trocar`)),
       h('div', { class: 'resumo' }, caixa(`${vistas}/${Q.length}`, 'vistas'), caixa(t ? pct(a, t) + '%' : '–', 'acertos'), caixa(erradas, 'a revisar')),
-      menuBtn('Simulado do exame', `${SIM.total} perguntas, ${SIM.minutos} min, sem gabarito até o fim. Segue os pesos dos domínios do exame.`, iniciarSimulado, true),
+      menuBtn('Simulado sorteado', `${SIM.total} perguntas, ${SIM.minutos} min, sem gabarito até o fim. Sorteia priorizando o que você menos viu, com os pesos dos domínios do exame.`, iniciarSimulado, true),
+      h('div', { class: 'card' },
+        h('strong', null, 'Simulados fixos'),
+        h('p', { class: 'suave' }, `Sempre as mesmas ${SIM.total} perguntas em cada um, sem repetição entre eles. Refaça para medir a evolução.`),
+        h('div', { class: 'barra-acoes' }, SIM_FIXOS.map((n) => {
+          const nt = notasFixo(n);
+          return h('button', { class: 'btn', onclick: () => iniciarFixo(n) },
+            `Simulado ${n}`, h('small', { style: 'display:block;font-weight:400' }, nt ? `última ${nt.ultima}% · melhor ${nt.melhor}%` : 'não feito'));
+        }))),
+      menuBtn('Treino cronometrado', `${CRONO.total} perguntas em ${CRONO.minutos} minutos, gabarito no final. 1 minuto por pergunta, um pouco mais apertado que a prova (cerca de 1min20s).`, iniciarCronometrado),
       menuBtn('Treino inteligente', '20 perguntas: prioriza o que você errou e o que ainda não viu.', treinoInteligente),
       menuBtn('Praticar por tema', 'Escolha domínios, assuntos e quantidade.', () => go('config')),
       menuBtn(`Rever as que errei (${erradas})`, 'Perguntas em que a última tentativa foi errada.', () => iniciarFiltro('erradas'), false, erradas === 0),
@@ -631,6 +660,18 @@
     }
     return m;
   }
+  function agregarServicos() {
+    const m = {};
+    for (const q of Q) {
+      const s = store.stats[q.uid];
+      for (const nome of q.servicos || []) {
+        const e = (m[nome] = m[nome] || { t: 0, a: 0, vistas: 0, total: 0 });
+        e.total++;
+        if (s) { e.t += s.t; e.a += s.a; e.vistas++; }
+      }
+    }
+    return m;
+  }
   function exportar() {
     const blob = new Blob([JSON.stringify(store)], { type: 'application/json' });
     const a = h('a', { href: URL.createObjectURL(blob), download: 'clf-c02-progresso.json' });
@@ -662,10 +703,20 @@
       h('div', { class: 'card' }, DOMINIOS.map((d) => barraStat(`${d} (${PESOS[d]}%)`, dom[d].a, dom[d].t, ` · ${dom[d].vistas}/${dom[d].total} vistas`))),
       h('h2', null, 'Por assunto (do mais fraco ao mais forte)'),
       h('div', { class: 'card' }, sub.length ? sub.map(([k, v]) => barraStat(k, v.a, v.t)) : h('p', { class: 'suave' }, 'Responda algumas perguntas para ver o desempenho por assunto.')),
+      h('h2', null, 'Serviços mais fracos'),
+      (() => {
+        const lista = Object.entries(agregarServicos()).filter(([, v]) => v.t >= 2)
+          .sort((a, b) => a[1].a / a[1].t - b[1].a / b[1].t || b[1].t - a[1].t).slice(0, 15);
+        return h('div', { class: 'card' }, lista.length
+          ? [h('p', { class: 'suave' }, 'Os 15 serviços com menor taxa de acerto (com pelo menos 2 respostas). Toque em Praticar para treinar só aquele serviço.'),
+            lista.map(([k, v]) => h('div', { class: 'linha-servico' }, barraStat(k, v.a, v.t),
+              h('button', { class: 'btn pequeno', onclick: () => iniciarServico(k) }, `Praticar (${v.total})`)))]
+          : h('p', { class: 'suave' }, 'Responda mais perguntas para ver os serviços em que você erra mais.'));
+      })(),
       h('h2', null, 'Últimas sessões'),
       h('div', { class: 'card historico' }, store.historico.length
         ? store.historico.slice(-12).reverse().map((x) => h('div', null,
-          h('span', null, `${fmtData(x.data)} · ${x.modo === 'simulado' ? 'Simulado' : 'Prática'}`),
+          h('span', null, `${fmtData(x.data)} · ${nomeModo(x)}`),
           h('b', null, `${pct(x.acertos, x.total)}% (${x.acertos}/${x.total})`)))
         : h('p', { class: 'suave' }, 'Nenhuma sessão concluída ainda.')),
       h('h2', null, 'Backup do progresso'),
@@ -717,6 +768,17 @@
     ok(sim.length === SIM.total, `simulado com ${sim.length} perguntas`);
     ok(new Set(sim.map((q) => q.uid)).size === sim.length, 'simulado com repetidas');
     ok(!sim.some((q) => q.tipo === 'pareamento'), 'simulado não deve ter pergunta de associação');
+    const vistosFixos = new Set();
+    for (const n of SIM_FIXOS) {
+      const f = Q.filter((q) => q.simulado === n);
+      ok(f.length === SIM.total, `simulado fixo ${n} com ${f.length} perguntas`);
+      DOMINIOS.forEach((d) => ok(f.filter((q) => q.tema === d).length === c[d], `simulado fixo ${n}: cota de ${d}`));
+      ok(!f.some((q) => q.tipo === 'pareamento'), `simulado fixo ${n} com associação`);
+      f.forEach((q) => { ok(!vistosFixos.has(q.uid), `pergunta repetida entre simulados fixos: ${q.id}`); vistosFixos.add(q.uid); });
+    }
+    ok(Q.every((q) => Array.isArray(q.servicos)), 'campo servicos ausente');
+    const cr = montarSimulado(CRONO.total);
+    ok(cr.length === CRONO.total, `cronometrado com ${cr.length} perguntas`);
     DOMINIOS.forEach((d) => ok(sim.filter((q) => q.tema === d).length === c[d], `cota de ${d} não respeitada`));
     testePerfis(falhas);
     const interfaceTestada = testeInterface(falhas);
@@ -815,7 +877,7 @@
       ok(view === 'resultado' && !!app.querySelector('.nota'), 'sem resultado do treino');
       ok(store.historico.length === 1, 'histórico do treino');
       view = 'home'; render();
-      ok(clicar('Simulado do exame'), 'botão simulado');
+      ok(clicar('Simulado sorteado'), 'botão simulado');
       ok(view === 'quiz' && sess.itens.length === SIM.total && !!document.getElementById('relogio'), 'simulado não iniciou');
       for (let i = 0; i < SIM.total; i++) {
         responder();
@@ -825,6 +887,22 @@
       ok(clicar('Finalizar prova'), 'finalizar');
       ok(view === 'resultado' && resultado.total === SIM.total, 'resultado do simulado');
       ok(store.historico.length === 2, 'histórico do simulado');
+      view = 'home'; render();
+      ok(clicar('Simulado 2'), 'botão simulado fixo');
+      ok(view === 'quiz' && sess.fixo === 2 && sess.itens.length === SIM.total, 'simulado fixo não iniciou');
+      for (let i = 0; i < SIM.total; i++) {
+        responder();
+        ok(clicar(i < SIM.total - 1 ? 'Próxima' : 'Revisar e finalizar'), `avançar fixo ${i}`);
+      }
+      ok(clicar('Finalizar prova'), 'finalizar fixo');
+      ok(store.historico[store.historico.length - 1].fixo === 2, 'histórico do simulado fixo');
+      view = 'home'; render();
+      ok(app.textContent.includes('última'), 'nota do simulado fixo não aparece no início');
+      ok(clicar('Treino cronometrado'), 'botão cronometrado');
+      ok(view === 'quiz' && sess.modo === 'cronometrado' && sess.itens.length === CRONO.total && !!document.getElementById('relogio'), 'cronometrado não iniciou');
+      sairSessao();
+      view = 'stats'; render();
+      ok(app.textContent.includes('Serviços mais fracos'), 'seção de serviços ausente');
       view = 'config'; render();
       ok(clicar('Computação'), 'chip de assunto');
       ok(!!app.querySelector('.rodape-fixo .btn.primario'), 'config sem botão iniciar');

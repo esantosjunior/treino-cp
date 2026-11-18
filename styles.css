@@ -159,6 +159,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 details { background: var(--card); border: 1px solid var(--borda); border-radius: 12px; padding: 10px 12px; margin-bottom: 10px; }
 summary { cursor: pointer; font-weight: 600; }
+.linha-servico { display: flex; gap: 10px; align-items: center; }
+.linha-servico > div { flex: 1; }
 .historico div { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid var(--borda); font-size: 0.9rem; }
 .rotulo { font-weight: 600; margin: 14px 0 6px; display: block; }
 pre#autoteste { white-space: pre-wrap; font-size: 0.8rem; }
