@@ -3,7 +3,7 @@
   const CHAVE = 'clf-c02.v1';
   // Estas constantes ficam no topo de propósito: carregarMeta() e carregar() rodam logo abaixo,
   // e usá-las antes de serem definidas lança erro e zera o progresso.
-  const VERSAO = '2026-11-15.4';
+  const VERSAO = '2026-11-16.1';
   const META = CHAVE + '.perfis';
   const chavePerfil = (id) => (id === 'p1' ? CHAVE : `${CHAVE}.${id}`);
   const DOMINIOS = ['Conceitos de nuvem', 'Segurança e conformidade', 'Tecnologia e serviços', 'Cobrança e suporte'];
@@ -219,7 +219,7 @@
 
   // ---------- configuração da prática ----------
   function cfgPadrao() {
-    return { dominios: new Set(), subtemas: new Set(), filtro: 'todas', qtd: 20, ordem: 'aleatoria', feedback: 'imediato' };
+    return { dominios: new Set(), subtemas: new Set(), filtro: 'todas', qtd: 10, ordem: 'aleatoria', feedback: 'imediato' };
   }
   function passaFiltro(q, filtro) {
     const s = store.stats[q.uid];
