@@ -3,7 +3,7 @@
   const CHAVE = 'clf-c02.v1';
   // Estas constantes ficam no topo de propósito: carregarMeta() e carregar() rodam logo abaixo,
   // e usá-las antes de serem definidas lança erro e zera o progresso.
-  const VERSAO = '2026-11-16.3';
+  const VERSAO = '2026-11-16.4';
   const META = CHAVE + '.perfis';
   const chavePerfil = (id) => (id === 'p1' ? CHAVE : `${CHAVE}.${id}`);
   const DOMINIOS = ['Conceitos de nuvem', 'Segurança e conformidade', 'Tecnologia e serviços', 'Cobrança e suporte'];
@@ -208,13 +208,21 @@
     DOMINIOS.forEach((d, i) => { r[d] = base[i]; });
     return r;
   }
+  // Cerca de 1 em cada 5 perguntas é de várias respostas, como na amostra do simulado oficial (6 de 24).
+  const FRACAO_MULTIPLA = 0.2;
   function montarSimulado(total = SIM.total) {
     const c = cotas(total);
     const lista = [];
+    const menosVistas = (arr) => embaralhar(arr).sort((a, b) => tentativas(a) - tentativas(b));
     for (const d of DOMINIOS) {
       // O exame real só tem pergunta de uma resposta e de várias respostas (sem associação).
-      const pool = embaralhar(Q.filter((q) => q.tema === d && q.tipo !== 'pareamento')).sort((a, b) => tentativas(a) - tentativas(b));
-      lista.push(...pool.slice(0, c[d]));
+      const multi = menosVistas(Q.filter((q) => q.tema === d && q.tipo === 'multipla'));
+      const unica = menosVistas(Q.filter((q) => q.tema === d && q.tipo === 'unica'));
+      const nMulti = Math.min(multi.length, Math.round(c[d] * FRACAO_MULTIPLA));
+      const escolhidas = multi.slice(0, nMulti);
+      escolhidas.push(...unica.slice(0, c[d] - nMulti));
+      if (escolhidas.length < c[d]) escolhidas.push(...multi.slice(nMulti, nMulti + c[d] - escolhidas.length));
+      lista.push(...escolhidas);
     }
     return embaralhar(lista);
   }
@@ -768,6 +776,8 @@
     ok(sim.length === SIM.total, `simulado com ${sim.length} perguntas`);
     ok(new Set(sim.map((q) => q.uid)).size === sim.length, 'simulado com repetidas');
     ok(!sim.some((q) => q.tipo === 'pareamento'), 'simulado não deve ter pergunta de associação');
+    const esperadoMulti = DOMINIOS.reduce((s, d) => s + Math.round(c[d] * FRACAO_MULTIPLA), 0);
+    ok(sim.filter((q) => q.tipo === 'multipla').length === esperadoMulti, `simulado com ${sim.filter((q) => q.tipo === 'multipla').length} de várias respostas (esperado ${esperadoMulti})`);
     const vistosFixos = new Set();
     for (const n of SIM_FIXOS) {
       const f = Q.filter((q) => q.simulado === n);
