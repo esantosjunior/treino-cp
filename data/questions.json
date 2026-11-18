@@ -16433,5 +16433,622 @@
   "fonte": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain4.html",
   "autoral": true,
   "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 471,
+  "uid": "00753d53",
+  "tipo": "multipla",
+  "tema": "Conceitos de nuvem",
+  "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "gabarito": "documentacao",
+  "enunciado": "Quais opções são modelos de serviço de computação em nuvem? (Selecione TRÊS.)",
+  "alternativas": [
+   {
+    "texto": "Infraestrutura como serviço (IaaS)",
+    "correta": true
+   },
+   {
+    "texto": "Implantação em nuvem híbrida",
+    "correta": false
+   },
+   {
+    "texto": "Plataforma como serviço (PaaS)",
+    "correta": true
+   },
+   {
+    "texto": "Hospedagem em colocation",
+    "correta": false
+   },
+   {
+    "texto": "Software como serviço (SaaS)",
+    "correta": true
+   },
+   {
+    "texto": "Implantação on-premises",
+    "correta": false
+   }
+  ],
+  "explicacao": "Os três modelos de serviço são IaaS (por exemplo, Amazon EC2), PaaS (por exemplo, AWS Elastic Beanstalk) e SaaS (software pronto, usado pelo navegador). Nuvem, híbrido e on-premises são modelos de implantação, uma classificação diferente.",
+  "fonte": "https://aws.amazon.com/types-of-cloud-computing/",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 472,
+  "uid": "a0da9295",
+  "tipo": "unica",
+  "tema": "Conceitos de nuvem",
+  "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [
+   "Elastic Beanstalk"
+  ],
+  "gabarito": "documentacao",
+  "enunciado": "Uma equipe envia o código para o AWS Elastic Beanstalk, e a AWS cuida dos servidores, do sistema operacional e da plataforma de execução. Qual modelo de serviço de nuvem a equipe está usando?",
+  "alternativas": [
+   {
+    "texto": "Plataforma como serviço (PaaS)",
+    "correta": true
+   },
+   {
+    "texto": "Infraestrutura como serviço (IaaS)",
+    "correta": false
+   },
+   {
+    "texto": "Software como serviço (SaaS)",
+    "correta": false
+   },
+   {
+    "texto": "Implantação on-premises",
+    "correta": false
+   }
+  ],
+  "explicacao": "No PaaS, o provedor gerencia a infraestrutura e a plataforma, e o cliente foca na aplicação. No IaaS, o cliente gerencia o sistema operacional (como no EC2). No SaaS, o cliente só usa um software pronto.",
+  "fonte": "https://aws.amazon.com/types-of-cloud-computing/",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 473,
+  "uid": "b1554087",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Computação",
+  "servicos": [
+   "EC2"
+  ],
+  "gabarito": "documentacao",
+  "enunciado": "Para atender mais usuários, uma empresa passa de duas para seis instâncias do Amazon EC2 atrás de um balanceador de carga. Que tipo de escalabilidade é esse?",
+  "alternativas": [
+   {
+    "texto": "Escalabilidade horizontal",
+    "correta": true
+   },
+   {
+    "texto": "Escalabilidade vertical",
+    "correta": false
+   },
+   {
+    "texto": "Escalabilidade diagonal",
+    "correta": false
+   },
+   {
+    "texto": "Escalabilidade regional",
+    "correta": false
+   }
+  ],
+  "explicacao": "Escalar horizontalmente é adicionar ou remover instâncias, o que o Auto Scaling faz automaticamente. Escalar verticalmente é aumentar ou reduzir o tamanho de uma mesma instância.",
+  "fonte": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 474,
+  "uid": "ac686e27",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Computação",
+  "servicos": [
+   "EC2"
+  ],
+  "gabarito": "documentacao",
+  "enunciado": "Um banco de dados roda em uma única instância do Amazon EC2 que ficou sem memória. A equipe troca o tipo da instância por um com mais CPU e memória. Que tipo de escalabilidade é esse?",
+  "alternativas": [
+   {
+    "texto": "Escalabilidade vertical",
+    "correta": true
+   },
+   {
+    "texto": "Escalabilidade horizontal",
+    "correta": false
+   },
+   {
+    "texto": "Escalabilidade elástica automática",
+    "correta": false
+   },
+   {
+    "texto": "Escalabilidade entre Regiões",
+    "correta": false
+   }
+  ],
+  "explicacao": "Aumentar a capacidade de uma mesma instância, trocando o tipo, é escalar verticalmente. Para trocar o tipo de uma instância baseada em EBS, ela precisa ser interrompida antes. Adicionar instâncias seria escalar horizontalmente.",
+  "fonte": "https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-types.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 475,
+  "uid": "1f8f4cb6",
+  "tipo": "multipla",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Computação",
+  "servicos": [
+   "EC2",
+   "Auto Scaling"
+  ],
+  "gabarito": "documentacao",
+  "enunciado": "Quais são funções do Amazon EC2 Auto Scaling? (Selecione TRÊS.)",
+  "alternativas": [
+   {
+    "texto": "Verificar a integridade das instâncias em execução",
+    "correta": true
+   },
+   {
+    "texto": "Bloquear o tráfego para instâncias sem patches",
+    "correta": false
+   },
+   {
+    "texto": "Substituir automaticamente as instâncias com falha",
+    "correta": true
+   },
+   {
+    "texto": "Distribuir a capacidade entre Zonas de Disponibilidade",
+    "correta": true
+   },
+   {
+    "texto": "Criptografar os volumes do EBS de cada instância",
+    "correta": false
+   },
+   {
+    "texto": "Registrar as chamadas de API feitas nas instâncias",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Auto Scaling monitora a integridade das instâncias, substitui as que falham e equilibra a capacidade entre as Zonas de Disponibilidade, além de ajustar o número de instâncias à demanda. Bloquear tráfego é papel de grupos de segurança, e registrar API é papel do CloudTrail.",
+  "fonte": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 476,
+  "uid": "12e7c52f",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Computação",
+  "servicos": [
+   "Auto Scaling"
+  ],
+  "gabarito": "documentacao",
+  "enunciado": "Um grupo do Auto Scaling tem capacidade mínima de 3 instâncias. Um administrador encerra manualmente uma delas, e o grupo fica com 2. O que acontece?",
+  "alternativas": [
+   {
+    "texto": "O Auto Scaling inicia uma nova instância para voltar ao mínimo",
+    "correta": true
+   },
+   {
+    "texto": "O mínimo do grupo é alterado automaticamente para 2",
+    "correta": false
+   },
+   {
+    "texto": "Nada acontece até que a utilização da CPU aumente",
+    "correta": false
+   },
+   {
+    "texto": "O grupo inteiro é encerrado para evitar inconsistências",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Auto Scaling mantém o número de instâncias dentro dos limites definidos. Se o grupo fica abaixo do mínimo, ele inicia instâncias novas para repor a capacidade, sem intervenção manual.",
+  "fonte": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 477,
+  "uid": "1df2764a",
+  "tipo": "multipla",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [
+   "S3"
+  ],
+  "gabarito": "documentacao",
+  "enunciado": "Quais afirmações sobre o escopo regional dos recursos da AWS são verdadeiras? (Selecione TRÊS.)",
+  "alternativas": [
+   {
+    "texto": "Um bucket do S3 é criado em uma Região escolhida pelo usuário",
+    "correta": true
+   },
+   {
+    "texto": "Uma AMI criada fica disponível só na Região em que foi criada",
+    "correta": true
+   },
+   {
+    "texto": "O console mostra os recursos da Região selecionada no momento",
+    "correta": true
+   },
+   {
+    "texto": "O console mostra ao mesmo tempo os recursos de todas as Regiões",
+    "correta": false
+   },
+   {
+    "texto": "Um bucket do S3 guarda os dados em uma única Zona de Disponibilidade",
+    "correta": false
+   },
+   {
+    "texto": "Uma instância do EC2 pode ser usada em qualquer Região sem migração",
+    "correta": false
+   }
+  ],
+  "explicacao": "A maioria dos recursos é regional: o bucket é criado em uma Região, a AMI fica na Região em que foi criada (e pode ser copiada para outras) e o console mostra os recursos da Região selecionada. O S3 Standard guarda os dados em pelo menos três Zonas da Região.",
+  "fonte": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 478,
+  "uid": "0b3b0b09",
+  "tipo": "multipla",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Armazenamento",
+  "servicos": [
+   "S3"
+  ],
+  "gabarito": "documentacao",
+  "enunciado": "Quais afirmações sobre os buckets do Amazon S3 são verdadeiras? (Selecione DUAS.)",
+  "alternativas": [
+   {
+    "texto": "Um bucket é um contêiner para os objetos guardados no S3",
+    "correta": true
+   },
+   {
+    "texto": "Cada bucket aceita no máximo um milhão de objetos",
+    "correta": false
+   },
+   {
+    "texto": "Não há limite para o número de objetos em um bucket",
+    "correta": true
+   },
+   {
+    "texto": "Os buckets novos ficam públicos por padrão na internet",
+    "correta": false
+   },
+   {
+    "texto": "Um bucket é um volume anexado a uma instância do EC2",
+    "correta": false
+   }
+  ],
+  "explicacao": "O bucket é o contêiner dos objetos no S3, e não há limite para a quantidade de objetos nem para o volume total armazenado. Os buckets são privados por padrão, e volumes anexados a instâncias são do Amazon EBS.",
+  "fonte": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 479,
+  "uid": "3a2542fd",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Armazenamento",
+  "servicos": [
+   "EFS"
+  ],
+  "gabarito": "documentacao",
+  "enunciado": "Qual protocolo as instâncias Linux usam para montar um sistema de arquivos do Amazon EFS?",
+  "alternativas": [
+   {
+    "texto": "Network File System (NFS)",
+    "correta": true
+   },
+   {
+    "texto": "Server Message Block (SMB)",
+    "correta": false
+   },
+   {
+    "texto": "File Transfer Protocol (FTP)",
+    "correta": false
+   },
+   {
+    "texto": "Internet SCSI (iSCSI)",
+    "correta": false
+   }
+  ],
+  "explicacao": "O Amazon EFS é acessado pelo protocolo NFS. Para compartilhamentos de arquivos do Windows com SMB, a opção é o Amazon FSx para Windows File Server.",
+  "fonte": "https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 480,
+  "uid": "00edaa4a",
+  "tipo": "unica",
+  "tema": "Segurança e conformidade",
+  "subtema": "Segurança e identidade",
+  "servicos": [
+   "IAM",
+   "S3"
+  ],
+  "gabarito": "documentacao",
+  "enunciado": "Em que formato são escritas as políticas do IAM e as políticas de bucket do Amazon S3?",
+  "alternativas": [
+   {
+    "texto": "JSON",
+    "correta": true
+   },
+   {
+    "texto": "XML",
+    "correta": false
+   },
+   {
+    "texto": "YAML",
+    "correta": false
+   },
+   {
+    "texto": "CSV",
+    "correta": false
+   }
+  ],
+  "explicacao": "As políticas do IAM e as políticas baseadas em recursos, como as de bucket do S3, são documentos JSON com elementos como Effect, Action e Resource. O YAML aparece em modelos do CloudFormation, mas não em políticas.",
+  "fonte": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 481,
+  "uid": "a946d335",
+  "tipo": "unica",
+  "tema": "Segurança e conformidade",
+  "subtema": "Redes e entrega de conteúdo",
+  "servicos": [],
+  "gabarito": "documentacao",
+  "enunciado": "O grupo de segurança de uma instância tem uma única regra de entrada, que permite HTTPS (porta 443). O que acontece quando alguém tenta acessar a instância por HTTP (porta 80)?",
+  "alternativas": [
+   {
+    "texto": "A conexão é negada, pois não há regra que permita a porta 80",
+    "correta": true
+   },
+   {
+    "texto": "A conexão é aceita, pois a regra de HTTPS também libera o HTTP",
+    "correta": false
+   },
+   {
+    "texto": "A conexão é aceita, mas a resposta da instância é bloqueada",
+    "correta": false
+   },
+   {
+    "texto": "A conexão só é negada se uma ACL de rede tiver regra de negar",
+    "correta": false
+   }
+  ],
+  "explicacao": "Grupos de segurança só têm regras de permitir: todo tráfego de entrada que não estiver permitido é negado. Como são stateful, quando uma entrada é permitida, a resposta sai automaticamente.",
+  "fonte": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 482,
+  "uid": "26b78185",
+  "tipo": "unica",
+  "tema": "Conceitos de nuvem",
+  "subtema": "Conceitos de nuvem e Well-Architected",
+  "servicos": [],
+  "gabarito": "documentacao",
+  "enunciado": "Qual afirmação descreve a computação em nuvem?",
+  "alternativas": [
+   {
+    "texto": "A entrega sob demanda de recursos de TI pela internet, com preço conforme o uso",
+    "correta": true
+   },
+   {
+    "texto": "A hospedagem de servidores próprios em um data center alugado de outra empresa",
+    "correta": false
+   },
+   {
+    "texto": "A execução do mesmo código em vários computadores do escritório ao mesmo tempo",
+    "correta": false
+   },
+   {
+    "texto": "A contratação de capacidade fixa de servidores por meio de um contrato anual",
+    "correta": false
+   }
+  ],
+  "explicacao": "A AWS define computação em nuvem como a entrega sob demanda de recursos de TI pela internet, com definição de preço de pagamento conforme o uso. Alugar espaço para servidores próprios é colocation, e capacidade fixa contratada não é elástica.",
+  "fonte": "https://aws.amazon.com/what-is-cloud-computing/",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 483,
+  "uid": "def1fabb",
+  "tipo": "unica",
+  "tema": "Cobrança e suporte",
+  "subtema": "Preços, custos e suporte",
+  "servicos": [
+   "EC2",
+   "Fargate",
+   "Lambda"
+  ],
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa quer um desconto em computação que se aplique automaticamente ao uso do Amazon EC2 em qualquer Região e família de instância, e também ao AWS Fargate e ao AWS Lambda. Qual opção atende a esse requisito?",
+  "alternativas": [
+   {
+    "texto": "Compute Savings Plans",
+    "correta": true
+   },
+   {
+    "texto": "Instâncias reservadas padrão",
+    "correta": false
+   },
+   {
+    "texto": "Instâncias spot do EC2",
+    "correta": false
+   },
+   {
+    "texto": "Hosts dedicados do EC2",
+    "correta": false
+   }
+  ],
+  "explicacao": "Os Compute Savings Plans dão desconto em troca de compromisso de gasto por 1 ou 3 anos e valem para o EC2 independentemente de família, tamanho, Região e sistema operacional, além do Fargate e do Lambda. As instâncias reservadas padrão ficam presas a atributos como o tipo de instância.",
+  "fonte": "https://docs.aws.amazon.com/savingsplans/latest/userguide/what-is-savings-plans.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 484,
+  "uid": "15bb975f",
+  "tipo": "unica",
+  "tema": "Cobrança e suporte",
+  "subtema": "Preços, custos e suporte",
+  "servicos": [
+   "EC2",
+   "EBS"
+  ],
+  "gabarito": "documentacao",
+  "enunciado": "Uma empresa tem três instâncias sob demanda do Amazon EC2, cada uma com um volume EBS de 50 GB. Duas estão em execução e uma está interrompida. Pelo que ela é cobrada?",
+  "alternativas": [
+   {
+    "texto": "Pelas duas instâncias em execução e pelos 150 GB de EBS",
+    "correta": true
+   },
+   {
+    "texto": "Pelas duas instâncias em execução e por apenas 100 GB de EBS",
+    "correta": false
+   },
+   {
+    "texto": "Pelas três instâncias e pelos 150 GB de EBS, sem diferença",
+    "correta": false
+   },
+   {
+    "texto": "Pelas três instâncias, com tarifa menor para a interrompida",
+    "correta": false
+   }
+  ],
+  "explicacao": "Uma instância interrompida não gera cobrança de computação, mas os volumes EBS anexados a ela continuam sendo cobrados, pois os dados permanecem armazenados.",
+  "fonte": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-lifecycle.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 485,
+  "uid": "0a795aee",
+  "tipo": "unica",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Armazenamento",
+  "servicos": [
+   "S3"
+  ],
+  "gabarito": "documentacao",
+  "enunciado": "Um desenvolvedor quer publicar um site estático (HTML, JavaScript e imagens) com o menor custo e sem gerenciar servidores. O que ele deve fazer?",
+  "alternativas": [
+   {
+    "texto": "Criar um bucket do S3 e ativar a hospedagem de site estático",
+    "correta": true
+   },
+   {
+    "texto": "Iniciar uma instância do EC2 e instalar um servidor web nela",
+    "correta": false
+   },
+   {
+    "texto": "Criar um banco de dados no RDS para guardar as páginas do site",
+    "correta": false
+   },
+   {
+    "texto": "Implantar o site como uma aplicação no AWS Elastic Beanstalk",
+    "correta": false
+   }
+  ],
+  "explicacao": "O S3 pode hospedar sites estáticos diretamente, sem servidores, pagando só pelo armazenamento e pelas transferências. O CloudFront pode ser colocado na frente para reduzir a latência. EC2 e Elastic Beanstalk exigem instâncias em execução.",
+  "fonte": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 486,
+  "uid": "00ad632c",
+  "tipo": "multipla",
+  "tema": "Tecnologia e serviços",
+  "subtema": "Bancos de dados",
+  "servicos": [
+   "RDS"
+  ],
+  "gabarito": "documentacao",
+  "enunciado": "Quais mecanismos de banco de dados o Amazon RDS oferece? (Selecione TRÊS.)",
+  "alternativas": [
+   {
+    "texto": "MySQL",
+    "correta": true
+   },
+   {
+    "texto": "MongoDB",
+    "correta": false
+   },
+   {
+    "texto": "PostgreSQL",
+    "correta": true
+   },
+   {
+    "texto": "Apache Cassandra",
+    "correta": false
+   },
+   {
+    "texto": "Microsoft SQL Server",
+    "correta": true
+   },
+   {
+    "texto": "SQLite",
+    "correta": false
+   }
+  ],
+  "explicacao": "O RDS oferece Aurora, MySQL, MariaDB, PostgreSQL, Oracle, Microsoft SQL Server e Db2. Para cargas compatíveis com MongoDB a AWS oferece o Amazon DocumentDB, e para Cassandra, o Amazon Keyspaces.",
+  "fonte": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
+ },
+ {
+  "id": 487,
+  "uid": "fe2e57e0",
+  "tipo": "multipla",
+  "tema": "Segurança e conformidade",
+  "subtema": "Segurança e identidade",
+  "servicos": [
+   "IAM"
+  ],
+  "gabarito": "documentacao",
+  "enunciado": "Quais afirmações sobre os grupos do AWS IAM são verdadeiras? (Selecione DUAS.)",
+  "alternativas": [
+   {
+    "texto": "Um usuário do IAM pode pertencer a vários grupos",
+    "correta": true
+   },
+   {
+    "texto": "Um usuário do IAM só pode pertencer a um grupo",
+    "correta": false
+   },
+   {
+    "texto": "Um grupo do IAM não pode conter outros grupos",
+    "correta": true
+   },
+   {
+    "texto": "Cada grupo tem senha e chaves de acesso próprias",
+    "correta": false
+   },
+   {
+    "texto": "Um grupo herda as permissões do usuário-raiz",
+    "correta": false
+   }
+  ],
+  "explicacao": "Um grupo do IAM reúne usuários para aplicar as mesmas permissões. Um usuário pode estar em vários grupos, mas grupos não podem ser aninhados. Grupos não têm credenciais próprias: quem faz login são os usuários.",
+  "fonte": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html",
+  "autoral": true,
+  "origem": "Elaborada com base na documentação oficial da AWS"
  }
 ]
